@@ -106,7 +106,7 @@ automatización avanzada de IA para la derivación. Markdown + Git + Astro
 
 ## Piloto
 
-El primer contenido derivado con esta arquitectura es **DBA — Unidad
+El primer contenido derivado con esta arquitectura fue **DBA — Unidad
 2**, seleccionada por ser la primera unidad con dictamen de QA
 `APROBADO` en `academic-workspace`
 (`materias/dba/unidad02/AUDITORIA_QA_MATERIALES_U2.md`). La validación
@@ -114,3 +114,15 @@ académica humana de esa unidad permanece pendiente; eso no bloquea el
 piloto técnico de infraestructura, pero sí implica que su contenido debe
 tratarse como borrador pedagógicamente aprobado, no como definitivo
 institucional.
+
+Posteriormente se derivó también **DBA — Unidad 1**, con un estado de
+QA/publicación explícitamente distinto y menos avanzado
+(`qa_final: REQUIERE_NUEVA_VERIFICACIÓN`, `publicacion: NO_AUTORIZADA`
+en `CONTEXTO_UNIDAD.md`, secc. 22), por decisión directa documentada en
+el historial de derivación (`docs/PUBLICACION.md`, secc. 3). Esto
+demuestra que la arquitectura de publicación **no asume automáticamente
+que "derivado" significa "aprobado"**: cada unidad conserva y expone su
+propio estado de QA independientemente de las demás, mediante la
+insignia visible en cada página de unidad. La calendarización de
+sesiones (planeación de clases) es un eje independiente del estado de
+QA de contenido y puede estar cerrada aunque el contenido no lo esté.

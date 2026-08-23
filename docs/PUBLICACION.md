@@ -32,7 +32,44 @@ No existe todavía extracción automática. El procedimiento actual es:
    documento (o en un registro equivalente por unidad).
 5. Ejecutar `npm run build` en el/los portal(es) afectados para validar.
 
-## 3. Registro de derivación — DBA Unidad 2 (piloto)
+## 3. Registro de derivación — DBA Unidad 1
+
+Fecha de derivación: **2026-08-23**. Fuente: `academic-workspace`,
+`materias/dba/unidad01/` (`CONTEXTO_UNIDAD.md`, secc. 22:
+`qa_final: REQUIERE_NUEVA_VERIFICACIÓN`; `publicacion: NO_AUTORIZADA`;
+`validacion_academica: PENDIENTE`).
+
+**Nota sobre el estado de esta unidad:** a diferencia de la Unidad 2
+(derivada primero por tener QA `APROBADO`), la Unidad 1 se derivó con un
+estado de QA/publicación explícitamente no cerrado, por decisión directa
+del responsable del workspace (ver historial de esta sesión). Cada
+página de la unidad, en ambos portales, lleva una insignia visible
+"QA requiere nueva verificación · Publicación no autorizada". La
+calendarización de la unidad (9 sesiones, `unidad01_planeacion_clases.md`)
+es un eje independiente y sí está cerrada; no debe confundirse con el
+estado de aprobación del contenido.
+
+| Archivo fuente (`academic-workspace`) | Destino | Audiencia | Notas |
+| --- | --- | --- | --- |
+| `materias/dba/unidad01/CONTEXTO_UNIDAD.md` | — (no se deriva) | `WORKSPACE_ONLY` | Permanece exclusivamente en el workspace. |
+| `materias/dba/unidad01/QA_UNIDAD.md`, `AUDITORIA_QA_MATERIALES_U1.md` | — (no se derivan) | `WORKSPACE_ONLY` | QA interno; solo el dictamen resumido se refleja en `unidad-01/index.md` de ambos portales. |
+| `materias/dba/unidad01/PLANEACION_UNIDAD.md` | — (no se deriva) | `WORKSPACE_ONLY` | Documento rector superado por `CONTEXTO_UNIDAD.md` y `unidad01_planeacion_clases.md`; permanece como registro interno. |
+| `materias/dba/unidad01/material/unidad01_manual_estudiante.md` | `student-portal` y `teacher-portal`: `.../unidad-01/{01..06}-*.md` | `STUDENT_PUBLIC` | Dividido en 6 páginas temáticas (una por sección del manual) en vez de una sola página larga, según la estructura solicitada. |
+| `materias/dba/unidad01/material/unidad01_presentacion.md` | `student-portal` y `teacher-portal`: `.../unidad-01/presentacion.md` | `STUDENT_PUBLIC` | Convertida de diapositivas Marp a página de documentación condensada; sin información nueva respecto al manual. |
+| `materias/dba/unidad01/material/unidad01_actividades.md` | `student-portal`: `.../unidad-01/actividades/actividad-{1..7}.md` (sin "Notas para el docente") · `teacher-portal`: mismas páginas, íntegras + notas docentes | `STUDENT_PUBLIC` (parcial) + `TEACHER_RESTRICTED` (notas docentes) | Dividido en 7 páginas (una por actividad) en ambos portales. |
+| `materias/dba/unidad01/material/unidad01_ejemplos_resueltos.md` | `teacher-portal`: sección "Ejemplo resuelto" embebida en cada `actividades/actividad-{1..7}.md` | `TEACHER_RESTRICTED` | No se creó como página independiente: se integró en la página de la actividad correspondiente para mantener el contenido junto a su contexto. |
+| `materias/dba/unidad01/material/unidad01_lab01_presentacion.md`, `unidad01_lab02_presentacion.md` | — (no se derivan como páginas independientes) | `STUDENT_PUBLIC` | Contenido redundante con las guías de laboratorio ya derivadas (mismos comandos/salidas); no se duplica. |
+| `materias/dba/unidad01/laboratorios/unidad01_lab01_postgresql_arquitectura_relacional.md` | `student-portal` y `teacher-portal`: `.../unidad-01/laboratorios/laboratorio-1-postgresql.md` | `STUDENT_PUBLIC` | — |
+| `materias/dba/unidad01/laboratorios/unidad01_lab02_mongodb_modelo_documental.md` | `student-portal` y `teacher-portal`: `.../unidad-01/laboratorios/laboratorio-2-mongodb.md` | `STUDENT_PUBLIC` | — |
+| `materias/dba/unidad01/evaluacion/unidad01_rubrica.md` | `teacher-portal`: `.../unidad-01/rubrica.md` | `TEACHER_RESTRICTED` | No se deriva al Student Portal (D5). Se sustituye ahí por `evaluacion.md`, con criterios generales. |
+| `materias/dba/unidad01/planeacion/unidad01_manual_profesor.md` | `teacher-portal`: `.../unidad-01/manual-profesor.md` | `TEACHER_RESTRICTED` | — |
+| `materias/dba/unidad01/planeacion/unidad01_planeacion_clases.md` | `teacher-portal`: `.../unidad-01/planeacion-clases.md` | `TEACHER_RESTRICTED` | Marcada explícitamente como oferta de cohorte (D6), no contenido permanente. |
+| `materias/dba/unidad01/referencias/unidad01_materiales_referencias.md` | `student-portal` y `teacher-portal`: `.../unidad-01/referencias/index.md` | `STUDENT_PUBLIC` | Se excluye la sección "Notas de uso" (proceso editorial, `WORKSPACE_ONLY`); se conservan las tablas de referencias y trazabilidad. |
+| `materias/dba/unidad01/referencias/unidad01_lecturas_complementarias.md` | `student-portal` y `teacher-portal`: `.../unidad-01/referencias/lecturas-complementarias.md` | `STUDENT_PUBLIC` | Se excluye la sección "Fuentes evaluadas y descartadas" (nota de proceso interno sobre una anomalía de seguridad detectada en una fuente descartada, `WORKSPACE_ONLY`). |
+| `materias/dba/unidad01/referencias/unidad01_casos_completos.md` | `student-portal` y `teacher-portal`: `.../unidad-01/referencias/casos-reales.md` | `STUDENT_PUBLIC` | Copia íntegra. |
+| `materias/dba/CONTEXTO_MATERIA.md` (secc. 2, extracto) | ya derivado en el piloto de Unidad 2; sin cambios | `STUDENT_PUBLIC` (extracto) | No se repite la derivación. |
+
+## 4. Registro de derivación — DBA Unidad 2 (piloto)
 
 Fecha de derivación: **2026-08-23**. Fuente: `academic-workspace`,
 `materias/dba/unidad02/` (QA: `APROBADO`; validación académica:
@@ -52,7 +89,7 @@ Fecha de derivación: **2026-08-23**. Fuente: `academic-workspace`,
 | (nuevo, sin fuente 1:1) | `student-portal`: `.../unidad-02/evaluacion.md` | `STUDENT_PUBLIC` | Página nueva que resume criterios generales de evaluación sin reproducir la rúbrica docente; no introduce ningún criterio ausente de `unidad02_actividades.md`. |
 | `materias/dba/CONTEXTO_MATERIA.md` (secc. 2, extracto) | `student-portal` y `teacher-portal`: `.../dba/index.md` | `STUDENT_PUBLIC` (extracto) | Solo el propósito general públicamente seguro; el resto del archivo permanece `WORKSPACE_ONLY`. |
 
-## 4. Hosting y CI/CD
+## 5. Hosting y CI/CD
 
 - **Student Portal** — sitio estático, apto para GitHub Pages público
   una vez que se confirme la organización/dominio de destino (`site` en
@@ -72,7 +109,7 @@ Fecha de derivación: **2026-08-23**. Fuente: `academic-workspace`,
   y deja documentado que el paso de publicación requiere la capa de
   acceso mencionada arriba antes de activarse.
 
-## 5. Cómo se agrega una materia nueva (resumen operativo)
+## 6. Cómo se agrega una materia nueva (resumen operativo)
 
 1. En `academic-workspace`: confirmar que la unidad a publicar tiene QA
    `APROBADO`.
