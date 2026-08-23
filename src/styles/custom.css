@@ -1,0 +1,94 @@
+/*
+ * Identidad visual — Academic Student Portal (UAS / FIC)
+ * Paleta derivada de plantillas/tema-uas.css (academic-workspace),
+ * adaptada a los tokens de Starlight para modo claro y oscuro.
+ */
+
+:root {
+	--uas-azul-oscuro: #003595;
+	--uas-azul-medio: #1d71b8;
+	--uas-azul-claro: #29abe2;
+	--uas-dorado: #cb9700;
+	--uas-dorado-oscuro: #8a7520;
+	--uas-crema: #f1ebd5;
+}
+
+/* Modo claro */
+:root {
+	--sl-color-accent-low: #d6e6f7;
+	--sl-color-accent: var(--uas-azul-medio);
+	--sl-color-accent-high: var(--uas-azul-oscuro);
+	--sl-color-white: #171717;
+	--sl-color-gray-1: #f4f6f9;
+	--sl-color-gray-2: #e7ebf1;
+	--sl-color-gray-3: #c7cfdb;
+	--sl-color-gray-4: #8992a1;
+	--sl-color-gray-5: #5b6472;
+	--sl-color-gray-6: #383f4a;
+	--sl-color-gray-7: #23272e;
+	--sl-color-black: #ffffff;
+}
+
+/* Modo oscuro */
+:root[data-theme='dark'],
+:root:not([data-theme='light']) {
+	--sl-color-accent-low: #17335c;
+	--sl-color-accent: var(--uas-azul-claro);
+	--sl-color-accent-high: #a8d8f5;
+	--sl-color-white: #f5f7fa;
+	--sl-color-gray-1: #eceef1;
+	--sl-color-gray-2: #c3c9d3;
+	--sl-color-gray-3: #8a93a3;
+	--sl-color-gray-4: #5b6472;
+	--sl-color-gray-5: #383f4a;
+	--sl-color-gray-6: #23272e;
+	--sl-color-gray-7: #181b20;
+	--sl-color-black: #14161a;
+}
+
+@media (prefers-color-scheme: light) {
+	:root:not([data-theme='dark']) {
+		--sl-color-accent-low: #d6e6f7;
+		--sl-color-accent: var(--uas-azul-medio);
+		--sl-color-accent-high: var(--uas-azul-oscuro);
+		--sl-color-white: #171717;
+		--sl-color-gray-1: #f4f6f9;
+		--sl-color-gray-2: #e7ebf1;
+		--sl-color-gray-3: #c7cfdb;
+		--sl-color-gray-4: #8992a1;
+		--sl-color-gray-5: #5b6472;
+		--sl-color-gray-6: #383f4a;
+		--sl-color-gray-7: #23272e;
+		--sl-color-black: #ffffff;
+	}
+}
+
+/* Acentos institucionales puntuales */
+.sl-markdown-content h1 {
+	border-bottom: 3px solid var(--uas-dorado);
+	padding-bottom: 0.3em;
+}
+
+a.site-title {
+	font-weight: 700;
+}
+
+/* Insignia de estado editorial (borrador / aprobado) reutilizable en el contenido */
+.badge-estado {
+	display: inline-block;
+	font-size: 0.75rem;
+	font-weight: 700;
+	letter-spacing: 0.02em;
+	text-transform: uppercase;
+	padding: 0.15rem 0.55rem;
+	border-radius: 999px;
+	border: 1px solid var(--uas-dorado-oscuro);
+	color: var(--uas-dorado-oscuro);
+	background: var(--uas-crema);
+}
+:root[data-theme='dark'] .badge-estado,
+:root:not([data-theme='light']) .badge-estado {
+	background: transparent;
+	color: var(--uas-dorado);
+	border-color: var(--uas-dorado);
+}
