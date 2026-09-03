@@ -1,17 +1,45 @@
 {
   "name": "academic-student-portal",
+  "version": "1.0.1",
+  "description": "Portal público del estudiante — Facultad de Informática Culiacán, UAS. Tema DocKit (Astro + Starlight + Tailwind).",
+  "author": "Themefisher",
+  "license": "MIT",
   "type": "module",
-  "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "check": "astro check",
+    "deploy:cf-workers": "npm run build && wrangler deploy",
+    "preview:cf-workers": "npm run build && wrangler dev"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.41.7",
-    "astro": "^7.1.6",
-    "sharp": "^0.35.3"
+    "@astro-community/astro-embed-youtube": "^0.5.10",
+    "@astrojs/starlight": "0.41.1",
+    "@astrojs/starlight-tailwind": "5.0.0",
+    "@pagefind/default-ui": "^1.5.2",
+    "@tailwindcss/vite": "^4.3.1",
+    "astro": "7.0.3",
+    "astro-font": "^1.1.0",
+    "astro-mermaid": "^2.1.0",
+    "marked": "^18.0.5",
+    "mermaid": "^11.17.2",
+    "sharp": "^0.35.2",
+    "vite": "^8.1.0"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.9",
+    "astro-vtbot": "^2.1.12",
+    "tailwindcss": "^4.3.1",
+    "typescript": "^6.0.3",
+    "wrangler": "^4"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild",
+      "sharp",
+      "workerd"
+    ]
   }
 }

@@ -1,19 +1,19 @@
 ---
-title: "Actividad 5 — Diagrama de arquitectura de un SGBD relacional"
-description: "Unidad 1 de DBA — diagrama etiquetado de organización lógica/física y memoria de la instancia."
+title: "Actividad 5 · Diagrama de arquitectura de un SGBD relacional"
+description: "Unidad 1 de DBA. Diagrama etiquetado de organización lógica/física y memoria de la instancia."
 ---
 
-**Objetivo específico:** OE-U1.4. **Contenido:** C1.4.1–C1.4.2.
+**Objetivo específico:** OE-U1.4. **Contenido:** C1.4.1 a C1.4.2.
 **Modalidad:** individual.
 
 ## Requisitos antes de empezar
 
 * Haber leído [Arquitectura de almacenamiento en un SGBD relacional](/materias/dba/unidad-01/04-arquitectura-relacional/).
-* Papel y lápiz, o cualquier herramienta de diagramas — no se requiere
-  software específico.
+* Papel y lápiz, o cualquier herramienta de diagramas, no se requiere
+ software específico.
 * Opcional: haber hecho el
-  [Laboratorio 1 — Arquitectura relacional (PostgreSQL)](/materias/dba/unidad-01/laboratorios/laboratorio-1-postgresql/)
-  como referencia visual real (no obligatorio).
+ [Laboratorio 1. Arquitectura relacional (PostgreSQL)](/materias/dba/unidad-01/laboratorios/laboratorio-1-postgresql/)
+ como referencia visual real (no obligatorio).
 * Tiempo estimado: 20-25 minutos.
 
 ## Instrucciones para el estudiante
@@ -23,7 +23,7 @@ organización física y memoria de la instancia, tal como se describen en
 [Arquitectura de almacenamiento en un SGBD relacional](/materias/dba/unidad-01/04-arquitectura-relacional/).
 Etiqueta cada elemento usando la terminología de **uno** de los dos
 motores presentados como ejemplos paralelos (Oracle: tablespace,
-datafile, SGA, Database Buffer Cache — o PostgreSQL: PGDATA, archivos de
+datafile, SGA, Database Buffer Cache, o PostgreSQL: PGDATA, archivos de
 datos, `shared_buffers`) y explica en una frase qué función cumple cada
 elemento.
 

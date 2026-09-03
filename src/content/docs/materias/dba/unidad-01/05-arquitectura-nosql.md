@@ -1,9 +1,7 @@
 ---
 title: "5. Arquitectura en SGBD NoSQL"
-description: "Unidad 1 de DBA — los cuatro modelos de datos NoSQL: documental, clave-valor, columnar y grafos."
+description: "Unidad 1 de DBA. Los cuatro modelos de datos NoSQL: documental, clave-valor, columnar y grafos."
 ---
-
-<span class="badge-estado">Borrador — QA requiere nueva verificación</span>
 
 Así como un SGBD relacional organiza su almacenamiento en tablespaces y
 datafiles (ver [Arquitectura relacional](/materias/dba/unidad-01/04-arquitectura-relacional/)),
@@ -14,11 +12,11 @@ con un motor real como ejemplo:
 ## Modelo documental
 
 Un documento es la unidad básica de datos en bases de datos documentales
-como MongoDB. Los documentos están compuestos por pares campo-valor,
-donde el valor de un campo puede ser cualquier tipo de dato admitido
-—incluidos otros documentos o arreglos de documentos—, lo que permite
-representar datos jerárquicos dentro de un mismo documento (REF-U1-07:
-MongoDB Manual, "Documents").
+como MongoDB. Los documentos se componen de pares campo-valor, y el valor
+de un campo puede ser cualquier tipo de dato admitido, incluidos otros
+documentos o arreglos de documentos. Eso permite representar datos
+jerárquicos dentro de un mismo documento (REF-U1-07: MongoDB Manual,
+"Documents").
 
 **Ejemplo mínimo:**
 
@@ -60,10 +58,10 @@ consultar por separado.
 
 Apache Cassandra implementa un **modelo de almacenamiento de columnas
 anchas particionado** (*partitioned wide-column storage model*). Los
-datos se organizan en ***keyspaces*** —el espacio de nombres de nivel
-superior de Cassandra, aproximadamente equivalente a una base de datos
-en un motor relacional— que contienen tablas compuestas por filas y
-columnas, y las tablas se particionan según una clave primaria que
+datos se organizan en ***keyspaces*** (el espacio de nombres de nivel
+superior de Cassandra, más o menos equivalente a una base de datos en un
+motor relacional), que contienen tablas compuestas por filas y columnas.
+Cada tabla se particiona según una clave primaria que
 determina en qué nodo del clúster se almacena cada fila (REF-U1-09:
 Apache Cassandra Documentation, v5.0, "Overview").
 
@@ -73,7 +71,7 @@ Apache Cassandra Documentation, v5.0, "Overview").
 keyspace: universidad
 tabla: inscripciones
 partición (clave): usr1001
-  columna: curso="DBA",   fecha="2026-08-25"
+  columna: curso="DBA", fecha="2026-08-25"
   columna: curso="Redes", fecha="2026-08-26"
 ```
 
@@ -89,9 +87,8 @@ repartidas en muchos servidores.
 > La consistencia de ACID es sobre una transacción individual: deja los
 > datos en un estado válido. La consistencia eventual es sobre cómo se
 > sincronizan, con el tiempo, las réplicas de un sistema distribuido. Es
-> solo una mención introductoria — el tratamiento completo de
-> replicación y consistencia en sistemas distribuidos se estudia en la
-> **Unidad VI**.
+> solo una mención introductoria. El tratamiento completo de replicación
+> y consistencia en sistemas distribuidos se estudia en la **Unidad VI**.
 
 ## Modelo de grafos
 
@@ -119,9 +116,6 @@ reconocer qué modelo está administrando, porque de eso depende cómo se
 distribuyen los datos, cómo se replican, y qué mecanismos de seguridad y
 desempeño aplican (temas de las unidades siguientes).
 
-> **Actividad 6 — Comparación de modelos NoSQL.** Instrucciones
+> **Actividad 6 · Comparación de modelos NoSQL.** Instrucciones
 > completas en la
 > [Actividad 6](/materias/dba/unidad-01/actividades/actividad-6/). También
-> puedes observar el modelo documental en un MongoDB real, de forma
-> opcional y no evaluada, en el
-> [Laboratorio 2 — Modelo documental (MongoDB)](/materias/dba/unidad-01/laboratorios/laboratorio-2-mongodb/).

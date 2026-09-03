@@ -1,0 +1,36 @@
+{
+  "colors": {
+    "default": {
+      "theme_color": {
+        "primary": "#4d7fb3",
+        "body": "#10131a",
+        "light": "#f4f6f8",
+        "dark": "#0b0e14"
+      },
+      "text_color": {
+        "text": "#c1c7cd"
+      }
+    },
+    "lightmode": {
+      "theme_color": {
+        "primary": "#0a3161",
+        "body": "#f7f8fa",
+        "light": "#1c1f24",
+        "dark": "#ffffff"
+      },
+      "text_color": {
+        "text": "#5a6470"
+      }
+    }
+  },
+  "fonts": {
+    "font_family": {
+      "primary": "Segoe UI",
+      "primary_type": "system-ui, -apple-system, sans-serif"
+    },
+    "font_size": {
+      "base": "16",
+      "scale": "1.15"
+    }
+  }
+}

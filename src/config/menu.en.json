@@ -1,0 +1,15 @@
+{
+  "main": [
+    { "name": "Inicio", "url": "/" },
+    { "name": "Materias", "url": "/materias/" }
+  ],
+  "footer": {
+    "help_links": {
+      "title": "Navegación",
+      "links": [
+        { "name": "Inicio", "url": "/" },
+        { "name": "Materias", "url": "/materias/" }
+      ]
+    }
+  }
+}

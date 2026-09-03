@@ -1,0 +1,8 @@
+---
+// Identidad UAS/FIC: la tipografía institucional es una fuente de sistema
+// ("Segoe UI", ver src/config/theme.json), por lo que NO se carga ninguna
+// webfont. Solo se emiten las etiquetas <head> que produce Starlight.
+const { head } = Astro.locals.starlightRoute;
+---
+
+{head.map(({ tag: Tag, attrs, content }) => <Tag {...attrs} set:html={content} />)}

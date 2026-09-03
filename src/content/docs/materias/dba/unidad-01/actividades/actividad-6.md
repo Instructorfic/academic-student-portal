@@ -1,6 +1,6 @@
 ---
-title: "Actividad 6 — Comparación de modelos NoSQL"
-description: "Unidad 1 de DBA — tabla comparativa de los cuatro modelos de datos NoSQL."
+title: "Actividad 6 · Comparación de modelos NoSQL"
+description: "Unidad 1 de DBA. Tabla comparativa de los cuatro modelos de datos NoSQL."
 ---
 
 **Objetivo específico:** OE-U1.5. **Contenido:** C1.5.1. **Modalidad:**
@@ -10,8 +10,8 @@ individual o grupal.
 
 * Haber leído [Arquitectura en SGBD NoSQL](/materias/dba/unidad-01/05-arquitectura-nosql/) (los cuatro modelos NoSQL).
 * Opcional: haber hecho el
-  [Laboratorio 2 — Modelo documental (MongoDB)](/materias/dba/unidad-01/laboratorios/laboratorio-2-mongodb/)
-  como referencia visual real del modelo documental (no obligatorio).
+ [Laboratorio 2. Modelo documental (MongoDB)](/materias/dba/unidad-01/laboratorios/laboratorio-2-mongodb/)
+ como referencia visual real del modelo documental (no obligatorio).
 * Tiempo estimado: 20-25 minutos.
 
 ## Instrucciones para el estudiante

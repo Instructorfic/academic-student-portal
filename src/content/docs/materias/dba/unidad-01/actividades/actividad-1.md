@@ -1,6 +1,6 @@
 ---
-title: "Actividad 1 — Diagnóstico de ideas previas"
-description: "Unidad 1 de DBA — actividad de activación sobre la situación disparadora."
+title: "Actividad 1 · Diagnóstico de ideas previas"
+description: "Unidad 1 de DBA. Actividad de activación sobre la situación disparadora."
 ---
 
 **Objetivo específico:** insumo para OE-U1.1. **Modalidad:** individual o

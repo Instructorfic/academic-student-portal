@@ -1,0 +1,27 @@
+{
+  "site": {
+    "title": "FIC DOCS",
+    "logo": "",
+    "logo_darkmode": "",
+    "logo_width": "160",
+    "logo_height": "32",
+    "logo_text": "FIC DOCS"
+  },
+  "settings": {
+    "search": true,
+    "theme_switcher": true
+  },
+  "params": {
+    "footer_contact": {
+      "enable": false,
+      "action": "#"
+    },
+    "copyright": "Facultad de Informática Culiacán · Universidad Autónoma de Sinaloa."
+  },
+  "navigation_button": {
+    "enable": false,
+    "label": "",
+    "translations": {},
+    "link": "/"
+  }
+}

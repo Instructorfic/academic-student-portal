@@ -1,38 +1,35 @@
 ---
-title: DBA — Gestión de Seguridad y Desempeño de Bases de Datos
-description: Presentación pública de la materia DBA, séptimo semestre, Licenciatura en Informática (UAS/FIC).
+title: DBA · Gestión de Seguridad y Desempeño de Bases de Datos
+description: Presentación de la materia DBA, séptimo semestre, Licenciatura en Informática (UAS/FIC).
 ---
 
-Materia de séptimo semestre de la Licenciatura en Informática, Facultad
-de Informática Culiacán (UAS).
+Materia de séptimo semestre de la Licenciatura en Informática, Facultad de
+Informática Culiacán (UAS).
 
 ## Propósito
 
-La materia desplaza el enfoque desde el diseño y la consulta de datos
-(cubiertos en materias previas) hacia la **operación profesional de
-bases de datos ya existentes**: su seguridad, su desempeño, su
-continuidad, su escalabilidad y su gobierno práctico.
+Las materias previas se centran en diseñar una base de datos y consultarla.
+Esta materia da el paso siguiente: operar bases de datos que ya están en
+producción y de las que dependen personas y sistemas reales. El foco está
+en su seguridad, su desempeño, su continuidad, su escalabilidad y su
+gobierno práctico.
 
-> Administrar, proteger, monitorear y optimizar bases de datos
-> relacionales, no relacionales y en la nube, aplicando prácticas de
-> seguridad, control de acceso, auditoría, privacidad, optimización de
-> consultas, gestión de concurrencia, respaldo, restauración,
-> replicación, alta disponibilidad, particionamiento horizontal de
-> datos, recuperación ante desastres y continuidad operativa.
+En concreto, la materia trabaja cómo administrar, proteger, monitorear y
+optimizar bases de datos relacionales, no relacionales y en la nube. Eso
+incluye control de acceso, auditoría, privacidad, optimización de
+consultas, gestión de concurrencia, respaldo y restauración, replicación,
+alta disponibilidad, particionamiento de datos, recuperación ante
+desastres y continuidad operativa.
 
-## Resultados/competencias de referencia
+## Competencias de referencia
 
-Las competencias asociadas a esta materia se presentan como
-**propuestas de referencia**, no como resultados de aprendizaje
-oficiales certificados en un formato institucional PROEA. Consulta el
-manual de cada unidad para el detalle de los objetivos específicos que
-aplican.
+Las competencias de esta página son una propuesta de referencia, no
+resultados de aprendizaje oficiales en formato PROEA. En el manual de cada
+unidad encuentras el detalle de los objetivos específicos que aplican.
 
 ## Unidades publicadas
 
-- [Unidad 2 — Seguridad, privacidad y control de acceso](/materias/dba/unidad-02/)
+- [Unidad 1 · Introducción a la Gestión de Bases de Datos](/materias/dba/unidad-01/)
 
-Las demás unidades del programa (1 y 3 a 6) todavía no están publicadas
-en este portal. La Unidad 2 es el piloto técnico de esta arquitectura de
-publicación, seleccionada por ser la primera con dictamen de QA
-**APROBADO**.
+El resto de las unidades del programa se irá publicando conforme su
+material esté listo.

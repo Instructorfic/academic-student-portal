@@ -117,8 +117,35 @@ Fecha de derivación: **2026-08-23**. Fuente: `academic-workspace`,
 3. Crear `src/content/docs/materias/<materia>/unidad-NN/` en el/los
    portal(es) correspondientes.
 4. Copiar/adaptar el contenido permitido por audiencia.
-5. Agregar las entradas al `sidebar` de `astro.config.mjs`.
+5. Agregar las entradas a `src/config/sidebar.json` (tema DocKit).
 6. Agregar una fila a la tabla de registro de derivación (sección 3, o
    una tabla equivalente para la nueva unidad).
 7. `npm run build` para validar.
 8. Publicar según el flujo de CI del repositorio.
+
+## 7. Registro de derivación — Estándares de desarrollo (Engineering Handbook)
+
+Fecha de derivación: **2026-09-02**. Fuente: `academic-workspace`,
+`recursos/estandares/` (recurso transversal, no una materia/unidad).
+Dictamen de QA: **`APROBADO_CON_OBSERVACIONES`**
+(`recursos/estandares/AUDITORIA_QA_ESTANDARES.md`; observaciones H-01…H-14
+resueltas, PEND-EST-01 —edición OWASP— y PEND-EST-02 —Doc. 18— abiertas).
+Validación académica: **PENDIENTE** (insignia de estado en cada página).
+
+Destino: nueva sección de primer nivel `src/content/docs/estandares/` del
+**Student Portal** (grupo "Estándares de desarrollo" en `src/config/sidebar.json`).
+Encuadre neutro: es estándar *de referencia*; su carácter obligatorio por
+materia lo define cada `CONTEXTO_MATERIA.md` (H-14 / PEND-EST-03).
+
+| Archivo fuente (`academic-workspace/recursos/estandares/`) | Destino | Audiencia | Notas |
+| --- | --- | --- | --- |
+| `00`–`13`, `16`, `17` (16 documentos) | `student-portal`: `.../estandares/<slug>.md` | `STUDENT_PUBLIC` | Copia adaptada: se quita el H1 (pasa a `title`), se quita el pie "Fin del documento", las referencias «Doc. NN» se enlazan a las páginas equivalentes del portal. Sin cambios de contenido normativo. |
+| `14-MATRIZ-VERIFICACION-Y-CUMPLIMIENTO.md` | — (no se deriva) | `TEACHER_RESTRICTED` | Matriz de auditoría; audiencia docente. Iría al Teacher Portal en una derivación posterior. |
+| `15-RUBRICA-EVALUACION.md` | — (no se deriva) | `TEACHER_RESTRICTED` | Rúbrica de evaluación técnica; audiencia docente (precedente D5). |
+| `18-AUDITORIA-PROPIA.md` | — (no existe) | `WORKSPACE_ONLY` | Referenciado en el índice pero no entregado (PEND-EST-02). |
+| `AUDITORIA_QA_ESTANDARES.md` | — (no se deriva) | `WORKSPACE_ONLY` | QA interno; solo su dictamen resumido se refleja en `estandares/index.md` y en la insignia. |
+| `config-examples/` (17 archivos) | `student-portal`: `.../estandares/config-examples.md` | `STUDENT_PUBLIC` | Reunidos en una sola página, cada archivo en un bloque de código con su ruta destino en el repo del proyecto. Las rutas `docs/handbook/…` internas se conservan (se refieren al repo del proyecto del equipo, no al portal). |
+| (nuevo, sin fuente 1:1) | `student-portal`: `.../estandares/index.md` | `STUDENT_PUBLIC` | Página de presentación de la sección: estatus, índice y cómo leer las referencias. |
+
+Pendiente antes de considerar esta sección definitiva: cerrar PEND-EST-01…03
+en `academic-workspace` y la validación académica humana.

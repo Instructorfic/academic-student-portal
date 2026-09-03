@@ -1,4 +1,4 @@
-name: Build and deploy (Student Portal)
+name: Build and deploy (FIC DOCS)
 
 on:
   push:
@@ -20,10 +20,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
           node-version: 20
           cache: npm
@@ -33,6 +33,12 @@ jobs:
 
       - name: Build
         run: npm run build
+        env:
+          # URLs de producción derivadas del repositorio. Para un dominio
+          # propio, define la variable de repositorio SITE (Settings >
+          # Secrets and variables > Actions > Variables) y BASE_PATH vacío.
+          SITE: ${{ vars.SITE || format('https://{0}.github.io', github.repository_owner) }}
+          BASE_PATH: ${{ vars.BASE_PATH != '' && vars.BASE_PATH || format('/{0}', github.event.repository.name) }}
 
       - name: Upload Pages artifact
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
@@ -41,11 +47,8 @@ jobs:
           path: ./dist
 
   deploy:
-    # Este job publica en GitHub Pages. Requiere que Pages esté
-    # habilitado en la configuración del repositorio (Settings > Pages >
-    # Source: GitHub Actions) y que `site` (y `base`, si aplica) estén
-    # configurados en astro.config.mjs con el dominio/organización real
-    # — ver docs/PUBLICACION.md, sección "Hosting y CI/CD".
+    # Publica en GitHub Pages. Requiere Pages habilitado en el repositorio
+    # (Settings > Pages > Source: GitHub Actions).
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     needs: build
     runs-on: ubuntu-latest

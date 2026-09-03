@@ -1,13 +1,11 @@
 ---
-title: "Laboratorio 2 — Observación del modelo documental (MongoDB)"
-description: "Unidad 1 de DBA — laboratorio observacional y no evaluado, apoyo visual a la Actividad 6."
+title: "Laboratorio 2 · Observación del modelo documental (MongoDB)"
+description: "Unidad 1 de DBA. Laboratorio de observación, apoyo visual a la Actividad 6."
 ---
 
-<span class="badge-estado">Observacional — no evaluado</span>
-
-> **Alcance — leer antes de usar esta guía.** La Unidad 1 es
+> **Alcance, leer antes de usar esta guía.** La Unidad 1 es
 > **predominantemente conceptual**: si dispones de un SGBD instalado,
-> este **solo puede usarse para observar —no configurar—** elementos de
+> este **solo puede usarse para observar, no configurar, ** elementos de
 > arquitectura, como apoyo visual a la Actividad 6, **no como práctica
 > evaluada**. Esta guía es un **complemento visual opcional**, no un
 > laboratorio que amplíe la evidencia oficial de la unidad. No se asigna
@@ -60,18 +58,18 @@ Si el paso 2 funcionó, ya estás listo para el resto de esta guía.
 
 1. Levantar un MongoDB de práctica.
 2. Insertar un documento de ejemplo y observar su estructura flexible,
-   sin esquema fijo (ver
-   [Arquitectura en SGBD NoSQL](/materias/dba/unidad-01/05-arquitectura-nosql/)).
+ sin esquema fijo (ver
+ [Arquitectura en SGBD NoSQL](/materias/dba/unidad-01/05-arquitectura-nosql/)).
 3. Borrar todo (limpieza), sin dejar nada instalado.
 
 ### 0.5 Recordatorio de alcance
 
 * Contenedor **temporal, desechable**, sin datos reales ni de producción.
 * Corresponde a la [Actividad 6](/materias/dba/unidad-01/actividades/actividad-6/)
-  — apoyo visual, no la sustituye.
+, apoyo visual, no la sustituye.
 * Motor usado: **MongoDB**, imagen oficial de Docker Hub. Esta unidad no
-  despliega Redis, Cassandra ni Neo4j (mencionados solo como ejemplos
-  conceptuales de los otros tres modelos NoSQL).
+ despliega Redis, Cassandra ni Neo4j (mencionados solo como ejemplos
+ conceptuales de los otros tres modelos NoSQL).
 
 ## 1. Observar la arquitectura de un SGBD NoSQL documental (MongoDB)
 
@@ -87,7 +85,7 @@ docker run --name dba-u1-mongo -d mongo:7
 docker exec -it dba-u1-mongo mongosh
 ```
 
-**Qué deberías ver:** tu terminal cambia a algo como `test>` — ya estás
+**Qué deberías ver:** tu terminal cambia a algo como `test>`, ya estás
 **dentro** de `mongosh`.
 
 ### 1.3 Observar las bases de datos existentes
@@ -99,9 +97,9 @@ show dbs
 **Qué deberías ver** (deben aparecer estas tres bases, tamaños variables):
 
 ```text
-admin    8.00 KiB
-config  12.00 KiB
-local    8.00 KiB
+admin 8.00 KiB
+config 12.00 KiB
+local 8.00 KiB
 ```
 
 Estas tres bases las crea MongoDB automáticamente al iniciar.
@@ -144,10 +142,10 @@ db.ejemplo.find()
 ```text
 [
   {
-    _id: ObjectId('66f1a2b3c4d5e6f7a8b9c0d1'),
-    nombre: 'Servidor de práctica',
-    ambiente: 'laboratorio',
-    etiquetas: [ 'observacion', 'unidad01' ]
+  _id: ObjectId('66f1a2b3c4d5e6f7a8b9c0d1'),
+  nombre: 'Servidor de práctica',
+  ambiente: 'laboratorio',
+  etiquetas: [ 'observacion', 'unidad01' ]
   }
 ]
 ```
@@ -167,8 +165,8 @@ exit
 
 ### Qué debe registrar el estudiante (apoyo visual, no evidencia evaluada)
 
-Una captura de pantalla o transcripción breve de los pasos 1.3–1.5, como
-referencia real al elaborar la tabla comparativa de la Actividad 6 — no
+Una captura de pantalla o transcripción breve de los pasos 1.3 a 1.5, como
+referencia real al elaborar la tabla comparativa de la Actividad 6, no
 se entrega como evidencia independiente.
 
 ## 2. Limpieza del entorno

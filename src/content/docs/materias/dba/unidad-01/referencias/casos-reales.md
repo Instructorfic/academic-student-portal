@@ -1,17 +1,17 @@
 ---
-title: "Casos reales completos — Unidad 1"
+title: "Casos reales completos · Unidad 1"
 description: "Narrativa extendida y autocontenida de los dos casos reales de la unidad: Knight Capital y GitLab."
 ---
 
 > Dos de las fuentes primarias de estos casos (el postmortem de GitLab y
 > la orden de la SEC) bloquean el acceso directo de herramientas
-> automatizadas — están verificadas por consistencia entre múltiples
+> automatizadas, están verificadas por consistencia entre múltiples
 > fuentes independientes, no es que el contenido sea dudoso. Este
 > documento reproduce, de forma extendida y autocontenida, los hechos ya
 > verificados de ambos casos, para que el aprendizaje no dependa de la
 > disponibilidad de un sitio externo.
 
-## Caso 1 — Knight Capital Group (1 de agosto de 2012)
+## Caso 1. Knight Capital Group (1 de agosto de 2012)
 
 ### Contexto
 
@@ -35,7 +35,7 @@ octavo servidor conservó una función de prueba, antigua e inactiva desde
 2003 (conocida internamente como "Power Peg"), que había quedado
 controlada por una bandera de configuración. El nuevo código de RLP
 reutilizó esa misma bandera para un propósito distinto, sin haber
-verificado —ni eliminado— la función antigua asociada a ella.
+verificado (ni eliminado) la función antigua asociada a ella.
 
 Al activarse el sistema el 1 de agosto de 2012, el servidor 8 interpretó
 la señal de forma distinta a los otros 7: en lugar de ejecutar la lógica
@@ -54,13 +54,13 @@ sistema parecía estar "funcionando", solo que de forma incorrecta.
 
 * **Pérdida:** entre **USD 440 y 460 millones** en 45 minutos.
 * La pérdida fue tan grande que puso en riesgo la continuidad financiera
-  de la empresa. Knight Capital requirió una inyección de capital de
-  emergencia para sobrevivir y, meses después, fue adquirida/fusionada
-  con otra firma.
+ de la empresa. Knight Capital requirió una inyección de capital de
+ emergencia para sobrevivir y, meses después, fue adquirida/fusionada
+ con otra firma.
 * La **SEC** (Securities and Exchange Commission, regulador bursátil de
-  Estados Unidos) sancionó a Knight Capital con **USD 12 millones** por
-  violar la *Market Access Rule* (Regla 15c3-5), que exige controles de
-  riesgo previos al acceso al mercado.
+ Estados Unidos) sancionó a Knight Capital con **USD 12 millones** por
+ violar la *Market Access Rule* (Regla 15c3-5), que exige controles de
+ riesgo previos al acceso al mercado.
 
 ### Por qué es un caso de "ambientes" y no solo "un bug"
 
@@ -77,14 +77,14 @@ real, aunque cada servidor individual "funcione".
 ### Fuentes
 
 * **Primaria (regulatoria):** U.S. Securities and Exchange Commission,
-  orden administrativa *Release No. 34-70694* (2013) — REF-U1-15.
-  <https://www.sec.gov/news/press-release/2013-222>
+ orden administrativa *Release No. 34-70694* (2013). REF-U1-15.
+ <https://www.sec.gov/news/press-release/2013-222>
 * **Para profundizar (análisis secundario):** Henrico Dolfing, "Case
-  Study 4: The $440 Million Software Error at Knight Capital" (2019) —
-  REF-U1-16.
-  <https://www.henricodolfing.ch/en/case-study-4-the-440-million-software-error-at-knight-capital/>
+ Study 4: The $440 Million Software Error at Knight Capital" (2019),
+ REF-U1-16.
+ <https://www.henricodolfing.ch/en/case-study-4-the-440-million-software-error-at-knight-capital/>
 
-## Caso 2 — GitLab.com (31 de enero de 2017)
+## Caso 2. GitLab.com (31 de enero de 2017)
 
 ### Contexto
 
@@ -109,14 +109,14 @@ principal de GitLab.com **mientras el sistema estaba en operación**.
 ### Impacto
 
 * Ventana de datos perdidos de forma permanente: **aproximadamente 6
-  horas** (entre las 17:20 y las 00:00 UTC del 31 de enero de 2017).
+ horas** (entre las 17:20 y las 00:00 UTC del 31 de enero de 2017).
 * Se perdieron cambios en **proyectos, comentarios, *issues*,
-  *snippets*** y otros datos de esa ventana — del orden de **~5,000
-  proyectos y ~700 cuentas de usuario** afectadas.
+ *snippets*** y otros datos de esa ventana, del orden de **~5,000
+ proyectos y ~700 cuentas de usuario** afectadas.
 * Los repositorios de código en sí (el contenido de Git) no se vieron
-  afectados de la misma forma que la base de datos de la aplicación — la
-  pérdida fue principalmente en los metadatos y datos de la aplicación
-  almacenados en PostgreSQL.
+ afectados de la misma forma que la base de datos de la aplicación, la
+ pérdida fue principalmente en los metadatos y datos de la aplicación
+ almacenados en PostgreSQL.
 
 ### Por qué fue tan grave: los respaldos tampoco funcionaron
 
@@ -138,34 +138,34 @@ inusual y valorado en la industria por su nivel de transparencia.
 Este incidente conecta, en un solo evento real, los cuatro temas de la
 Unidad 1:
 
-* **Rol del DBA** (OE-U1.1) — ¿quién es responsable de verificar que los
-  mecanismos de respaldo funcionen de verdad, no solo que existan?
-* **Responsabilidades operativas** (OE-U1.2) — monitoreo, diagnóstico de
-  fallas y documentación fallaron en cadena.
-* **Ambientes** (OE-U1.3) — el comando se ejecutó contra el servidor
-  equivocado. Una separación y una identificación más claras entre
-  ambientes/servidores habrían reducido ese riesgo.
-* **Disponibilidad** — el incidente es, en esencia, una falla de
-  disponibilidad con pérdida de datos, no solo una interrupción
-  temporal.
+* **Rol del DBA** (OE-U1.1). ¿quién es responsable de verificar que los
+ mecanismos de respaldo funcionen de verdad, no solo que existan?
+* **Responsabilidades operativas** (OE-U1.2), monitoreo, diagnóstico de
+ fallas y documentación fallaron en cadena.
+* **Ambientes** (OE-U1.3), el comando se ejecutó contra el servidor
+ equivocado. Una separación y una identificación más claras entre
+ ambientes/servidores habrían reducido ese riesgo.
+* **Disponibilidad:** el incidente es, en esencia, una falla de
+ disponibilidad con pérdida de datos, no solo una interrupción
+ temporal.
 
 ### Fuentes
 
 * **Primaria (oficial):** GitLab Inc., "Postmortem of database outage of
-  January 31" (blog oficial, 2017) — REF-U1-14.
-  <https://about.gitlab.com/blog/postmortem-of-database-outage-of-january-31/>
+ January 31" (blog oficial, 2017). REF-U1-14.
+ <https://about.gitlab.com/blog/postmortem-of-database-outage-of-january-31/>
 * **Para profundizar (análisis secundario, en audio):** *The Downtime
-  Project*, episodio "GitLab's 2017 Postgres Outage" (2021) —
-  REF-U1-17. <https://downtimeproject.com/podcast/gitlabs-2017-postgres-outage/>
+ Project*, episodio "GitLab's 2017 Postgres Outage" (2021),
+ REF-U1-17. <https://downtimeproject.com/podcast/gitlabs-2017-postgres-outage/>
 
 ## Cómo usar este documento
 
 * Para la [Actividad 4](/materias/dba/unidad-01/actividades/actividad-4/):
-  usa la sección "Por qué es un caso de..." de cada caso como punto de
-  partida para identificar qué separación de ambientes habría evitado el
-  problema.
+ usa la sección "Por qué es un caso de..." de cada caso como punto de
+ partida para identificar qué separación de ambientes habría evitado el
+ problema.
 * Para la [Actividad 7](/materias/dba/unidad-01/actividades/actividad-7/)
-  (evidencia oficial): puedes citar cualquiera de los dos casos como
-  ejemplo real al construir tu diagnóstico.
+ (evidencia oficial): puedes citar cualquiera de los dos casos como
+ ejemplo real al construir tu diagnóstico.
 * Este documento **no sustituye** la lectura de las fuentes primarias
-  cuando estén disponibles: es un respaldo para cuando no lo estén.
+ cuando estén disponibles: es un respaldo para cuando no lo estén.

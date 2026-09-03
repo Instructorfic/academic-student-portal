@@ -1,7 +1,28 @@
-# Academic Student Portal
+# FIC DOCS
 
-Sitio público (Astro + Starlight) con los materiales del estudiante de
-las materias de la Facultad de Informática Culiacán (UAS).
+Sitio público con los materiales de estudio de las materias de la Facultad
+de Informática Culiacán (UAS). Se publica en GitHub Pages. Construido con
+**Astro + Starlight**
+usando el tema **DocKit** (Themefisher, licencia MIT — ver `LICENSE`),
+adaptado a la identidad visual institucional UAS/FIC.
+
+## Tema y personalización
+
+DocKit es Starlight con una capa de Tailwind CSS 4 y *overrides* de
+componentes. La personalización de este portal vive en:
+
+- `src/config/theme.json` — paleta (azul UAS `#0a3161`; azul claro
+  `#4d7fb3` en modo oscuro) y tipografía institucional (`Segoe UI`).
+- `src/config/config.json` — título, texto del logo, pie de página.
+- `src/config/menu.en.json` — navegación superior.
+- `src/config/sidebar.json` — menú lateral (una entrada por página).
+- `src/components/override-components/` — componentes de Starlight
+  sobrescritos por DocKit; los ajustes locales (sin Google Fonts, sin
+  CTA de marketing, modo claro por defecto, pie institucional) están
+  marcados con comentarios.
+- `src/styles/global.css` (+ `base/navigation/components/button.css`) —
+  estilos del tema.
+- `astro-mermaid` renderiza los bloques ` ```mermaid ` como diagramas.
 
 ## Propósito
 
@@ -33,20 +54,25 @@ para el procedimiento operativo.
 ## Estructura
 
 ```text
-src/content/docs/
-├── index.md                     # portada del portal
-├── materias/
-│   ├── index.md                 # listado de materias publicadas / en preparación
-│   └── dba/
-│       ├── index.md             # presentación pública de la materia
-│       └── unidad-02/           # unidad piloto
-│           ├── index.md
-│           ├── presentacion.md
-│           ├── manual-estudiante.md
-│           ├── actividades.md
-│           ├── evaluacion.md
-│           └── referencias.md
+src/
+├── config/                      # personalización del tema DocKit (ver arriba)
+├── components/override-components/  # componentes de Starlight sobrescritos
+├── styles/                      # global.css + parciales del tema
+├── tailwind-plugin/             # plugins Tailwind de DocKit (colores/grid desde theme.json)
+└── content/docs/
+    ├── index.md                 # portada del sitio
+    ├── materias/
+    │   ├── index.md
+    │   └── dba/
+    │       ├── index.md
+    │       └── unidad-01/       # 21 páginas publicadas
+    ├── mapa-de-contenido.md     # draft: true (no se publica)
+    └── estandares/              # draft: true (Engineering Handbook, no se publica)
 ```
+
+Las páginas con `draft: true` no entran en el build de producción
+(`npm run build`) ni en GitHub Pages; siguen visibles en `npm run dev`
+para trabajo interno.
 
 Cada materia nueva se agrega como un subdirectorio de
 `src/content/docs/materias/<materia>/`, y cada unidad como
@@ -70,7 +96,7 @@ ni una configuración nueva por materia.
    presentación pública breve (sin copiar `CONTEXTO_MATERIA.md`
    completo).
 3. Derivar la(s) unidad(es) aprobadas siguiendo `docs/PUBLICACION.md`.
-4. Registrar las nuevas entradas en el `sidebar` de `astro.config.mjs`.
+4. Registrar las nuevas entradas en `src/config/sidebar.json`.
 5. Ejecutar `npm run build` para validar, y actualizar
    `src/content/docs/materias/index.md`.
 
