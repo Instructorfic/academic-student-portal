@@ -3,8 +3,6 @@ title: "1. El rol del DBA en la organización"
 description: "Unidad 1 de DBA — qué es un DBA, sus responsabilidades desde el día uno y su relación con otros roles."
 ---
 
-<span class="badge-estado">Borrador — QA requiere nueva verificación</span>
-
 Un **administrador de bases de datos** (*Database Administrator*, **DBA**)
 es la persona (o el equipo) responsable de instalar, configurar,
 proteger, monitorear, optimizar y mantener operativa una base de datos a
@@ -22,16 +20,16 @@ operativa— que define al rol.
 Según la *Database Administrator's Guide* de Oracle Database, un DBA
 puede ser responsable, entre otras tareas, de:
 
-* instalar y actualizar el servidor de base de datos y sus herramientas;
-* asignar almacenamiento del sistema y planear requerimientos futuros;
+* instalar y actualizar el servidor de base de datos y sus herramientas
+* asignar almacenamiento del sistema y planear requerimientos futuros
 * crear las estructuras primarias de almacenamiento (tablespaces) una vez
-  que los desarrolladores de aplicaciones diseñaron una aplicación;
+  que los desarrolladores de aplicaciones diseñaron una aplicación
 * modificar la estructura de la base de datos según lo indiquen los
-  desarrolladores de aplicaciones;
-* dar de alta usuarios y mantener la seguridad del sistema;
-* controlar y monitorear el acceso de los usuarios a la base de datos;
-* monitorear y optimizar el desempeño de la base de datos;
-* planear el respaldo y la recuperación de la información;
+  desarrolladores de aplicaciones
+* dar de alta usuarios y mantener la seguridad del sistema
+* controlar y monitorear el acceso de los usuarios a la base de datos
+* monitorear y optimizar el desempeño de la base de datos
+* planear el respaldo y la recuperación de la información
 * respaldar y restaurar la base de datos
 
 (REF-U1-01: Oracle Corporation, *Database Administrator's Guide*, 21c,
@@ -82,7 +80,7 @@ después:
   el contenido completo de la **Unidad II**.
 * **Continuidad** — que la base de datos pueda seguir operando, o
   recuperarse, incluso ante una falla. La misma lista de tareas ya lo
-  anticipa: "planear el respaldo y la recuperación de la información;
+  anticipa: "planear el respaldo y la recuperación de la información,
   respaldar y restaurar la base de datos" (REF-U1-01). En esta unidad
   basta con reconocer que un DBA nunca asume que "nada va a fallar": el
   **cómo** —tipos de respaldo, restauración, recuperación ante

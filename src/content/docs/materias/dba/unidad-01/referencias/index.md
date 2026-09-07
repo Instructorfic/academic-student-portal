@@ -1,12 +1,9 @@
 ---
 title: "Referencias — Unidad 1"
-description: "Bibliografía verificada de la Unidad 1 de DBA."
+description: "Bibliografía de la Unidad 1 de DBA."
 ---
 
-Todas las fuentes listadas fueron consultadas y verificadas directamente
-el **2026-08-18/19**; no se inventó ningún autor, título, URL ni fecha.
-
-## Referencias verificadas
+## Referencias
 
 | ID | Fuente | Tipo |
 | --- | --- | --- |
@@ -25,8 +22,8 @@ el **2026-08-18/19**; no se inventó ningún autor, título, URL ni fecha.
 | REF-U1-13 | Microsoft Corporation. *Azure Deployment Environments* — "Key Concepts and Roles". https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environments-key-concepts | Documentación oficial |
 | REF-U1-14 | GitLab Inc. "Postmortem of database outage of January 31" (blog oficial). https://about.gitlab.com/blog/postmortem-of-database-outage-of-january-31/ | Informe técnico / postmortem oficial |
 | REF-U1-15 | U.S. Securities and Exchange Commission. *SEC Charges Knight Capital With Violations of Market Access Rule* (2013-222 / Release No. 34-70694). https://www.sec.gov/news/press-release/2013-222 | Documento regulatorio oficial |
-| REF-U1-16 | Dolfing, H. "Case Study 4: The $440 Million Software Error at Knight Capital" (2019). https://www.henricodolfing.ch/en/case-study-4-the-440-million-software-error-at-knight-capital/ | Análisis técnico (fuente secundaria) |
-| REF-U1-17 | Kleinpeter, T.; Turner, J. "GitLab's 2017 Postgres Outage". *The Downtime Project* (2021). https://downtimeproject.com/podcast/gitlabs-2017-postgres-outage/ | Podcast técnico (fuente secundaria) |
+| REF-U1-16 | Dolfing, H. "Case Study 4: The $440 Million Software Error at Knight Capital" (2019). https://www.henricodolfing.ch/en/case-study-4-the-440-million-software-error-at-knight-capital/ | Análisis técnico |
+| REF-U1-17 | Kleinpeter, T. y Turner, J. "GitLab's 2017 Postgres Outage". *The Downtime Project* (2021). https://downtimeproject.com/podcast/gitlabs-2017-postgres-outage/ | Podcast técnico |
 | REF-U1-18 | MongoDB, Inc. *MongoDB Document Model* (curso oficial). MongoDB University. https://learn.mongodb.com/learn/course/mongodb-document-model | Documentación oficial / curso en línea |
 
 ## Relación con los objetivos de la unidad

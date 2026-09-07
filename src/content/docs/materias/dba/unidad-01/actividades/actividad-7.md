@@ -27,10 +27,10 @@ elabora:
 
 1. un **mapa de responsabilidades** que le correspondería a un DBA en ese
    entorno (retomando [el rol del DBA](/materias/dba/unidad-01/01-rol-del-dba/)
-   y sus [responsabilidades operativas](/materias/dba/unidad-01/02-responsabilidades-operativas/));
+   y sus [responsabilidades operativas](/materias/dba/unidad-01/02-responsabilidades-operativas/))
 2. un **diagnóstico breve** de la separación (o ausencia de separación)
    de [ambientes](/materias/dba/unidad-01/03-ambientes-de-trabajo/) en
-   ese entorno;
+   ese entorno
 3. la **identificación de su arquitectura**, relacional o NoSQL según el
    caso asignado (ver [Arquitectura relacional](/materias/dba/unidad-01/04-arquitectura-relacional/)
    o [Arquitectura NoSQL](/materias/dba/unidad-01/05-arquitectura-nosql/)).
@@ -43,7 +43,7 @@ Mapa de responsabilidades + diagnóstico de entorno (documento único).
 
 El trabajo integra correctamente las tres partes: (1) responsabilidades
 concretas y pertinentes al entorno descrito, no una lista genérica
-copiada del manual; (2) un diagnóstico de ambientes que identifica
-riesgos reales del entorno dado; (3) identificación correcta de al menos
+copiada del manual, (2) un diagnóstico de ambientes que identifica
+riesgos reales del entorno dado, y (3) identificación correcta de al menos
 los elementos arquitectónicos centrales correspondientes al tipo de SGBD
 del entorno asignado.

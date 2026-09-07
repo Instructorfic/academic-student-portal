@@ -122,3 +122,181 @@ Fecha de derivación: **2026-08-23**. Fuente: `academic-workspace`,
    una tabla equivalente para la nueva unidad).
 7. `npm run build` para validar.
 8. Publicar según el flujo de CI del repositorio.
+
+## 7. Registro de derivación — Taller Integrador, Bloque I
+
+Fecha de derivación: **2026-09-06**. Fuente: `academic-workspace`,
+`materias/taller-integrador/bloque01/` (`CONTEXTO_UNIDAD.md`, secc. 19:
+`qa_inicial: PENDIENTE`; `qa_final: PENDIENTE`;
+`validacion_academica: PENDIENTE`; `publicacion: NO_AUTORIZADA`). No
+existe todavía un archivo `AUDITORIA_QA_*.md` para este bloque.
+
+**Nota sobre el estado de esta unidad.** A diferencia del piloto de DBA
+Unidad 2 (QA `APROBADO`), este bloque se deriva **sin haber pasado
+todavía por ningún ciclo de QA**, por decisión directa del responsable
+del workspace, siguiendo el mismo precedente ya sentado con DBA Unidad
+1 (sección 3 de este documento): la derivación técnica no bloquea a la
+espera de QA, pero cada página de este bloque, en este portal, lleva
+una insignia visible "Borrador — QA pendiente · Publicación no
+autorizada". Esto no debe leerse como una excepción silenciosa a la
+regla de la sección 1 de este documento: es una decisión explícita,
+registrada aquí, y el contenido no debe tratarse como definitivo hasta
+que `academic-workspace` registre un dictamen de QA.
+
+**Inconsistencia detectada y no corregida en la fuente.**
+`bloque01_manual_estudiante.md` y `bloque01_actividades.md` (en
+`academic-workspace`) enlazan a dos archivos de laboratorio que ya no
+existen (`bloque01_lab01_sprint0.md`,
+`bloque01_practica01_historias_usuario.md`), reemplazados por los
+cuatro laboratorios actuales
+(`bloque01_lab01_laravel.md` a `bloque01_lab04_sprint0.md`). Esta
+derivación enlaza a los cuatro laboratorios que sí existen; el enlace
+roto en la fuente no se corrigió ahí (no es responsabilidad de este
+repositorio) y debe reportarse al responsable de `academic-workspace`.
+
+| Archivo fuente (`academic-workspace`) | Destino | Audiencia | Notas |
+| --- | --- | --- | --- |
+| `bloque01/CONTEXTO_UNIDAD.md` | — (no se deriva) | `WORKSPACE_ONLY` | Permanece exclusivamente en el workspace. |
+| `bloque01/material/bloque01_manual_estudiante.md` | `student-portal`: `.../bloque-01/index.md` + `.../bloque-01/{01..06}-*.md` | `STUDENT_PUBLIC` | Dividido en una página de introducción y 6 páginas temáticas, siguiendo el patrón de DBA Unidad 1. |
+| `bloque01/material/bloque01_presentacion.md` | `student-portal`: `.../bloque-01/presentacion.md` | `STUDENT_PUBLIC` | Convertida de diapositivas Marp a página de documentación condensada; sin información nueva respecto al manual. |
+| `bloque01/material/bloque01_actividades.md` | `student-portal`: `.../bloque-01/actividades/actividad-{1..5}.md` (sin "Notas para el docente") | `STUDENT_PUBLIC` (parcial) | Dividido en 5 páginas, una por actividad. |
+| `bloque01/material/bloque01_manual_profesor.md` | — (no se deriva) | `TEACHER_RESTRICTED` | Incluye decisiones D-001 a D-005 y notas de validación docente; no corresponde al Student Portal. |
+| `bloque01/laboratorios/bloque01_lab01_laravel.md` | `student-portal`: `.../bloque-01/laboratorios/laboratorio-1-laravel-desde-cero.md` | `STUDENT_PUBLIC` | Copia íntegra, sin simplificar pasos, checkpoints ni errores frecuentes. |
+| `bloque01/laboratorios/bloque01_lab02_laravel.md` | `student-portal`: `.../bloque-01/laboratorios/laboratorio-2-crud-laravel.md` | `STUDENT_PUBLIC` | Copia íntegra. |
+| `bloque01/laboratorios/bloque01_lab03_historias_usuario.md` | `student-portal`: `.../bloque-01/laboratorios/laboratorio-3-historias-de-usuario.md` | `STUDENT_PUBLIC` | Copia íntegra. |
+| `bloque01/laboratorios/bloque01_lab04_sprint0.md` | `student-portal`: `.../bloque-01/laboratorios/laboratorio-4-sprint-0.md` | `STUDENT_PUBLIC` | Copia íntegra. |
+| `bloque01/referencias/bloque01_materiales_referencias.md` | `student-portal`: `.../bloque-01/referencias/index.md` | `STUDENT_PUBLIC` | Se excluyen las secciones de proceso editorial ("Regla para generación de materiales", "Reglas de mantenimiento") y la ruta interna del PDF del SBOK; se conservan las tablas de fuentes y trazabilidad. |
+| `bloque01/referencias/RUTA_LECTURAS_BLOQUE01.md` | `student-portal`: `.../bloque-01/referencias/lecturas-complementarias.md` | `STUDENT_PUBLIC` | Copia adaptada; conserva únicamente URL públicas ya presentes en la fuente. |
+| `bloque01/planeacion/PLAN_BLOQUE01.md` | — (no se deriva) | `WORKSPACE_ONLY` | Planeación interna del bloque. |
+| `taller-integrador/CONTEXTO_MATERIA.md`, `presentacion/presentacion_materia.md` (extracto) | `student-portal`: `.../taller-integrador/index.md` | `STUDENT_PUBLIC` (extracto) | Solo propósito, organización en bloques y evaluación oficial; el resto de `CONTEXTO_MATERIA.md` permanece `WORKSPACE_ONLY`. |
+
+No se creó una página independiente de "evaluación" a partir de un
+archivo fuente 1:1 (no existe un `bloque01_rubrica.md` todavía): la
+página `.../bloque-01/evaluacion.md` es nueva, resume criterios
+generales de evaluación sin reproducir ninguna rúbrica docente, y no
+introduce ningún criterio ausente de `bloque01_actividades.md`.
+
+## 8. Registro de derivación — Lógica de Programación, Unidad I
+
+Fecha de derivación: **2026-09-06**. Fuente: `academic-workspace`,
+`materias/logica-programacion/unidad01/` (`CONTEXTO_UNIDAD.md`, secc.
+23: `QA editorial: Pendiente`; `QA curricular: Pendiente`;
+`Validación académica: Pendiente`; `Publicación definitiva: No
+autorizada`). No existe todavía un archivo `AUDITORIA_QA_*.md` para
+esta unidad.
+
+**Nota sobre el estado de esta unidad.** Igual que el Bloque I de
+Taller Integrador (sección 7 de este documento), esta unidad se deriva
+sin haber pasado todavía por ningún ciclo de QA, por decisión directa
+del responsable del workspace, siguiendo el mismo precedente sentado
+con DBA Unidad 1 (sección 3). Cada página de esta unidad, en este
+portal, lleva una insignia visible "Borrador — QA pendiente ·
+Publicación no autorizada". Esto no es una excepción silenciosa a la
+regla de la sección 1: es una decisión explícita, registrada aquí, y
+el contenido no debe tratarse como definitivo hasta que
+`academic-workspace` registre un dictamen de QA.
+
+| Archivo fuente (`academic-workspace`) | Destino | Audiencia | Notas |
+| --- | --- | --- | --- |
+| `unidad01/CONTEXTO_UNIDAD.md` | — (no se deriva) | `WORKSPACE_ONLY` | Permanece exclusivamente en el workspace. |
+| `unidad01/PLANEACION_UNIDAD.md` | — (no se deriva) | `WORKSPACE_ONLY` | Planeación interna de la unidad. |
+| `unidad01/material/unidad01_manual_estudiante.md` | `student-portal`: `.../unidad-01/index.md` + `.../unidad-01/{01..06}-*.md` | `STUDENT_PUBLIC` | Dividido en una página de introducción y 6 páginas temáticas, siguiendo el patrón ya usado en DBA Unidad 1 y Taller Integrador Bloque I. |
+| `unidad01/material/unidad01_presentacion.md` | `student-portal`: `.../unidad-01/presentacion.md` | `STUDENT_PUBLIC` | Convertida de diapositivas Marp a página de documentación condensada; sin información nueva respecto al manual. No se copiaron las imágenes (`recursos/imagenes/*.svg`, `*.png`); los diagramas se representan como texto/ASCII. |
+| `unidad01/material/unidad01_actividades.md` | `student-portal`: `.../unidad-01/actividades/actividad-{1..6}.md` (sin "Notas para el docente") | `STUDENT_PUBLIC` (parcial) | Dividido en 6 páginas, una por actividad. |
+| `unidad01/material/unidad01_manual_profesor.md` | — (no se deriva) | `TEACHER_RESTRICTED` | No corresponde al Student Portal. |
+| `unidad01/evaluacion/unidad01_rubrica.md` | — (no se deriva) | `TEACHER_RESTRICTED` | Rúbrica docente completa; se sustituye en el Student Portal por `evaluacion.md`, con criterios generales. |
+| `unidad01/referencias/unidad01_materiales_referencias.md` | `student-portal`: `.../unidad-01/referencias/index.md` | `STUDENT_PUBLIC` | Se excluyen las secciones de proceso editorial (checklist de control de calidad, decisión curricular, regla para materiales futuros); se conservan las tablas de fuentes, pertinencia y cobertura temática. |
+| `unidad01/referencias/RUTA_LECTURAS_UNIDAD01.md` | `student-portal`: `.../unidad-01/referencias/lecturas-complementarias.md` | `STUDENT_PUBLIC` | Copia adaptada; conserva únicamente las URL públicas ya presentes en la fuente. |
+| `logica-programacion/CONTEXTO_MATERIA.md`, `presentacion/presentacion_materia.md` (extracto) | `student-portal`: `.../logica-programacion/index.md` | `STUDENT_PUBLIC` (extracto) | Solo propósito, organización en unidades y evaluación oficial; el resto de `CONTEXTO_MATERIA.md` permanece `WORKSPACE_ONLY`. |
+
+No se creó una página independiente de "laboratorios": esta unidad no
+tiene laboratorios en `academic-workspace` (`unidad01/laboratorios/`
+está vacío); su componente práctico (Scratch) se cubre dentro de los
+temas y actividades correspondientes, igual que en la fuente.
+
+No se creó una página independiente de "evaluación" a partir de un
+archivo fuente 1:1: la página `.../unidad-01/evaluacion.md` es nueva,
+resume criterios generales de evaluación sin reproducir la rúbrica
+docente (`unidad01_rubrica.md`), y no introduce ningún criterio ausente
+de `unidad01_actividades.md`.
+
+## 9. Aprobación de publicación — DBA, Taller Integrador y Lógica de Programación
+
+Fecha: **2026-09-06**. El responsable del workspace aprobó, por
+instrucción directa en este repositorio, la publicación de todo el
+contenido derivado hasta la fecha: DBA (Unidad 1 y Unidad 2), Taller
+Integrador de Especialización (Bloque I) y Lógica de Programación y
+Pensamiento Computacional (Unidad I).
+
+Como consecuencia:
+
+- Se retiraron todas las insignias `badge-estado` de estado de QA/
+  publicación ("Borrador — QA pendiente", "QA requiere nueva
+  verificación", "Publicación no autorizada", "QA: aprobado",
+  "Validación académica: pendiente") de todas las páginas de las tres
+  materias. La insignia "Observacional — no evaluado" de los
+  laboratorios opcionales de DBA Unidad 1 se conservó: no describe un
+  estado de QA, describe el alcance no evaluado de esos laboratorios.
+- Se retiró o reformuló el lenguaje que calificaba contenido de apoyo
+  como "no oficial" (por ejemplo, "Contenido de apoyo, no oficial" →
+  "Contenido de apoyo"; "competencias... propuestas, no oficiales" →
+  redactado sin esa calificación), conservando la distinción funcional
+  entre contenido oficial del programa y contenido de apoyo, sin
+  presentar este último como no válido o no aprobado.
+- Se registra esta aprobación como la decisión que sustituye, para
+  efectos de publicación en este portal, el estado de QA pendiente
+  documentado en las secciones 3, 7 y 8 de este archivo. Esas
+  secciones se conservan sin editar como registro histórico de cómo y
+  cuándo se derivó cada unidad; esta sección 9 documenta el cambio de
+  estado posterior.
+
+Esta aprobación se realizó directamente sobre `academic-student-portal`
+y no queda reflejada automáticamente como un dictamen de QA en
+`academic-workspace`: si se corrige o amplía contenido de estas
+unidades en el futuro, `academic-workspace` sigue siendo la fuente de
+verdad y debe volver a derivarse siguiendo el procedimiento de la
+sección 2.
+
+## 10. Registro de derivación y aprobación — Pruebas de Software, Unidad I
+
+Fecha: **2026-09-06**. Fuente: `academic-workspace`,
+`materias/pruebas-software/unidad01/` (`CONTEXTO_UNIDAD.md`, secc. 19:
+`qa_inicial: PENDIENTE`; `qa_final: PENDIENTE`;
+`validacion_academica: PENDIENTE`; `publicacion: NO_AUTORIZADA`). No
+existe todavía un archivo `AUDITORIA_QA_*.md` para esta unidad.
+
+Por la misma decisión de aprobación registrada en la sección 9 (el
+responsable del workspace instruyó publicar todo el contenido del
+portal sin insignias de estado de QA), esta unidad se deriva y publica
+en un solo paso, sin pasar por un estado intermedio con insignias de
+"Borrador — QA pendiente": ningún archivo de esta derivación incluyó
+nunca esas insignias.
+
+| Archivo fuente (`academic-workspace`) | Destino | Audiencia | Notas |
+| --- | --- | --- | --- |
+| `unidad01/CONTEXTO_UNIDAD.md` | — (no se deriva) | `WORKSPACE_ONLY` | Permanece exclusivamente en el workspace. |
+| `unidad01/PLANEACION_UNIDAD.md`, `unidad01/planeacion/unidad01_planeacion_clases.md` | — (no se derivan) | `WORKSPACE_ONLY` | Planeación interna de la unidad. |
+| `unidad01/material/unidad01_manual_estudiante.md` | `student-portal`: `.../unidad-01/index.md` + `.../unidad-01/{01..06}-*.md` | `STUDENT_PUBLIC` | Dividido en una página de introducción y 6 páginas temáticas, siguiendo el patrón ya usado en las demás materias. |
+| `unidad01/material/unidad01_presentacion.md` | `student-portal`: `.../unidad-01/presentacion.md` | `STUDENT_PUBLIC` | Convertida de diapositivas Marp a página de documentación condensada; sin información nueva respecto al manual. |
+| `unidad01/material/unidad01_actividades.md` | `student-portal`: `.../unidad-01/actividades/actividad-{1..5}.md` (sin "Notas para el docente") | `STUDENT_PUBLIC` (parcial) | Dividido en 5 páginas, una por actividad. |
+| `unidad01/material/unidad01_manual_profesor.md` | — (no se deriva) | `TEACHER_RESTRICTED` | No corresponde al Student Portal. |
+| `unidad01/evaluacion/unidad01_rubrica.md` | — (no se deriva) | `TEACHER_RESTRICTED` | Rúbrica docente completa; se sustituye en el Student Portal por `evaluacion.md`, con criterios generales. |
+| `unidad01/referencias/unidad01_materiales_referencias.md` | `student-portal`: `.../unidad-01/referencias/index.md` | `STUDENT_PUBLIC` | Se excluye la sección de proceso editorial ("Reglas de mantenimiento"); se conservan las tablas de fuentes, prioridad de lectura y relación con los temas. |
+| `pruebas-software/CONTEXTO_MATERIA.md`, `presentacion/presentacion_materia.md` (extracto) | `student-portal`: `.../pruebas-software/index.md` | `STUDENT_PUBLIC` (extracto) | Solo propósito, organización en unidades y evaluación oficial; el resto de `CONTEXTO_MATERIA.md` permanece `WORKSPACE_ONLY`. |
+
+No se creó una página independiente de "laboratorios": esta unidad no
+tiene laboratorios en `academic-workspace` (`unidad01/laboratorios/`
+está vacío) ni el programa oficial le asigna herramientas de
+referencia; es una unidad conceptual, igual que Lógica de Programación
+Unidad I.
+
+No se creó una página independiente de "lecturas complementarias":
+a diferencia de DBA y Taller Integrador, `academic-workspace` no tiene
+un segundo archivo de ruta de lecturas para esta unidad (solo
+`unidad01_materiales_referencias.md`), así que no se inventó uno.
+
+No se creó una página independiente de "evaluación" a partir de un
+archivo fuente 1:1: la página `.../unidad-01/evaluacion.md` es nueva,
+resume criterios generales de evaluación sin reproducir la rúbrica
+docente (`unidad01_rubrica.md`), y no introduce ningún criterio
+ausente de `unidad01_actividades.md`.

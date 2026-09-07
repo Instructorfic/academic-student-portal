@@ -140,7 +140,7 @@ docker run --name dba-mongo-act3 \
 ### Producto/evidencia
 
 Matriz de usuarios/roles/permisos (primera mitad de la evidencia oficial
-de la unidad; se completará en la Actividad 8).
+de la unidad, se completará en la Actividad 8).
 
 ### Criterio de logro
 
@@ -191,8 +191,8 @@ justificación del tipo de técnica aplicada.
 
 ### Criterio de logro
 
-La clasificación es razonable y justificada; el enmascaramiento funciona
-correctamente; el estudiante identifica correctamente que este ejemplo es
+La clasificación es razonable y justificada, el enmascaramiento funciona
+correctamente, y el estudiante identifica correctamente que este ejemplo es
 enmascaramiento (no es reversible con una llave, por lo que no es
 seudonimización en sentido estricto).
 
@@ -263,7 +263,7 @@ SHOW ssl;
 \conninfo
 ```
 
-Resultado esperado: `SHOW ssl;` devuelve `on`; `\conninfo` incluye una
+Resultado esperado: `SHOW ssl;` devuelve `on`, y `\conninfo` incluye una
 línea adicional del tipo `SSL connection (protocol: TLSv1.3, cipher:
 ..., compression: off)`. Si esa línea no aparece, la conexión particular
 no está cifrada aunque el servidor lo permita — depende de que el

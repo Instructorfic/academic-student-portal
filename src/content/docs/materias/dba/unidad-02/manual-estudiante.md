@@ -317,7 +317,7 @@ Los titulares de los datos tienen, además, los derechos **ARCO**:
 Un DBA no decide las políticas de privacidad de la organización, pero es
 quien **implementa técnicamente** las obligaciones que de ellas se
 derivan: si la ley exige minimización de datos, el DBA es quien decide
-qué columnas realmente necesitan almacenarse; si un titular ejerce su
+qué columnas realmente necesitan almacenarse. Si un titular ejerce su
 derecho de cancelación, el DBA es quien ejecuta —de forma segura y
 verificable— la eliminación de esos datos (sección 7).
 
@@ -410,7 +410,7 @@ datos sensibles (secc. 7), el cifrado (secc. 8), el marco normativo (secc.
 
 ## 12. Autoevaluación
 
-Responde sin consultar el manual; después verifica tus respuestas con tu
+Responde sin consultar el manual. Después verifica tus respuestas con tu
 docente.
 
 1. Explica por qué una consulta parametrizada previene la inyección SQL,
@@ -438,7 +438,7 @@ docente.
 | Privilegio mínimo (*least privilege*) | Principio según el cual cada usuario o proceso debe tener únicamente los permisos estrictamente necesarios. |
 | Separación de funciones | Principio según el cual ninguna persona debería controlar, por sí sola, una operación crítica de principio a fin. |
 | Inyección SQL / NoSQL | Ataque que altera la lógica de una consulta insertando entrada de usuario no validada dentro de ella. |
-| Rol | En PostgreSQL, entidad a la que se otorgan privilegios; un usuario es un rol con el atributo `LOGIN`. |
+| Rol | En PostgreSQL, entidad a la que se otorgan privilegios. Un usuario es un rol con el atributo `LOGIN`. |
 | RBAC (*Role-Based Access Control*) | Modelo de control de acceso basado en roles, usado por MongoDB y muchos otros sistemas. |
 | Enmascaramiento de datos | Mostrar solo una parte de un dato o sustituirlo por un valor no identificable. |
 | Seudonimización | Sustitución de un dato identificable por un identificador artificial, reversible con una llave separada. |
@@ -467,6 +467,6 @@ datos. Los siguientes temas **no se explican todavía**:
 
 ## 15. Referencias
 
-Este material se apoya exclusivamente en las trece referencias verificadas
-para esta unidad, disponibles en la página de
+Este material se apoya exclusivamente en las trece referencias de
+esta unidad, disponibles en la página de
 [Referencias](/materias/dba/unidad-02/referencias/).

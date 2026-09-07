@@ -30,6 +30,7 @@ y de acceso restringido.
 
 ## Materias
 
-Consulta el listado completo en [Materias](/materias/). Actualmente solo
-está publicado material de **DBA — Unidad 2**, como piloto de esta
-arquitectura de publicación.
+Consulta el listado completo en [Materias](/materias/). Actualmente hay
+material publicado de **DBA** (Unidades 1 y 2), **Taller Integrador de
+Especialización** (Bloque I), **Lógica de Programación y Pensamiento
+Computacional** (Unidad I) y **Pruebas de Software** (Unidad I).

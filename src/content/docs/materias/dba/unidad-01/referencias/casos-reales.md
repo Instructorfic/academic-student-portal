@@ -3,12 +3,8 @@ title: "Casos reales completos — Unidad 1"
 description: "Narrativa extendida y autocontenida de los dos casos reales de la unidad: Knight Capital y GitLab."
 ---
 
-> Dos de las fuentes primarias de estos casos (el postmortem de GitLab y
-> la orden de la SEC) bloquean el acceso directo de herramientas
-> automatizadas — están verificadas por consistencia entre múltiples
-> fuentes independientes, no es que el contenido sea dudoso. Este
-> documento reproduce, de forma extendida y autocontenida, los hechos ya
-> verificados de ambos casos, para que el aprendizaje no dependa de la
+> Este documento reproduce, de forma extendida y autocontenida, los
+> hechos de ambos casos, para que tu aprendizaje no dependa de la
 > disponibilidad de un sitio externo.
 
 ## Caso 1 — Knight Capital Group (1 de agosto de 2012)

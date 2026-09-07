@@ -3,8 +3,6 @@ title: "3. Ambientes de trabajo: desarrollo, pruebas y producción"
 description: "Unidad 1 de DBA — qué es un ambiente, por qué se separan, y dos casos reales (Knight Capital, GitLab)."
 ---
 
-<span class="badge-estado">Borrador — QA requiere nueva verificación</span>
-
 ## ¿Qué es, formalmente, un ambiente?
 
 Hasta este punto usamos la palabra "ambiente" de forma intuitiva. Vale la
@@ -29,9 +27,9 @@ El programa de esta materia define tres ambientes como base:
 
 | Ambiente | Propósito | Utilidad concreta |
 | --- | --- | --- |
-| **Desarrollo** | Construir y probar código o cambios nuevos | Permite experimentar y equivocarse sin consecuencias reales; los datos pueden modificarse o destruirse libremente |
-| **Pruebas** | Validar que un cambio funciona correctamente antes de exponerlo a usuarios reales | Detecta errores **antes** de que afecten a un usuario real; funciona como "ensayo general" |
-| **Producción** | Atender a los usuarios reales | Es el ambiente que realmente importa para el negocio; cualquier falla aquí tiene consecuencias reales (pérdida de datos, de confianza, económicas) |
+| **Desarrollo** | Construir y probar código o cambios nuevos | Permite experimentar y equivocarse sin consecuencias reales, los datos pueden modificarse o destruirse libremente |
+| **Pruebas** | Validar que un cambio funciona correctamente antes de exponerlo a usuarios reales | Detecta errores **antes** de que afecten a un usuario real, funciona como "ensayo general" |
+| **Producción** | Atender a los usuarios reales | Es el ambiente que realmente importa para el negocio, cualquier falla aquí tiene consecuencias reales (pérdida de datos, de confianza, económicas) |
 
 > **Nota de industria.** Muchas organizaciones agregan un cuarto
 > ambiente, llamado ***staging*** (o preproducción), entre pruebas y
@@ -57,9 +55,9 @@ rápido" un problema. Esto es exactamente el tipo de riesgo que la
 separación de ambientes busca evitar:
 
 * un cambio sin probar puede introducir errores directamente donde más
-  duele (los usuarios reales);
+  duele (los usuarios reales)
 * sin un ambiente de pruebas, no hay forma de validar un cambio antes de
-  aplicarlo;
+  aplicarlo
 * mezclar desarrollo y producción hace que un error de una persona en
   desarrollo pueda afectar a todos los usuarios reales.
 
@@ -73,7 +71,7 @@ hacer qué** en él:
 | Ambiente | Quién puede actuar ahí |
 | --- | --- |
 | **Desarrollo** | El equipo de desarrollo, con amplia libertad para experimentar y modificar directamente. |
-| **Pruebas** | Se amplía a quien valida el cambio; ya no se experimenta libremente, se valida algo que ya se dio por terminado en desarrollo. |
+| **Pruebas** | Se amplía a quien valida el cambio. Ya no se experimenta libremente, se valida algo que ya se dio por terminado en desarrollo. |
 | **Producción** | Restringido a quien tiene la responsabilidad formal de administrarla —normalmente el DBA o un proceso de despliegue controlado—, no cualquier integrante del equipo de desarrollo. |
 
 En la situación inicial, el problema no fue solo "no había un ambiente de

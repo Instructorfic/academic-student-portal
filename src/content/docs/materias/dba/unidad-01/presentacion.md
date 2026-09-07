@@ -3,8 +3,6 @@ title: "Presentación — Unidad 1"
 description: "Resumen de diapositivas de la Unidad 1 de DBA (rol del DBA, responsabilidades, ambientes y arquitectura)."
 ---
 
-<span class="badge-estado">Borrador — QA requiere nueva verificación</span>
-
 > Contenido derivado de la presentación de la unidad, sin información
 > nueva respecto al manual del estudiante. Cada bloque corresponde a un
 > grupo de diapositivas del original.
@@ -125,8 +123,8 @@ la Actividad 7.
 
 ## Referencias
 
-Quince referencias verificadas (documentación oficial de Oracle,
-PostgreSQL, MongoDB, Redis, Cassandra, Neo4j y AWS/IBM; la metodología
-*The Twelve-Factor App*; un documento regulatorio de la SEC; un
+Quince referencias (documentación oficial de Oracle,
+PostgreSQL, MongoDB, Redis, Cassandra, Neo4j y AWS/IBM, la metodología
+*The Twelve-Factor App*, un documento regulatorio de la SEC, y un
 postmortem oficial de GitLab). Listado completo en
 [Referencias](/materias/dba/unidad-01/referencias/).

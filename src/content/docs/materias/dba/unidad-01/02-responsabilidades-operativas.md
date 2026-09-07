@@ -3,8 +3,6 @@ title: "2. Responsabilidades operativas del DBA"
 description: "Unidad 1 de DBA — las seis responsabilidades cotidianas del DBA, desempeño y disponibilidad."
 ---
 
-<span class="badge-estado">Borrador — QA requiere nueva verificación</span>
-
 Más allá de la lista general del [rol del DBA](/materias/dba/unidad-01/01-rol-del-dba/),
 el trabajo cotidiano de un DBA suele organizarse en seis tipos de
 responsabilidad (REF-U1-01):
@@ -12,10 +10,10 @@ responsabilidad (REF-U1-01):
 | Responsabilidad | En qué consiste |
 | --- | --- |
 | **Configuración inicial y mantenimiento** | Instalar, configurar parámetros del motor y mantener la base de datos operativa en el tiempo. |
-| **Gestión de usuarios y privilegios** | Dar de alta y de baja usuarios, y controlar qué pueden hacer (visión general; el detalle técnico se estudia en la Unidad II). |
-| **Monitoreo del servicio** | Vigilar que la base de datos esté disponible y funcionando dentro de parámetros esperados (visión general; el detalle técnico se estudia en la Unidad IV). |
+| **Gestión de usuarios y privilegios** | Dar de alta y de baja usuarios, y controlar qué pueden hacer (visión general, el detalle técnico se estudia en la Unidad II). |
+| **Monitoreo del servicio** | Vigilar que la base de datos esté disponible y funcionando dentro de parámetros esperados (visión general, el detalle técnico se estudia en la Unidad IV). |
 | **Diagnóstico de fallas** | Identificar la causa de un problema cuando algo no funciona como se espera. |
-| **Optimización de desempeño** | Detectar y corregir situaciones que hacen que la base de datos responda más lento de lo esperado (visión general; el detalle técnico se estudia en la Unidad IV). |
+| **Optimización de desempeño** | Detectar y corregir situaciones que hacen que la base de datos responda más lento de lo esperado (visión general, el detalle técnico se estudia en la Unidad IV). |
 | **Documentación y bitácoras operativas** | Registrar configuración, cambios y decisiones para que el conocimiento no dependa de una sola persona. |
 
 Nota que varias de estas responsabilidades ("gestión de usuarios",

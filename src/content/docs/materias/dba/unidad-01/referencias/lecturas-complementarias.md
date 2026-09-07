@@ -3,7 +3,7 @@ title: "Lecturas complementarias — Unidad 1"
 description: "Recursos oficiales adicionales para profundizar por objetivo específico. No evaluado."
 ---
 
-> Una selección organizada de los recursos ya verificados en
+> Una selección organizada de los recursos de
 > [Referencias](/materias/dba/unidad-01/referencias/), presentados de
 > forma más accesible para que la uses como apoyo de estudio
 > independiente — no es lectura obligatoria: el manual y las actividades
@@ -30,9 +30,9 @@ description: "Recursos oficiales adicionales para profundizar por objetivo espec
 | Wiggins, A., *The Twelve-Factor App*, Factor X | Metodología / artículo técnico | Explica por qué mantener los ambientes lo más parecidos posible reduce riesgo | <https://12factor.net/dev-prod-parity> |
 | Microsoft Corporation, *Azure Deployment Environments* | Documentación oficial | Define formalmente qué es un "ambiente" y qué tipos existen en la industria | <https://learn.microsoft.com/en-us/azure/deployment-environments/concept-environments-key-concepts> |
 | U.S. SEC, orden administrativa sobre Knight Capital (2013) | Documento regulatorio oficial | Caso real de pérdida financiera masiva por falta de paridad entre servidores — ver también [Casos reales completos](/materias/dba/unidad-01/referencias/casos-reales/) | <https://www.sec.gov/news/press-release/2013-222> |
-| Dolfing, H., "Case Study 4: The $440 Million Software Error at Knight Capital" (2019) | Análisis técnico (fuente secundaria) | Narrativa extendida y análisis del caso Knight Capital | <https://www.henricodolfing.ch/en/case-study-4-the-440-million-software-error-at-knight-capital/> |
+| Dolfing, H., "Case Study 4: The $440 Million Software Error at Knight Capital" (2019) | Análisis técnico | Narrativa extendida y análisis del caso Knight Capital | <https://www.henricodolfing.ch/en/case-study-4-the-440-million-software-error-at-knight-capital/> |
 | GitLab Inc., postmortem del caso GitLab (2017) | Informe técnico oficial | Caso real de ejecución de un comando contra el servidor equivocado | <https://about.gitlab.com/blog/postmortem-of-database-outage-of-january-31/> |
-| Kleinpeter, T.; Turner, J., *The Downtime Project* (2021) | Podcast técnico (~50 min) | Reconstrucción conversacional del incidente de GitLab | <https://downtimeproject.com/podcast/gitlabs-2017-postgres-outage/> |
+| Kleinpeter, T. y Turner, J., *The Downtime Project* (2021) | Podcast técnico (~50 min) | Reconstrucción conversacional del incidente de GitLab | <https://downtimeproject.com/podcast/gitlabs-2017-postgres-outage/> |
 
 ## OE-U1.4 — Arquitectura de un SGBD relacional
 
@@ -62,8 +62,6 @@ completa y autocontenida en
 
 ## Si quieres seguir profundizando por tu cuenta
 
-Estos recursos cubren lo verificado para esta unidad. Si encuentras algún
+Estos recursos cubren lo esencial para esta unidad. Si encuentras algún
 otro artículo, video o curso que te parezca valioso, coméntalo con tu
-docente antes de citarlo en un entregable — no todo lo que aparece en una
-búsqueda cumple los mismos criterios de autoridad y verificación que se
-siguieron aquí.
+docente antes de citarlo en un entregable.

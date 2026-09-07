@@ -3,8 +3,6 @@ title: "4. Arquitectura de almacenamiento en un SGBD relacional"
 description: "Unidad 1 de DBA — organización lógica/física y memoria de un SGBD relacional, con Oracle y PostgreSQL como ejemplos paralelos."
 ---
 
-<span class="badge-estado">Borrador — QA requiere nueva verificación</span>
-
 ## Antes de continuar: un repaso rápido
 
 En materias anteriores ya trabajaste con el concepto de SGBD y con la
@@ -142,8 +140,8 @@ El siguiente esquema resume el concepto universal de ambos problemas,
 antes de que produzcas tu propio diagrama en la Actividad 5 (que sí debe
 etiquetar específicamente la organización lógica/física y la memoria de
 la instancia, usando de forma consistente la terminología de uno de los
-dos motores —Oracle: tablespace, datafile, SGA, Database Buffer Cache; o
-PostgreSQL: PGDATA, archivos de datos, `shared_buffers`—, con la función
+dos motores —Oracle: tablespace, datafile, SGA, Database Buffer Cache, o
+bien PostgreSQL: PGDATA, archivos de datos, `shared_buffers`—, con la función
 de cada uno):
 
 ```mermaid

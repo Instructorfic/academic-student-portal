@@ -3,8 +3,6 @@ title: "6. Cierre, autoevaluación y glosario"
 description: "Unidad 1 de DBA — cierre integrador, autoevaluación de 11 preguntas, glosario y qué sigue en la Unidad 2."
 ---
 
-<span class="badge-estado">Borrador — QA requiere nueva verificación</span>
-
 ## Cierre: integrando todo lo aprendido
 
 Vuelve a la [situación de la introducción](/materias/dba/unidad-01/):
@@ -103,11 +101,11 @@ docente.
 | Seguridad de los datos | Responsabilidad del DBA de que solo quien debe ver o modificar un dato pueda hacerlo. Su mecanismo técnico se estudia en la Unidad II. |
 | Continuidad | Responsabilidad del DBA de que la base de datos pueda seguir operando, o recuperarse, ante una falla. Su mecanismo técnico se estudia en la Unidad V. |
 | Organización lógica (almacenamiento) | Concepto universal: agrupamiento de estructuras relacionadas (tablas, índices) que el DBA administra como unidad, sin importar el motor. Ejemplo Oracle: tablespace. |
-| Organización física (almacenamiento) | Concepto universal: el archivo o archivos reales en disco donde viven los datos, sin importar el motor. Ejemplo Oracle: datafile; ejemplo PostgreSQL: archivos dentro de `PGDATA`. |
-| Tablespace | Unidad de almacenamiento lógico de una base de datos relacional que agrupa estructuras relacionadas (ejemplo de terminología: Oracle; PostgreSQL también tiene el concepto, con un alcance distinto). |
+| Organización física (almacenamiento) | Concepto universal: el archivo o archivos reales en disco donde viven los datos, sin importar el motor. Ejemplo Oracle: datafile. Ejemplo PostgreSQL: archivos dentro de `PGDATA`. |
+| Tablespace | Unidad de almacenamiento lógico de una base de datos relacional que agrupa estructuras relacionadas (ejemplo de terminología: Oracle. PostgreSQL también tiene el concepto, con un alcance distinto). |
 | Datafile | Archivo físico, a nivel de sistema operativo, donde se almacenan los datos de un tablespace (ejemplo de terminología: Oracle). |
 | SGA (*System Global Area*) | Área de memoria compartida de una instancia de base de datos, que incluye el Database Buffer Cache, entre otros componentes (ejemplo de terminología: Oracle). |
-| Database Buffer Cache | Componente de la SGA que guarda en memoria los datos leídos recientemente del disco, para acelerar accesos futuros (ejemplo de terminología: Oracle; equivalente funcional en PostgreSQL: `shared_buffers`). |
+| Database Buffer Cache | Componente de la SGA que guarda en memoria los datos leídos recientemente del disco, para acelerar accesos futuros (ejemplo de terminología: Oracle. Equivalente funcional en PostgreSQL: `shared_buffers`). |
 | Modelo documental | Modelo de datos NoSQL que organiza la información en documentos con pares campo-valor (ejemplo: MongoDB). |
 | Modelo clave-valor | Modelo de datos NoSQL que asocia una clave a un valor (ejemplo: Redis). |
 | Modelo columnar (wide-column) | Modelo de datos NoSQL que organiza la información en tablas particionadas de filas y columnas (ejemplo: Apache Cassandra). |
@@ -142,6 +140,6 @@ unidades posteriores:
 
 ## Referencias
 
-Este material se apoya exclusivamente en las quince referencias
-verificadas para esta unidad, disponibles en la página de
+Este material se apoya exclusivamente en las quince referencias de
+esta unidad, disponibles en la página de
 [Referencias](/materias/dba/unidad-01/referencias/).

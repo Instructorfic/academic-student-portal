@@ -1,13 +1,9 @@
 ---
 title: "Referencias — Unidad 2"
-description: "Bibliografía verificada de la Unidad 2 de DBA."
+description: "Bibliografía de la Unidad 2 de DBA."
 ---
 
-Todas las fuentes listadas fueron consultadas y verificadas el
-**2026-08-18**; no se inventó ningún autor, título, URL, comando, cifra ni
-fecha.
-
-## Referencias verificadas
+## Referencias
 
 | ID | Fuente | Tipo |
 | --- | --- | --- |

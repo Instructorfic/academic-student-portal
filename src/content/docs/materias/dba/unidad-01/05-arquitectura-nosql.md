@@ -3,8 +3,6 @@ title: "5. Arquitectura en SGBD NoSQL"
 description: "Unidad 1 de DBA — los cuatro modelos de datos NoSQL: documental, clave-valor, columnar y grafos."
 ---
 
-<span class="badge-estado">Borrador — QA requiere nueva verificación</span>
-
 Así como un SGBD relacional organiza su almacenamiento en tablespaces y
 datafiles (ver [Arquitectura relacional](/materias/dba/unidad-01/04-arquitectura-relacional/)),
 un SGBD NoSQL organiza sus datos según un **modelo de datos**

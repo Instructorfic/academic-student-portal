@@ -22,17 +22,15 @@ continuidad, su escalabilidad y su gobierno práctico.
 
 ## Resultados/competencias de referencia
 
-Las competencias asociadas a esta materia se presentan como
-**propuestas de referencia**, no como resultados de aprendizaje
-oficiales certificados en un formato institucional PROEA. Consulta el
-manual de cada unidad para el detalle de los objetivos específicos que
-aplican.
+Las competencias asociadas a esta materia sintetizan el propósito y
+los saberes del programa en objetivos específicos por unidad. Consulta
+el manual de cada unidad para el detalle de los objetivos específicos
+que aplican.
 
 ## Unidades publicadas
 
+- [Unidad 1 — Introducción a la Gestión de Bases de Datos](/materias/dba/unidad-01/)
 - [Unidad 2 — Seguridad, privacidad y control de acceso](/materias/dba/unidad-02/)
 
-Las demás unidades del programa (1 y 3 a 6) todavía no están publicadas
-en este portal. La Unidad 2 es el piloto técnico de esta arquitectura de
-publicación, seleccionada por ser la primera con dictamen de QA
-**APROBADO**.
+Las demás unidades del programa (3 a 6) todavía no están publicadas en
+este portal.

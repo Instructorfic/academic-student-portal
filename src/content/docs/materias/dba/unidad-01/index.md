@@ -3,14 +3,6 @@ title: "Unidad 1 — Introducción a la Gestión de Bases de Datos"
 description: Presentación de la Unidad 1 de DBA — el rol del DBA, responsabilidades operativas, ambientes y arquitectura relacional/NoSQL.
 ---
 
-<span class="badge-estado">Borrador — QA requiere nueva verificación</span> <span class="badge-estado">Publicación no autorizada</span>
-
-> El contenido de esta unidad está en producción activa. La versión aquí
-> publicada es la más reciente disponible, pero todavía **no cuenta con
-> un dictamen de QA vigente ni con validación académica**, por lo que no
-> debe tratarse como definitivo. Consulta con tu docente antes de citarlo
-> como referencia final.
-
 ## Identificación de la unidad
 
 | Campo | Información |
@@ -28,7 +20,7 @@ description: Presentación de la Unidad 1 de DBA — el rol del DBA, responsabil
 > **COMP-DBA-02.** Describir la arquitectura de almacenamiento y memoria
 > de un SGBD relacional y los modelos de datos de un SGBD NoSQL.
 
-Estas competencias son una síntesis **propuesta**, no oficial. Los
+Estas competencias sintetizan el propósito del programa. Los
 objetivos específicos de esta unidad son subdivisiones didácticas de esas
 dos competencias:
 

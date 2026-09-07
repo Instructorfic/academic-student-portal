@@ -52,6 +52,6 @@ pruebas (o un proceso que pase primero por desarrollo y pruebas) habría
 evitado aplicar un cambio sin validar directamente sobre datos reales.
 Para el caso real elegido, identifica correctamente el elemento que
 corresponde a "ambiente" en ese caso (servidores no sincronizados en
-Knight Capital; servidor de producción confundido en GitLab) y no lo
+Knight Capital, o servidor de producción confundido en GitLab) y no lo
 confunde con otros conceptos de la unidad (por ejemplo, desempeño o
 disponibilidad en abstracto).

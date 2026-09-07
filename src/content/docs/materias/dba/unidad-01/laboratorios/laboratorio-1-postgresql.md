@@ -33,7 +33,7 @@ contenedor y no queda nada instalado.
 | **Contenedor** | Una copia en ejecución de una imagen. Puedes crear y borrar contenedores sin afectar la imagen original. |
 | `docker run` | Crea y arranca un contenedor nuevo a partir de una imagen. |
 | `docker exec` | Ejecuta un comando **dentro** de un contenedor que ya está corriendo. |
-| `-d` | "*Detached*": el contenedor corre en segundo plano; no bloquea tu terminal. |
+| `-d` | "*Detached*": el contenedor corre en segundo plano y no bloquea tu terminal. |
 | `-e VARIABLE=valor` | Define una variable de entorno dentro del contenedor (por ejemplo, una contraseña inicial). |
 | `--name` | Le da un nombre fijo al contenedor, para poder referirte a él después sin recordar un identificador largo. |
 
@@ -72,7 +72,7 @@ This message shows that your installation appears to be working correctly.
 
 **Si ves** `Cannot connect to the Docker daemon`: Docker está instalado
 pero **no está corriendo**. En Windows/macOS, abre la aplicación "Docker
-Desktop" y espera a que el ícono de la ballena deje de moverse; en Linux,
+Desktop" y espera a que el ícono de la ballena deje de moverse. En Linux,
 ejecuta `sudo systemctl start docker`. Vuelve a intentar el comando.
 
 **Si ves** `permission denied` **(típico en Linux):** ejecuta el comando
@@ -228,5 +228,5 @@ que puede resolverse sin haber ejecutado este laboratorio.
 | `permission denied` al ejecutar `docker` | Tu usuario no tiene permiso | Usar `sudo`, o pedir que se agregue tu usuario al grupo `docker` |
 | `port is already allocated` / `Conflict... already in use` | Ya existe un contenedor previo con el mismo nombre | Ejecutar `docker rm -f dba-u1-postgres` y repetir el paso |
 | `psql: error: connection to server ... failed` | El contenedor todavía está inicializando | Esperar 5-10 segundos y repetir el paso 1.2 |
-| El paso 1.1 tarda mucho descargando | Primera vez que se descarga la imagen | Esperar; las siguientes veces será instantáneo |
+| El paso 1.1 tarda mucho descargando | Primera vez que se descarga la imagen | Esperar. Las siguientes veces será instantáneo |
 | No sabes cómo salir | `psql` tiene su propio comando de salida | `\q` |

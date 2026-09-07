@@ -3,8 +3,6 @@ title: "Unidad 2 — Seguridad, privacidad y control de acceso"
 description: Introducción a la Unidad 2 de DBA — seguridad, control de acceso, protección de datos sensibles y hardening.
 ---
 
-<span class="badge-estado">QA: aprobado</span> <span class="badge-estado">Validación académica: pendiente</span>
-
 ## Identificación de la unidad
 
 | Campo | Información |
@@ -23,8 +21,7 @@ description: Introducción a la Unidad 2 de DBA — seguridad, control de acceso
 - **OE-U2.5** — Explicar el marco de privacidad y cumplimiento normativo.
 - **OE-U2.6** — Aplicar hardening a un servidor de base de datos.
 
-> Competencias de referencia: COMP-DBA-03, COMP-DBA-04 (propuestas, no
-> oficiales).
+> Competencias de referencia: COMP-DBA-03, COMP-DBA-04.
 
 ## ¿Qué problema vamos a resolver?
 
@@ -48,7 +45,7 @@ La pregunta que organiza esta unidad:
 2. [Manual del estudiante](/materias/dba/unidad-02/manual-estudiante/) — desarrollo completo de los temas.
 3. [Actividades](/materias/dba/unidad-02/actividades/) — instrucciones de las 8 actividades, incluida la evidencia oficial.
 4. [Evaluación](/materias/dba/unidad-02/evaluacion/) — qué se evalúa y criterios generales.
-5. [Referencias](/materias/dba/unidad-02/referencias/) — bibliografía verificada de la unidad.
+5. [Referencias](/materias/dba/unidad-02/referencias/) — bibliografía de la unidad.
 
 ## Qué aprenderás después
 
