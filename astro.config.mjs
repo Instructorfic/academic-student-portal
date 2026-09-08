@@ -14,6 +14,8 @@ export default defineConfig({
 			title: 'FIC Academy',
 			description:
 				'Recursos, actividades y materiales académicos para estudiantes de la Facultad de Informática Culiacán, UAS.',
+			
+			favicon: '/favicon.png',
 			logo: {
 				light: './src/assets/logo-fic-1.png',
 				dark: './src/assets/logo-fic-2.png',
