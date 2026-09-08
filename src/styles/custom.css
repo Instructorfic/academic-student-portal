@@ -1,138 +1,764 @@
+/* ==========================================================================
+   FIC ACADEMY — UAS / Facultad de Informática Culiacán
+   Astro + Starlight
+   ========================================================================== */
+
+/* ==========================================================================
+   1. VARIABLES DE IDENTIDAD
+   ========================================================================== */
+
+   :root {
+	/* Identidad institucional */
+	--sl-color-accent-low: #e8eef7;
+	--sl-color-accent: #003b7a;
+	--sl-color-accent-high: #002957;
+
+	/* Escala de grises */
+	--fic-text: #172033;
+	--fic-text-soft: #526174;
+	--fic-border: #dce2ea;
+	--fic-surface: #ffffff;
+	--fic-surface-soft: #f6f8fb;
+	--fic-surface-blue: #f2f6fb;
+
+	/* Azul institucional */
+	--fic-blue: #003b7a;
+	--fic-blue-dark: #002957;
+	--fic-blue-light: #e8eef7;
+
+	/* Detalles */
+	--fic-radius: 12px;
+	--fic-radius-small: 8px;
+	--fic-shadow: 0 4px 18px rgb(15 23 42 / 0.06);
+	--fic-shadow-hover: 0 10px 30px rgb(15 23 42 / 0.1);
+
+	/* Tipografía */
+	--fic-content-width: 75rem;
+}
+
+/* ==========================================================================
+   2. MODO OSCURO
+   ========================================================================== */
+
+   :root[data-theme='dark'] {
+	--fic-text: #e8edf5;
+	--fic-text-soft: #b8c4d4;
+	--fic-border: #2d3b50;
+	--fic-surface: #111827;
+	--fic-surface-soft: #182235;
+	--fic-surface-blue: #1b2d46;
+
+	--fic-blue: #79b9f2;
+	--fic-blue-dark: #b9dcfa;
+	--fic-blue-light: #203b5c;
+
+	--sl-color-accent-low: #203b5c;
+	--sl-color-accent: #79b9f2;
+	--sl-color-accent-high: #c7e5ff;
+}
+
+/* ==========================================================================
+   3. BASE
+   ========================================================================== */
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	font-family:
+		Inter,
+		ui-sans-serif,
+		system-ui,
+		-apple-system,
+		BlinkMacSystemFont,
+		"Segoe UI",
+		sans-serif;
+	color: var(--fic-text);
+}
+
+/* Mejora general de legibilidad */
+p,
+li {
+	line-height: 1.7;
+}
+
+p {
+	color: var(--fic-text);
+}
+
+small {
+	color: var(--fic-text-soft);
+}
+
+/* ==========================================================================
+   4. HEADER
+   ========================================================================== */
+
+header.header {
+	border-bottom: 1px solid var(--fic-border);
+	background: color-mix(
+		in srgb,
+		var(--fic-surface) 94%,
+		transparent
+	);
+	backdrop-filter: blur(12px);
+}
+
+/* Contenedor del header */
+.header {
+	box-shadow: 0 1px 0 rgb(15 23 42 / 0.03);
+}
+
+/* Nombre del sitio */
+.site-title {
+	font-weight: 700;
+	letter-spacing: -0.02em;
+}
+
+/* ==========================================================================
+   5. MARCA / TÍTULO
+   ========================================================================== */
+
+.site-title span {
+	color: var(--fic-blue);
+}
+
+/* ==========================================================================
+   LOGO FIC
+   ========================================================================== */
+
+   .fic-logo {
+	height: 42px;
+	width: auto;
+	display: block;
+	object-fit: contain;
+}
+
+.fic-brand {
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
+}
+
+.fic-brand-title {
+	display: flex;
+	flex-direction: column;
+	line-height: 1.1;
+}
+
+.fic-brand-title strong {
+	font-size: 0.95rem;
+	font-weight: 700;
+}
+
+.fic-brand-title span {
+	font-size: 0.72rem;
+	color: var(--fic-text-soft);
+}
+
+/* ==========================================================================
+   6. SIDEBAR
+   ========================================================================== */
+
+.sidebar-content {
+	padding-top: 1.25rem;
+}
+
+/* Elementos del menú */
+.sidebar-content a {
+	border-radius: var(--fic-radius-small);
+	transition:
+		background-color 0.15s ease,
+		color 0.15s ease,
+		transform 0.15s ease;
+}
+
+/* Hover */
+.sidebar-content a:hover {
+	background: var(--fic-surface-blue);
+}
+
+/* Elemento activo */
+.sidebar-content a[aria-current='page'] {
+	background: var(--fic-blue-light);
+	color: var(--fic-blue);
+	font-weight: 650;
+}
+
+/* ==========================================================================
+   7. CONTENIDO PRINCIPAL
+   ========================================================================== */
+
+.sl-markdown-content {
+	max-width: var(--fic-content-width);
+}
+
+/* Títulos */
+
+.sl-markdown-content h1 {
+	font-size: clamp(2rem, 4vw, 3rem);
+	font-weight: 750;
+	letter-spacing: -0.04em;
+	line-height: 1.1;
+	color: var(--fic-text);
+	margin-bottom: 1.25rem;
+}
+
+.sl-markdown-content h2 {
+	font-size: clamp(1.5rem, 3vw, 2rem);
+	font-weight: 700;
+	letter-spacing: -0.025em;
+	margin-top: 3rem;
+	padding-bottom: 0.6rem;
+	border-bottom: 1px solid var(--fic-border);
+}
+
+.sl-markdown-content h3 {
+	font-size: 1.3rem;
+	font-weight: 700;
+	margin-top: 2rem;
+}
+
+/* Links */
+
+.sl-markdown-content a {
+	color: var(--fic-blue);
+	font-weight: 550;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 3px;
+}
+
+.sl-markdown-content a:hover {
+	color: var(--fic-blue-dark);
+}
+
+/* ==========================================================================
+   8. CÓDIGO
+   ========================================================================== */
+
+.sl-markdown-content code {
+	border-radius: 5px;
+	padding: 0.15em 0.35em;
+	font-size: 0.9em;
+}
+
+.sl-markdown-content pre {
+	border: 1px solid var(--fic-border);
+	border-radius: var(--fic-radius);
+	box-shadow: var(--fic-shadow);
+}
+
+.sl-markdown-content pre code {
+	border: 0;
+}
+
+/* ==========================================================================
+   9. TABLAS
+   ========================================================================== */
+
+.sl-markdown-content table {
+	display: table;
+	width: 100%;
+	border-collapse: separate;
+	border-spacing: 0;
+	overflow: hidden;
+	border: 1px solid var(--fic-border);
+	border-radius: var(--fic-radius);
+	box-shadow: var(--fic-shadow);
+}
+
+.sl-markdown-content th {
+	background: var(--fic-surface-blue);
+	color: var(--fic-text);
+	font-weight: 700;
+}
+
+.sl-markdown-content th,
+.sl-markdown-content td {
+	padding: 0.85rem 1rem;
+	border-bottom: 1px solid var(--fic-border);
+}
+
+.sl-markdown-content tr:last-child td {
+	border-bottom: 0;
+}
+
+.sl-markdown-content tbody tr {
+	transition: background-color 0.15s ease;
+}
+
+.sl-markdown-content tbody tr:hover {
+	background: var(--fic-surface-soft);
+}
+
+/* ==========================================================================
+   10. BLOCKQUOTES
+   ========================================================================== */
+
+.sl-markdown-content blockquote {
+	margin: 1.5rem 0;
+	padding: 1rem 1.25rem;
+	border-left: 4px solid var(--fic-blue);
+	border-radius: 0 var(--fic-radius-small) var(--fic-radius-small) 0;
+	background: var(--fic-surface-blue);
+	color: var(--fic-text);
+}
+
+/* ==========================================================================
+   11. LISTAS
+   ========================================================================== */
+
+.sl-markdown-content ul,
+.sl-markdown-content ol {
+	padding-left: 1.5rem;
+}
+
+.sl-markdown-content li::marker {
+	color: var(--fic-blue);
+}
+
+/* ==========================================================================
+   12. SEPARADORES
+   ========================================================================== */
+
+.sl-markdown-content hr {
+	border: 0;
+	border-top: 1px solid var(--fic-border);
+	margin: 3rem 0;
+}
+
+/* ==========================================================================
+   13. CARDS / STYLES DE STarlight
+   ========================================================================== */
+
+.card {
+	border: 1px solid var(--fic-border);
+	border-radius: var(--fic-radius);
+	background: var(--fic-surface);
+	box-shadow: var(--fic-shadow);
+	transition:
+		transform 0.18s ease,
+		box-shadow 0.18s ease,
+		border-color 0.18s ease;
+}
+
+.card:hover {
+	transform: translateY(-2px);
+	box-shadow: var(--fic-shadow-hover);
+	border-color: color-mix(
+		in srgb,
+		var(--fic-blue) 35%,
+		var(--fic-border)
+	);
+}
+
+/* ==========================================================================
+   14. ASIDES / CALLOUTS
+   ========================================================================== */
+
+.starlight-aside {
+	border-radius: var(--fic-radius);
+	border-width: 1px;
+	box-shadow: var(--fic-shadow);
+}
+
+/* ==========================================================================
+   15. BOTONES
+   ========================================================================== */
+
+.sl-link-button {
+	border-radius: 9px;
+	font-weight: 650;
+	transition:
+		transform 0.15s ease,
+		box-shadow 0.15s ease;
+}
+
+.sl-link-button:hover {
+	transform: translateY(-1px);
+}
+
+/* ==========================================================================
+   16. BREADCRUMBS
+   ========================================================================== */
+
+.breadcrumbs {
+	font-size: 0.82rem;
+	color: var(--fic-text-soft);
+}
+
+.breadcrumbs a:hover {
+	color: var(--fic-blue);
+}
+
+/* ==========================================================================
+   17. TOC / TABLA DE CONTENIDOS
+   ========================================================================== */
+
+.right-sidebar-panel {
+	border-left-color: var(--fic-border);
+}
+
+.right-sidebar-panel a {
+	color: var(--fic-text-soft);
+	transition: color 0.15s ease;
+}
+
+.right-sidebar-panel a:hover {
+	color: var(--fic-blue);
+}
+
+/* ==========================================================================
+   18. PAGINACIÓN
+   ========================================================================== */
+
+.pagination-links a {
+	border: 1px solid var(--fic-border);
+	border-radius: var(--fic-radius);
+	background: var(--fic-surface);
+	transition:
+		border-color 0.15s ease,
+		transform 0.15s ease,
+		box-shadow 0.15s ease;
+}
+
+.pagination-links a:hover {
+	border-color: var(--fic-blue);
+	transform: translateY(-1px);
+	box-shadow: var(--fic-shadow);
+}
+
+/* ==========================================================================
+   19. BÚSQUEDA
+   ========================================================================== */
+
+site-search button {
+	border-radius: 9px;
+}
+
+[data-open-modal] {
+	border-radius: 9px;
+}
+
+/* ==========================================================================
+   20. FOCUS / ACCESIBILIDAD
+   ========================================================================== */
+
+:focus-visible {
+	outline: 3px solid color-mix(
+		in srgb,
+		var(--fic-blue) 45%,
+		transparent
+	);
+	outline-offset: 3px;
+}
+
+/* ==========================================================================
+   21. IMÁGENES
+   ========================================================================== */
+
+.sl-markdown-content img {
+	border-radius: var(--fic-radius);
+	max-width: 100%;
+	height: auto;
+}
+
+.sl-markdown-content figure {
+	margin: 2rem 0;
+}
+
+.sl-markdown-content figcaption {
+	margin-top: 0.6rem;
+	font-size: 0.85rem;
+	color: var(--fic-text-soft);
+	text-align: center;
+}
+
+/* ==========================================================================
+   22. PORTADA / HERO
+   ========================================================================== */
+
 /*
- * Identidad visual — Academic Student Portal (UAS / FIC)
- * Paleta y tipografía tomadas directamente del tema Marp institucional
- * (plantillas/tema-uas3.css, academic-workspace), adaptadas a los
- * tokens de Starlight para modo claro y oscuro.
+ * Clases disponibles para utilizar en páginas Markdown/MDX.
  *
- * Prioridad de color (ver docs/ARQUITECTURA.md):
- *   1. Azul institucional UAS      2. Azul oscuro / marino FIC
- *   3. Dorado institucional (acento, nunca dominante)
- *   4. Blanco / gris académico (superficies)
- *   5. Colores complementarios solo con función semántica puntual
+ * Ejemplo:
+ *
+ * <div class="fic-hero">
+ *   <span class="fic-kicker">FACULTAD DE INFORMÁTICA CULIACÁN</span>
+ *   <h1>Portal del estudiante</h1>
+ *   <p>...</p>
+ * </div>
  */
 
-:root {
-	/* Paleta base UAS3 (idéntica a plantillas/tema-uas3.css) */
-	--azul-uas: #0a3161;
-	--azul-oscuro: #062043;
-	--azul-claro: #4d7fb3;
-
-	--dorado-uas: #c9a227;
-	--dorado-claro: #e6c765;
-
-	--gris-academico: #5a6470;
-	--gris-claro: #e9ecef;
-
-	--fondo-claro: #f7f8fa;
-	--fondo-blanco: #ffffff;
-
-	--texto-principal: #1c1f24;
-
-	/* Identidad complementaria FIC/UAS — uso semántico puntual únicamente */
-	--fic-azul-marino: #081231;
-	--fic-oro: #c69229;
-	--uas-azul: #3070b2;
-
-	/* Tipografía institucional (idéntica a los materiales Marp) */
-	--sl-font: 'Segoe UI', system-ui, -apple-system, sans-serif;
-	--sl-font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+.fic-hero {
+	position: relative;
+	padding: clamp(2rem, 5vw, 4rem);
+	margin-bottom: 3rem;
+	border: 1px solid var(--fic-border);
+	border-radius: 18px;
+	background:
+		linear-gradient(
+			135deg,
+			var(--fic-surface-blue),
+			var(--fic-surface)
+		);
+	overflow: hidden;
 }
 
-/* Modo claro — azul UAS como acento, dorado reservado a énfasis puntuales */
-:root {
-	--sl-color-accent-low: #d7e2ef;
-	--sl-color-accent: var(--azul-uas);
-	--sl-color-accent-high: var(--azul-oscuro);
-	--sl-color-white: var(--texto-principal);
-	--sl-color-gray-1: #eef1f4;
-	--sl-color-gray-2: var(--gris-claro);
-	--sl-color-gray-3: #c7ccd3;
-	--sl-color-gray-4: #98a0aa;
-	--sl-color-gray-5: var(--gris-academico);
-	--sl-color-gray-6: #383f4a;
-	--sl-color-gray-7: #23272e;
-	--sl-color-black: var(--fondo-blanco);
-	--sl-color-bg: var(--fondo-claro);
-	--sl-color-bg-nav: var(--fondo-blanco);
-	--sl-color-bg-sidebar: var(--fondo-blanco);
+.fic-hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 4px;
+	background: var(--fic-blue);
 }
 
-/* Modo oscuro — azul claro institucional como acento (mejor contraste sobre fondo oscuro) */
-:root[data-theme='dark'],
-:root:not([data-theme='light']) {
-	--sl-color-accent-low: #1a2f4a;
-	--sl-color-accent: var(--azul-claro);
-	--sl-color-accent-high: #9dbfdf;
-	--sl-color-white: #f4f6f8;
-	--sl-color-gray-1: #e7eaed;
-	--sl-color-gray-2: #c1c7cd;
-	--sl-color-gray-3: #8b929c;
-	--sl-color-gray-4: #5f6670;
-	--sl-color-gray-5: #3a4049;
-	--sl-color-gray-6: #262b32;
-	--sl-color-gray-7: #181c21;
-	--sl-color-black: #10131a;
-	--sl-color-bg: #10131a;
-	--sl-color-bg-nav: #161a22;
-	--sl-color-bg-sidebar: #161a22;
+.fic-hero .fic-kicker {
+	display: inline-block;
+	margin-bottom: 0.75rem;
+	font-size: 0.75rem;
+	font-weight: 750;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--fic-blue);
 }
 
-@media (prefers-color-scheme: light) {
-	:root:not([data-theme='dark']) {
-		--sl-color-accent-low: #d7e2ef;
-		--sl-color-accent: var(--azul-uas);
-		--sl-color-accent-high: var(--azul-oscuro);
-		--sl-color-white: var(--texto-principal);
-		--sl-color-gray-1: #eef1f4;
-		--sl-color-gray-2: var(--gris-claro);
-		--sl-color-gray-3: #c7ccd3;
-		--sl-color-gray-4: #98a0aa;
-		--sl-color-gray-5: var(--gris-academico);
-		--sl-color-gray-6: #383f4a;
-		--sl-color-gray-7: #23272e;
-		--sl-color-black: var(--fondo-blanco);
-		--sl-color-bg: var(--fondo-claro);
-		--sl-color-bg-nav: var(--fondo-blanco);
-		--sl-color-bg-sidebar: var(--fondo-blanco);
+.fic-hero h1 {
+	margin: 0 0 1rem;
+	max-width: 800px;
+	font-size: clamp(2.2rem, 5vw, 4rem);
+	line-height: 1.05;
+	letter-spacing: -0.05em;
+}
+
+.fic-hero p {
+	max-width: 720px;
+	margin: 0;
+	font-size: 1.1rem;
+	color: var(--fic-text-soft);
+}
+
+/* ==========================================================================
+   23. TARJETAS DE MATERIAS
+   ========================================================================== */
+
+.fic-subject-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1rem;
+	margin: 2rem 0;
+}
+
+.fic-subject-card {
+	display: flex;
+	flex-direction: column;
+	padding: 1.5rem;
+	border: 1px solid var(--fic-border);
+	border-radius: var(--fic-radius);
+	background: var(--fic-surface);
+	box-shadow: var(--fic-shadow);
+	text-decoration: none !important;
+	transition:
+		transform 0.18s ease,
+		box-shadow 0.18s ease,
+		border-color 0.18s ease;
+}
+
+.fic-subject-card:hover {
+	transform: translateY(-3px);
+	box-shadow: var(--fic-shadow-hover);
+	border-color: var(--fic-blue);
+}
+
+.fic-subject-card .fic-subject-label {
+	margin-bottom: 0.5rem;
+	font-size: 0.75rem;
+	font-weight: 750;
+	letter-spacing: 0.06em;
+	text-transform: uppercase;
+	color: var(--fic-blue);
+}
+
+.fic-subject-card h3 {
+	margin: 0 0 0.5rem;
+	color: var(--fic-text);
+	font-size: 1.15rem;
+}
+
+.fic-subject-card p {
+	margin: 0;
+	color: var(--fic-text-soft);
+	font-size: 0.9rem;
+	line-height: 1.55;
+}
+
+/* ==========================================================================
+   24. ETIQUETAS
+   ========================================================================== */
+
+.fic-badge {
+	display: inline-flex;
+	align-items: center;
+	padding: 0.3rem 0.65rem;
+	border-radius: 999px;
+	background: var(--fic-blue-light);
+	color: var(--fic-blue);
+	font-size: 0.75rem;
+	font-weight: 700;
+}
+
+/* ==========================================================================
+   25. BLOQUES DE INFORMACIÓN
+   ========================================================================== */
+
+.fic-info {
+	margin: 1.5rem 0;
+	padding: 1.25rem 1.5rem;
+	border: 1px solid var(--fic-border);
+	border-radius: var(--fic-radius);
+	background: var(--fic-surface-soft);
+}
+
+.fic-info-title {
+	margin-bottom: 0.4rem;
+	font-weight: 700;
+	color: var(--fic-text);
+}
+
+.fic-info p:last-child {
+	margin-bottom: 0;
+}
+
+/* ==========================================================================
+   26. ESTADÍSTICAS
+   ========================================================================== */
+
+.fic-stats {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: 1rem;
+	margin: 2rem 0;
+}
+
+.fic-stat {
+	padding: 1.25rem;
+	border: 1px solid var(--fic-border);
+	border-radius: var(--fic-radius);
+	background: var(--fic-surface);
+	text-align: center;
+}
+
+.fic-stat strong {
+	display: block;
+	margin-bottom: 0.25rem;
+	font-size: 1.8rem;
+	line-height: 1;
+	color: var(--fic-blue);
+}
+
+.fic-stat span {
+	font-size: 0.8rem;
+	color: var(--fic-text-soft);
+}
+
+/* ==========================================================================
+   27. SECCIONES ACADÉMICAS
+   ========================================================================== */
+
+.fic-section {
+	margin: 3rem 0;
+}
+
+.fic-section-header {
+	margin-bottom: 1.5rem;
+}
+
+.fic-section-header span {
+	font-size: 0.75rem;
+	font-weight: 750;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: var(--fic-blue);
+}
+
+.fic-section-header h2 {
+	margin: 0.3rem 0 0;
+	padding: 0;
+	border: 0;
+}
+
+/* ==========================================================================
+   28. RESPONSIVE
+   ========================================================================== */
+
+@media (max-width: 900px) {
+	.fic-subject-grid {
+		grid-template-columns: 1fr;
+	}
+
+	.fic-stats {
+		grid-template-columns: 1fr;
+	}
+
+	.fic-hero {
+		padding: 2rem;
 	}
 }
 
-/* Página: fondo blanco para el área de lectura, académico y sin grandes vacíos */
-.main-pane {
-	background: var(--sl-color-black);
+@media (max-width: 640px) {
+	.sl-markdown-content h1 {
+		font-size: 2rem;
+	}
+
+	.sl-markdown-content h2 {
+		font-size: 1.45rem;
+		margin-top: 2.25rem;
+	}
+
+	.fic-hero {
+		padding: 1.5rem;
+		border-radius: 12px;
+	}
+
+	.fic-hero h1 {
+		font-size: 2.2rem;
+	}
+
+	.fic-hero p {
+		font-size: 1rem;
+	}
+
+	.fic-subject-card {
+		padding: 1.2rem;
+	}
+
+	.sl-markdown-content table {
+		font-size: 0.9rem;
+	}
+
+	.sl-markdown-content th,
+	.sl-markdown-content td {
+		padding: 0.65rem 0.75rem;
+	}
 }
 
-/* Acentos institucionales puntuales — títulos en azul, acento en dorado */
-.sl-markdown-content h1 {
-	border-bottom: 3px solid var(--dorado-uas);
-	padding-bottom: 0.3em;
-}
+/* ==========================================================================
+   29. REDUCCIÓN DE MOVIMIENTO
+   ========================================================================== */
 
-.sl-markdown-content blockquote {
-	border-left: 4px solid var(--dorado-uas);
-}
+@media (prefers-reduced-motion: reduce) {
+	html {
+		scroll-behavior: auto;
+	}
 
-a.site-title {
-	font-weight: 700;
-}
-
-/* Insignia de estado editorial (borrador / QA / publicación) */
-.badge-estado {
-	display: inline-block;
-	font-size: 0.75rem;
-	font-weight: 700;
-	letter-spacing: 0.02em;
-	text-transform: uppercase;
-	padding: 0.15rem 0.55rem;
-	margin-bottom: 0.5rem;
-	border-radius: 999px;
-	border: 1px solid var(--dorado-uas);
-	color: #7a611a;
-	background: #faf3df;
-}
-:root[data-theme='dark'] .badge-estado,
-:root:not([data-theme='light']) .badge-estado {
-	background: transparent;
-	color: var(--dorado-claro);
-	border-color: var(--dorado-uas);
+	*,
+	*::before,
+	*::after {
+		transition-duration: 0.01ms !important;
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+	}
 }

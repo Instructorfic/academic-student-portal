@@ -8,12 +8,17 @@ export default defineConfig({
 	// deben configurarse cuando se confirme la organización/dominio real
 	// de GitHub Pages — ver docs/PUBLICACION.md. No se asume un valor
 	// aquí para no inventar una URL de hosting no confirmada.
-	site: 'https://instructorfic.github.io',
+	site: 'https://academy.ficlabs.com.mx',
 	integrations: [
 		starlight({
-			title: 'Portal del Estudiante · FIC UAS',
+			title: 'FIC Academy',
 			description:
-				'Materiales públicos para el estudiante — Facultad de Informática Culiacán, UAS.',
+				'Recursos, actividades y materiales académicos para estudiantes de la Facultad de Informática Culiacán, UAS.',
+			logo: {
+				light: './src/assets/logo-fic-1.png',
+				dark: './src/assets/logo-fic-2.png',
+				alt: 'Facultad de Informática Culiacán — Universidad Autónoma de Sinaloa',
+			},
 			customCss: ['./src/styles/custom.css'],
 			social: [],
 			sidebar: [
