@@ -17,14 +17,3 @@ materias y unidades.
   — Unidad I.
 - [Pruebas de Software](/materias/pruebas-software/)
   — Unidad I.
-
-## En preparación
-
-Las siguientes materias todavía no tienen contenido publicado en este
-portal:
-
-- Sistemas de Control de Versiones
-- Contenedores y Cloud Native
-- Cómputo Móvil
-- DevSecOps
-- Curso de Inducción
