@@ -8,6 +8,7 @@ export default defineConfig({
 	// deben configurarse cuando se confirme la organización/dominio real
 	// de GitHub Pages — ver docs/PUBLICACION.md. No se asume un valor
 	// aquí para no inventar una URL de hosting no confirmada.
+	site: 'https://instructorfic.github.io',
 	integrations: [
 		starlight({
 			title: 'Portal del Estudiante · FIC UAS',
