@@ -34,7 +34,7 @@ empiezas a construir en el Bloque I.
 | Bloque | Tema | Estado en este portal |
 | --- | --- | --- |
 | I | Del problema al producto | **Publicado** |
-| II | Desarrollo colaborativo y arquitectura | En preparación |
+| II | Desarrollo colaborativo y arquitectura | **Publicado** |
 | III | Construcción del sistema | En preparación |
 | IV | Contenedores, despliegue y escalabilidad | En preparación |
 | V | Integración, operación y presentación profesional | En preparación |
@@ -64,6 +64,7 @@ documentación o prototipos al final del semestre.
 ## Bloques publicados
 
 - [Bloque I — Del problema al producto](/materias/taller-integrador/bloque-01/)
+- [Bloque II — Desarrollo colaborativo y arquitectura](/materias/taller-integrador/bloque-02/)
 
-Los Bloques II a V del programa todavía no están publicados en este
+Los Bloques III a V del programa todavía no están publicados en este
 portal.

@@ -69,11 +69,10 @@ para la segunda.
 ## Qué sigue: Bloque II
 
 Ya sabes qué problema resolver, para quién, y qué construirás primero.
-El Bloque II del taller — Desarrollo colaborativo y arquitectura — se
-concentra en aprender a construir eso de manera colaborativa: Git y
+El [Bloque II — Desarrollo colaborativo y arquitectura](/materias/taller-integrador/bloque-02/)
+se concentra en aprender a construir eso de manera colaborativa: Git y
 control de versiones, integración del trabajo del equipo, y arquitectura
-de software aplicada a tu proyecto. Ese bloque todavía no está publicado
-en este portal.
+de software aplicada a tu proyecto.
 
 ## Referencias generales del bloque
 

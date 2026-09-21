@@ -77,12 +77,12 @@ antes de avanzar: [1](/materias/logica-programacion/unidad-01/01-importancia-de-
 ## Qué sigue: Unidad II
 
 Ya sabes pensar un problema de forma algorítmica y expresarlo en
-lenguaje natural ordenado. La Unidad II del programa — Elementos
-algorítmicos básicos — introduce los elementos con los que se
-construyen expresiones y algoritmos de manera más precisa: tipos de
-datos, expresiones, operadores, identificadores, constantes, variables
-y funciones matemáticas. Esa unidad todavía no está publicada en este
-portal.
+lenguaje natural ordenado. La
+[Unidad II — Elementos algorítmicos básicos](/materias/logica-programacion/unidad-02/)
+del programa introduce los elementos con los que se construyen
+expresiones y algoritmos de manera más precisa: tipos de datos,
+expresiones, operadores, identificadores, constantes, variables y
+funciones matemáticas.
 
 ## Referencias generales de la unidad
 
