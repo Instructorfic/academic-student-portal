@@ -349,3 +349,16 @@ No se derivan: `unidad03_solucionario_profesor.md` (TEACHER_RESTRICTED),
 (WORKSPACE_ONLY). Tampoco se derivaron, por no estar en la solicitud,
 `unidad03_especificacion_pseudocodigo.md`, `unidad03_glosario_terminos.md`
 ni las hojas de `tareas/`.
+
+## 13. Referencias de DBA — Unidad 2 y materia
+
+Fecha: **2026-09-27**. Publicación por instrucción directa del
+responsable académico.
+
+| Archivo fuente (`academic-workspace`) | Destino | Notas |
+| --- | --- | --- |
+| `dba/unidad02/referencias/unidad02_materiales_referencias.md` | `.../dba/unidad-02/referencias/index.md` | Versión completa (sustituye la resumida). Se excluyen "Notas de uso" y "Pendientes" (WORKSPACE_ONLY). Los códigos OE/C se sustituyen por enlaces a los temas. |
+| `dba/unidad02/referencias/unidad02_lecturas_complementarias.md` | `.../dba/unidad-02/referencias/lecturas-complementarias.md` | Versión completa por tema. Se agrega REF-U2-14 (NIST SP 800-188), ya verificada en las referencias de la unidad. |
+| `dba/referencias/ postgresql-dba.md` | `.../dba/referencias/postgresql-dba.md` | Nueva. Emojis de advertencia sustituidos por "Precaución". |
+| `dba/referencias/mongodb-dba.md` | `.../dba/referencias/mongodb-dba.md` | Nueva. |
+| `dba/referencias/glosario.md` | `.../dba/referencias/glosario.md` | Nueva. Sigla corregida en la fuente: LFPDPPSO → LGPDPPSO. |

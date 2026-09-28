@@ -34,3 +34,11 @@ que aplican.
 
 Las demás unidades del programa (3 a 6) todavía no están publicadas en
 este portal.
+
+## Referencias de la materia
+
+Guías de consulta que puedes usar en todas las unidades y laboratorios:
+
+- [Referencia DBA PostgreSQL](/materias/dba/referencias/postgresql-dba/) — comandos de `psql` y SQL para administración, roles y privilegios, sesiones y bloqueos, `EXPLAIN`, índices, mantenimiento, configuración y respaldos.
+- [Referencia DBA MongoDB](/materias/dba/referencias/mongodb-dba/) — comandos de `mongosh` para documentos, consultas, agregaciones, índices, `explain`, usuarios y roles, monitoreo y respaldos.
+- [Glosario](/materias/dba/referencias/glosario/) — conceptos de seguridad, privacidad, rendimiento, concurrencia, respaldo, continuidad y alta disponibilidad.

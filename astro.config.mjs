@@ -63,6 +63,14 @@ export default defineConfig({
 							items: [
 								{ label: 'Presentación de la materia', slug: 'materias/dba' },
 								{
+									label: 'Referencias de la materia',
+									items: [
+										{ label: 'Referencia DBA PostgreSQL', slug: 'materias/dba/referencias/postgresql-dba' },
+										{ label: 'Referencia DBA MongoDB', slug: 'materias/dba/referencias/mongodb-dba' },
+										{ label: 'Glosario', slug: 'materias/dba/referencias/glosario' },
+									],
+								},
+								{
 									label: 'Unidad 1 — Introducción a la Gestión de Bases de Datos',
 									items: [
 										{ label: 'Introducción', slug: 'materias/dba/unidad-01' },
