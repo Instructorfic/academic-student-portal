@@ -26,7 +26,7 @@ fundamentos hasta la aplicación práctica y la integración profesional.
 | Unidad | Tema | Estado en este portal |
 | --- | --- | --- |
 | I | Fundamentos de pruebas y aseguramiento de calidad | **Publicada** |
-| II | Requisitos, criterios de aceptación y trazabilidad | En preparación |
+| II | Requisitos, criterios de aceptación y trazabilidad | **Publicada** |
 | III | Ingeniería y planificación de pruebas | En preparación |
 | IV | Pruebas unitarias e integración | En preparación |
 | V | Pruebas funcionales, de sistema y APIs | En preparación |
@@ -78,6 +78,7 @@ reporte final.
 ## Unidades publicadas
 
 - [Unidad I — Fundamentos de pruebas y aseguramiento de calidad](/materias/pruebas-software/unidad-01/)
+- [Unidad II — Requisitos, criterios de aceptación y trazabilidad](/materias/pruebas-software/unidad-02/)
 
-Las Unidades II a VIII del programa todavía no están publicadas en
+Las Unidades III a VIII del programa todavía no están publicadas en
 este portal.

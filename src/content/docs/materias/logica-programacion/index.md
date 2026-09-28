@@ -32,7 +32,7 @@ la anterior.
 | --- | --- | --- |
 | I | Introducción a la programación | **Publicada** |
 | II | Elementos algorítmicos básicos | **Publicada** |
-| III | Metodología para la solución de problemas algorítmicos | En preparación |
+| III | Metodología para la solución de problemas algorítmicos | **Publicada** |
 | IV | Estructuras algorítmicas | En preparación |
 
 ```text
@@ -70,6 +70,6 @@ aprobatoria mínima de 6.0 en los exámenes parciales.
 
 - [Unidad I — Introducción a la programación](/materias/logica-programacion/unidad-01/)
 - [Unidad II — Elementos algorítmicos básicos](/materias/logica-programacion/unidad-02/)
+- [Unidad III — Metodología para la solución de problemas algorítmicos](/materias/logica-programacion/unidad-03/)
 
-Las Unidades III y IV del programa todavía no están publicadas en este
-portal.
+La Unidad IV del programa todavía no está publicada en este portal.

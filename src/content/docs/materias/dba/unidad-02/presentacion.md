@@ -51,7 +51,8 @@ Entrada maliciosa simple: `' OR '1'='1` — rompe la primera, no la segunda.
 ## Control de acceso: usuarios, roles y permisos
 
 - **Rol** — en PostgreSQL, un usuario es un rol con `LOGIN`.
-- `GRANT` / `REVOKE` — otorgar y retirar privilegios.
+- `GRANT` / `REVOKE` — otorgar y retirar privilegios: es **DAC** (decide el dueño del objeto); agruparlos bajo un rol con nombre es **RBAC**.
+- **ABAC** (Row-Level Security en PostgreSQL) — restringe por atributo de fila, algo que DAC/RBAC no logran por sí solos.
 - MongoDB: control de acceso basado en roles (RBAC), **no activo por defecto** — debe habilitarse explícitamente (`--auth`).
 
 ## Protección de datos sensibles
@@ -112,3 +113,11 @@ En la Unidad 3 vas a auditar y rastrear que estos controles realmente se
 estén cumpliendo. El control de acceso, la clasificación de datos y el
 hardening de esta unidad son la base que la Unidad 3 va a dar por
 conocida.
+
+## Referencias
+
+Catorce referencias (documentación oficial de PostgreSQL y MongoDB,
+guías de OWASP y CIS, dos documentos normativos mexicanos, un informe
+oficial de la GAO, un reportaje técnico especializado y una guía técnica
+del NIST). Listado completo en
+[Referencias](/materias/dba/unidad-02/referencias/).

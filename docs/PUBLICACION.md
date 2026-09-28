@@ -300,3 +300,52 @@ archivo fuente 1:1: la página `.../unidad-01/evaluacion.md` es nueva,
 resume criterios generales de evaluación sin reproducir la rúbrica
 docente (`unidad01_rubrica.md`), y no introduce ningún criterio
 ausente de `unidad01_actividades.md`.
+
+## 11. Nueva derivación — Pruebas de Software, Unidad II
+
+Fecha: **2026-09-27**. Fuente: `academic-workspace`,
+`materias/pruebas-software/unidad02/` (laboratorios v1.1,
+`PROYECTOS_BASE.md` v2.0 y `FORMATO_MATRIZ_TRAZABILIDAD.md` v2.0, estado
+OFICIAL en la fuente; resto de materiales BORRADOR con QA
+`APROBADO_CON_OBSERVACIONES` del 2026-09-22, anterior a la actualización
+de los laboratorios). Publicación por instrucción directa del
+responsable académico.
+
+Antes de derivar se resolvió en el workspace la decisión **D-006**
+(`CONTEXTO_UNIDAD.md` §16): cada equipo trabaja sobre un proyecto base
+asignado por el docente, no sobre un sistema propio elegido en la Unidad
+I. Manual del estudiante, presentación y contexto se alinearon con esa
+decisión antes de derivar.
+
+| Archivo fuente | Destino | Notas |
+| --- | --- | --- |
+| `PROYECTOS_BASE.md` | `.../unidad-02/proyectos-base.md` | Nuevo. Versión completa, redactada para el estudiante. |
+| `FORMATO_MATRIZ_TRAZABILIDAD.md` | `.../unidad-02/formato-matriz-trazabilidad.md` | Nuevo. Versión completa; plantilla vacía reconstruida con sus 11 columnas. |
+| `laboratorios/unidad02_lab01…lab03` | `.../unidad-02/laboratorios/laboratorio-{1,2,3}-*.md` | Sustituyen a la derivación anterior. Versión completa. |
+| `material/unidad02_presentacion.md` | `.../unidad-02/presentacion.md` | Versión completa (no condensada), convertida de Marp; estilos en `custom.css` §30. |
+| `laboratorios/unidad02_lab03` §31 | `.../unidad-02/evaluacion.md` | Nuevo. Evaluación de cierre 50 % teórica / 50 % práctica. |
+| `material/unidad02_manual_estudiante.md` | `index.md` y temas `01`–`06` | Se ajustaron las menciones al sistema propio, los mínimos de cada laboratorio y las rutas del repositorio. |
+
+## 12. Derivación — Lógica de Programación, Unidad III
+
+Fecha: **2026-09-27**. Fuente: `academic-workspace`,
+`materias/logica-programacion/unidad03/`. La presentación tiene estado
+APROBADO por el responsable académico (D-016); el resto de los
+materiales se publica en BORRADOR por instrucción directa del
+responsable académico.
+
+| Archivo fuente | Destino | Notas |
+| --- | --- | --- |
+| `material/unidad03_presentacion.md` | `.../unidad-03/presentacion.md` | Versión completa, convertida de Marp. Imágenes en `public/imagenes/logica-programacion/unidad-03/`. |
+| `material/especificacion-diagramas-flujo.md` | `.../unidad-03/especificacion-diagramas-flujo.md` | Sin notas de verificación interna, decisiones ni registro de cambios. |
+| `material/traduccion-a-pseint.md` | `.../unidad-03/traduccion-a-pseint.md` | Sin identificadores de decisiones ni registro de cambios. |
+| `banco-ejercicios/ejercicios/*` (25 fichas) | `.../unidad-03/banco-ejercicios/*.md` (8 páginas por tema + índice) | Solo enunciado, instrucciones, casos de prueba, evidencia y criterios. Se excluyen códigos U3-XXX, niveles, estado, análisis ya resueltos y criterios que revelaban la respuesta. |
+| `plantillas/*` (8 instrumentos) | `.../unidad-03/plantillas/*.md` + índice | `actividad-banco.md` no se deriva (plantilla interna del banco). |
+| `CONTEXTO_UNIDAD.md` §1, §4, §5, §7 (extracto) | `.../unidad-03/index.md` | Identificación, RA, contenidos y alcance. |
+
+No se derivan: `unidad03_solucionario_profesor.md` (TEACHER_RESTRICTED),
+`AUDITORIA_QA_MATERIALES_U3.md`, `CONTEXTO_UNIDAD.md`,
+`planeacion/`, `banco-ejercicios/{README,matriz-ejercicios,niveles,taxonomia,instrumentos,actividades}.md`
+(WORKSPACE_ONLY). Tampoco se derivaron, por no estar en la solicitud,
+`unidad03_especificacion_pseudocodigo.md`, `unidad03_glosario_terminos.md`
+ni las hojas de `tareas/`.

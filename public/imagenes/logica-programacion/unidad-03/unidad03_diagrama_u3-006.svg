@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 940 400" width="940" height="400" role="img" aria-labelledby="t d">
+<title id="t">Diagrama de flujo del ejemplo U3-006: área de un triángulo</title>
+<desc id="d">Columna izquierda: Inicio; proceso DIVISOR_AREA_TRIANGULO = 2; salida en pantalla del mensaje Ingrese la base; entrada base; salida en pantalla del mensaje Ingrese la altura; conector A. Columna derecha: conector A; entrada altura; proceso area = (base * altura) / DIVISOR_AREA_TRIANGULO; salida en pantalla del mensaje y el área; Fin.</desc>
+<defs><marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0b2e59"/></marker></defs>
+<rect width="940" height="400" fill="#ffffff"/>
+<rect x="155.0" y="15" width="120" height="40" rx="20.0" ry="20.0" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="215" y="35.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Inicio</text>
+<line x1="215" y1="55" x2="215" y2="79" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="65.0" y="79" width="300" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="215" y="99.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">DIVISOR_AREA_TRIANGULO = 2</text>
+<line x1="215" y1="119" x2="215" y2="143" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<path d="M50.0,163.0 L68.0,143.0 L364.0,143.0 A16,20.0 0 0 1 364.0,183.0 L68.0,183.0 Z" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="215" y="163.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Mostrar "Ingrese la base:"</text>
+<line x1="215" y1="183" x2="215" y2="207" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<polygon points="133.0,207 315.0,207 297.0,247 115.0,247" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="215" y="227.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Entrada: base</text>
+<line x1="215" y1="247" x2="215" y2="271" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<path d="M45.0,291.0 L63.0,271.0 L369.0,271.0 A16,20.0 0 0 1 369.0,311.0 L63.0,311.0 Z" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="215" y="291.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Mostrar "Ingrese la altura:"</text>
+<line x1="215" y1="311" x2="215" y2="335" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<circle cx="215" cy="355" r="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="215" y="355" text-anchor="middle" dominant-baseline="middle" font-size="16" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">A</text>
+<circle cx="695" cy="35" r="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="695" y="35" text-anchor="middle" dominant-baseline="middle" font-size="16" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">A</text>
+<line x1="695" y1="55" x2="695" y2="79" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<polygon points="608.0,79 800.0,79 782.0,119 590.0,119" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="695" y="99.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Entrada: altura</text>
+<line x1="695" y1="119" x2="695" y2="143" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="475.0" y="143" width="440" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="695" y="163.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">area = (base * altura) / DIVISOR_AREA_TRIANGULO</text>
+<line x1="695" y1="183" x2="695" y2="207" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<path d="M490.0,227.0 L508.0,207.0 L884.0,207.0 A16,20.0 0 0 1 884.0,247.0 L508.0,247.0 Z" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="695" y="227.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Mostrar "El área del triángulo es:", area</text>
+<line x1="695" y1="247" x2="695" y2="271" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="635.0" y="271" width="120" height="40" rx="20.0" ry="20.0" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="695" y="291.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Fin</text>
+</svg>

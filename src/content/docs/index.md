@@ -25,9 +25,9 @@ Consulta las materias disponibles y accede directamente a sus unidades y materia
 Actualmente encontrarás contenido de:
 
 - **Gestión de Seguridad y Desempeño de Bases de Datos** — Unidades I y II
-- **Taller Integrador de Especialización** — Bloque I
-- **Lógica de Programación y Pensamiento Computacional** — Unidad I
-- **Pruebas de Software** — Unidad I
+- **Taller Integrador de Especialización** — Bloques I y II
+- **Lógica de Programación y Pensamiento Computacional** — Unidades I, II y III
+- **Pruebas de Software** — Unidades I y II
 
 [**Explorar materias →**](/materias/)
 

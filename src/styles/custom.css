@@ -762,3 +762,157 @@ site-search button {
 		animation-iteration-count: 1 !important;
 	}
 }
+/* ==========================================================================
+   30. PRESENTACIONES DE CLASE (contenido derivado de las diapositivas)
+   ========================================================================== */
+
+.sl-markdown-content .grid-2,
+.sl-markdown-content .grid-3,
+.sl-markdown-content .grid-4 {
+	display: grid;
+	gap: 1rem;
+	margin: 1.25rem 0;
+}
+
+.sl-markdown-content .grid-2 {
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.sl-markdown-content .grid-3 {
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.sl-markdown-content .grid-4 {
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.sl-markdown-content .grid-2 > *,
+.sl-markdown-content .grid-3 > *,
+.sl-markdown-content .grid-4 > * {
+	margin-top: 0;
+}
+
+.sl-markdown-content .card {
+	padding: 1rem 1.1rem;
+	border-top: 4px solid var(--fic-border);
+}
+
+.sl-markdown-content .card > * {
+	margin-top: 0.5rem;
+}
+
+.sl-markdown-content .card > strong:first-child,
+.sl-markdown-content .card > .badge + strong {
+	display: block;
+	color: var(--fic-blue);
+}
+
+.sl-markdown-content .card.accent-azul {
+	border-top-color: #003b7a;
+}
+
+.sl-markdown-content .card.accent-dorado {
+	border-top-color: #c49a1a;
+}
+
+.sl-markdown-content .card.accent-verde {
+	border-top-color: #2e7d4f;
+}
+
+.sl-markdown-content .card.accent-rojo {
+	border-top-color: #b3261e;
+}
+
+.sl-markdown-content .badge {
+	display: inline-block;
+	margin: 0 0 0.35rem;
+	padding: 0.1rem 0.55rem;
+	border-radius: 999px;
+	background: var(--fic-blue-light);
+	color: var(--fic-blue);
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+
+.sl-markdown-content .callout,
+.sl-markdown-content .callout-alcance,
+.sl-markdown-content .callout-alerta,
+.sl-markdown-content .banner-node {
+	margin: 1.25rem 0;
+	padding: 0.9rem 1.1rem;
+	border-radius: var(--fic-radius-small);
+	border: 1px solid var(--fic-border);
+	border-left-width: 5px;
+	background: var(--fic-surface-soft);
+}
+
+.sl-markdown-content .callout > :first-child,
+.sl-markdown-content .callout-alcance > :first-child,
+.sl-markdown-content .callout-alerta > :first-child,
+.sl-markdown-content .banner-node > :first-child {
+	margin-top: 0;
+}
+
+.sl-markdown-content .callout {
+	border-left-color: var(--fic-blue);
+}
+
+.sl-markdown-content .callout-alcance {
+	border-left-color: #c49a1a;
+}
+
+.sl-markdown-content .callout-alerta {
+	border-left-color: #b3261e;
+}
+
+.sl-markdown-content .banner-node {
+	border-left-color: var(--fic-blue);
+	background: var(--fic-surface-blue);
+	text-align: center;
+}
+
+.sl-markdown-content .timeline-row {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+	gap: 0.75rem;
+	margin: 1.25rem 0;
+}
+
+.sl-markdown-content .timeline-step {
+	margin-top: 0;
+	padding: 0.85rem 1rem;
+	border: 1px solid var(--fic-border);
+	border-radius: var(--fic-radius-small);
+	background: var(--fic-surface);
+}
+
+.sl-markdown-content .timeline-step > * {
+	margin-top: 0.35rem;
+}
+
+.sl-markdown-content .step-number {
+	display: block;
+	color: var(--fic-text-soft);
+	font-size: 0.8rem;
+	font-weight: 700;
+}
+
+.sl-markdown-content .small {
+	color: var(--fic-text-soft);
+	font-size: 0.85rem;
+}
+
+@media (max-width: 900px) {
+	.sl-markdown-content .grid-3,
+	.sl-markdown-content .grid-4 {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 640px) {
+	.sl-markdown-content .grid-2,
+	.sl-markdown-content .grid-3,
+	.sl-markdown-content .grid-4 {
+		grid-template-columns: 1fr;
+	}
+}

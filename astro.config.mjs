@@ -121,12 +121,66 @@ export default defineConfig({
 											slug: 'materias/dba/unidad-02/presentacion',
 										},
 										{
-											label: 'Manual del estudiante',
-											slug: 'materias/dba/unidad-02/manual-estudiante',
+											label: '1. Principios de seguridad e inyección SQL/NoSQL',
+											slug: 'materias/dba/unidad-02/01-principios-de-seguridad-e-inyeccion',
+										},
+										{
+											label: '2. Control de acceso: usuarios, roles y permisos',
+											slug: 'materias/dba/unidad-02/02-control-de-acceso-usuarios-roles-permisos',
+										},
+										{
+											label: '3. Protección de datos sensibles',
+											slug: 'materias/dba/unidad-02/03-proteccion-de-datos-sensibles',
+										},
+										{
+											label: '4. Cifrado en tránsito y en reposo',
+											slug: 'materias/dba/unidad-02/04-cifrado-en-transito-y-en-reposo',
+										},
+										{
+											label: '5. Privacidad y cumplimiento normativo',
+											slug: 'materias/dba/unidad-02/05-privacidad-y-cumplimiento-normativo',
+										},
+										{
+											label: '6. Hardening de servidores de bases de datos',
+											slug: 'materias/dba/unidad-02/06-hardening-servidor-bases-datos',
+										},
+										{
+											label: '7. Cierre y autoevaluación',
+											slug: 'materias/dba/unidad-02/07-cierre-y-autoevaluacion',
 										},
 										{
 											label: 'Actividades',
-											slug: 'materias/dba/unidad-02/actividades',
+											items: [
+												{ label: 'Actividad 1', slug: 'materias/dba/unidad-02/actividades/actividad-1' },
+												{ label: 'Actividad 2', slug: 'materias/dba/unidad-02/actividades/actividad-2' },
+												{ label: 'Actividad 3', slug: 'materias/dba/unidad-02/actividades/actividad-3' },
+												{ label: 'Actividad 4', slug: 'materias/dba/unidad-02/actividades/actividad-4' },
+												{ label: 'Actividad 5', slug: 'materias/dba/unidad-02/actividades/actividad-5' },
+												{ label: 'Actividad 6', slug: 'materias/dba/unidad-02/actividades/actividad-6' },
+												{ label: 'Actividad 7', slug: 'materias/dba/unidad-02/actividades/actividad-7' },
+												{ label: 'Actividad 8 (evidencia oficial)', slug: 'materias/dba/unidad-02/actividades/actividad-8' },
+											],
+										},
+										{
+											label: 'Laboratorios',
+											items: [
+												{
+													label: 'Laboratorio 1 — Inyección SQL y NoSQL',
+													slug: 'materias/dba/unidad-02/laboratorios/laboratorio-1-inyeccion-sql-nosql',
+												},
+												{
+													label: 'Laboratorio 2 — Control de acceso',
+													slug: 'materias/dba/unidad-02/laboratorios/laboratorio-2-control-de-acceso',
+												},
+												{
+													label: 'Laboratorio 3 — Protección de datos y cifrado',
+													slug: 'materias/dba/unidad-02/laboratorios/laboratorio-3-proteccion-de-datos-y-cifrado',
+												},
+												{
+													label: 'Laboratorio 4 — Hardening',
+													slug: 'materias/dba/unidad-02/laboratorios/laboratorio-4-hardening',
+												},
+											],
 										},
 										{
 											label: 'Evaluación',
@@ -134,7 +188,13 @@ export default defineConfig({
 										},
 										{
 											label: 'Referencias',
-											slug: 'materias/dba/unidad-02/referencias',
+											items: [
+												{ label: 'Bibliografía', slug: 'materias/dba/unidad-02/referencias' },
+												{
+													label: 'Lecturas complementarias',
+													slug: 'materias/dba/unidad-02/referencias/lecturas-complementarias',
+												},
+											],
 										},
 									],
 								},
@@ -453,6 +513,52 @@ export default defineConfig({
 										},
 									],
 								},
+								{
+									label: 'Unidad III — Metodología para la solución de problemas algorítmicos',
+									items: [
+										{ label: 'Introducción', slug: 'materias/logica-programacion/unidad-03' },
+										{
+											label: 'Presentación',
+											slug: 'materias/logica-programacion/unidad-03/presentacion',
+										},
+										{
+											label: 'Banco de ejercicios',
+											items: [
+												{ label: 'Cómo usar el banco', slug: 'materias/logica-programacion/unidad-03/banco-ejercicios' },
+												{ label: 'Análisis del problema', slug: 'materias/logica-programacion/unidad-03/banco-ejercicios/analisis-del-problema' },
+												{ label: 'Datos, variables, constantes e identificadores', slug: 'materias/logica-programacion/unidad-03/banco-ejercicios/datos-variables-constantes-identificadores' },
+												{ label: 'Estrategias de solución', slug: 'materias/logica-programacion/unidad-03/banco-ejercicios/estrategias-de-solucion' },
+												{ label: 'Técnicas de análisis', slug: 'materias/logica-programacion/unidad-03/banco-ejercicios/tecnicas-de-analisis' },
+												{ label: 'Pseudocódigo', slug: 'materias/logica-programacion/unidad-03/banco-ejercicios/pseudocodigo' },
+												{ label: 'Prueba de escritorio y depuración', slug: 'materias/logica-programacion/unidad-03/banco-ejercicios/prueba-de-escritorio-y-depuracion' },
+												{ label: 'Documentación', slug: 'materias/logica-programacion/unidad-03/banco-ejercicios/documentacion' },
+												{ label: 'Estudio de caso integrador', slug: 'materias/logica-programacion/unidad-03/banco-ejercicios/estudio-de-caso-integrador' },
+											],
+										},
+										{
+											label: 'Plantillas de los instrumentos',
+											items: [
+												{ label: 'Índice de plantillas', slug: 'materias/logica-programacion/unidad-03/plantillas' },
+												{ label: 'Hoja de trabajo — Propuesta algorítmica', slug: 'materias/logica-programacion/unidad-03/plantillas/hoja-trabajo-propuesta-algoritmica' },
+												{ label: 'Propuesta algorítmica extendida', slug: 'materias/logica-programacion/unidad-03/plantillas/propuesta-algoritmica-extendida' },
+												{ label: 'Ficha de trazado', slug: 'materias/logica-programacion/unidad-03/plantillas/ficha-trazado' },
+												{ label: 'Ficha de depuración', slug: 'materias/logica-programacion/unidad-03/plantillas/ficha-depuracion' },
+												{ label: 'Ficha de ordenamiento', slug: 'materias/logica-programacion/unidad-03/plantillas/ficha-ordenamiento' },
+												{ label: 'Ficha de comparación', slug: 'materias/logica-programacion/unidad-03/plantillas/ficha-comparacion' },
+												{ label: 'Ficha de transformación', slug: 'materias/logica-programacion/unidad-03/plantillas/ficha-transformacion' },
+												{ label: 'Reto algorítmico', slug: 'materias/logica-programacion/unidad-03/plantillas/ficha-reto' },
+											],
+										},
+										{
+											label: 'Especificación de diagramas de flujo',
+											slug: 'materias/logica-programacion/unidad-03/especificacion-diagramas-flujo',
+										},
+										{
+											label: 'Traducción del pseudocódigo a PSeInt',
+											slug: 'materias/logica-programacion/unidad-03/traduccion-a-pseint',
+										},
+									],
+								},
 							],
 						},
 						{
@@ -508,6 +614,79 @@ export default defineConfig({
 										{
 											label: 'Referencias',
 											slug: 'materias/pruebas-software/unidad-01/referencias',
+										},
+									],
+								},
+								{
+									label: 'Unidad II — Requisitos, criterios de aceptación y trazabilidad',
+									items: [
+										{ label: 'Introducción', slug: 'materias/pruebas-software/unidad-02' },
+										{
+											label: 'Proyectos base',
+											slug: 'materias/pruebas-software/unidad-02/proyectos-base',
+										},
+										{
+											label: 'Presentación',
+											slug: 'materias/pruebas-software/unidad-02/presentacion',
+										},
+										{
+											label: '1. Requisitos funcionales, no funcionales y reglas de negocio',
+											slug: 'materias/pruebas-software/unidad-02/01-requisitos-funcionales-no-funcionales-reglas-negocio',
+										},
+										{
+											label: '2. Casos de uso e historias de usuario',
+											slug: 'materias/pruebas-software/unidad-02/02-casos-de-uso-historias-usuario',
+										},
+										{
+											label: '3. Criterios de aceptación y escenarios',
+											slug: 'materias/pruebas-software/unidad-02/03-criterios-aceptacion-escenarios',
+										},
+										{
+											label: '4. Trazabilidad y matriz de trazabilidad',
+											slug: 'materias/pruebas-software/unidad-02/04-trazabilidad-matriz',
+										},
+										{
+											label: '5. Más ejemplos aplicados',
+											slug: 'materias/pruebas-software/unidad-02/05-segundo-ejemplo-aplicado',
+										},
+										{
+											label: '6. Cierre y resumen',
+											slug: 'materias/pruebas-software/unidad-02/06-cierre-y-resumen',
+										},
+										{
+											label: 'Laboratorios',
+											items: [
+												{
+													label: 'Laboratorio 1',
+													slug: 'materias/pruebas-software/unidad-02/laboratorios/laboratorio-1-requisitos-reglas-negocio',
+												},
+												{
+													label: 'Laboratorio 2',
+													slug: 'materias/pruebas-software/unidad-02/laboratorios/laboratorio-2-criterios-aceptacion-escenarios',
+												},
+												{
+													label: 'Laboratorio 3 (evidencia oficial)',
+													slug: 'materias/pruebas-software/unidad-02/laboratorios/laboratorio-3-matriz-trazabilidad',
+												},
+											],
+										},
+										{
+											label: 'Formato de la matriz de trazabilidad',
+											slug: 'materias/pruebas-software/unidad-02/formato-matriz-trazabilidad',
+										},
+										{
+											label: 'Evaluación',
+											slug: 'materias/pruebas-software/unidad-02/evaluacion',
+										},
+										{
+											label: 'Referencias',
+											items: [
+												{ label: 'Bibliografía', slug: 'materias/pruebas-software/unidad-02/referencias' },
+												{
+													label: 'Lecturas complementarias',
+													slug: 'materias/pruebas-software/unidad-02/referencias/lecturas-complementarias',
+												},
+											],
 										},
 									],
 								},
