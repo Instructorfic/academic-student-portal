@@ -138,10 +138,10 @@ de materias permitidas.
    | | | | |
 
 3. Verifica cada identificador de acuerdo con las siguientes reglas:
-   - describe claramente la información que representa;
-   - no contiene espacios;
-   - no contiene caracteres especiales;
-   - utiliza la convención de escritura correspondiente;
+   - describe claramente la información que representa
+   - no contiene espacios
+   - no contiene caracteres especiales
+   - utiliza la convención de escritura correspondiente
    - no utiliza abreviaturas innecesarias.
 
 No desarrolles el pseudocódigo.

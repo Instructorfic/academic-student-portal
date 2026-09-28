@@ -23,7 +23,7 @@ corresponde, **flujos alternativos**.
 
 | Pregunta | Respuesta |
 | --- | --- |
-| ¿Dónde se define? | En la etapa de análisis de requisitos, normalmente por quien levanta y documenta el requerimiento; queda registrado en la especificación de requisitos del sistema. |
+| ¿Dónde se define? | En la etapa de análisis de requisitos, normalmente por quien levanta y documenta el requerimiento. Queda registrado en la especificación de requisitos del sistema. |
 | ¿Cuándo conviene usarlo? | Procesos con varios flujos alternos, varios actores, o contextos donde se necesita documentación formal y detallada. |
 
 ### ¿Qué resuelve un caso de uso para las pruebas?
@@ -100,7 +100,7 @@ mismo: los criterios de aceptación (siguiente tema).
 
 Tratar caso de uso e historia de usuario como si uno fuera "la versión
 formal" del otro. No lo son: un caso de uso documenta un flujo completo
-con sus alternativas; una historia de usuario prioriza el valor para
+con sus alternativas. Una historia de usuario prioriza el valor para
 quien la usa, en un formato breve. Ninguno es obligatorio sobre el otro
 — elige el que mejor se ajuste a tu proyecto o el que indique tu docente.
 En el Laboratorio 2 tu equipo usará una sola de las dos modalidades.

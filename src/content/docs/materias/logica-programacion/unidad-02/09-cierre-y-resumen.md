@@ -44,13 +44,13 @@ Partimos de información (`precio`, `cantidad`), reconocimos sus tipos (`Real`, 
 
 ## Resumen de la unidad
 
-- Un dato es un valor que representa información; un tipo de dato define su naturaleza y las operaciones válidas sobre él.
-- Un identificador nombra un elemento de la representación; una convención de nomenclatura (camelCase, PascalCase, snake_case, SCREAMING_SNAKE_CASE) mantiene esos nombres consistentes.
-- Una variable representa un valor que puede cambiar; una constante representa un valor que permanece fijo. La decisión depende del problema, no del valor en sí.
-- Los operadores aritméticos calculan, los relacionales comparan y los lógicos combinan condiciones; juntos permiten construir expresiones.
+- Un dato es un valor que representa información. Un tipo de dato define su naturaleza y las operaciones válidas sobre él.
+- Un identificador nombra un elemento de la representación. Una convención de nomenclatura (camelCase, PascalCase, snake_case, SCREAMING_SNAKE_CASE) mantiene esos nombres consistentes.
+- Una variable representa un valor que puede cambiar. Una constante representa un valor que permanece fijo. La decisión depende del problema, no del valor en sí.
+- Los operadores aritméticos calculan, los relacionales comparan y los lógicos combinan condiciones. Juntos permiten construir expresiones.
 - Una expresión combina operandos y operadores para producir un resultado, cuyo tipo depende de la naturaleza de la expresión (numérico o lógico).
 - Una expresión con varias operaciones se resuelve respetando una jerarquía completa de operadores y, cuando dos operadores comparten nivel, la asociatividad determina el orden.
-- Una herramienta como PSeInt comprueba el resultado de una solución ya razonada; no sustituye el razonamiento.
+- Una herramienta como PSeInt comprueba el resultado de una solución ya razonada. No sustituye el razonamiento.
 
 ## Lo que todavía no vas a estudiar
 

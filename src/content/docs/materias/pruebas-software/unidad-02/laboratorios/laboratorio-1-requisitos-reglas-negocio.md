@@ -60,11 +60,11 @@ laboratorios. No se permitirá cambiar de proyecto entre el Laboratorio
 
 El equipo tampoco deberá:
 
-- desarrollar software;
-- diseñar bases de datos;
-- agregar módulos;
-- agregar actores no contemplados;
-- incorporar funcionalidades ajenas al alcance;
+- desarrollar software
+- diseñar bases de datos
+- agregar módulos
+- agregar actores no contemplados
+- incorporar funcionalidades ajenas al alcance
 - modificar las reglas de negocio proporcionadas por el proyecto base.
 
 La fuente principal de información será la página
@@ -74,27 +74,27 @@ La fuente principal de información será la página
 
 Al finalizar el laboratorio, el equipo será capaz de:
 
-- identificar requisitos funcionales a partir del alcance del proyecto;
-- identificar requisitos no funcionales verificables;
-- identificar reglas de negocio derivadas directamente del dominio;
+- identificar requisitos funcionales a partir del alcance del proyecto
+- identificar requisitos no funcionales verificables
+- identificar reglas de negocio derivadas directamente del dominio
 - distinguir entre requisitos funcionales, requisitos no funcionales y
-  reglas de negocio;
+  reglas de negocio
 - redactar condiciones observables que puedan comprobarse mediante
-  pruebas;
-- asignar identificadores únicos y permanentes;
+  pruebas
+- asignar identificadores únicos y permanentes
 - establecer una base para la trazabilidad de los Laboratorios 2 y 3.
 
 ## 4. Prerrequisitos
 
 Antes de comenzar, el equipo deberá conocer del proyecto base asignado:
 
-- su descripción general;
-- los actores;
-- el alcance funcional;
-- las condiciones iniciales;
-- las reglas de negocio proporcionadas;
-- las restricciones del dominio;
-- las condiciones de prueba disponibles;
+- su descripción general
+- los actores
+- el alcance funcional
+- las condiciones iniciales
+- las reglas de negocio proporcionadas
+- las restricciones del dominio
+- las condiciones de prueba disponibles
 - la nomenclatura oficial de la Unidad II.
 
 ## 5. Nomenclatura oficial
@@ -201,7 +201,7 @@ verificarlas.
 ### 8.1 Seguridad
 
 La seguridad deberá expresarse como una condición verificable. No
-utilices "El sistema debe ser seguro"; utiliza una condición
+utilices "El sistema debe ser seguro", utiliza una condición
 observable, por ejemplo:
 
 > **RNF-01** — El sistema debe impedir que un usuario no autenticado
@@ -277,10 +277,10 @@ Seleccionen funcionalidades suficientes para construir posteriormente
 los artefactos de los Laboratorios 2 y 3. Se recomienda seleccionar
 funcionalidades que permitan diseñar escenarios:
 
-- positivos;
-- negativos;
-- alternos;
-- de condición límite;
+- positivos
+- negativos
+- alternos
+- de condición límite
 - de seguridad, cuando corresponda.
 
 La selección deberá facilitar posteriormente una trazabilidad clara.
@@ -289,20 +289,20 @@ La selección deberá facilitar posteriormente una trazabilidad clara.
 
 Redacten cinco requisitos funcionales. Cada requisito deberá:
 
-- describir una acción o comportamiento observable;
-- estar relacionado con el alcance del proyecto;
-- ser verificable;
-- tener un identificador único;
+- describir una acción o comportamiento observable
+- estar relacionado con el alcance del proyecto
+- ser verificable
+- tener un identificador único
 - conservarse durante los siguientes laboratorios.
 
 ### Paso 4 — Derivar requisitos no funcionales
 
 Redacten tres requisitos no funcionales. Cada requisito deberá:
 
-- pertenecer a una categoría de calidad;
-- ser verificable;
-- establecer una condición observable;
-- evitar términos ambiguos;
+- pertenecer a una categoría de calidad
+- ser verificable
+- establecer una condición observable
+- evitar términos ambiguos
 - poder relacionarse posteriormente con uno o más criterios o
   escenarios de prueba.
 
@@ -312,14 +312,14 @@ Al menos uno deberá abordar explícitamente Seguridad.
 
 Seleccionen cuatro reglas de negocio. Pueden utilizar:
 
-- reglas proporcionadas directamente en el proyecto base;
+- reglas proporcionadas directamente en el proyecto base
 - reglas derivadas directamente de las condiciones del dominio.
 
 No podrán:
 
-- eliminar una regla base;
-- cambiar su significado;
-- inventar políticas ajenas al proyecto;
+- eliminar una regla base
+- cambiar su significado
+- inventar políticas ajenas al proyecto
 - agregar restricciones que no puedan justificarse desde el proyecto.
 
 ### Paso 6 — Clasificar y numerar
@@ -366,8 +366,8 @@ tiene asignado otro proyecto.
 Cada requisito no funcional que sea derivado por el equipo deberá
 incluir una breve justificación que explique:
 
-- qué característica de calidad o restricción representa;
-- por qué es relevante para el proyecto;
+- qué característica de calidad o restricción representa
+- por qué es relevante para el proyecto
 - cómo podría verificarse posteriormente.
 
 **Ejemplo — RNF-01, Seguridad**
@@ -418,16 +418,16 @@ entregar.
 El equipo deberá entregar un único documento de requisitos y reglas de
 negocio que contenga:
 
-- identificación del proyecto asignado;
-- cinco requisitos funcionales;
-- tres requisitos no funcionales;
-- al menos un requisito no funcional de seguridad;
-- cuatro reglas de negocio;
-- identificador único para cada elemento;
-- tipo;
-- categoría;
-- descripción verificable;
-- fuente del elemento;
+- identificación del proyecto asignado
+- cinco requisitos funcionales
+- tres requisitos no funcionales
+- al menos un requisito no funcional de seguridad
+- cuatro reglas de negocio
+- identificador único para cada elemento
+- tipo
+- categoría
+- descripción verificable
+- fuente del elemento
 - justificación breve de los requisitos no funcionales derivados.
 
 **Nombre recomendado del archivo:** `laboratorio_1_requisitos.md`

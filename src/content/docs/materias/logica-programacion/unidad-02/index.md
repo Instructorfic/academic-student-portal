@@ -133,13 +133,13 @@ Guarda esta pregunta. Volverás a ella en el [cierre de la unidad](/materias/log
 
 Un algoritmo no trabaja con "cosas" de manera abstracta: necesita representar información. Antes de que puedas construir una solución algorítmica precisa, necesitas decidir:
 
-1. qué información es relevante;
-2. qué tipo de dato representa cada información;
-3. qué elementos pueden cambiar;
-4. qué elementos permanecen constantes;
-5. cómo nombrar esos elementos;
-6. qué operaciones deben realizarse;
-7. cómo combinar dichas operaciones en expresiones;
+1. qué información es relevante
+2. qué tipo de dato representa cada información
+3. qué elementos pueden cambiar
+4. qué elementos permanecen constantes
+5. cómo nombrar esos elementos
+6. qué operaciones deben realizarse
+7. cómo combinar dichas operaciones en expresiones
 8. cómo se obtiene y verifica el resultado.
 
 Esa secuencia —de la información a la expresión resuelta— es el hilo conductor de toda la unidad.
@@ -148,8 +148,8 @@ Esa secuencia —de la información a la expresión resuelta— es el hilo condu
 
 Para mantener el alcance de la Unidad II, no se desarrollan formalmente:
 
-- una metodología sistemática de diseño de soluciones (Unidad III);
-- estructuras de decisión (`if`, `if-else`, `switch`) ni estructuras repetitivas (`while`, `do-while`, `for`) (Unidad IV);
+- una metodología sistemática de diseño de soluciones (Unidad III)
+- estructuras de decisión (`if`, `if-else`, `switch`) ni estructuras repetitivas (`while`, `do-while`, `for`) (Unidad IV)
 - arreglos, matrices, estructuras de datos, archivos ni programación orientada a objetos (contenidos posteriores).
 
 PSeInt (o una herramienta equivalente) se utiliza únicamente para representar y comprobar expresiones — no como contenido de sintaxis de un lenguaje de programación.

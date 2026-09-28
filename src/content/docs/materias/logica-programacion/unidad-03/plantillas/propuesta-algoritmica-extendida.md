@@ -3,6 +3,11 @@ title: "Formato extendido de propuesta algorítmica"
 description: "Unidad III de Lógica de Programación — Formato completo para documentar el análisis, el diseño, la representación y la comprobación de una solución algorítmica."
 ---
 
+<div class="descargas">
+<a href="/descargas/logica-programacion/unidad-03/propuesta-algoritmica-extendida.docx" download>Descargar Word (.docx)</a>
+<a class="secundario" href="/descargas/logica-programacion/unidad-03/propuesta-algoritmica-extendida.md" download>Descargar Markdown (.md)</a>
+</div>
+
 **Propósito:** documentar el proceso seguido para analizar, diseñar, representar y comprobar una solución algorítmica.
 
 **Instrucción:** completa todas las secciones para documentar la solución. La propuesta debe mostrar el razonamiento seguido antes de llegar al pseudocódigo.

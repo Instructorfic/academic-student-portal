@@ -21,9 +21,9 @@ correcto antes del
    familia de patrón lo resolvería y por qué:
    - un sistema que debe enviar la notificación de un préstamo vencido
      por correo, SMS o notificación push, según la preferencia del
-     usuario;
+     usuario.
    - un sistema que necesita crear distintos tipos de reporte (PDF,
-     Excel, HTML) a partir de los mismos datos;
+     Excel, HTML) a partir de los mismos datos
    - un sistema que debe avisar a tres módulos distintos cada vez que
      se aprueba un préstamo, sin que esos módulos sepan unos de otros.
 3. No implementes código todavía: solo identifica la familia y

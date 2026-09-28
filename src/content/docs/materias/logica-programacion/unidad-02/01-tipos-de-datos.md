@@ -73,7 +73,7 @@ Observa los siguientes datos y su clasificación:
 
 ## Una pregunta importante: ¿el tipo depende del dato o de lo que queremos hacer con él?
 
-Por ejemplo, `2026` puede representar un número, un año o una cantidad. El valor es el mismo; la interpretación depende del contexto.
+Por ejemplo, `2026` puede representar un número, un año o una cantidad. El valor es el mismo, la interpretación depende del contexto.
 
 > **El significado de un dato depende del problema en el que se utiliza.**
 

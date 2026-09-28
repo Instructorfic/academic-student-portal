@@ -3,6 +3,11 @@ title: "Reto algorítmico"
 description: "Unidad III de Lógica de Programación — Formato para resolver un reto algorítmico: análisis, diseño, algoritmo, pruebas y reflexión."
 ---
 
+<div class="descargas">
+<a href="/descargas/logica-programacion/unidad-03/ficha-reto.docx" download>Descargar Word (.docx)</a>
+<a class="secundario" href="/descargas/logica-programacion/unidad-03/ficha-reto.md" download>Descargar Markdown (.md)</a>
+</div>
+
 ## Identificación
 
 | Campo | Valor |

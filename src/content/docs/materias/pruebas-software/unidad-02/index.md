@@ -10,7 +10,7 @@ description: "Pruebas de Software — introducción a la Unidad II: resultados d
 | Unidad | II — Requisitos, criterios de aceptación y trazabilidad |
 | Materia | Pruebas de Software (clave 19506) |
 | Sesiones | 5 |
-| Carácter | Aplicada — sin herramienta de gestión de pruebas (esa se introduce en la Unidad VII); tres laboratorios guiados |
+| Carácter | Aplicada — sin herramienta de gestión de pruebas (esa se introduce en la Unidad VII). Tres laboratorios guiados |
 
 ## Resultados de aprendizaje de la unidad
 
@@ -150,10 +150,10 @@ Guarda esta pregunta. Volverás a ella en el
 Para mantener el alcance de la Unidad II, no se desarrollan formalmente:
 
 - técnicas de diseño de casos de prueba (caja negra, caja blanca,
-  partición de equivalencia, valores límite formales) — Unidad III;
+  partición de equivalencia, valores límite formales) — Unidad III
 - ejecución real de pruebas y gestión operativa del defecto (severidad,
   prioridad, ciclo de vida, herramientas como Jira, TestLink o Zephyr) —
-  Unidad VII;
+  Unidad VII.
 - pruebas funcionales, de sistema, GUI o de API — Unidad V.
 
 La trazabilidad caso de prueba–defecto (2.3.2) se trabaja aquí solo como

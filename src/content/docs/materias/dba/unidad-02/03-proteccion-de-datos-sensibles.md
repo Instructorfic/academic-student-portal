@@ -52,8 +52,8 @@ o que esté vinculada directa o indirectamente a él — la misma lógica
 detrás de "dato personal" en la ley mexicana, sin el nivel adicional de
 "sensible".
 
-> Referencia. LFPDPPP Art. 3, fracciones V y VI; LFPDPPP Art. 9; SCJN,
-> Amparo Directo 48/2017; ISO/IEC 29100.
+> Referencia. LFPDPPP Art. 3, fracciones V y VI, LFPDPPP Art. 9, SCJN,
+> Amparo Directo 48/2017, ISO/IEC 29100.
 
 Una vez clasificados, existen tres técnicas para proteger los datos
 personales sin eliminarlos por completo. No son sinónimos, y confundirlas
@@ -101,7 +101,7 @@ Persona Ejemplo | es*****@correo-demo.test
 | --- | --- |
 | Definición | Reversible con una llave o mapa separado. |
 | Dónde se usa | Análisis interno, investigación, reproducir un incidente con datos reales sin exponer identidad a todo el equipo. |
-| Qué logra | Separa el identificador del resto del registro; permite trazabilidad controlada. |
+| Qué logra | Separa el identificador del resto del registro, permite trazabilidad controlada. |
 | Ventaja | Permite análisis longitudinal sin exponer identidad directamente. Sigue siendo operativamente útil. |
 | Desventaja | Sigue siendo dato personal ante la ley. El mapa de reversión es un punto único de fallo. |
 | Buena práctica | El mapa de reversión debe tener control de acceso más estricto que el propio dato seudonimizado — reutiliza el [control de acceso del tema 2](/materias/dba/unidad-02/02-control-de-acceso-usuarios-roles-permisos/). |
@@ -199,7 +199,7 @@ deje de ser recuperable, no solo "invisible" para la aplicación).
 
 - LFPDPPP Art. 3 (fracciones V y VI) y Art. 9 (REF-U2-09).
 - ISO/IEC 27002:2022, secc. 8.11 "Data masking".
-- ISO/IEC 20889:2018; NIST SP 800-188 (REF-U2-14).
+- ISO/IEC 20889:2018, NIST SP 800-188 (REF-U2-14).
 
 Ver [Referencias de la unidad](/materias/dba/unidad-02/referencias/) para
 la ficha completa de cada fuente.

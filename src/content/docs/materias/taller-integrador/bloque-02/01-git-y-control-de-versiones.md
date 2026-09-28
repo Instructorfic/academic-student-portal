@@ -29,11 +29,11 @@ nombres cada vez más largos: `proyecto.zip`, `proyecto_final.zip`,
 
 Ese esquema falla de formas predecibles:
 
-- nadie sabe con certeza cuál copia es la más reciente;
+- nadie sabe con certeza cuál copia es la más reciente
 - no hay forma de saber **qué cambió** entre una copia y otra sin abrir
-  ambas y compararlas a mano;
+  ambas y compararlas a mano
 - si dos personas trabajan "cada una en su copia", combinar el trabajo
-  de ambas al final es lento y propenso a errores;
+  de ambas al final es lento y propenso a errores
 - si algo se rompe, no hay una forma confiable de volver exactamente al
   estado anterior.
 
@@ -207,7 +207,7 @@ a1b2c3d feat: agregar campo numero_serie al modelo Equipo
 3c2b1a0 commit inicial del proyecto
 ```
 
-`--oneline` muestra una línea por commit; sin esa opción verías también
+`--oneline` muestra una línea por commit. Sin esa opción verías también
 el autor, la fecha y el mensaje completo.
 
 **`git branch`** — revisa en qué rama estás y cuáles existen:
@@ -308,7 +308,7 @@ e issues que documentan el trabajo pendiente (ver
 ## Error común
 
 Confundir Git con GitHub o GitLab, como si fueran lo mismo. Git es el
-sistema de control de versiones; GitHub y GitLab son plataformas que
+sistema de control de versiones. GitHub y GitLab son plataformas que
 alojan repositorios de Git y agregan una interfaz web, pull requests y
 revisión de código por encima de él.
 

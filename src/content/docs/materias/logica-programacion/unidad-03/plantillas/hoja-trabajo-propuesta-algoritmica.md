@@ -3,6 +3,11 @@ title: "Hoja de trabajo — Propuesta algorítmica"
 description: "Unidad III de Lógica de Programación — Formato para resolver ejercicios de construcción: definición del problema, análisis, diseño de los datos, algoritmo y prueba."
 ---
 
+<div class="descargas">
+<a href="/descargas/logica-programacion/unidad-03/hoja-trabajo-propuesta-algoritmica.docx" download>Descargar Word (.docx)</a>
+<a class="secundario" href="/descargas/logica-programacion/unidad-03/hoja-trabajo-propuesta-algoritmica.md" download>Descargar Markdown (.md)</a>
+</div>
+
 | Campo | Información |
 |---|---|
 | Nombre | |

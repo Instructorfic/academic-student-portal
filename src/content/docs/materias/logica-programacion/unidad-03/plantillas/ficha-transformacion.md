@@ -3,6 +3,11 @@ title: "Ficha de transformación de representaciones algorítmicas"
 description: "Unidad III de Lógica de Programación — Formato para convertir un algoritmo de una representación a otra sin cambiar su comportamiento."
 ---
 
+<div class="descargas">
+<a href="/descargas/logica-programacion/unidad-03/ficha-transformacion.docx" download>Descargar Word (.docx)</a>
+<a class="secundario" href="/descargas/logica-programacion/unidad-03/ficha-transformacion.md" download>Descargar Markdown (.md)</a>
+</div>
+
 ## Identificación
 
 | Campo | Valor |

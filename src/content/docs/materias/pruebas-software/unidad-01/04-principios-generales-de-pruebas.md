@@ -61,7 +61,7 @@ severidad alta" sí lo es.
 
 ## Ampliación — los 7 principios ISTQB
 
-> Esta sección amplía el contenido oficial de la unidad; no cambia lo
+> Esta sección amplía el contenido oficial de la unidad. No cambia lo
 > que se evalúa en la Actividad 5 ni en la rúbrica. El **ISTQB**
 > (*International Software Testing Qualifications Board*) reconoce 7
 > principios generales de las pruebas. Los cuatro que ya estudiaste
@@ -128,7 +128,7 @@ que viste en el
 Una actualización de contenido del sensor Falcon de CrowdStrike
 ("Channel File 291") provocó fallas masivas de Windows en
 aproximadamente 8.5 millones de equipos en todo el mundo. El sensor
-esperaba 20 campos de entrada; la actualización envió 21. Al leer el
+esperaba 20 campos de entrada, la actualización envió 21. Al leer el
 campo inexistente, el driver realizó una lectura de memoria fuera de
 rango.
 
@@ -141,8 +141,8 @@ funcionado" no prueba que esté libre de defectos.
 
 ### Boeing 737 MAX (2018–2019)
 
-Dos accidentes fatales (Lion Air, octubre de 2018; Ethiopian Airlines,
-marzo de 2019; 346 personas fallecidas en total) se vincularon al
+Dos accidentes fatales (Lion Air, octubre de 2018, Ethiopian Airlines,
+marzo de 2019, 346 personas fallecidas en total) se vincularon al
 sistema de estabilización MCAS, que confiaba en la lectura de un único
 sensor de ángulo de ataque, sin contrastarla con sensores redundantes,
 y podía anular el control manual de los pilotos.

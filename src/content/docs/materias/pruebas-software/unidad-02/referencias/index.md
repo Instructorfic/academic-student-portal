@@ -98,7 +98,7 @@ toda la unidad.
 | Relevancia para esta unidad | Media |
 
 Única fuente de la bibliografía oficial en español y con acceso digital
-directo; útil como lectura de apoyo sobre requisitos y casos de uso.
+directo. Útil como lectura de apoyo sobre requisitos y casos de uso.
 Verifica la disponibilidad del enlace antes de tomarlo como lectura
 obligatoria, ya que es contenido de blog y puede reorganizarse.
 

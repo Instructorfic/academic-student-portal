@@ -3,6 +3,11 @@ title: "Ficha de ordenamiento de algoritmos"
 description: "Unidad III de Lógica de Programación — Formato para ordenar instrucciones desordenadas y justificar la secuencia correcta."
 ---
 
+<div class="descargas">
+<a href="/descargas/logica-programacion/unidad-03/ficha-ordenamiento.docx" download>Descargar Word (.docx)</a>
+<a class="secundario" href="/descargas/logica-programacion/unidad-03/ficha-ordenamiento.md" download>Descargar Markdown (.md)</a>
+</div>
+
 ## Identificación
 
 | Campo | Valor |

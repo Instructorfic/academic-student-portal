@@ -14,9 +14,9 @@ A partir de [3. Operadores](/materias/logica-programacion/unidad-02/03-operadore
 
 Para cada expresión, identifiquen:
 
-1. los operandos;
-2. los operadores;
-3. el tipo de expresión (aritmética, relacional o lógica);
+1. los operandos
+2. los operadores
+3. el tipo de expresión (aritmética, relacional o lógica)
 4. el resultado (si cuentan con valores suficientes para evaluarla).
 
 ```text

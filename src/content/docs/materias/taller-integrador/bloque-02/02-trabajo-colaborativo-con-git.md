@@ -60,13 +60,13 @@ Una rama se elimina después de integrarse.
 
 **Modelo con ReservaFIC.** Dos integrantes trabajan al mismo tiempo:
 uno agrega el campo "número de serie" al modelo `Equipo`
-(`feature/numero-serie-equipo`); otro agrega la validación de doble
+(`feature/numero-serie-equipo`). Otro agrega la validación de doble
 reserva (`feature/validar-doble-reserva`). Ambos parten de `main`,
 ambos trabajan en paralelo, ninguno bloquea al otro.
 
 ## Estrategias de branching
 
-"Crear ramas de característica" es una práctica; **qué reglas sigue tu
+"Crear ramas de característica" es una práctica. **Qué reglas sigue tu
 equipo para crearlas, nombrarlas e integrarlas** es una **estrategia de
 branching** (*branching strategy*). Existen varias, con distinto nivel
 de formalidad:
@@ -188,7 +188,7 @@ un mensaje de commit:
 ```
 
 Los tipos que la especificación reconoce explícitamente son `feat`
-(nueva funcionalidad) y `fix` (corrección de un error); recomienda
+(nueva funcionalidad) y `fix` (corrección de un error). Recomienda
 además `build`, `chore`, `ci`, `docs`, `style`, `refactor`, `perf` y
 `test`.
 
@@ -234,14 +234,14 @@ MAYOR.MENOR.PARCHE
 | PARCHE | Corriges errores de forma compatible con versiones anteriores |
 
 Por ejemplo, pasar de `1.2.3` a `1.3.0` significa "agregamos algo
-nuevo, pero no rompimos nada que ya funcionaba"; pasar de `1.2.3` a
+nuevo, pero no rompimos nada que ya funcionaba". Pasar de `1.2.3` a
 `2.0.0` significa "algo que dependía de la versión anterior puede dejar
 de funcionar".
 
 **Relación con Conventional Commits.** No es casualidad que ambas
 especificaciones combinen bien: un commit `fix:` normalmente justifica
-subir el número de PARCHE; un commit `feat:` justifica subir el número
-MENOR; un commit `feat!:` o con `BREAKING CHANGE:` justifica subir el
+subir el número de PARCHE. Un commit `feat:` justifica subir el número
+MENOR. Un commit `feat!:` o con `BREAKING CHANGE:` justifica subir el
 número MAYOR. Cuando un release combina varios tipos de cambio, se usa
 el incremento más alto entre todos — nunca se suman.
 
@@ -257,7 +257,7 @@ git push origin v0.1.0
 ```
 
 `-a` crea una **etiqueta anotada** (guarda autor, fecha y mensaje, como
-un commit); una etiqueta sin `-a` (*lightweight tag*) es solo un
+un commit). Una etiqueta sin `-a` (*lightweight tag*) es solo un
 puntero, sin esa información. Para el primer incremento de este
 bloque, usa siempre etiquetas anotadas — dejan evidencia de quién y
 cuándo lo marcó como listo.
@@ -267,7 +267,7 @@ git tag
 git show v0.1.0
 ```
 
-`git tag` lista las etiquetas existentes; `git show` muestra el detalle
+`git tag` lista las etiquetas existentes. `git show` muestra el detalle
 de una etiqueta específica.
 
 > **Sobre esta ampliación.** El temario oficial del Bloque II

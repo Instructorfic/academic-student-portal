@@ -20,7 +20,7 @@ la lectura obligatoria se especifica por tema o actividad.
 
 Catálogo original de referencia para las tres familias de patrones de
 [5. Patrones de diseño](/materias/taller-integrador/bloque-02/05-patrones-de-diseno/).
-Es una obra formal y densa; para el nivel introductorio de este bloque,
+Es una obra formal y densa. Para el nivel introductorio de este bloque,
 combínala con REF-B2-02 (más accesible) antes de remitir al catálogo
 completo.
 
@@ -34,7 +34,7 @@ completo.
 | Rol en el bloque | Lectura de entrada a patrones de diseño |
 | Relevancia | Alta |
 
-Preferible para la primera exposición del concepto de patrón; usa
+Preferible para la primera exposición del concepto de patrón. Usa
 REF-B2-01 como referencia formal una vez que el concepto ya se
 comprendió.
 

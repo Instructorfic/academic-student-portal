@@ -31,7 +31,7 @@ Las reglas exactas de qué caracteres acepta un identificador dependen de la her
 
 ## Convenciones de nomenclatura
 
-Un mismo concepto —por ejemplo, "precio total"— puede escribirse de varias formas: `precioTotal`, `PrecioTotal`, `precio_total`, `PRECIO_TOTAL`. Todas representan la misma idea; la diferencia está en la **convención de escritura**.
+Un mismo concepto —por ejemplo, "precio total"— puede escribirse de varias formas: `precioTotal`, `PrecioTotal`, `precio_total`, `PRECIO_TOTAL`. Todas representan la misma idea. La diferencia está en la **convención de escritura**.
 
 > **Una convención de nomenclatura es un acuerdo sobre cómo se combinan palabras dentro de un identificador.**
 
@@ -74,7 +74,7 @@ Para el dato "tiene identificación": `tieneIdentificacion` (camelCase), `TieneI
 - **Sé descriptivo.** Prefiere `precioTotal` sobre `pt` o `x`.
 - **Sé consistente.** No mezcles convenciones dentro de la misma solución.
 - **Nombra los lógicos como preguntas.** `esMayorDeEdad`, `tienePermiso` se leen como una pregunta con respuesta Verdadero/Falso.
-- **Evita ambigüedad.** `d` puede ser distancia, día o dato; `distanciaKm` no deja duda.
+- **Evita ambigüedad.** `d` puede ser distancia, día o dato. `distanciaKm` no deja duda.
 
 Las reglas de qué caracteres acepta un identificador (tildes, espacios, número inicial) dependen de la herramienta. La claridad del nombre, en cambio, depende siempre de quien lo escribe.
 

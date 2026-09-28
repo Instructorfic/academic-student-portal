@@ -23,7 +23,7 @@ personales.
 > reciente, no el de hace más de una década. Verifica siempre su vigencia
 > antes de aplicarlo a un caso real.
 
-> Referencia. LFPDPPP Art. 6; LGPDPPSO Art. 16.
+> Referencia. LFPDPPP Art. 6, LGPDPPSO Art. 16.
 
 ## Los ocho principios rectores
 
@@ -70,7 +70,7 @@ aplicada **junto con** la LFPDPPP, no en lugar de ella.
 | **ISO/IEC 29100** | Marco de privacidad de ISO. Es la base de principios que referencia ISO/IEC 20889 y ISO/IEC 27701 (ver [tema 3](/materias/dba/unidad-02/03-proteccion-de-datos-sensibles/)). |
 | **HIPAA, SOX, CCPA** | HIPAA (salud) y SOX (financiero), ambas de EUA, y CCPA (California) — referencias sectoriales y regionales útiles para contrastar enfoques. |
 
-> Referencia. ISO/IEC 27701:2019; ISO/IEC 29100.
+> Referencia. ISO/IEC 27701:2019, ISO/IEC 29100.
 
 El programa de esta materia menciona estos marcos internacionales como
 **referencia comparativa**, no como marco normativo central: el marco
@@ -91,7 +91,7 @@ La pregunta que debe hacerse un DBA no es "qué ley existe", sino "qué
 tipo de dato estoy guardando en esta tabla o colección, y qué marco le
 corresponde por ese tipo de dato".
 
-> Referencia. PCI Security Standards Council, PCI DSS v4.0; GDPR Art. 3,
+> Referencia. PCI Security Standards Council, PCI DSS v4.0, GDPR Art. 3,
 > ámbito territorial.
 
 ## Implicaciones para el DBA
@@ -111,7 +111,7 @@ información:
   la vía de certificación para eso.
 
 Si la ley exige minimización de datos, el DBA es quien decide qué
-columnas realmente necesitan almacenarse; si un titular ejerce su
+columnas realmente necesitan almacenarse. Si un titular ejerce su
 derecho de cancelación, el DBA es quien ejecuta —de forma segura y
 verificable— la eliminación de esos datos.
 
@@ -130,13 +130,13 @@ verificable— la eliminación de esos datos.
 
 ## Referencias de este tema
 
-- LFPDPPP (REF-U2-09); LGPDPPSO (REF-U2-10).
-- LFPDPPP Art. 6; LGPDPPSO Art. 16.
+- LFPDPPP (REF-U2-09), LGPDPPSO (REF-U2-10).
+- LFPDPPP Art. 6, LGPDPPSO Art. 16.
 
 Ver [Referencias de la unidad](/materias/dba/unidad-02/referencias/) para
 la ficha completa de cada fuente. Los marcos internacionales
 (GDPR, ISO/IEC 27701, ISO/IEC 29100, HIPAA, SOX, CCPA, PCI DSS) se citan
-aquí como referencia comparativa del programa; no todos tienen ficha
+aquí como referencia comparativa del programa. No todos tienen ficha
 propia en el listado de referencias de la unidad.
 
 ## Qué sigue

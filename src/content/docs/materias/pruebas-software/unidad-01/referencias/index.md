@@ -162,9 +162,9 @@ relevancia principal corresponde a la Unidad III.
 > No son el caso institucional de la unidad — ver la
 > [introducción de la unidad](/materias/pruebas-software/unidad-01/)
 > para el escenario ilustrativo genérico. Se citan aquí solo las
-> fuentes; el desarrollo completo está en
+> fuentes, el desarrollo completo está en
 > [4. Principios generales de pruebas](/materias/pruebas-software/unidad-01/04-principios-generales-de-pruebas/).
-> Las cifras de impacto varían entre fuentes; verifícalas antes de
+> Las cifras de impacto varían entre fuentes, verifícalas antes de
 > citarlas como dato cerrado.
 
 | Caso | Fuente primaria |

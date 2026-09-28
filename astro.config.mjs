@@ -2,8 +2,35 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
+/**
+ * Envuelve cada tabla del contenido en un contenedor con desplazamiento
+ * horizontal, para que las tablas anchas (por ejemplo, la matriz de
+ * trazabilidad) no se salgan del área de lectura.
+ */
+function envolverTablas() {
+	const visitar = (nodo) => {
+		if (!nodo.children) return;
+		nodo.children = nodo.children.map((hijo) => {
+			visitar(hijo);
+			if (hijo.type === 'element' && hijo.tagName === 'table') {
+				return {
+					type: 'element',
+					tagName: 'div',
+					properties: { className: ['tabla-desplazable'] },
+					children: [hijo],
+				};
+			}
+			return hijo;
+		});
+	};
+	return (arbol) => visitar(arbol);
+}
+
 // https://astro.build/config
 export default defineConfig({
+	markdown: {
+		rehypePlugins: [envolverTablas],
+	},
 	// `site` (y `base`, si el sitio no se publica en la raíz del dominio)
 	// deben configurarse cuando se confirme la organización/dominio real
 	// de GitHub Pages — ver docs/PUBLICACION.md. No se asume un valor

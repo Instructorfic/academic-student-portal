@@ -37,5 +37,5 @@ Solo requieren traducción y ejecución en PSeInt las tareas *Conversión
 de Celsius a Fahrenheit* y *Costo total de una compra*, y el estudio de
 caso integrador. En esos casos sigue la
 [Traducción del pseudocódigo a PSeInt](/materias/logica-programacion/unidad-03/traduccion-a-pseint/)
-con el perfil Flexible. Primero desarrolla y prueba el pseudocódigo;
+con el perfil Flexible. Primero desarrolla y prueba el pseudocódigo,
 después tradúcelo.

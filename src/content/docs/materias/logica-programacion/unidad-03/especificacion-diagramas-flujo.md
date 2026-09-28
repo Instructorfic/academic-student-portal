@@ -11,10 +11,10 @@ los algoritmos desarrollados durante la unidad.
 El diagrama de flujo constituye una representación gráfica del
 algoritmo. Durante la Unidad III se utilizará para visualizar:
 
-- la secuencia de operaciones;
-- la entrada y salida de información;
-- el procesamiento de datos;
-- las decisiones;
+- la secuencia de operaciones
+- la entrada y salida de información
+- el procesamiento de datos
+- las decisiones
 - el flujo de ejecución del algoritmo.
 
 El diagrama de flujo no sustituye al análisis ni al pseudocódigo. La
@@ -60,16 +60,16 @@ página son solo una referencia orientativa.
 
 Todo diagrama debe:
 
-- representar un algoritmo definido previamente;
-- tener un inicio claramente identificado;
-- mantener una dirección de flujo comprensible;
-- utilizar símbolos de manera consistente;
-- evitar cruces innecesarios de líneas;
+- representar un algoritmo definido previamente
+- tener un inicio claramente identificado
+- mantener una dirección de flujo comprensible
+- utilizar símbolos de manera consistente
+- evitar cruces innecesarios de líneas
 - utilizar flechas para indicar el sentido del flujo cuando sea
-  necesario;
-- mantener correspondencia con el pseudocódigo;
-- utilizar textos breves dentro de los símbolos;
-- evitar ambigüedades;
+  necesario
+- mantener correspondencia con el pseudocódigo
+- utilizar textos breves dentro de los símbolos
+- evitar ambigüedades
 - permitir que otra persona pueda seguir el algoritmo sin explicaciones
   adicionales.
 
@@ -80,7 +80,7 @@ Todo diagrama debe:
 | Símbolo | Forma | Significado | Cuándo utilizarlo | Instrucción de pseudocódigo | Ejemplo |
 | --- | --- | --- | --- | --- | --- |
 | Terminal | Rectángulo con extremos redondeados | Inicio o final del algoritmo | Una vez al inicio y una vez al final | `Inicio`, `Fin` | `Inicio` |
-| Proceso | Rectángulo | Operación que modifica un valor | Asignaciones, cálculos y constantes con valor | `identificador = expresión`; constante con valor | `area = base * altura` |
+| Proceso | Rectángulo | Operación que modifica un valor | Asignaciones, cálculos y constantes con valor | `identificador = expresión`, constante con valor | `area = base * altura` |
 | Entrada | Paralelogramo | Información que se recibe | Cada instrucción de entrada | `Entrada:` | `Entrada: base` |
 | Salida (pantalla) | Pantalla: lado izquierdo en punta y lado derecho curvo | Información que se muestra en pantalla | Cada instrucción de salida, incluidos los mensajes previos a una entrada | `Mostrar` | `Mostrar area` |
 | Decisión | Rombo | Condición con dos caminos | Condicionales y repeticiones (tratamiento formal en la Unidad IV) | `Si … Entonces`, `Mientras … Hacer` | `edad >= 18` |
@@ -259,10 +259,10 @@ confuso.
 sale de un conector y continúa en otro conector con la misma letra.
 
 **Correspondencia:** no representa ninguna instrucción del
-pseudocódigo; solo organiza el dibujo.
+pseudocódigo, solo organiza el dibujo.
 
 **Ejemplo:** en el siguiente diagrama del área de un triángulo, el
-dibujo se divide en dos columnas; la primera termina en el conector A y
+dibujo se divide en dos columnas. La primera termina en el conector A y
 la segunda comienza en el conector A.
 
 <img src="/imagenes/logica-programacion/unidad-03/unidad03_diagrama_u3-006.svg" alt="Diagrama de flujo del área de un triángulo en dos columnas. Primera columna: Inicio, proceso DIVISOR_AREA_TRIANGULO = 2, Mostrar Ingrese la base, Entrada base, Mostrar Ingrese la altura, conector A. Segunda columna: conector A, Entrada altura, proceso area = (base * altura) / DIVISOR_AREA_TRIANGULO, Mostrar el área, Fin" style="width:100%">
@@ -350,7 +350,7 @@ correspondientes y no los caracteres anteriores:
 <img src="/imagenes/logica-programacion/unidad-03/unidad03_diagrama_area_triangulo_mitad.svg" alt="Diagrama de flujo del área de un triángulo con la constante MITAD: Inicio, proceso MITAD = 0.5, entrada base, entrada altura, proceso area = base * altura * MITAD, salida Mostrar area, Fin" style="max-width:460px;width:100%">
 
 La constante `MITAD` se representa con un proceso porque su valor se
-asigna durante el algoritmo; en la
+asigna durante el algoritmo. En la
 [traducción a PSeInt](/materias/logica-programacion/unidad-03/traduccion-a-pseint/)
 corresponde a la instrucción `MITAD = 0.5`. Así, las tres
 representaciones contienen las mismas instrucciones.

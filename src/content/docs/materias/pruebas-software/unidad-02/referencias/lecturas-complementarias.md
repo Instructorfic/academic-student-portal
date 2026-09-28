@@ -31,7 +31,7 @@ quien quiera profundizar por su cuenta.
 | --- | --- | --- |
 | Jorgensen, *Software Testing: A Craftsman's Approach* | Bibliografía básica | Incluye nociones de trazabilidad entre especificación y pruebas |
 | Black, van Veenendaal y Graham, *Foundations of Software Testing ISTQB Certification* | Bibliografía complementaria | Trata la trazabilidad como bloque formal del temario ISTQB |
-| ISO/IEC/IEEE 29119 (familia) | Estándar técnico | El programa oficial cita la familia completa sin desglosar partes; la Parte 3 (*Test documentation*) sería la más pertinente a trazabilidad, aunque esa correspondencia específica no está verificada para esta unidad |
+| ISO/IEC/IEEE 29119 (familia) | Estándar técnico | El programa oficial cita la familia completa sin desglosar partes. La Parte 3 (*Test documentation*) sería la más pertinente a trazabilidad, aunque esa correspondencia específica no está verificada para esta unidad |
 
 ## Fuentes de la bibliografía oficial con relevancia baja para esta unidad
 
@@ -41,8 +41,8 @@ específica (no aportan a requisitos, criterios de aceptación ni
 trazabilidad):
 
 - Knott, *Hands-On Mobile App Testing* — especializada en pruebas
-  móviles; más útil en la Unidad V.
-- IEEE 829-2008 — estándar de documentación de pruebas; su relevancia
+  móviles. Más útil en la Unidad V.
+- IEEE 829-2008 — estándar de documentación de pruebas. Su relevancia
   central corresponde a la Unidad III.
 
 No se excluyen de la bibliografía de la materia, solo se marca que su

@@ -93,7 +93,7 @@ db.clientes.insertOne({ nombre: "usuario_demo", clave_acceso: "clave_demo" })
 > `mongosh` conecta por defecto a la base `test`. La excepción de
 > localhost de MongoDB (que permite crear el primer usuario sin
 > autenticarse todavía) solo autoriza `createUser` cuando se ejecuta
-> contra la base `admin`; sin `use admin`, el comando falla con
+> contra la base `admin`. Sin `use admin`, el comando falla con
 > `Unauthorized`. Además, crear el usuario **no autentica automáticamente
 > la sesión actual** como ese usuario — la excepción de localhost se
 > cierra en cuanto existe el primer usuario, y cualquier operación
@@ -230,7 +230,7 @@ documentación de evidencia, revisa la parte correspondiente antes.
 | Problema | Posible causa | Verificación | Solución |
 | --- | --- | --- | --- |
 | El nombre `dba-postgres-u2` o `dba-mongo-u2` ya está en uso | Un contenedor previo no se eliminó | `docker ps -a` | `docker rm -f <nombre>` y repite la creación |
-| `psql: error: connection refused` | El contenedor aún está iniciando, o el puerto está ocupado | `docker ps` | Reintentar; revisar el mapeo `-p` si el puerto está ocupado |
+| `psql: error: connection refused` | El contenedor aún está iniciando, o el puerto está ocupado | `docker ps` | Reintentar. Revisar el mapeo `-p` si el puerto está ocupado |
 | La consulta concatenada del A2 devuelve 0 filas | Cadena maliciosa mal escrita | Comparar carácter por carácter contra `' OR '1'='1` | Reescribir exactamente la cadena indicada |
 | `$ne` no produce el bypass esperado | Se conectó ya autenticado con `--auth` sin repetir la consulta en `practica` | `use practica` antes de la consulta | Repetir `use practica` en la sesión de `mongosh` |
 | No recuerdas cómo salir | — | — | `\q` en psql, `exit` en mongosh |

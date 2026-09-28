@@ -56,7 +56,7 @@ existen otros con lógicas de decisión distintas.
 
 | Modelo | Ventaja | Desventaja |
 | --- | --- | --- |
-| DAC | Flexible, fácil de administrar en equipos pequeños. | Difícil de auditar a escala; un dueño descuidado compromete el objeto. |
+| DAC | Flexible, fácil de administrar en equipos pequeños. | Difícil de auditar a escala, un dueño descuidado compromete el objeto. |
 | MAC | Muy resistente a error humano, cumplimiento estricto. | Rígido, alto costo de administración, poco común en SGBD comerciales. |
 | RBAC | Escala bien, auditable, estándar de facto en bases de datos. | No captura contexto, como la hora, la ubicación o el valor del propio dato. |
 | ABAC | Muy expresivo y dinámico, responde a contexto. | Las políticas se vuelven complejas de mantener y depurar. |
@@ -86,7 +86,7 @@ abreviarse "LCD" — por eso aquí se usan las siglas en inglés. Algunos
 autores tampoco consideran DQL una categoría aparte y ubican `SELECT`
 dentro de DML. MongoDB, por su parte, no tiene una gramática formal
 dividida en estas categorías — los métodos se agrupan aquí solo para el
-paralelo conceptual; las transacciones multidocumento, por ejemplo,
+paralelo conceptual. Las transacciones multidocumento, por ejemplo,
 existen desde la versión 4.0.
 
 ## Ejemplo guiado: roles con privilegio diferenciado

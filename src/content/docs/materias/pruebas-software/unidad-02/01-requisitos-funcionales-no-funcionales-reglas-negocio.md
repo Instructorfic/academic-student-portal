@@ -34,9 +34,9 @@ Necesidad → Requisito → Verificación
 
 No debemos confundir **qué necesita cumplirse** (requisito) con **cómo
 decidimos implementarlo** (diseño/implementación). Ejemplo: el
-estudiante necesita conocer por qué no puede inscribirse (necesidad); el
+estudiante necesita conocer por qué no puede inscribirse (necesidad). El
 sistema debe informar la condición que impide completar la inscripción
-(requisito); el equipo decide mostrar el motivo con un mensaje en
+(requisito). El equipo decide mostrar el motivo con un mensaje en
 pantalla (implementación) — son tres cosas distintas, y solo la segunda
 es lo que vas a probar.
 
@@ -91,7 +91,7 @@ No todo requisito tiene como sujeto al "sistema", y no todo requisito
 debe describir una decisión técnica — un requisito redactado en el nivel
 equivocado de abstracción mezcla necesidad con diseño.
 
-<p style="font-size:0.85em">Fuentes: ISO/IEC/IEEE 29148; INCOSE Systems Engineering Handbook.</p>
+<p style="font-size:0.85em">Fuentes: ISO/IEC/IEEE 29148, INCOSE Systems Engineering Handbook.</p>
 
 ## ¿Qué es un requisito?
 
@@ -264,9 +264,9 @@ regulación — no encaja en una sola categoría.
 NECESIDAD → RIESGO → REQUISITO → PRUEBA
 ```
 
-Un ejemplo: el usuario necesita recuperar su cuenta (necesidad); un
-atacante podría descubrir qué correos están registrados (riesgo); el
-sistema no debe revelar si un correo existe (requisito); comparar la
+Un ejemplo: el usuario necesita recuperar su cuenta (necesidad). Un
+atacante podría descubrir qué correos están registrados (riesgo). El
+sistema no debe revelar si un correo existe (requisito). Comparar la
 respuesta para correos registrados y no registrados (prueba). Los
 requisitos de seguridad pueden derivarse de **riesgos y amenazas**, no
 solamente de solicitudes explícitas de los usuarios.
@@ -275,9 +275,9 @@ Vas a desarrollar esta misma necesidad — recuperación de contraseña —
 como el segundo ejemplo completo de la unidad, en
 [5. Más ejemplos aplicados](/materias/pruebas-software/unidad-02/05-segundo-ejemplo-aplicado/).
 Otro requisito de seguridad del mismo tipo: un atacante puede intentar
-repetidamente autenticarse (riesgo de fuerza bruta); el sistema deberá
+repetidamente autenticarse (riesgo de fuerza bruta). El sistema deberá
 bloquear temporalmente una cuenta después de cinco intentos consecutivos
-de autenticación fallidos (requisito); el criterio verificable sería
+de autenticación fallidos (requisito). El criterio verificable sería
 *"dado un usuario activo, cuando se realizan cinco intentos consecutivos
 con credenciales incorrectas, entonces el sistema deberá impedir nuevos
 intentos durante el periodo definido"*.
@@ -295,10 +295,10 @@ formalmente en
 [4. Trazabilidad y matriz de trazabilidad](/materias/pruebas-software/unidad-02/04-trazabilidad-matriz/):
 un requisito de ejemplo del dominio de inscripción — `RF-INSC-01`,
 "permitir solicitar inscripción" — puede trazarse a la necesidad del
-estudiante que lo originó; una regla de negocio análoga a "respetar
-prerrequisitos" se traza a la política académica; un requisito de
+estudiante que lo originó. Una regla de negocio análoga a "respetar
+prerrequisitos" se traza a la política académica. Un requisito de
 seguridad análogo a "no revelar cuentas existentes" se traza a un
-análisis de riesgo; y un requisito de calidad análogo a "responder
+análisis de riesgo. Y un requisito de calidad análogo a "responder
 dentro del tiempo definido" se traza a un objetivo de desempeño. La
 trazabilidad no significa solamente requisito → prueba: también puede
 empezar como fuente → necesidad → requisito → prueba → evidencia.
@@ -349,8 +349,8 @@ El checklist no sustituye el análisis: ayuda a hacerlo sistemáticamente.
 > principal):** El sistema deberá permitir que el estudiante se
 > inscriba rápidamente a cualquier materia que necesite.
 
-Problemas: "rápidamente" no tiene métrica; "cualquier materia" ignora
-restricciones y prerrequisitos; "que necesite" no es una condición
+Problemas: "rápidamente" no tiene métrica, "cualquier materia" ignora
+restricciones y prerrequisitos, "que necesite" no es una condición
 objetiva.
 
 Versión mejorada:
@@ -376,8 +376,8 @@ también debemos evaluar el conjunto y no solamente cada frase.
 ACTIVO → AMENAZA → RIESGO → REQUISITO
 ```
 
-Ejemplo: activo = cuenta del estudiante; amenaza = fuerza bruta; riesgo
-= acceso no autorizado; requisito = bloquear temporalmente después de
+Ejemplo: activo = cuenta del estudiante, amenaza = fuerza bruta, riesgo
+= acceso no autorizado. Requisito = bloquear temporalmente después de
 cinco intentos fallidos. Y de ahí al requisito de prueba: requisito
 ("bloquear después de 5 intentos") → criterio ("el quinto intento
 produce bloqueo") → escenario ("credenciales incorrectas cinco veces")

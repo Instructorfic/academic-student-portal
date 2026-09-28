@@ -3,6 +3,11 @@ title: "Ficha de depuración de algoritmos"
 description: "Unidad III de Lógica de Programación — Formato para identificar, explicar, corregir y verificar un error en un algoritmo."
 ---
 
+<div class="descargas">
+<a href="/descargas/logica-programacion/unidad-03/ficha-depuracion.docx" download>Descargar Word (.docx)</a>
+<a class="secundario" href="/descargas/logica-programacion/unidad-03/ficha-depuracion.md" download>Descargar Markdown (.md)</a>
+</div>
+
 ## Identificación
 
 | Campo | Valor |

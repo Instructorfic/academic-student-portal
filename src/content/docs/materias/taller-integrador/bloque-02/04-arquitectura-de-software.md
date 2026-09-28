@@ -75,8 +75,8 @@ construye, se prueba y se despliega como una sola unidad.
 | | |
 | --- | --- |
 | **Caso de uso** | Proyectos pequeños o medianos, equipos pequeños, aplicaciones nuevas donde todavía no se conoce bien el dominio (exactamente la situación de tu proyecto) |
-| **Ventajas** | Simple de desarrollar, probar y desplegar; no hay comunicación de red entre partes internas; depurar un error es más directo porque todo el código vive en un solo lugar |
-| **Desventajas** | Difícil escalar solo una parte específica (tienes que escalar toda la aplicación aunque solo un módulo reciba mucha carga); un error grave puede afectar a todo el sistema; conforme crece, los despliegues se vuelven más grandes y riesgosos |
+| **Ventajas** | Simple de desarrollar, probar y desplegar. No hay comunicación de red entre partes internas. Depurar un error es más directo porque todo el código vive en un solo lugar |
+| **Desventajas** | Difícil escalar solo una parte específica (tienes que escalar toda la aplicación aunque solo un módulo reciba mucha carga). Un error grave puede afectar a todo el sistema. Conforme crece, los despliegues se vuelven más grandes y riesgosos |
 
 ### Multicapa (*layered*)
 
@@ -88,21 +88,21 @@ inmediatamente adyacente.
 | | |
 | --- | --- |
 | **Caso de uso** | La organización interna por defecto de la mayoría de las aplicaciones empresariales — es exactamente lo que vas a construir en este bloque (Form Request, Controlador, Service, Model) |
-| **Ventajas** | Separación clara de responsabilidades; cada capa se puede entender y modificar de forma relativamente aislada; facilita dividir el trabajo entre integrantes del equipo |
-| **Desventajas** | Si no se respeta la dirección de las dependencias (una capa inferior nunca debe depender de una superior), el acoplamiento crece igual que en un monolito sin capas; un cambio que "atraviesa" varias capas (por ejemplo, un campo nuevo que debe reflejarse en la vista, el controlador, el servicio y el modelo) sigue tocando varios archivos |
+| **Ventajas** | Separación clara de responsabilidades. Cada capa se puede entender y modificar de forma relativamente aislada. Facilita dividir el trabajo entre integrantes del equipo |
+| **Desventajas** | Si no se respeta la dirección de las dependencias (una capa inferior nunca debe depender de una superior), el acoplamiento crece igual que en un monolito sin capas. Un cambio que "atraviesa" varias capas (por ejemplo, un campo nuevo que debe reflejarse en la vista, el controlador, el servicio y el modelo) sigue tocando varios archivos |
 
 ### Cliente-servidor
 
 El sistema se divide en dos roles: un **cliente** que solicita
 información o acciones, y un **servidor** que las provee. El servidor
-no inicia la comunicación; siempre responde a una solicitud del
+no inicia la comunicación, siempre responde a una solicitud del
 cliente.
 
 | | |
 | --- | --- |
 | **Caso de uso** | Cualquier aplicación web o móvil que consume una API — tu navegador pidiendo una página a Laravel, o una futura app móvil consumiendo la misma API |
-| **Ventajas** | Separa la interfaz de usuario del procesamiento; el mismo servidor puede atender a varios tipos de cliente (web, móvil, otro sistema) sin duplicar la lógica de negocio |
-| **Desventajas** | Depende de la disponibilidad de la red entre cliente y servidor; el servidor puede convertirse en un cuello de botella si muchos clientes lo solicitan al mismo tiempo (tema de escalabilidad de infraestructura del Bloque IV) |
+| **Ventajas** | Separa la interfaz de usuario del procesamiento. El mismo servidor puede atender a varios tipos de cliente (web, móvil, otro sistema) sin duplicar la lógica de negocio |
+| **Desventajas** | Depende de la disponibilidad de la red entre cliente y servidor. El servidor puede convertirse en un cuello de botella si muchos clientes lo solicitan al mismo tiempo (tema de escalabilidad de infraestructura del Bloque IV) |
 
 ### Orientada a servicios (SOA)
 
@@ -113,8 +113,8 @@ coordinados por un mecanismo central de comunicación.
 | | |
 | --- | --- |
 | **Caso de uso** | Organizaciones grandes donde varias aplicaciones distintas necesitan compartir la misma lógica de negocio (por ejemplo, un servicio de "validar identidad" que usan varios sistemas de la misma institución) |
-| **Ventajas** | Reutilización real de servicios entre aplicaciones distintas; desacopla a las aplicaciones que consumen un servicio de los cambios internos de ese servicio |
-| **Desventajas** | Mayor complejidad de infraestructura y de coordinación entre servicios; requiere gobierno técnico (versionado de contratos, disponibilidad) que un proyecto de este tamaño no necesita todavía |
+| **Ventajas** | Reutilización real de servicios entre aplicaciones distintas. Desacopla a las aplicaciones que consumen un servicio de los cambios internos de ese servicio |
+| **Desventajas** | Mayor complejidad de infraestructura y de coordinación entre servicios. Requiere gobierno técnico (versionado de contratos, disponibilidad) que un proyecto de este tamaño no necesita todavía |
 
 > **Alcance de este bloque.** Necesitas poder **identificar** estas
 > cuatro arquitecturas y elegir, con justificación, cuál corresponde a
@@ -133,16 +133,16 @@ diferencian del monolito multicapa que sí vas a construir.
 
 | Arquitectura | Idea central | Ventaja principal | Desventaja principal |
 | --- | --- | --- | --- |
-| Microservicios | El sistema se divide en varios servicios pequeños e independientes, cada uno con su propia base de datos y su propio ciclo de despliegue | Cada servicio escala y se despliega por separado; distintos equipos pueden trabajar en paralelo con menos interferencia | Alta complejidad operativa: red entre servicios, monitoreo distribuido, consistencia de datos entre servicios — requiere la madurez de contenedores y CI/CD de los Bloques III y IV |
-| Orientada a eventos (*event-driven*) | Los componentes se comunican publicando y reaccionando a eventos, sin conocerse directamente entre sí | Desacoplamiento muy alto entre quien produce un evento y quien reacciona a él; buena para procesar cosas en paralelo | Más difícil de rastrear el flujo completo de una operación (¿qué reaccionó a qué, y en qué orden?); la consistencia de los datos suele ser "eventual", no inmediata |
-| *Serverless* (funciones como servicio) | El código se ejecuta en funciones administradas por un proveedor de nube, que las activa bajo demanda | No administras servidores; pagas únicamente por el tiempo de ejecución real | Tiempo de arranque adicional en la primera ejecución (*cold start*); atarte a las particularidades de un proveedor de nube específico |
+| Microservicios | El sistema se divide en varios servicios pequeños e independientes, cada uno con su propia base de datos y su propio ciclo de despliegue | Cada servicio escala y se despliega por separado. Distintos equipos pueden trabajar en paralelo con menos interferencia | Alta complejidad operativa: red entre servicios, monitoreo distribuido, consistencia de datos entre servicios — requiere la madurez de contenedores y CI/CD de los Bloques III y IV |
+| Orientada a eventos (*event-driven*) | Los componentes se comunican publicando y reaccionando a eventos, sin conocerse directamente entre sí | Desacoplamiento muy alto entre quien produce un evento y quien reacciona a él. Buena para procesar cosas en paralelo | Más difícil de rastrear el flujo completo de una operación (¿qué reaccionó a qué, y en qué orden?). La consistencia de los datos suele ser "eventual", no inmediata |
+| *Serverless* (funciones como servicio) | El código se ejecuta en funciones administradas por un proveedor de nube, que las activa bajo demanda | No administras servidores. Pagas únicamente por el tiempo de ejecución real | Tiempo de arranque adicional en la primera ejecución (*cold start*). Atarte a las particularidades de un proveedor de nube específico |
 
 > **Por qué se mencionan sin profundizar.** `CONTEXTO_UNIDAD.md` de este
 > bloque señala explícitamente que las arquitecturas distribuidas y de
 > microservicios en profundidad **no son contenido de este bloque** —
 > el temario oficial pide *identificar* arquitecturas comunes, no
 > implementarlas. Tu proyecto sigue siendo, deliberadamente, un
-> monolito multicapa durante todo este bloque; estas tres son
+> monolito multicapa durante todo este bloque. Estas tres son
 > referencia para que reconozcas el panorama, no para que las apliques
 > ahora.
 
@@ -171,12 +171,12 @@ organizado el código por dentro.
 Documentar la arquitectura de tu propio proyecto significa dejar por
 escrito, en un archivo `ARQUITECTURA.md`:
 
-- el **tipo de arquitectura** (monolito multicapa, en tu caso);
+- el **tipo de arquitectura** (monolito multicapa, en tu caso)
 - los **componentes principales** (controladores, Form Requests,
-  Services, Models) y qué hace cada uno;
+  Services, Models) y qué hace cada uno
 - el **flujo de información**, desde la petición HTTP hasta la
-  respuesta;
-- las **dependencias entre componentes** (quién depende de quién);
+  respuesta
+- las **dependencias entre componentes** (quién depende de quién)
 - la **decisión de diseño**: por qué separaste las responsabilidades
   específicamente así para tu proyecto.
 

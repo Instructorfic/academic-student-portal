@@ -383,7 +383,7 @@ Un requisito debe redactarse en el nivel de abstracción apropiado. No todo requ
 
 </div>
 
-<p class="small">ISO/IEC/IEEE 29148; INCOSE Systems Engineering Handbook.</p>
+<p class="small">ISO/IEC/IEEE 29148, INCOSE Systems Engineering Handbook.</p>
 
 ### Un mismo problema visto en diferentes niveles
 
@@ -1401,10 +1401,10 @@ Selecciona dos de los requisitos anteriores.
 
 Para cada uno:
 
-1. identifica la ambigüedad o problema;
-2. determina qué información falta;
-3. identifica una posible fuente o stakeholder;
-4. redacta una nueva versión;
+1. identifica la ambigüedad o problema
+2. determina qué información falta
+3. identifica una posible fuente o stakeholder
+4. redacta una nueva versión
 5. explica cómo podría verificarse.
 
 </div>
@@ -1494,13 +1494,13 @@ decidir cuándo una funcionalidad puede considerarse aceptada.
 
 Un **caso de uso** describe una interacción completa entre un **actor** y el sistema: incluye un **flujo principal** y, cuando corresponde, **flujos alternativos**.
 
-**Ejemplo:** actor "visitante"; flujo principal: envía datos válidos → el sistema crea la cuenta.
+**Ejemplo:** actor "visitante", flujo principal: envía datos válidos → el sistema crea la cuenta.
 
 ### ¿Dónde se define un caso de uso y cuándo se usa?
 
 <div class="grid-2">
 
-<div class="card accent-azul"><strong>¿Dónde se define?</strong><p>En la etapa de análisis de requisitos, normalmente por quien levanta y documenta el requerimiento; queda registrado en la especificación de requisitos del sistema.</p></div>
+<div class="card accent-azul"><strong>¿Dónde se define?</strong><p>En la etapa de análisis de requisitos, normalmente por quien levanta y documenta el requerimiento. Queda registrado en la especificación de requisitos del sistema.</p></div>
 <div class="card accent-dorado"><strong>¿Cuándo conviene usarlo?</strong><p>Procesos con varios flujos alternos, varios actores, o contextos donde se necesita documentación formal y detallada.</p></div>
 
 </div>
@@ -1603,7 +1603,7 @@ Un **actor** es un rol externo que interactúa con el sistema para alcanzar un o
 <div class="card accent-dorado">
 <strong>Sistema</strong>
 <p>Sistema de biblioteca</p>
-<p>Es el sistema que estamos describiendo; no es un actor de sí mismo.</p>
+<p>Es el sistema que estamos describiendo. No es un actor de sí mismo.</p>
 </div>
 
 <div class="card accent-verde">
@@ -1903,7 +1903,7 @@ Primero piensa en el comportamiento. Después escribe la frase.
 
 <div class="callout-alcance">
 
-El formato dado–cuando–entonces que usas en esta unidad corresponde al lenguaje **Gherkin**, ampliamente usado en la industria dentro del desarrollo guiado por comportamiento (*Behavior-Driven Development*, BDD): **Given–When–Then**. El programa oficial de esta unidad no exige Gherkin como herramienta; se presenta aquí como la convención más extendida para escribir criterios de aceptación de forma verificable, no como contenido evaluado adicional.
+El formato dado–cuando–entonces que usas en esta unidad corresponde al lenguaje **Gherkin**, ampliamente usado en la industria dentro del desarrollo guiado por comportamiento (*Behavior-Driven Development*, BDD): **Given–When–Then**. El programa oficial de esta unidad no exige Gherkin como herramienta. Se presenta aquí como la convención más extendida para escribir criterios de aceptación de forma verificable, no como contenido evaluado adicional.
 
 </div>
 
@@ -2109,8 +2109,8 @@ Escribe al menos 2.
 **5. Escenarios**  
 Construye al menos:
 
-- un escenario positivo;
-- un escenario negativo;
+- un escenario positivo
+- un escenario negativo
 - un escenario alterno o límite.
 
 **6. Resultado esperado**  
@@ -2559,14 +2559,14 @@ Selecciona **una funcionalidad del proyecto base asignado a tu equipo**. No nece
 
 Con lo aprendido en esta unidad, ahora puedes explicar con precisión:
 
-* el problema del formulario de registro fue un **requisito no verificable**, no un desacuerdo sobre gustos;
-* un criterio de aceptación bien escrito hubiera evitado la discusión;
+* el problema del formulario de registro fue un **requisito no verificable**, no un desacuerdo sobre gustos
+* un criterio de aceptación bien escrito hubiera evitado la discusión
 * la matriz de trazabilidad muestra, de entrada, si "validar el correo" tenía siquiera un caso de prueba asociado.
 
 ### En síntesis
 
 * Los **requisitos** (funcionales, no funcionales, reglas de negocio) deben redactarse de forma **verificable**.
-* **Casos de uso** e **historias de usuario** son dos formas de describir una interacción; ninguna sustituye a la otra.
+* **Casos de uso** e **historias de usuario** son dos formas de describir una interacción. Ninguna sustituye a la otra.
 * Los **criterios de aceptación** convierten un requisito en condiciones comprobables.
 * Los **escenarios** (positivos, negativos, alternos/límite) traducen esos criterios en pruebas concretas.
 * La **matriz de trazabilidad** conecta requisito → prueba, y deja prevista prueba → defecto.
@@ -2595,6 +2595,6 @@ La misma matriz de trazabilidad que construiste hoy reaparece en la **Unidad V**
 * Black, van Veenendaal y Graham — *Foundations of Software Testing ISTQB Certification* (2012).
 * Crispin y Gregory — *Agile Testing* (2009).
 * Toledo — *Introducción a las pruebas de sistemas de información* (2024).
-* ISO/IEC 25010:2011; ISO/IEC/IEEE 29119.
+* ISO/IEC 25010:2011, ISO/IEC/IEEE 29119.
 
 <p class="small">Ficha completa de cada fuente en las referencias de la unidad (REF-U2-01 a REF-U2-10).</p>

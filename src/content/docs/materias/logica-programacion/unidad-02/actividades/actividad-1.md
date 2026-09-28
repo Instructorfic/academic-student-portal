@@ -26,8 +26,8 @@ Verdadero
 ```
 
 2. Para cada uno, indica:
-   - el dato;
-   - el tipo (entero, real, carácter/cadena o lógico);
+   - el dato
+   - el tipo (entero, real, carácter/cadena o lógico)
    - qué información podría representar en un problema real.
 3. Elige uno de los datos anteriores y explica en una frase por qué **no** podría clasificarse en otro tipo distinto al que elegiste.
 

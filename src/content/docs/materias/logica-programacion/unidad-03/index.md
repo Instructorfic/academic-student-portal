@@ -70,7 +70,7 @@ algorítmica** completa: el
 
 ### Ruta de estudio sugerida
 
-La unidad se organiza por temas; cada tema puede ocupar una o varias
+La unidad se organiza por temas. Cada tema puede ocupar una o varias
 sesiones de clase.
 
 | Tema | Etapa | Ejercicios |
@@ -97,7 +97,7 @@ En la Unidad IV profundizarás en:
 
 - estructuras secuenciales, condicionales (simples, dobles, múltiples,
   anidadas) y repetitivas (mientras, repetir, desde) con su sintaxis
-  formal;
+  formal.
 - la resolución de problemas diseñados para practicar cada estructura
   de control.
 

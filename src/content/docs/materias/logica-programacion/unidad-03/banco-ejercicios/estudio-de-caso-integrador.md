@@ -13,14 +13,14 @@ un solo producto.
 
 El usuario proporciona:
 
-- la cantidad de unidades compradas;
-- el precio unitario del producto;
+- la cantidad de unidades compradas
+- el precio unitario del producto
 - el porcentaje de impuesto aplicable.
 
 El sistema debe calcular:
 
-- el subtotal de la compra;
-- el importe correspondiente al impuesto;
+- el subtotal de la compra
+- el importe correspondiente al impuesto
 - el total que debe pagar el cliente.
 
 ### Reglas de cálculo

@@ -9,7 +9,7 @@ Un algoritmo utiliza datos para resolver un problema, pero tener los datos no si
 
 Por ejemplo, si `precio = 100` y `cantidad = 3`, y queremos responder **¿cuál es el costo total?**, necesitamos realizar una operación: `100 × 3`, cuyo resultado es `300`.
 
-**Por qué importa:** los datos nos permiten representar el problema; las operaciones nos permiten trabajar con ellos.
+**Por qué importa:** los datos nos permiten representar el problema, las operaciones nos permiten trabajar con ellos.
 
 ## De una operación a una expresión
 
@@ -36,7 +36,7 @@ expresión
 
 ## ¿Qué es una expresión?
 
-Una **expresión** es una combinación de operandos y operadores que puede ser evaluada para obtener un resultado. Por ejemplo, `100 + 25` contiene el operando `100`, el operador `+` y el operando `25`; al evaluarla obtenemos `125`.
+Una **expresión** es una combinación de operandos y operadores que puede ser evaluada para obtener un resultado. Por ejemplo, `100 + 25` contiene el operando `100`, el operador `+` y el operando `25`. Al evaluarla obtenemos `125`.
 
 > **Operandos + operadores → expresión → resultado.**
 
@@ -44,11 +44,11 @@ Una **expresión** es una combinación de operandos y operadores que puede ser e
 
 Una expresión puede utilizar directamente valores (`20 + 5`), identificadores que representan datos (`precio * cantidad`), o combinar ambos (`precio * 10`). Si `precio = 35`, la expresión `precio * 10` utiliza el dato representado por `precio`.
 
-**Ejemplo profesional.** En un sistema de nómina, la expresión `horasTrabajadas * tarifaPorHora` combina dos identificadores; el sistema no necesita "conocer" los valores concretos al momento de escribir la expresión — los toma de las variables correspondientes cuando se ejecuta.
+**Ejemplo profesional.** En un sistema de nómina, la expresión `horasTrabajadas * tarifaPorHora` combina dos identificadores. El sistema no necesita "conocer" los valores concretos al momento de escribir la expresión — los toma de las variables correspondientes cuando se ejecuta.
 
 ## Evaluar una expresión
 
-**Evaluar una expresión** significa determinar el resultado que produce. `8 + 5` se evalúa como `13`; `20 / 4` se evalúa como `5`; `7 * 3` se evalúa como `21`.
+**Evaluar una expresión** significa determinar el resultado que produce. `8 + 5` se evalúa como `13`, `20 / 4` se evalúa como `5`, `7 * 3` se evalúa como `21`.
 
 > **Evaluar → realizar las operaciones indicadas → obtener un resultado.**
 

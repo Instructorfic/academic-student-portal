@@ -118,8 +118,8 @@ tengo, y qué patrón lo resuelve?". Ver
 
 Dos integrantes modifican el mismo archivo y Git avisa que no puede
 subir el segundo cambio. Con ramas de característica, ese problema no
-habría bloqueado a ninguno; un pull request con revisión real lo habría
-detectado antes; y el conflicto se resuelve decidiendo, como equipo, qué
+habría bloqueado a ninguno. Un pull request con revisión real lo habría
+detectado antes. Y el conflicto se resuelve decidiendo, como equipo, qué
 versión es correcta.
 
 ## En síntesis

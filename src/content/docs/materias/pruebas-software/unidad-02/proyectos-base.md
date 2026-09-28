@@ -127,16 +127,16 @@ procurando una carga de trabajo equilibrada.
 Aunque los productos principales sean elaborados en equipo, cada
 integrante deberá conocer y poder explicar:
 
-- el proyecto asignado;
-- los requisitos identificados;
-- las reglas de negocio;
-- las historias de usuario o casos de uso;
-- los criterios de aceptación;
-- los escenarios y casos de prueba;
-- la estrategia de pruebas;
-- los defectos encontrados;
-- las evidencias obtenidas;
-- las métricas utilizadas;
+- el proyecto asignado
+- los requisitos identificados
+- las reglas de negocio
+- las historias de usuario o casos de uso
+- los criterios de aceptación
+- los escenarios y casos de prueba
+- la estrategia de pruebas
+- los defectos encontrados
+- las evidencias obtenidas
+- las métricas utilizadas
 - las conclusiones del proyecto.
 
 El trabajo colaborativo no elimina la responsabilidad individual sobre
@@ -150,7 +150,7 @@ integrador.
 | Elemento | Formato | Significado |
 | --- | --- | --- |
 | Requisito funcional | RF-01, RF-02, RF-03, ... | Función o comportamiento observable que el sistema debe realizar. |
-| Requisito no funcional | RNF-01, RNF-02, RNF-03, ... | Característica de calidad, restricción o condición que debe cumplir el sistema; debe poder verificarse mediante una prueba, medición o inspección. |
+| Requisito no funcional | RNF-01, RNF-02, RNF-03, ... | Característica de calidad, restricción o condición que debe cumplir el sistema. Debe poder verificarse mediante una prueba, medición o inspección. |
 | Regla de negocio | RN-01, RN-02, RN-03, ... | Condición, restricción o política propia del dominio del sistema que debe respetarse. |
 | Historia de usuario | HU-01, HU-02, HU-03, ... | Necesidad expresada desde la perspectiva de un actor. |
 | Caso de uso | CU-01, CU-02, CU-03, ... | Interacción entre un actor y el sistema. |
@@ -274,9 +274,9 @@ Estas funcionalidades constituyen el alcance académico del proyecto.
 
 | Actor | Puede |
 | --- | --- |
-| Paciente | Registrar sus datos; consultar disponibilidad; solicitar una cita; consultar sus citas; cancelar una cita; solicitar la reprogramación de una cita; recibir notificaciones. |
-| Personal médico | Consultar las citas asignadas; consultar su disponibilidad; recibir información relacionada con sus citas. |
-| Personal administrativo | Registrar información necesaria para la gestión de citas; consultar citas; consultar disponibilidad; realizar acciones administrativas permitidas. |
+| Paciente | Registrar sus datos, consultar disponibilidad, solicitar una cita, consultar sus citas, cancelar una cita, solicitar la reprogramación de una cita, recibir notificaciones. |
+| Personal médico | Consultar las citas asignadas, consultar su disponibilidad, recibir información relacionada con sus citas. |
+| Personal administrativo | Registrar información necesaria para la gestión de citas. Consultar citas, consultar disponibilidad, realizar acciones administrativas permitidas. |
 
 ### 6.4 Condiciones iniciales
 
@@ -313,9 +313,9 @@ directamente de la descripción y condiciones del proyecto.
 
 ### 6.6 Condiciones de prueba disponibles
 
-Puedes considerar: paciente existente; paciente no registrado;
-profesional existente; horario disponible; horario no disponible; cita
-confirmada; cita cancelada; solicitud de cita duplicada; intento de
+Puedes considerar: paciente existente, paciente no registrado,
+profesional existente, horario disponible, horario no disponible, cita
+confirmada, cita cancelada, solicitud de cita duplicada, intento de
 reprogramación hacia un horario ocupado.
 
 ## 7. Proyecto B — Sistema de venta y pedidos de una tienda
@@ -343,8 +343,8 @@ Estas funcionalidades constituyen el alcance académico del proyecto.
 
 | Actor | Puede |
 | --- | --- |
-| Cliente | Registrarse; consultar productos; agregar productos al carrito; modificar cantidades; eliminar productos del carrito; generar un pedido; consultar el estado de sus pedidos. |
-| Personal de tienda | Consultar pedidos; actualizar el estado de los pedidos; consultar información de productos. |
+| Cliente | Registrarse, consultar productos, agregar productos al carrito, modificar cantidades, eliminar productos del carrito, generar un pedido, consultar el estado de sus pedidos. |
+| Personal de tienda | Consultar pedidos, actualizar el estado de los pedidos, consultar información de productos. |
 
 ### 7.4 Condiciones iniciales
 
@@ -380,10 +380,10 @@ directamente de la descripción y condiciones del proyecto.
 
 ### 7.6 Condiciones de prueba disponibles
 
-Puedes considerar: cliente registrado; cliente no registrado; producto
-disponible; producto sin existencia; cantidad disponible suficiente;
-cantidad solicitada superior a la existencia; carrito vacío; carrito con
-productos; pedido generado; pedido enviado; pedido entregado; intento de
+Puedes considerar: cliente registrado, cliente no registrado, producto
+disponible, producto sin existencia, cantidad disponible suficiente,
+cantidad solicitada superior a la existencia, carrito vacío, carrito con
+productos, pedido generado, pedido enviado, pedido entregado, intento de
 cancelar un pedido entregado.
 
 ## 8. Proyecto C — Sistema de inscripción escolar
@@ -411,8 +411,8 @@ Estas funcionalidades constituyen el alcance académico del proyecto.
 
 | Actor | Puede |
 | --- | --- |
-| Estudiante | Consultar sus datos; consultar materias disponibles; consultar horarios; inscribirse a materias; consultar sus materias inscritas. |
-| Personal académico o administrativo | Consultar estudiantes; consultar materias; consultar cupos; consultar inscripciones. |
+| Estudiante | Consultar sus datos, consultar materias disponibles, consultar horarios, inscribirse a materias, consultar sus materias inscritas. |
+| Personal académico o administrativo | Consultar estudiantes, consultar materias, consultar cupos, consultar inscripciones. |
 
 ### 8.4 Condiciones iniciales
 
@@ -447,10 +447,10 @@ directamente de la descripción y condiciones del proyecto.
 
 ### 8.6 Condiciones de prueba disponibles
 
-Puedes considerar: estudiante registrado; estudiante no registrado;
-materia con cupo; materia sin cupo; estudiante ya inscrito; estudiante
-no inscrito; materias con horarios compatibles; materias con horarios
-incompatibles; intento de inscripción duplicada.
+Puedes considerar: estudiante registrado, estudiante no registrado,
+materia con cupo, materia sin cupo, estudiante ya inscrito, estudiante
+no inscrito, materias con horarios compatibles, materias con horarios
+incompatibles, intento de inscripción duplicada.
 
 ## 9. Distribución de los proyectos
 
@@ -510,17 +510,17 @@ el proyecto.
 
 El equipo puede:
 
-- redactar requisitos derivados de la especificación;
-- dividir una funcionalidad en varios requisitos;
-- identificar reglas de negocio adicionales derivadas del dominio;
-- seleccionar historias de usuario o casos de uso;
-- definir criterios de aceptación;
-- diseñar escenarios de prueba;
-- establecer datos de entrada;
-- definir datos de prueba;
-- establecer supuestos académicos necesarios para una prueba;
-- ampliar los casos de prueba;
-- identificar riesgos de prueba;
+- redactar requisitos derivados de la especificación
+- dividir una funcionalidad en varios requisitos
+- identificar reglas de negocio adicionales derivadas del dominio
+- seleccionar historias de usuario o casos de uso
+- definir criterios de aceptación
+- diseñar escenarios de prueba
+- establecer datos de entrada
+- definir datos de prueba
+- establecer supuestos académicos necesarios para una prueba
+- ampliar los casos de prueba
+- identificar riesgos de prueba
 - proponer pruebas adicionales justificadas.
 
 Las ampliaciones deberán conservar relación con el alcance del
@@ -530,16 +530,16 @@ proyecto.
 
 El equipo no deberá:
 
-- cambiar el alcance principal del proyecto;
-- agregar módulos completamente nuevos sin autorización;
-- inventar funcionalidades no relacionadas con el proyecto;
-- eliminar una regla de negocio establecida;
-- cambiar el significado de una regla de negocio;
-- modificar identificadores previamente utilizados;
-- presentar como ejecutada una prueba que no se realizó;
-- inventar resultados;
-- inventar defectos;
-- inventar métricas;
+- cambiar el alcance principal del proyecto
+- agregar módulos completamente nuevos sin autorización
+- inventar funcionalidades no relacionadas con el proyecto
+- eliminar una regla de negocio establecida
+- cambiar el significado de una regla de negocio
+- modificar identificadores previamente utilizados
+- presentar como ejecutada una prueba que no se realizó
+- inventar resultados
+- inventar defectos
+- inventar métricas
 - presentar evidencia falsa.
 
 Cuando un elemento sea modificado por una razón justificada, deberá

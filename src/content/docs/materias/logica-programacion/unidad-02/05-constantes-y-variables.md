@@ -14,7 +14,7 @@ Dentro de un algoritmo podemos trabajar con valores que permanecen constantes y 
 
 ## Ejemplo
 
-Para calcular el área de un círculo necesitamos `radio` y `π`. El radio puede cambiar de un círculo a otro; el valor de π se considera constante para nuestro modelo:
+Para calcular el área de un círculo necesitamos `radio` y `π`. El radio puede cambiar de un círculo a otro. El valor de π se considera constante para nuestro modelo:
 
 ```text
 radio → variable

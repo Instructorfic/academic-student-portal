@@ -18,7 +18,7 @@ matriz**: primera mitad de la evidencia oficial de la Unidad 2.
 
 ## Prerrequisitos
 
-* Principios de privilegio mínimo y separación de funciones; modelos DAC, RBAC, ABAC — ver [2. Control de acceso](/materias/dba/unidad-02/02-control-de-acceso-usuarios-roles-permisos/).
+* Principios de privilegio mínimo y separación de funciones. Modelos DAC, RBAC, ABAC — ver [2. Control de acceso](/materias/dba/unidad-02/02-control-de-acceso-usuarios-roles-permisos/).
 * Haber completado el [Laboratorio 1](/materias/dba/unidad-02/laboratorios/laboratorio-1-inyeccion-sql-nosql/).
 
 ## Entorno
@@ -58,7 +58,7 @@ CREATE ROLE administrador WITH LOGIN PASSWORD '<REDACTED>' SUPERUSER;
 \du
 ```
 
-`administrador` muestra `Superuser`; `lector` y `editor` no.
+`administrador` muestra `Superuser`, `lector` y `editor` no.
 
 **A1. Identifica el modelo.** Para cada rol creado, anota en tu matriz:
 `GRANT`/`REVOKE` sobre un objeto específico es de naturaleza DAC (el

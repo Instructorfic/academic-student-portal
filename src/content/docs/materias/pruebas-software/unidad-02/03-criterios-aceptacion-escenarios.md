@@ -98,7 +98,7 @@ formalmente en la Unidad III.
 Pregúntate: ¿cuál es el valor más pequeño que el sistema debe aceptar?
 ¿cuál es el más grande? ¿qué pasa justo un paso antes y un paso después
 de ese borde? Estas preguntas —no una fórmula— son la manera intuitiva
-de encontrar condiciones límite en esta unidad; en la **Unidad III** se
+de encontrar condiciones límite en esta unidad. En la **Unidad III** se
 retoman con una técnica formal.
 
 ### Más ejemplos de condiciones límite

@@ -20,9 +20,9 @@ después protegemos los campos sensibles que contiene (tema 3), después
 lo cifrado en tránsito y en reposo (tema 4), después conectamos cada
 control con la obligación legal que lo exige (tema 5), y cerramos
 endureciendo el servidor que lo aloja (tema 6). Un usuario correctamente
-autenticado puede seguir teniendo demasiados privilegios; un dato cifrado
-puede seguir estando disponible para quien sí está autorizado a leerlo;
-cerrar un puerto innecesario no sustituye el control de acceso. Ninguna
+autenticado puede seguir teniendo demasiados privilegios. Un dato cifrado
+puede seguir estando disponible para quien sí está autorizado a leerlo.
+Cerrar un puerto innecesario no sustituye el control de acceso. Ninguna
 capa reemplaza a las demás.
 
 ```text
@@ -113,7 +113,7 @@ cur.execute("SELECT * FROM clientes WHERE nombre = %s", (entrada_nombre,))
 
 El motor recibe el valor por un canal separado de la consulta. Nunca se
 interpreta como código, sin importar qué contenga. En SQL puro esto se
-logra con `PREPARE`; en NoSQL, con tipado estricto del valor antes de
+logra con `PREPARE`. En NoSQL, con tipado estricto del valor antes de
 construir el filtro.
 
 ### ORM con escape automático
@@ -176,8 +176,8 @@ revisión manual de código:
 | DBA | Responsable de que la cuenta de aplicación tenga privilegio mínimo, de auditar patrones anómalos en los *logs* de consultas, y de que ningún usuario de aplicación tenga privilegios de superusuario. |
 | Seguridad y QA | Responsable de escaneos periódicos, análisis estático de código (SAST) y pruebas dinámicas sobre la aplicación en ejecución (DAST), integrados al *pipeline* de CI/CD. |
 
-> Referencia. OWASP *SQL Injection Prevention Cheat Sheet*; OWASP
-> *Testing for NoSQL Injection*; ISO/IEC 27002:2022, secc. 5.2,
+> Referencia. OWASP *SQL Injection Prevention Cheat Sheet*, OWASP
+> *Testing for NoSQL Injection*, ISO/IEC 27002:2022, secc. 5.2,
 > "Information security roles and responsibilities".
 
 > **Actividad 2 — Principios de seguridad e inyección (laboratorio).**

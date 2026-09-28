@@ -33,7 +33,7 @@ El operador `%` permite obtener el **residuo** de una división entera. Por ejem
 
 ### Los paréntesis en una expresión
 
-Los paréntesis permiten **agrupar operaciones**. En `2 + 3 * 4` no todas las operaciones se realizan necesariamente de izquierda a derecha; en cambio, `(2 + 3) * 4` indica explícitamente que primero debemos considerar `2 + 3` y después multiplicar el resultado por `4`.
+Los paréntesis permiten **agrupar operaciones**. En `2 + 3 * 4` no todas las operaciones se realizan necesariamente de izquierda a derecha. En cambio, `(2 + 3) * 4` indica explícitamente que primero debemos considerar `2 + 3` y después multiplicar el resultado por `4`.
 
 > **Los paréntesis permiten expresar explícitamente cómo queremos agrupar una operación.** El orden completo de resolución (jerarquía de todos los operadores, no solo los aritméticos) se estudia en
 > [7. Resolución de expresiones](/materias/logica-programacion/unidad-02/07-resolucion-de-expresiones/).
@@ -53,7 +53,7 @@ La representación exacta puede variar según la herramienta utilizada.
 
 ### Una comparación produce una condición
 
-En `8 > 5`, el operador `>` compara los operandos `8` y `5`; al evaluar la expresión obtenemos `Verdadero`. En cambio, `3 > 10` produce `Falso`.
+En `8 > 5`, el operador `>` compara los operandos `8` y `5`. Al evaluar la expresión obtenemos `Verdadero`. En cambio, `3 > 10` produce `Falso`.
 
 > **Una expresión relacional compara valores y produce un resultado lógico.**
 
@@ -65,7 +65,7 @@ Una comparación permite responder preguntas del problema. Por ejemplo, `edad >=
 
 ## Operadores lógicos
 
-A veces una sola condición no es suficiente; podemos necesitar combinar varias condiciones.
+A veces una sola condición no es suficiente. Podemos necesitar combinar varias condiciones.
 
 | Operador | Significado |
 | --- | --- |

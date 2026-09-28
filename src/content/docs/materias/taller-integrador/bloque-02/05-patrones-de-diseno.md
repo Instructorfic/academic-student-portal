@@ -56,8 +56,8 @@ frecuencia en un proyecto del tamaño del tuyo.
 | --- | --- |
 | **Problema que resuelve** | Necesitas crear distintos tipos de un mismo objeto según una condición, sin que el código que los usa tenga que conocer cada clase concreta |
 | **Caso de uso** | Un sistema que debe crear distintos tipos de notificación (correo, SMS, push) según la preferencia del usuario, o distintos tipos de reporte (PDF, Excel, HTML) a partir de los mismos datos |
-| **Ventajas** | Desacopla el código que necesita el objeto de las clases concretas que lo construyen; agregar un tipo nuevo (por ejemplo, notificación por WhatsApp) no obliga a modificar el código que ya funciona, solo a agregar una fábrica nueva |
-| **Desventajas** | Puede generar muchas clases pequeñas (una fábrica por tipo) si se aplica a problemas con pocas variantes; agrega una capa de indirección que no siempre se justifica para dos o tres tipos fijos que nunca van a crecer |
+| **Ventajas** | Desacopla el código que necesita el objeto de las clases concretas que lo construyen. Agregar un tipo nuevo (por ejemplo, notificación por WhatsApp) no obliga a modificar el código que ya funciona, solo a agregar una fábrica nueva |
+| **Desventajas** | Puede generar muchas clases pequeñas (una fábrica por tipo) si se aplica a problemas con pocas variantes. Agrega una capa de indirección que no siempre se justifica para dos o tres tipos fijos que nunca van a crecer |
 
 **Implementación en ReservaFIC.** Cuando se aprueba un préstamo, hay que
 notificar al estudiante por el canal que haya elegido (correo, SMS o
@@ -118,8 +118,8 @@ nuevo (por ejemplo, WhatsApp) significa agregar una clase y un caso al
 | --- | --- |
 | **Problema que resuelve** | Garantizar que exista una única instancia de una clase en toda la aplicación, y un punto de acceso global a ella |
 | **Caso de uso** | Una configuración compartida que se lee una sola vez y se reutiliza en toda la aplicación, o una conexión a un recurso que no tiene sentido duplicar |
-| **Ventajas** | Evita crear múltiples instancias costosas de crear o que deben mantenerse sincronizadas; controla el acceso a un recurso compartido |
-| **Desventajas** | Introduce estado global oculto, lo que dificulta las pruebas unitarias (el resultado de una prueba puede depender del estado que dejó otra); es fácil de sobreusar hasta convertirlo en un "objeto todopoderoso" que termina conociendo demasiado sobre el resto del sistema — en Laravel, buena parte de lo que "se sentiría" como Singleton ya lo resuelve el contenedor de servicios del framework, sin que necesites implementarlo tú mismo |
+| **Ventajas** | Evita crear múltiples instancias costosas de crear o que deben mantenerse sincronizadas. Controla el acceso a un recurso compartido |
+| **Desventajas** | Introduce estado global oculto, lo que dificulta las pruebas unitarias (el resultado de una prueba puede depender del estado que dejó otra). Es fácil de sobreusar hasta convertirlo en un "objeto todopoderoso" que termina conociendo demasiado sobre el resto del sistema — en Laravel, buena parte de lo que "se sentiría" como Singleton ya lo resuelve el contenedor de servicios del framework, sin que necesites implementarlo tú mismo |
 
 **Implementación en ReservaFIC.** El número máximo de préstamos activos
 que puede tener un estudiante al mismo tiempo es una regla que se
@@ -197,7 +197,7 @@ conoce la interfaz.
 | | |
 | --- | --- |
 | **Caso de uso** | Desacoplar la lógica de negocio (el Service) de los detalles de cómo se accede a los datos (Eloquent, otra base de datos, incluso una API externa) |
-| **Ventajas** | El Service se puede probar sin una base de datos real, sustituyendo la interfaz por una implementación de prueba; cambiar de motor de persistencia no obliga a tocar la lógica de negocio |
+| **Ventajas** | El Service se puede probar sin una base de datos real, sustituyendo la interfaz por una implementación de prueba. Cambiar de motor de persistencia no obliga a tocar la lógica de negocio |
 | **Desventajas** | Agrega una capa adicional (interfaz + implementación) que, para un CRUD simple sin lógica de negocio real, puede ser más estructura de la que el problema necesita |
 
 #### Adapter
@@ -206,8 +206,8 @@ conoce la interfaz.
 | --- | --- |
 | **Problema que resuelve** | Dos interfaces incompatibles necesitan trabajar juntas: tienes una clase o librería ya existente cuya interfaz no coincide con la que tu código espera |
 | **Caso de uso** | Integrar una librería externa de pagos o de envío de correo cuya forma de llamarse no coincide con la interfaz que ya usa tu `Service` |
-| **Ventajas** | Permite reutilizar código o librerías externas sin modificarlas; aísla el resto de tu proyecto de los detalles de una API externa específica |
-| **Desventajas** | Agrega una capa de indirección adicional; si tienes que adaptar muchas librerías distintas, el número de adaptadores puede crecer y volverse difícil de mantener |
+| **Ventajas** | Permite reutilizar código o librerías externas sin modificarlas. Aísla el resto de tu proyecto de los detalles de una API externa específica |
+| **Desventajas** | Agrega una capa de indirección adicional. Si tienes que adaptar muchas librerías distintas, el número de adaptadores puede crecer y volverse difícil de mantener |
 
 **Implementación en ReservaFIC.** Retomando el `NotificadorSms` del
 ejemplo de Factory Method: la librería externa para enviar SMS tiene su
@@ -257,7 +257,7 @@ llamando a `enviar()` sin enterarse del cambio.
 | --- | --- |
 | **Problema que resuelve** | Un subsistema tiene varias clases que colaboran entre sí de forma compleja, y el código que las usa no debería necesitar conocer esa complejidad |
 | **Caso de uso** | Exponer una sola clase `ReporteService` que internamente coordina varias clases especializadas en generar PDF, Excel y HTML, para que el controlador solo llame a un método |
-| **Ventajas** | Simplifica el uso del subsistema desde fuera; reduce el acoplamiento entre el código cliente y los detalles internos del subsistema |
+| **Ventajas** | Simplifica el uso del subsistema desde fuera. Reduce el acoplamiento entre el código cliente y los detalles internos del subsistema |
 | **Desventajas** | Si la fachada empieza a acumular demasiada lógica propia (no solo coordinación), puede convertirse en un "God Object" que concentra responsabilidades que deberían seguir separadas |
 
 **Implementación en ReservaFIC.** El administrador de laboratorio
@@ -309,8 +309,8 @@ distintos — esa complejidad queda oculta detrás de la fachada.
 | --- | --- |
 | **Problema que resuelve** | Necesitas elegir entre varios algoritmos o reglas intercambiables para resolver la misma tarea, y quieres evitar un bloque gigante de condicionales (`if`/`else` o `switch`) para decidir cuál usar |
 | **Caso de uso** | Distintas formas de calcular un descuento según el tipo de cliente, o distintas reglas de prioridad para atender una solicitud |
-| **Ventajas** | Permite agregar una estrategia nueva sin modificar las que ya existen (ni el código que las usa); evita condicionales largos y difíciles de mantener |
-| **Desventajas** | El código que usa el patrón debe conocer las estrategias disponibles para poder elegir la correcta; para dos opciones simples que nunca van a cambiar, puede ser más estructura de la que el problema justifica |
+| **Ventajas** | Permite agregar una estrategia nueva sin modificar las que ya existen (ni el código que las usa). Evita condicionales largos y difíciles de mantener |
+| **Desventajas** | El código que usa el patrón debe conocer las estrategias disponibles para poder elegir la correcta. Para dos opciones simples que nunca van a cambiar, puede ser más estructura de la que el problema justifica |
 
 **Implementación en ReservaFIC.** Cuando hay más solicitudes de
 préstamo que equipos disponibles, alguien tiene que decidir en qué
@@ -380,8 +380,8 @@ agregar una nueva implementación de `EstrategiaPriorizacion`.
 | --- | --- |
 | **Problema que resuelve** | Varias partes del sistema necesitan enterarse cuando algo cambia, sin que el objeto que cambia tenga que conocer a cada una de ellas de antemano |
 | **Caso de uso** | Notificar a los módulos de facturación, inventario y correo cada vez que se aprueba un préstamo, sin que esos módulos sepan unos de otros ni el `PrestamoService` tenga que llamarlos uno por uno de forma explícita |
-| **Ventajas** | Bajo acoplamiento entre quien emite el cambio y quien reacciona a él; agregar un nuevo interesado en el evento no requiere modificar el código que lo genera |
-| **Desventajas** | El orden en que reaccionan los distintos observadores puede no estar garantizado; rastrear qué observador reaccionó a qué evento (para depurar un error) puede ser más difícil que seguir una llamada directa a un método |
+| **Ventajas** | Bajo acoplamiento entre quien emite el cambio y quien reacciona a él. Agregar un nuevo interesado en el evento no requiere modificar el código que lo genera |
+| **Desventajas** | El orden en que reaccionan los distintos observadores puede no estar garantizado. Rastrear qué observador reaccionó a qué evento (para depurar un error) puede ser más difícil que seguir una llamada directa a un método |
 
 **Implementación en ReservaFIC.** Cuando se aprueba un préstamo, tres
 cosas distintas deben ocurrir: actualizar la disponibilidad del equipo,

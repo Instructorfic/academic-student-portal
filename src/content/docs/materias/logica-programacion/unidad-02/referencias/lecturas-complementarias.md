@@ -15,7 +15,7 @@ INFORMACIÓN → DATOS → TIPOS DE DATOS → IDENTIFICADORES
 
 ## Lectura 1 — Datos y tipos de datos
 
-**Fuente principal:** Joyanes Aguilar (2020), 3.5 Datos, tipos de datos y operaciones primitivas; 3.5.1 Datos numéricos; 3.5.2 Datos lógicos; 3.5.3 Datos tipo carácter y tipo cadena.
+**Fuente principal:** Joyanes Aguilar (2020), 3.5 Datos, tipos de datos y operaciones primitivas, 3.5.1 Datos numéricos, 3.5.2 Datos lógicos, 3.5.3 Datos tipo carácter y tipo cadena.
 
 **Propósito:** comprender que la información de un problema debe representarse mediante datos y que estos poseen diferentes tipos.
 
@@ -23,7 +23,7 @@ INFORMACIÓN → DATOS → TIPOS DE DATOS → IDENTIFICADORES
 
 ## Lectura 2 — Expresiones
 
-**Fuente principal:** Joyanes Aguilar (2020), 3.7 Expresiones y operadores; 3.7.1 Expresiones aritméticas.
+**Fuente principal:** Joyanes Aguilar (2020), 3.7 Expresiones y operadores, 3.7.1 Expresiones aritméticas.
 
 **Propósito:** comprender cómo se combinan datos mediante operaciones para obtener un resultado.
 
@@ -45,7 +45,7 @@ La notación podrá variar dependiendo de la herramienta utilizada.
 
 ## Lectura 4 — Identificadores, constantes y variables
 
-**Fuente principal:** Joyanes Aguilar (2020), 3.6 Constantes y variables; 3.6.1 Declaración de constantes y variables. **Fuente de apoyo:** Cairo Battistutti (2015), 1.3.2 Identificadores, constantes y variables.
+**Fuente principal:** Joyanes Aguilar (2020), 3.6 Constantes y variables, 3.6.1 Declaración de constantes y variables. **Fuente de apoyo:** Cairo Battistutti (2015), 1.3.2 Identificadores, constantes y variables.
 
 **Modelo conceptual:**
 
@@ -59,7 +59,7 @@ Constante     → elemento cuyo valor permanece fijo
 
 ## Lectura 5 — Funciones matemáticas
 
-**Fuente principal:** Joyanes Aguilar (2020), 3.8 Funciones internas; 3.8.1 Funciones matemáticas.
+**Fuente principal:** Joyanes Aguilar (2020), 3.8 Funciones internas, 3.8.1 Funciones matemáticas.
 
 **El estudiante debe reconocer aplicaciones como:** raíz cuadrada, valor absoluto, potencia, redondeo y otras funciones matemáticas básicas pertinentes.
 
@@ -67,7 +67,7 @@ Constante     → elemento cuyo valor permanece fijo
 
 ## Lectura 6 — Resolución de expresiones
 
-**Fuente principal:** Joyanes Aguilar (2020), 3.7.2 Reglas de prioridad; 3.7.4 Reglas generales de prioridad y asociatividad.
+**Fuente principal:** Joyanes Aguilar (2020), 3.7.2 Reglas de prioridad, 3.7.4 Reglas generales de prioridad y asociatividad.
 
 **El estudiante debe comprender:** prioridad de operadores, asociatividad, uso de paréntesis, evaluación paso a paso.
 
@@ -122,7 +122,7 @@ Situación → información necesaria → datos → tipos de datos
 
 ## Qué no necesitas estudiar todavía
 
-Para mantener el alcance de esta unidad, en esta etapa no es necesario profundizar en: sintaxis de C, C++, Java, Python u otro lenguaje de programación; programación orientada a objetos; estructuras de decisión; ciclos; arreglos; matrices; estructuras de datos; modularización; depuración formal; planes de pruebas; ni una metodología formal de resolución de problemas. Estos contenidos se abordarán progresivamente en las unidades correspondientes (principalmente en la Unidad III y la Unidad IV).
+Para mantener el alcance de esta unidad, en esta etapa no es necesario profundizar en: sintaxis de C, C++, Java, Python u otro lenguaje de programación. Programación orientada a objetos, estructuras de decisión, ciclos, arreglos, matrices, estructuras de datos, modularización, depuración formal, planes de pruebas. Ni una metodología formal de resolución de problemas. Estos contenidos se abordarán progresivamente en las unidades correspondientes (principalmente en la Unidad III y la Unidad IV).
 
 ## Producto de lectura recomendado
 

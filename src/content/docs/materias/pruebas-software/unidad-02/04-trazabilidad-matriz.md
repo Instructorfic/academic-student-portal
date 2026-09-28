@@ -108,7 +108,7 @@ de ejecutar" en todas las filas. Confundir "diseñar trazabilidad" con
 > relacionando los requisitos y reglas del Laboratorio 1 con las
 > historias o casos de uso, los criterios y los escenarios del
 > Laboratorio 2. La matriz del laboratorio usa el
-> [formato oficial de once columnas](/materias/pruebas-software/unidad-02/formato-matriz-trazabilidad/);
+> [formato oficial de once columnas](/materias/pruebas-software/unidad-02/formato-matriz-trazabilidad/).
 > las tablas de este tema son versiones simplificadas. Guía completa en el
 > [Laboratorio 3](/materias/pruebas-software/unidad-02/laboratorios/laboratorio-3-matriz-trazabilidad/).
 

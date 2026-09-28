@@ -20,7 +20,7 @@ configuración y conecta explícitamente con `sslmode=require`. Documenta
 el estado "antes" y "después".
 
 **Parte B — Cifrado en reposo.** Habilita la extensión `pgcrypto` y
-cifra el valor de una columna sensible con `pgp_sym_encrypt`; demuestra
+cifra el valor de una columna sensible con `pgp_sym_encrypt`. Demuestra
 que el valor almacenado no es legible directamente, y que sí se recupera
 con `pgp_sym_decrypt` usando la llave correcta.
 

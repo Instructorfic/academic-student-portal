@@ -47,7 +47,7 @@ Actividad 8. Respóndelo antes de pasar a las preguntas abiertas de abajo.
 
 ## Autoevaluación
 
-Responde sin consultar el material anterior; después verifica tus
+Responde sin consultar el material anterior, después verifica tus
 respuestas con tu docente.
 
 1. Explica por qué una consulta parametrizada previene la inyección SQL,

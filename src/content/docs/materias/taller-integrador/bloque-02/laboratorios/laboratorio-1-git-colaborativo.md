@@ -125,7 +125,7 @@ git commit -m "feat: descripción corta y clara del cambio"
 ```
 
 > **Ampliación — Conventional Commits.** No forma parte del temario
-> oficial del bloque; ver
+> oficial del bloque. Ver
 > [2. Trabajo colaborativo con Git](/materias/taller-integrador/bloque-02/02-trabajo-colaborativo-con-git/).
 > Usen la especificación pública Conventional Commits para todos los
 > commits de este laboratorio:
@@ -291,7 +291,7 @@ git push origin v0.1.0
 Usen `v0.1.0` (no `v1.0.0` todavía): el proyecto apenas tiene su primer
 incremento, no una versión estable para producción. Si más adelante en
 el semestre agregan una funcionalidad nueva sin romper nada, la
-siguiente etiqueta sube el número MENOR (`v0.2.0`); si corrigen un
+siguiente etiqueta sube el número MENOR (`v0.2.0`). Si corrigen un
 error, sube el número PARCHE (`v0.1.1`).
 
 ### Punto de control 4

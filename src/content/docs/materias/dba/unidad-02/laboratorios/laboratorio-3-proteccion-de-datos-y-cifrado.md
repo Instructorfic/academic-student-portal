@@ -6,7 +6,7 @@ description: "Unidad 2 de DBA — laboratorio evaluado: enmascaramiento, seudoni
 <span class="badge-estado">Evaluado</span>
 
 **SGBD:** PostgreSQL 16 y MongoDB 7. **Tecnología de apoyo:** contenedores
-Docker; `openssl` en el equipo anfitrión.
+Docker, `openssl` en el equipo anfitrión.
 
 > Este laboratorio integra dos actividades: primero se clasifica y
 > protege el dato (Actividad 4), después se cifra en tránsito y en
@@ -68,9 +68,9 @@ INSERT INTO clientes (nombre, clave_acceso, correo, rfc, edad) VALUES
 
 **Paso 2.** Clasifica cada columna (documento aparte, no una consulta):
 `nombre`, `correo`, `telefono` si la agregaste, son dato personal según
-LFPDPPP Art. 3 fracción V; `rfc` es dato personal identificativo, no cae
+LFPDPPP Art. 3 fracción V. `rfc` es dato personal identificativo, no cae
 en la lista de sensibles del Art. 3 fracción VI a menos que se combine
-con otros datos; si tu tabla llegara a incluir salud u origen étnico, ahí
+con otros datos. Si tu tabla llegara a incluir salud u origen étnico, ahí
 sí sería dato sensible.
 
 **Paso 3, enmascaramiento:**
@@ -202,7 +202,7 @@ muestra `SSL connection (protocol: TLSv1.3, ...)`.
 > banderas al **arrancar** el proceso — no hay forma de "recargarlo" en
 > caliente como `pg_reload_conf()` en PostgreSQL. Por eso el certificado
 > se monta en un contenedor **nuevo y desechable**, creado ya con las
-> banderas de TLS desde `docker run`; `dba-mongo-u2` (con los datos de
+> banderas de TLS desde `docker run`. `dba-mongo-u2` (con los datos de
 > `practica`) no se toca y se sigue usando, sin TLS, en la Parte D.
 
 ```bash
@@ -223,7 +223,7 @@ docker run --name dba-mongo-u2-tls -p 27018:27017 \
 `--tlsCAFile` es obligatorio a partir de MongoDB 7: el servidor exige una
 cadena de confianza explícita aunque no vayas a pedir certificado de
 cliente. Como el certificado es autofirmado, se reutiliza el mismo
-archivo como su propia cadena de confianza; `--tlsAllowConnectionsWithoutCertificates`
+archivo como su propia cadena de confianza. `--tlsAllowConnectionsWithoutCertificates`
 evita exigir un certificado de cliente (fuera del alcance de esta
 unidad).
 

@@ -19,7 +19,7 @@ description: "Unidad 2 de DBA — clasificar columnas y aplicar las tres técnic
    identificador y un correo), mostrando solo una parte del valor
    original.
 3. Aplica seudonimización: crea una tabla de mapeo separada y sustituye
-   el identificador por un seudónimo; después demuestra la reversión
+   el identificador por un seudónimo. Después demuestra la reversión
    mediante un `JOIN` contra esa tabla.
 4. Aplica anonimización: agrega una columna de edad y genera una consulta
    que agrupe por rango de edad, sin que el resultado conserve nombre ni
@@ -38,8 +38,8 @@ técnicas.
 
 ## Criterio de logro
 
-La clasificación es razonable y justificada; el enmascaramiento funciona
-correctamente; la seudonimización demuestra reversibilidad real mediante
-la tabla de mapeo; la anonimización no deja ninguna fila identificable en
-el resultado; el estudiante distingue correctamente las tres técnicas sin
+La clasificación es razonable y justificada, el enmascaramiento funciona
+correctamente. La seudonimización demuestra reversibilidad real mediante
+la tabla de mapeo. La anonimización no deja ninguna fila identificable en
+el resultado. El estudiante distingue correctamente las tres técnicas sin
 confundirlas.

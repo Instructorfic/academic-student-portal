@@ -23,7 +23,7 @@ mayor precisión:
 
 ## Resumen
 
-- Antes de un requisito existe una **necesidad**; el requisito
+- Antes de un requisito existe una **necesidad**. El requisito
   expresa qué debe cumplirse, y la prueba proporciona evidencia de que
   se cumple. Un requisito se evalúa por **verificación** (¿está bien
   escrito?) y por **validación** (¿es lo que realmente se necesita?).
@@ -36,13 +36,13 @@ mayor precisión:
   funcional: pueden ser función, propiedad, restricción o auditoría, y
   con frecuencia se derivan de un riesgo, no de una solicitud explícita.
 - **Casos de uso** e **historias de usuario** son dos formas de describir
-  una interacción; ninguna sustituye a la otra.
+  una interacción. Ninguna sustituye a la otra.
 - Los **criterios de aceptación** convierten un requisito en condiciones
   comprobables (dado–cuando–entonces).
 - Los **escenarios** (positivos, negativos, alternos/límite) traducen
   esos criterios en pruebas concretas.
 - La **trazabilidad** conecta requisito → prueba, y deja prevista prueba
-  → defecto; la **matriz de trazabilidad** documenta esa relación y
+  → defecto. La **matriz de trazabilidad** documenta esa relación y
   revela huecos de cobertura.
 
 ## Qué produjiste en esta unidad

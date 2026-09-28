@@ -32,7 +32,7 @@ abajo con un ejemplo.
 | **Simétrico** | Misma llave para cifrar y descifrar. Rápido. | `pgcrypto` en PostgreSQL. |
 | **Asimétrico** | Llave pública para cifrar, llave privada para descifrar. | Es la base de TLS. |
 
-> Referencia. NIST FIPS 197, *Advanced Encryption Standard*; RFC 8446,
+> Referencia. NIST FIPS 197, *Advanced Encryption Standard*, RFC 8446,
 > TLS 1.3.
 
 ### Simétrico y asimétrico juntos: cómo funciona HTTPS
@@ -91,7 +91,7 @@ se compara.
 SELECT crypt('clave-de-usuario', gen_salt('bf'));
 ```
 
-> Referencia. OWASP *Password Storage Cheat Sheet*; NIST SP 800-63B,
+> Referencia. OWASP *Password Storage Cheat Sheet*, NIST SP 800-63B,
 > secc. 5.1.1.2.
 
 ## Codificación con Base64 no es cifrado
@@ -112,7 +112,7 @@ ningún secreto.
 | Qué significa | Proteger los datos mientras viajan por la red, entre cliente y servidor. |
 | Cómo se protege | TLS con certificados válidos, deshabilitando versiones antiguas de TLS. |
 | En qué beneficia | Previene interceptación y protege credenciales que viajan por la conexión. |
-| Ventaja | Transparente para la aplicación una vez configurado; estándar ampliamente soportado. |
+| Ventaja | Transparente para la aplicación una vez configurado, estándar ampliamente soportado. |
 | Desventaja | No protege el dato una vez que llega a disco o memoria. Requiere gestionar certificados. |
 
 ### Ejemplo guiado: cifrar la conexión (PostgreSQL)
@@ -218,7 +218,7 @@ PostgreSQL, fuera de ella (a nivel de aplicación) en MongoDB Community.
 Una llave de cifrado, igual que una contraseña, **nunca debe** guardarse
 en texto plano dentro del código de la aplicación ni en el propio
 repositorio de código. La gestión de llaves con un servicio externo
-(gestor de secretos o KMS) excede el alcance de esta unidad; aquí se
+(gestor de secretos o KMS) excede el alcance de esta unidad. Aquí se
 presenta solo como principio.
 
 > **Actividad 5 — Cifrado.** Habilita TLS en PostgreSQL y cifra `rfc` con

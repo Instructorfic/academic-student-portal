@@ -916,3 +916,67 @@ site-search button {
 		grid-template-columns: 1fr;
 	}
 }
+
+/* ==========================================================================
+   31. TABLAS ANCHAS
+   ========================================================================== */
+
+.sl-markdown-content .tabla-desplazable {
+	max-width: 100%;
+	overflow-x: auto;
+	margin: 1.5rem 0;
+	border-radius: var(--fic-radius);
+	-webkit-overflow-scrolling: touch;
+}
+
+.sl-markdown-content .tabla-desplazable > table {
+	margin: 0;
+}
+
+/* Tablas de siete columnas o más: ancho mínimo, texto más compacto y
+   desplazamiento horizontal dentro del contenedor. */
+.sl-markdown-content .tabla-desplazable:has(th:nth-child(7)) > table {
+	min-width: 72rem;
+	font-size: 0.85rem;
+}
+
+.sl-markdown-content .tabla-desplazable:has(th:nth-child(7)) :is(th, td) {
+	padding: 0.55rem 0.65rem;
+	vertical-align: top;
+}
+
+.sl-markdown-content .tabla-desplazable:has(th:nth-child(10)) > table {
+	min-width: 90rem;
+}
+
+/* Botones de descarga de formatos */
+.sl-markdown-content .descargas {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+	margin: 1.25rem 0;
+}
+
+.sl-markdown-content .descargas a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.4rem;
+	margin: 0;
+	padding: 0.55rem 1rem;
+	border-radius: 999px;
+	background: var(--fic-blue);
+	color: var(--fic-surface);
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.sl-markdown-content .descargas a:hover {
+	background: var(--fic-blue-dark);
+	color: var(--fic-surface);
+}
+
+.sl-markdown-content .descargas a.secundario {
+	background: transparent;
+	color: var(--fic-blue);
+	border: 1px solid var(--fic-blue);
+}

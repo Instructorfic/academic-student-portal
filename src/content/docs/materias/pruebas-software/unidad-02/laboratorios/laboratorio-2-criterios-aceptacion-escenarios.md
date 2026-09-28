@@ -20,9 +20,9 @@ de negocio identificados y documentados en el
 [Laboratorio 1](/materias/pruebas-software/unidad-02/laboratorios/laboratorio-1-requisitos-reglas-negocio/)
 en artefactos que permitan establecer:
 
-- qué comportamiento debe aceptar el sistema;
-- bajo qué condiciones debe cumplirse;
-- qué condiciones deben rechazarse;
+- qué comportamiento debe aceptar el sistema
+- bajo qué condiciones debe cumplirse
+- qué condiciones deben rechazarse
 - qué escenarios permitirán verificar posteriormente dichas
   condiciones.
 
@@ -62,12 +62,12 @@ se registrarán resultados ni defectos reales.
 Antes de iniciar este laboratorio, el equipo deberá haber completado el
 Laboratorio 1 y contar como mínimo con:
 
-- 5 requisitos funcionales: RF-XX;
-- 3 requisitos no funcionales: RNF-XX;
-- 4 reglas de negocio: RN-XX;
-- identificadores únicos y permanentes;
-- descripciones verificables;
-- fuente de cada elemento;
+- 5 requisitos funcionales: RF-XX
+- 3 requisitos no funcionales: RNF-XX
+- 4 reglas de negocio: RN-XX
+- identificadores únicos y permanentes
+- descripciones verificables
+- fuente de cada elemento
 - al menos un requisito no funcional relacionado con seguridad.
 
 El equipo deberá continuar utilizando exactamente el mismo proyecto
@@ -78,16 +78,16 @@ identificadores ni cambiar el significado de los requisitos o reglas.
 
 Al finalizar el laboratorio, el equipo será capaz de:
 
-- seleccionar requisitos y reglas de negocio verificables;
+- seleccionar requisitos y reglas de negocio verificables
 - construir historias de usuario o casos de uso coherentes con el
-  proyecto;
-- relacionar historias de usuario o casos de uso con requisitos;
-- definir criterios de aceptación verificables;
-- diseñar escenarios positivos;
-- diseñar escenarios negativos;
-- diseñar escenarios alternos o de condición límite;
-- diseñar escenarios de seguridad cuando corresponda;
-- establecer relaciones de trazabilidad entre los artefactos;
+  proyecto
+- relacionar historias de usuario o casos de uso con requisitos
+- definir criterios de aceptación verificables
+- diseñar escenarios positivos
+- diseñar escenarios negativos
+- diseñar escenarios alternos o de condición límite
+- diseñar escenarios de seguridad cuando corresponda
+- establecer relaciones de trazabilidad entre los artefactos
 - conservar los identificadores establecidos en el Laboratorio 1.
 
 ## 4. Nomenclatura oficial
@@ -198,7 +198,7 @@ Para el Proyecto A — Sistema de citas médicas.
 
 Los identificadores de los ejemplos coinciden con el ejemplo completo de matriz del
 [Laboratorio 3](/materias/pruebas-software/unidad-02/laboratorios/laboratorio-3-matriz-trazabilidad/)
-(Proyecto A); por eso la numeración de criterios y escenarios no siempre es
+(Proyecto A). Por eso la numeración de criterios y escenarios no siempre es
 consecutiva.
 
 > **HU-01** — Como paciente, quiero consultar la disponibilidad de un
@@ -281,13 +281,13 @@ resultado esperado pueda determinarse objetivamente.
 
 Cada criterio de aceptación deberá:
 
-- tener un identificador único;
-- estar relacionado con una HU o CU;
+- tener un identificador único
+- estar relacionado con una HU o CU
 - estar relacionado con uno o más requisitos o reglas cuando
-  corresponda;
-- describir una condición verificable;
-- establecer un comportamiento esperado;
-- ser coherente con el alcance del proyecto;
+  corresponda
+- describir una condición verificable
+- establecer un comportamiento esperado
+- ser coherente con el alcance del proyecto
 - poder relacionarse posteriormente con uno o más escenarios.
 
 No deberán utilizarse criterios ambiguos como "El sistema funciona
@@ -319,14 +319,14 @@ Los escenarios de prueba representan condiciones diseñadas para
 verificar los criterios de aceptación. Cada escenario deberá contener
 como mínimo:
 
-- identificador;
-- requisito relacionado;
-- HU/CU relacionado;
-- criterio de aceptación relacionado;
-- tipo de escenario;
-- tipo de prueba;
-- condición de entrada;
-- acción;
+- identificador
+- requisito relacionado
+- HU/CU relacionado
+- criterio de aceptación relacionado
+- tipo de escenario
+- tipo de prueba
+- condición de entrada
+- acción
 - resultado esperado.
 
 ### 12.1 Formato obligatorio
@@ -373,10 +373,10 @@ Verifica el comportamiento esperado cuando las condiciones son válidas.
 
 Un escenario negativo verifica el comportamiento ante una condición:
 
-- inválida;
-- prohibida;
-- no permitida;
-- no autorizada;
+- inválida
+- prohibida
+- no permitida
+- no autorizada
 - incompatible con una regla de negocio.
 
 **ESC-03 — Solicitud de cita en horario ocupado**
@@ -400,10 +400,10 @@ Un escenario alterno o de condición límite deberá representar una
 condición diferente del flujo normal y tener una justificación. Puede
 corresponder a:
 
-- un límite definido por el requisito;
-- un valor frontera;
-- una condición alternativa;
-- una condición excepcional;
+- un límite definido por el requisito
+- un valor frontera
+- una condición alternativa
+- una condición excepcional
 - una variación relevante del flujo.
 
 No deberá clasificarse como alterno o límite únicamente porque utilice
@@ -530,8 +530,8 @@ El equipo deberá entregar como mínimo 6 escenarios.
 
 Además de esta tabla de resumen, cada escenario deberá documentar:
 
-- condición de entrada;
-- acción;
+- condición de entrada
+- acción
 - resultado esperado.
 
 ## 21. Cadena mínima de trazabilidad
@@ -548,9 +548,9 @@ CA-01
 ESC-01
 ```
 
-La interpretación es: RF-01 define el comportamiento requerido; HU-01
-representa la necesidad del actor; CA-01 establece la condición de
-aceptación; ESC-01 define cómo verificar posteriormente dicha
+La interpretación es: RF-01 define el comportamiento requerido, HU-01
+representa la necesidad del actor, CA-01 establece la condición de
+aceptación. ESC-01 define cómo verificar posteriormente dicha
 condición.
 
 Para una regla de negocio:
@@ -607,12 +607,12 @@ cambios para el Laboratorio 3.
 Los artefactos deberán construirse exclusivamente a partir del proyecto
 asignado. No se deberá:
 
-- agregar funcionalidades nuevas;
-- agregar actores que no correspondan al proyecto;
-- inventar reglas de negocio;
-- modificar restricciones existentes;
-- crear requisitos para funcionalidades inexistentes;
-- introducir vulnerabilidades no relacionadas con el alcance;
+- agregar funcionalidades nuevas
+- agregar actores que no correspondan al proyecto
+- inventar reglas de negocio
+- modificar restricciones existentes
+- crear requisitos para funcionalidades inexistentes
+- introducir vulnerabilidades no relacionadas con el alcance
 - crear resultados de ejecución.
 
 Los escenarios deberán verificar condiciones derivadas de los
@@ -622,14 +622,14 @@ requisitos y reglas identificados.
 
 Cuando exista un requisito de seguridad:
 
-- deberá ser verificable;
-- deberá expresar una condición observable;
-- deberá estar relacionado con uno o más criterios;
-- deberá estar relacionado con uno o más escenarios;
+- deberá ser verificable
+- deberá expresar una condición observable
+- deberá estar relacionado con uno o más criterios
+- deberá estar relacionado con uno o más escenarios
 - el escenario correspondiente deberá indicar Seguridad como tipo de
-  prueba;
+  prueba
 - los accesos no autorizados deberán clasificarse normalmente como
-  Negativo;
+  Negativo
 - no deberá afirmarse la existencia de una vulnerabilidad sin una
   ejecución real.
 

@@ -28,7 +28,7 @@ description: "Unidad 2 de DBA — crear roles con privilegio diferenciado en Pos
 ## Producto/evidencia
 
 Matriz de usuarios/roles/permisos (primera mitad de la evidencia oficial
-de la unidad; se completará en la Actividad 8).
+de la unidad, se completará en la Actividad 8).
 
 ## Criterio de logro
 

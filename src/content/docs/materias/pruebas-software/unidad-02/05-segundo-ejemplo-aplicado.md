@@ -71,8 +71,8 @@ cumplir la regla de negocio.
 
 | Escenario | Tipo | Entrada | Resultado esperado |
 | --- | --- | --- | --- |
-| E4 | Positivo | Correo registrado | Enlace enviado; mensaje genérico de confirmación |
-| E5 | Negativo | Correo no registrado | Mismo mensaje genérico; ningún correo enviado |
+| E4 | Positivo | Correo registrado | Enlace enviado, mensaje genérico de confirmación |
+| E5 | Negativo | Correo no registrado | Mismo mensaje genérico, ningún correo enviado |
 | E6 | Alterno / condición límite | Enlace usado exactamente a los 30 minutos de generado | Definir explícitamente si se acepta o se rechaza (el límite debe quedar documentado, no ambiguo) |
 
 El escenario E5 no es un error en el sentido habitual: el sistema
@@ -97,7 +97,7 @@ diseñada obliga a resolver por escrito.
 
 Observa que `RN-02` y `RNF-01` (del primer ejemplo, contraseña
 almacenada cifrada) protegen cosas distintas aunque ambos "suenan a
-seguridad": `RNF-01` protege el dato en reposo; `RN-02` protege contra
+seguridad": `RNF-01` protege el dato en reposo. `RN-02` protege contra
 una fuga de información en la *respuesta* del sistema. Al construir tu
 propia matriz, si confundes estos dos tipos de protección en una sola
 fila, sepáralos — cada uno se prueba con un escenario distinto.

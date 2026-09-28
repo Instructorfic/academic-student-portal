@@ -3,6 +3,11 @@ title: "Ficha de trazado de algoritmos"
 description: "Unidad III de Lógica de Programación — Formato para realizar una prueba de escritorio y registrar los valores de las variables paso a paso."
 ---
 
+<div class="descargas">
+<a href="/descargas/logica-programacion/unidad-03/ficha-trazado.docx" download>Descargar Word (.docx)</a>
+<a class="secundario" href="/descargas/logica-programacion/unidad-03/ficha-trazado.md" download>Descargar Markdown (.md)</a>
+</div>
+
 ## Identificación
 
 | Campo | Valor |

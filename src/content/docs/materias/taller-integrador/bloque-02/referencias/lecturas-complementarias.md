@@ -44,8 +44,8 @@ completa? ¿por qué un archivo `.env` nunca debería salir de tu
 **Fuente principal:** documentación oficial de Git (ramas y `merge`) y
 documentación de pull requests de GitHub o merge requests de GitLab
 (según confirme tu docente). **Fuentes sobre estrategias de
-branching:** Driessen, *A successful Git branching model* (Git Flow);
-guía oficial de GitHub Flow; trunkbaseddevelopment.com.
+branching:** Driessen, *A successful Git branching model* (Git Flow),
+guía oficial de GitHub Flow, trunkbaseddevelopment.com.
 
 **Preguntas de lectura:** ¿por qué crear una rama es una operación
 instantánea y barata? ¿qué diferencia hay entre un pull request

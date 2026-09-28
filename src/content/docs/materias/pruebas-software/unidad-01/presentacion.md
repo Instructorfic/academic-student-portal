@@ -125,8 +125,8 @@ Boeing 737 MAX (2018-19)  el sistema MCAS confió en un único sensor
 ```
 
 Desarrollo completo en
-[4. Principios generales de pruebas](/materias/pruebas-software/unidad-01/04-principios-generales-de-pruebas/);
-fuentes citadas en
+[4. Principios generales de pruebas](/materias/pruebas-software/unidad-01/04-principios-generales-de-pruebas/).
+Fuentes citadas en
 [Referencias de la Unidad I](/materias/pruebas-software/unidad-01/referencias/).
 
 ## Panorama normativo internacional (ampliación)

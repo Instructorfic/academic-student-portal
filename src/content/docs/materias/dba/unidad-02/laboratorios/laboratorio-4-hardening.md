@@ -57,7 +57,7 @@ docker ps | grep dba-mongo-act7
 | --- | --- | --- | --- |
 | `listen_addresses` (Postgres) | Motor | `*` | `localhost` o rango específico |
 | `pg_hba.conf` | Motor | Acepta cualquier origen | Restringido a red interna |
-| `net.bindIp` (Mongo) | Motor | Escucha en todas las interfaces dentro del contenedor | Confirmar y mantener `--auth`; restringir por red, no por `bindIp` |
+| `net.bindIp` (Mongo) | Motor | Escucha en todas las interfaces dentro del contenedor | Confirmar y mantener `--auth`, restringir por red, no por `bindIp` |
 | `security.authorization` (Mongo) | Motor | Deshabilitado | Habilitado con `--auth` |
 | Permisos de `pg_hba.conf`/`postgresql.conf` | Sistema operativo | Verificar propietario | `chmod 600`, propietario `postgres` |
 | Usuario que corre el proceso | Sistema operativo | Verificar | Nunca `root` |
@@ -213,10 +213,10 @@ servidor).
 | Problema | Posible causa | Verificación | Solución |
 | --- | --- | --- | --- |
 | Ya no puedes conectarte tras cambiar `pg_hba.conf` | La regla nueva no incluye la conexión local | `docker logs dba-postgres-act7` | Incluir una línea `local all all` si conectas dentro del contenedor |
-| El contenedor no reinicia tras `ALTER SYSTEM` | Error de sintaxis | `docker logs dba-postgres-act7` | Revisar el mensaje de error; si es necesario, recrear el contenedor |
+| El contenedor no reinicia tras `ALTER SYSTEM` | Error de sintaxis | `docker logs dba-postgres-act7` | Revisar el mensaje de error, si es necesario, recrear el contenedor |
 | `SHOW listen_addresses;` sigue en `*` | No reiniciaste el contenedor | `docker restart dba-postgres-act7` | Este parámetro requiere reinicio, a diferencia de `ssl` |
 | No sabes qué subred usar | Docker la asigna dinámicamente | `docker network inspect bridge \| grep Subnet` | Usar el valor real devuelto |
-| `mongod` con `--bind_ip` no arranca | `bindIp` no acepta notación CIDR (`x.x.x.x/16`), solo IPs/hostnames literales separados por coma | `docker logs dba-mongo-act7` | Usar `--bind_ip_all` (todas las interfaces) o una lista de IPs literales; restringir por red se hace a nivel de Docker/firewall, no con `bindIp` |
+| `mongod` con `--bind_ip` no arranca | `bindIp` no acepta notación CIDR (`x.x.x.x/16`), solo IPs/hostnames literales separados por coma | `docker logs dba-mongo-act7` | Usar `--bind_ip_all` (todas las interfaces) o una lista de IPs literales. Restringir por red se hace a nivel de Docker/firewall, no con `bindIp` |
 
 ## Evidencia mínima
 

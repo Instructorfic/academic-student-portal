@@ -197,10 +197,10 @@ Representa el algoritmo mediante un diagrama de flujo. Utiliza los
 símbolos de la
 [Especificación de diagramas de flujo](/materias/logica-programacion/unidad-03/especificacion-diagramas-flujo/):
 
-- terminal para `Inicio` y `Fin`;
-- entrada (paralelogramo) para cada `Entrada:`;
-- salida en pantalla para cada `Mostrar`;
-- proceso para el cálculo;
+- terminal para `Inicio` y `Fin`
+- entrada (paralelogramo) para cada `Entrada:`
+- salida en pantalla para cada `Mostrar`
+- proceso para el cálculo
 - línea de flujo entre cada par de símbolos.
 
 Las declaraciones de variables sin valor (`REAL base`, `REAL altura`,

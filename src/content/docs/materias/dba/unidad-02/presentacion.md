@@ -51,7 +51,7 @@ Entrada maliciosa simple: `' OR '1'='1` — rompe la primera, no la segunda.
 ## Control de acceso: usuarios, roles y permisos
 
 - **Rol** — en PostgreSQL, un usuario es un rol con `LOGIN`.
-- `GRANT` / `REVOKE` — otorgar y retirar privilegios: es **DAC** (decide el dueño del objeto); agruparlos bajo un rol con nombre es **RBAC**.
+- `GRANT` / `REVOKE` — otorgar y retirar privilegios: es **DAC** (decide el dueño del objeto). Agruparlos bajo un rol con nombre es **RBAC**.
 - **ABAC** (Row-Level Security en PostgreSQL) — restringe por atributo de fila, algo que DAC/RBAC no logran por sí solos.
 - MongoDB: control de acceso basado en roles (RBAC), **no activo por defecto** — debe habilitarse explícitamente (`--auth`).
 

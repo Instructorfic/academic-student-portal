@@ -3,6 +3,11 @@ title: "Ficha de comparación de soluciones algorítmicas"
 description: "Unidad III de Lógica de Programación — Formato para comparar dos soluciones de un mismo problema mediante características observables."
 ---
 
+<div class="descargas">
+<a href="/descargas/logica-programacion/unidad-03/ficha-comparacion.docx" download>Descargar Word (.docx)</a>
+<a class="secundario" href="/descargas/logica-programacion/unidad-03/ficha-comparacion.md" download>Descargar Markdown (.md)</a>
+</div>
+
 ## Identificación
 
 | Campo | Valor |

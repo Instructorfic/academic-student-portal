@@ -34,13 +34,13 @@ y
 
 Es individual y evalúa el dominio conceptual de:
 
-- requisitos funcionales y no funcionales;
-- seguridad como característica verificable;
-- reglas de negocio;
-- historias de usuario y casos de uso;
-- criterios de aceptación;
-- escenarios positivos, negativos y alternos, y condiciones límite;
-- trazabilidad y matriz de trazabilidad;
+- requisitos funcionales y no funcionales
+- seguridad como característica verificable
+- reglas de negocio
+- historias de usuario y casos de uso
+- criterios de aceptación
+- escenarios positivos, negativos y alternos, y condiciones límite
+- trazabilidad y matriz de trazabilidad
 - relación requisito–prueba y relación prueba–defecto.
 
 ### Evaluación práctica — 50 %

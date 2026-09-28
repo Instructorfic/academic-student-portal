@@ -49,9 +49,9 @@ Pendiente de ejecución
 
 No deberán inventarse:
 
-- resultados de ejecución;
-- defectos;
-- evidencias de ejecución;
+- resultados de ejecución
+- defectos
+- evidencias de ejecución
 - estados como Pasó o Falló.
 
 La matriz deberá demostrar la coherencia entre los tres laboratorios.
@@ -62,17 +62,17 @@ El formato completo de la matriz se describe en
 
 Al finalizar el laboratorio, el equipo será capaz de:
 
-- construir una matriz de trazabilidad;
-- relacionar requisitos con artefactos de prueba;
-- relacionar reglas de negocio con criterios y escenarios;
-- relacionar requisitos no funcionales con escenarios verificables;
-- identificar requisitos sin cobertura;
-- identificar escenarios sin requisito de origen;
-- identificar criterios de aceptación sin escenario asociado;
-- identificar escenarios sin criterio de aceptación;
-- documentar relaciones de seguridad;
-- establecer la relación prevista entre escenarios y defectos;
-- validar la consistencia de los identificadores;
+- construir una matriz de trazabilidad
+- relacionar requisitos con artefactos de prueba
+- relacionar reglas de negocio con criterios y escenarios
+- relacionar requisitos no funcionales con escenarios verificables
+- identificar requisitos sin cobertura
+- identificar escenarios sin requisito de origen
+- identificar criterios de aceptación sin escenario asociado
+- identificar escenarios sin criterio de aceptación
+- documentar relaciones de seguridad
+- establecer la relación prevista entre escenarios y defectos
+- validar la consistencia de los identificadores
 - defender oralmente las relaciones establecidas en la matriz.
 
 ## 3. Prerrequisitos
@@ -81,21 +81,21 @@ El equipo deberá haber completado los Laboratorios 1 y 2.
 
 **Laboratorio 1** — deberá contar con:
 
-- 5 requisitos funcionales;
-- 3 requisitos no funcionales;
-- 4 reglas de negocio;
-- al menos 1 requisito no funcional de seguridad;
-- identificadores únicos (RF-XX, RNF-XX, RN-XX);
-- descripciones verificables;
+- 5 requisitos funcionales
+- 3 requisitos no funcionales
+- 4 reglas de negocio
+- al menos 1 requisito no funcional de seguridad
+- identificadores únicos (RF-XX, RNF-XX, RN-XX)
+- descripciones verificables
 - fuente de cada elemento.
 
 **Laboratorio 2** — deberá contar como mínimo con:
 
-- 2 historias de usuario o 2 casos de uso;
-- 4 criterios de aceptación;
+- 2 historias de usuario o 2 casos de uso
+- 4 criterios de aceptación
 - 6 escenarios de prueba: 2 positivos, 2 negativos y 2 alternos /
-  límite;
-- escenarios de seguridad cuando correspondan;
+  límite
+- escenarios de seguridad cuando correspondan
 - identificadores HU-XX / CU-XX, CA-XX y ESC-XX.
 
 Los identificadores deberán ser exactamente los mismos utilizados en
@@ -146,8 +146,8 @@ Laboratorio 1.
 
 Indica el tipo del elemento de origen:
 
-- **RF** = Requisito funcional;
-- **RNF** = Requisito no funcional;
+- **RF** = Requisito funcional
+- **RNF** = Requisito no funcional
 - **RN** = Regla de negocio.
 
 ### 6.3 Descripción
@@ -342,14 +342,14 @@ sea ejecutada.
 La matriz deberá demostrar, dentro del alcance definido por el equipo,
 la relación entre:
 
-- requisitos funcionales;
-- requisitos no funcionales;
-- reglas de negocio;
-- historias de usuario o casos de uso;
-- criterios de aceptación;
-- escenarios de prueba;
-- tipos de escenario;
-- tipos de prueba;
+- requisitos funcionales
+- requisitos no funcionales
+- reglas de negocio
+- historias de usuario o casos de uso
+- criterios de aceptación
+- escenarios de prueba
+- tipos de escenario
+- tipos de prueba
 - relación futura con defectos.
 
 El objetivo no es llenar filas arbitrariamente. La matriz deberá
@@ -366,9 +366,9 @@ preguntar:
 
 Cuando alguna respuesta sea negativa, el equipo deberá revisar si:
 
-- falta un artefacto;
-- la relación está documentada en otro elemento;
-- el requisito no forma parte del alcance seleccionado;
+- falta un artefacto
+- la relación está documentada en otro elemento
+- el requisito no forma parte del alcance seleccionado
 - la relación no requiere una HU/CU intermedia.
 
 No deberán agregarse elementos únicamente para ocultar una falta de
@@ -526,8 +526,8 @@ Este ejemplo deberá adaptarse al proyecto realmente asignado al equipo.
 ## 24. Interpretación de una relación completa
 
 La fila `RF-02 → HU-02 → CA-02 → ESC-02` significa: RF-02 establece el
-comportamiento requerido; HU-02 representa la necesidad del actor;
-CA-02 define la condición de aceptación; ESC-02 establece el escenario
+comportamiento requerido, HU-02 representa la necesidad del actor,
+CA-02 define la condición de aceptación. ESC-02 establece el escenario
 diseñado para verificar dicha condición.
 
 Una relación de regla de negocio podría ser `RN-03 → CA-03 → ESC-03`.
@@ -571,12 +571,12 @@ Laboratorio 3:  RF-01 → HU-02
 
 Antes de entregar, deberán comprobar que:
 
-- no existen identificadores duplicados;
-- no existen identificadores modificados;
-- todos los requisitos conservan sus IDs;
-- todas las reglas conservan sus IDs;
-- todas las HU/CU conservan sus IDs;
-- todos los criterios conservan sus IDs;
+- no existen identificadores duplicados
+- no existen identificadores modificados
+- todos los requisitos conservan sus IDs
+- todas las reglas conservan sus IDs
+- todas las HU/CU conservan sus IDs
+- todos los criterios conservan sus IDs
 - todos los escenarios conservan sus IDs.
 
 La nomenclatura deberá ser consistente: RF-01, RNF-01, RN-01, HU-01,
@@ -589,8 +589,8 @@ documentos relacionados.
 
 | Documento | Archivo | Contenido |
 | --- | --- | --- |
-| 1 — Requisitos y reglas | `laboratorio_1_requisitos.md` | 5 RF; 3 RNF; 4 RN; al menos 1 RNF de seguridad; identificadores; fuentes; redacción verificable. |
-| 2 — HU/CU, criterios y escenarios | `laboratorio_2_criterios_escenarios.md` | 2 HU o CU; 4 CA; 6 ESC como mínimo (2 positivos, 2 negativos, 2 alternos / límite); escenarios de seguridad cuando correspondan. |
+| 1 — Requisitos y reglas | `laboratorio_1_requisitos.md` | 5 RF, 3 RNF, 4 RN, al menos 1 RNF de seguridad, identificadores, fuentes, redacción verificable. |
+| 2 — HU/CU, criterios y escenarios | `laboratorio_2_criterios_escenarios.md` | 2 HU o CU, 4 CA, 6 ESC como mínimo (2 positivos, 2 negativos, 2 alternos / límite). Escenarios de seguridad cuando correspondan. |
 | 3 — Matriz de trazabilidad | `matriz_trazabilidad.md` | Integra Requisito / Regla → HU / CU → Criterio de aceptación → Escenario → Defecto. Durante la Unidad II, Defecto: Pendiente de ejecución. |
 
 ## 28. Presentación práctica
@@ -599,18 +599,18 @@ La matriz será utilizada como evidencia de la evaluación práctica de la
 Unidad II. El equipo deberá presentar y explicar las relaciones
 principales de la matriz. Cada integrante deberá comprender:
 
-- el proyecto asignado;
-- los requisitos funcionales;
-- los requisitos no funcionales;
-- las reglas de negocio;
-- las historias de usuario o casos de uso;
-- los criterios de aceptación;
-- los escenarios;
-- los escenarios de seguridad;
-- los tipos de escenario;
-- los tipos de prueba;
-- las relaciones de trazabilidad;
-- la razón de las relaciones;
+- el proyecto asignado
+- los requisitos funcionales
+- los requisitos no funcionales
+- las reglas de negocio
+- las historias de usuario o casos de uso
+- los criterios de aceptación
+- los escenarios
+- los escenarios de seguridad
+- los tipos de escenario
+- los tipos de prueba
+- las relaciones de trazabilidad
+- la razón de las relaciones
 - la situación de los defectos.
 
 ## 29. Defensa individual
@@ -655,11 +655,11 @@ La evaluación de cierre de la Unidad II estará integrada por:
 ### 31.1 Evaluación teórica — 50 %
 
 Evaluará, de forma individual, el dominio conceptual de: requisitos
-funcionales; requisitos no funcionales; seguridad como característica
-verificable; reglas de negocio; historias de usuario; casos de uso;
-criterios de aceptación; escenarios positivos; escenarios negativos;
-escenarios alternos; condiciones límite; trazabilidad; matriz de
-trazabilidad; relación requisito–prueba; relación prueba–defecto.
+funcionales, requisitos no funcionales, seguridad como característica
+verificable, reglas de negocio, historias de usuario, casos de uso,
+criterios de aceptación, escenarios positivos, escenarios negativos,
+escenarios alternos, condiciones límite, trazabilidad, matriz de
+trazabilidad, relación requisito–prueba, relación prueba–defecto.
 
 ### 31.2 Evaluación práctica — 50 %
 
@@ -751,7 +751,11 @@ relaciones entre los artefactos. Se considerará:
 
 ## 33. Plantilla oficial de la matriz
 
-El equipo deberá completar la siguiente estructura:
+El equipo deberá completar la siguiente estructura, disponible también en Excel:
+
+<div class="descargas">
+<a href="/descargas/pruebas-software/unidad-02/matriz_trazabilidad_unidad02.xlsx" download>Descargar la matriz vacía (Excel .xlsx)</a>
+</div>
 
 | ID origen | Tipo | Descripción | HU/CU | CA | ESC | Tipo de escenario | Tipo de prueba | Defecto | Estado de ejecución | Observaciones |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

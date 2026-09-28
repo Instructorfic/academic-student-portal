@@ -21,7 +21,7 @@ queda y cuál se apaga. Esa decisión continua es hardening.
 | **Instalación funcional** | Todo habilitado, cualquier interfaz, cualquier extensión. |
 | **Instalación endurecida** | Solo lo que la aplicación realmente necesita. |
 
-> Referencia. Saltzer y Schroeder (1975); ISO/IEC 27002:2022.
+> Referencia. Saltzer y Schroeder (1975), ISO/IEC 27002:2022.
 
 ## Dónde viven los datos realmente
 
@@ -33,7 +33,7 @@ necesita saber dónde está cada uno antes de tocar cualquier parámetro:
 * **Archivos de configuración** — cómo se comporta el motor: puerto,
   memoria, quién puede conectarse.
 * **Registro de escritura** — bitácora de cambios antes de aplicarlos al
-  archivo de datos; da durabilidad ante una caída.
+  archivo de datos. Da durabilidad ante una caída.
 * **Archivos de autenticación y metadatos** — quién puede conectarse y
   con qué método, versión del motor que creó los archivos.
 
@@ -134,7 +134,7 @@ organizado por secciones.
 | --- | --- | --- |
 | `port` | 5432 | Cambiarlo retrasa escaneos automáticos, no sustituye el control de acceso. |
 | `listen_addresses` | `localhost`, en el paquete *upstream* | Restringir a las IP que realmente necesitan conectarse. |
-| `max_connections` | 100 | Evita agotamiento de memoria; también es un vector de disponibilidad. |
+| `max_connections` | 100 | Evita agotamiento de memoria, también es un vector de disponibilidad. |
 | `superuser_reserved_connections` | 3 | Garantiza acceso del DBA durante un incidente. |
 | `password_encryption` | `scram-sha-256` desde PG 14 | Verificar que no quede en `md5`. |
 | `statement_timeout` | Sin límite | Corta sesiones colgadas que agotan conexiones. |
@@ -150,7 +150,7 @@ no reemplaza `pg_hba.conf` ni un *firewall*.
 | --- | --- | --- |
 | `net.port` | 27017 | Mismo matiz que en PostgreSQL. |
 | `net.bindIp` | `127.0.0.1` desde la versión 3.6 | Ampliarlo solo a las IP necesarias, nunca a `0.0.0.0` en producción. |
-| `net.maxIncomingConnections` | 65536 | Equivalente a `max_connections`; dimensionar. |
+| `net.maxIncomingConnections` | 65536 | Equivalente a `max_connections`, dimensionar. |
 | `security.authorization` | `disabled` | Debe quedar `enabled` (ver [tema 2](/materias/dba/unidad-02/02-control-de-acceso-usuarios-roles-permisos/)). |
 | `setParameter.enableLocalhostAuthBypass` | `true` | Deshabilitar una vez creado el primer usuario. |
 | `security.javascriptEnabled` | `true` | Deshabilitar si la app no usa `$where` o `mapReduce`. |
@@ -161,7 +161,7 @@ publicación abierta que usan los laboratorios de este curso deshace ese
 *default* seguro por conveniencia de laboratorio, no porque MongoDB
 venga inseguro por naturaleza.
 
-> Referencia. MongoDB Manual, "Configuration File Options"; MongoDB
+> Referencia. MongoDB Manual, "Configuration File Options", MongoDB
 > Engineering Blog.
 
 ## Lo mínimo que un DBA debe conocer del sistema operativo
@@ -260,7 +260,7 @@ el ataque (REF-U2-12).
 
 - The PostgreSQL Global Development Group, "Database File Layout",
   secc. 65.1.
-- MongoDB Manual, "WiredTiger Storage Engine"; "Configuration File
+- MongoDB Manual, "WiredTiger Storage Engine", "Configuration File
   Options".
 - The PostgreSQL Global Development Group, cap. 20 "Client
   Authentication" (REF-U2-02).

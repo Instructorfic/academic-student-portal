@@ -3,6 +3,14 @@ title: "Formato de la matriz de trazabilidad"
 description: "Pruebas de Software, Unidad II — formato oficial de la matriz de trazabilidad: columnas, valores permitidos, reglas, ejemplo con el Proyecto A y plantilla vacía."
 ---
 
+Descarga la plantilla en Excel para empezar a trabajar. Incluye la matriz
+vacía con listas desplegables para los tipos, una hoja de instrucciones
+y el ejemplo del Proyecto A.
+
+<div class="descargas">
+<a href="/descargas/pruebas-software/unidad-02/matriz_trazabilidad_unidad02.xlsx" download>Descargar la matriz vacía (Excel .xlsx)</a>
+</div>
+
 ## 1. Propósito
 
 La matriz de trazabilidad es el artefacto que permite demostrar la
@@ -407,8 +415,8 @@ proyecto asignado.
 
 Los identificadores de este ejemplo coinciden con el ejemplo completo
 de matriz del
-[Laboratorio 3](/materias/pruebas-software/unidad-02/laboratorios/laboratorio-3-matriz-trazabilidad/);
-por eso la numeración de criterios y escenarios no es consecutiva.
+[Laboratorio 3](/materias/pruebas-software/unidad-02/laboratorios/laboratorio-3-matriz-trazabilidad/).
+Por eso la numeración de criterios y escenarios no es consecutiva.
 
 ### 20.1 Requisitos
 
@@ -494,11 +502,11 @@ La incorporación del defecto deberá realizarse únicamente después de
 ejecutar la prueba y obtener evidencia. La existencia del defecto
 deberá poder relacionarse con:
 
-- escenario ejecutado;
-- evidencia;
-- resultado observado;
-- registro del defecto;
-- corrección;
+- escenario ejecutado
+- evidencia
+- resultado observado
+- registro del defecto
+- corrección
 - reprueba, cuando corresponda.
 
 ## 24. Evolución de la matriz durante el proyecto integrador
@@ -575,7 +583,12 @@ ejecución**.
 
 ## 28. Plantilla vacía
 
-Completa una matriz con la siguiente estructura:
+Completa una matriz con la siguiente estructura, o descarga la plantilla
+en Excel:
+
+<div class="descargas">
+<a href="/descargas/pruebas-software/unidad-02/matriz_trazabilidad_unidad02.xlsx" download>Descargar la matriz vacía (Excel .xlsx)</a>
+</div>
 
 | ID origen | Tipo | Descripción | HU/CU | CA | ESC | Tipo de escenario | Tipo de prueba | Defecto | Estado de ejecución | Observaciones |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |

@@ -44,12 +44,12 @@ PSeInt.
 
 La traducción no debe modificar:
 
-- los datos de entrada;
-- los datos de salida;
-- el proceso;
-- las operaciones;
-- las condiciones;
-- el orden lógico de las instrucciones;
+- los datos de entrada
+- los datos de salida
+- el proceso
+- las operaciones
+- las condiciones
+- el orden lógico de las instrucciones
 - los resultados esperados.
 
 Si el algoritmo funciona de manera diferente después de traducirlo a
@@ -73,10 +73,10 @@ PSeInt. Las reglas de esta página se verificaron con PSeInt 20240122.
 En el perfil Flexible:
 
 - el punto y coma al final de cada instrucción es opcional (las
-  traducciones de esta página no lo usan);
+  traducciones de esta página no lo usan)
 - la asignación puede escribirse con `=` o con `<-`. En el curso se
-  utiliza `=`, igual que en el pseudocódigo;
-- el algoritmo se delimita con `Algoritmo … FinAlgoritmo`;
+  utiliza `=`, igual que en el pseudocódigo
+- el algoritmo se delimita con `Algoritmo … FinAlgoritmo`
 - una variable definida pero no inicializada se muestra como 0, sin
   producir error. Por eso PSeInt no sustituye la prueba de escritorio:
   un error de inicialización puede pasar inadvertido.
@@ -264,7 +264,7 @@ análisis no es el adecuado.
 En el pseudocódigo, el símbolo `=` cumple dos funciones:
 
 - cuando una instrucción comienza con un identificador seguido de `=`,
-  es una asignación (`total = subtotal + impuesto`);
+  es una asignación (`total = subtotal + impuesto`)
 - dentro de una condición (`Si`, `Mientras`), es una comparación
   (`Si numero = 0 Entonces`).
 
@@ -353,7 +353,7 @@ El algoritmo es el mismo. Únicamente cambia la representación necesaria
 para que PSeInt pueda interpretarlo y ejecutarlo.
 
 **Verificación:** ejecutado en PSeInt 20240122 con perfil Flexible,
-entradas `base = 10` y `altura = 6`; se muestra `30`, que coincide con
+entradas `base = 10` y `altura = 6`. Se muestra `30`, que coincide con
 el resultado esperado.
 
 ## 16. PSeInt como herramienta de verificación
@@ -393,7 +393,7 @@ Resultado
 
 ## 18. Regla fundamental
 
-Primero se diseña el algoritmo; después se traduce a PSeInt;
+Primero se diseña el algoritmo, después se traduce a PSeInt,
 finalmente se ejecuta y verifica.
 
 PSeInt es una herramienta para experimentar, ejecutar y verificar

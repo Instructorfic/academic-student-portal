@@ -24,9 +24,9 @@ area = base * altura * 0.5
 
 La solución utiliza:
 
-- `base` como variable de tipo `REAL`;
-- `altura` como variable de tipo `REAL`;
-- `area` como variable de tipo `REAL`;
+- `base` como variable de tipo `REAL`
+- `altura` como variable de tipo `REAL`
+- `area` como variable de tipo `REAL`
 - `MITAD` como constante de tipo `REAL` con valor `0.5`.
 
 ### Algoritmo proporcionado

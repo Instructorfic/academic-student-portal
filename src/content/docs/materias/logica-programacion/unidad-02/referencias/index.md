@@ -50,7 +50,7 @@ Es especialmente útil para reforzar: tipos de datos, identificadores, constante
 
 **ISO/IEC/IEEE. (2017).** *ISO/IEC/IEEE 24765:2017 Systems and software engineering — Vocabulary*.
 
-No se utiliza como libro de texto ni como lectura obligatoria. Su función es apoyar la revisión terminológica cuando sea necesario establecer definiciones técnicas consistentes (por ejemplo, para confirmar la definición de "dato", "variable" o "expresión"). ISO mantiene actualmente en desarrollo una tercera edición; cualquier material que utilice esta referencia debe indicar la edición consultada (2017).
+No se utiliza como libro de texto ni como lectura obligatoria. Su función es apoyar la revisión terminológica cuando sea necesario establecer definiciones técnicas consistentes (por ejemplo, para confirmar la definición de "dato", "variable" o "expresión"). ISO mantiene actualmente en desarrollo una tercera edición. Cualquier material que utilice esta referencia debe indicar la edición consultada (2017).
 
 ## Herramienta de apoyo
 
