@@ -53,7 +53,7 @@ cuenta antes de usarla en un entregable.
 | [1. Principios de seguridad e inyección](/materias/dba/unidad-02/01-principios-de-seguridad-e-inyeccion/) | REF-U2-07, REF-U2-08 |
 | [2. Control de acceso](/materias/dba/unidad-02/02-control-de-acceso-usuarios-roles-permisos/) | REF-U2-01, REF-U2-05, REF-U2-13 |
 | [3. Protección de datos sensibles](/materias/dba/unidad-02/03-proteccion-de-datos-sensibles/) | REF-U2-09, REF-U2-10, REF-U2-14 |
-| [4. Cifrado en tránsito y en reposo](/materias/dba/unidad-02/04-cifrado-en-transito-y-en-reposo/) | REF-U2-03, REF-U2-04, REF-U2-06 |
+| [4. Cifrado y protección técnica](/materias/dba/unidad-02/04-cifrado-en-transito-y-en-reposo/) | REF-U2-03, REF-U2-04, REF-U2-06 |
 | [5. Privacidad y cumplimiento normativo](/materias/dba/unidad-02/05-privacidad-y-cumplimiento-normativo/) | REF-U2-09, REF-U2-10 |
 | [6. Hardening de servidores de bases de datos](/materias/dba/unidad-02/06-hardening-servidor-bases-datos/) | REF-U2-02, REF-U2-11, REF-U2-12, REF-U2-13 |
 

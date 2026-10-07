@@ -1,11 +1,22 @@
 ---
-title: "4. Cifrado en tránsito y en reposo"
-description: "Unidad 2 de DBA — fundamentos de criptografía, cifrado simétrico/asimétrico, hash, TLS en PostgreSQL y MongoDB, pgcrypto, y la asimetría entre motores."
+title: "4. Cifrado y protección técnica"
+description: "Unidad 2 de DBA — cifrado en tránsito y en reposo, TLS, hash y contraseñas, pgcrypto, manejo de credenciales y gestión de llaves."
 ---
 
 Clasificar y enmascarar protege el dato en uso. Pero mientras viaja por
 la red, o mientras está guardado en disco, necesita otra capa distinta:
 cifrado.
+
+El cifrado busca proteger la confidencialidad de la información. Puede
+aplicarse:
+
+* durante la comunicación
+* durante el almacenamiento
+* en respaldos
+* en determinados campos
+* en credenciales, mediante mecanismos especializados
+
+> El cifrado es un control, no una estrategia completa de seguridad.
 
 ## ¿Qué es la criptografía?
 
@@ -73,39 +84,20 @@ nunca en ocultar el algoritmo.
 > Referencia. Kerckhoffs, A. (1883). "La cryptographie militaire".
 > *Journal des sciences militaires*.
 
-## Hash: por qué SHA-256 no basta para contraseñas
-
-```sql
-SELECT digest('numero-de-tarjeta-de-ejemplo', 'sha256');
-```
-
-No existe un comando para revertir un hash: solo se vuelve a calcular y
-se compara.
-
-| Algoritmo | Por qué sí o no sirve para contraseñas |
-| --- | --- |
-| SHA-256 solo | Rápido *a propósito* — un atacante puede probar miles de millones de combinaciones por segundo. |
-| bcrypt, scrypt o Argon2 | Deliberadamente lentos, con *salt* integrado. |
-
-```sql
-SELECT crypt('clave-de-usuario', gen_salt('bf'));
-```
-
-> Referencia. OWASP *Password Storage Cheat Sheet*, NIST SP 800-63B,
-> secc. 5.1.1.2.
-
-## Codificación con Base64 no es cifrado
-
-```bash
-$ echo -n "numero-de-tarjeta-de-ejemplo" | base64
-bnVtZXJvLWRlLXRhcmpldGEtZGUtZWplbXBsbw==
-```
-
-No se usó ninguna clave para decodificarlo. Eso es exactamente lo que
-significa que Base64 no protege nada — cualquiera puede revertirlo sin
-ningún secreto.
-
 ## Cifrado en tránsito
+
+Protege información mientras se desplaza entre componentes.
+
+```text
+Sin protección:
+Cliente ────────────── Servidor
+          datos
+
+Con protección:
+Cliente ══ TLS ══════ Servidor
+```
+
+Ejemplos: TLS, conexiones seguras, túneles cifrados, VPN.
 
 | | |
 | --- | --- |
@@ -114,6 +106,18 @@ ningún secreto.
 | En qué beneficia | Previene interceptación y protege credenciales que viajan por la conexión. |
 | Ventaja | Transparente para la aplicación una vez configurado, estándar ampliamente soportado. |
 | Desventaja | No protege el dato una vez que llega a disco o memoria. Requiere gestionar certificados. |
+
+### TLS en bases de datos
+
+TLS puede proteger conexiones entre:
+
+* aplicación y PostgreSQL
+* aplicación y MongoDB
+* herramienta administrativa y servidor
+* componentes de una arquitectura distribuida
+
+Protege principalmente la confidencialidad, la integridad del canal y la
+autenticación del servidor.
 
 ### Ejemplo guiado: cifrar la conexión (PostgreSQL)
 
@@ -158,6 +162,14 @@ cifradas (REF-U2-06).
 
 ## Cifrado en reposo
 
+Protege información almacenada. Puede aplicarse mediante cifrado de
+discos, de volúmenes, de respaldos, de archivos, a nivel de aplicación o
+con mecanismos específicos del motor.
+
+> ¿Qué sucede si alguien obtiene una copia física del almacenamiento?
+
+El control de acceso al servidor por sí solo puede no ser suficiente.
+
 | | |
 | --- | --- |
 | Qué significa | Proteger los datos mientras están almacenados: en disco, respaldos o *snapshots*. |
@@ -187,7 +199,81 @@ SELECT pgp_sym_decrypt(rfc_cifrado, '<REDACTED-KEY>') FROM clientes;
 
 (REF-U2-04)
 
+> **Advertencia.** Las claves no deben quedar expuestas directamente en
+> consultas, código fuente o repositorios. Este ejemplo usa una clave
+> ficticia solo para mostrar el mecanismo.
+
+## Cifrado de datos frente a hashing
+
+No son lo mismo.
+
+| Mecanismo | Uso principal | Recuperación |
+| --- | --- | --- |
+| Hash | Verificación | No |
+| Cifrado | Confidencialidad | Sí |
+| HMAC | Integridad y autenticidad | No |
+| TLS | Comunicación segura | No aplica |
+
+Las contraseñas no deberían almacenarse mediante cifrado reversible.
+
+## Almacenamiento de contraseñas
+
+Una contraseña no debería almacenarse así:
+
+```text
+usuario | contraseña
+juan    | Secreto123
+```
+
+Ni simplemente mediante `SHA-256(contraseña)`. Para contraseñas se
+utilizan funciones diseñadas para derivación de claves y resistencia a
+ataques de fuerza bruta, como Argon2id, bcrypt o scrypt.
+
+```sql
+SELECT digest('numero-de-tarjeta-de-ejemplo', 'sha256');
+```
+
+No existe un comando para revertir un hash: solo se vuelve a calcular y
+se compara.
+
+| Algoritmo | Por qué sí o no sirve para contraseñas |
+| --- | --- |
+| SHA-256 solo | Rápido *a propósito* — un atacante puede probar miles de millones de combinaciones por segundo. |
+| bcrypt, scrypt o Argon2 | Deliberadamente lentos, con *salt* integrado. |
+
+```sql
+SELECT crypt('clave-de-usuario', gen_salt('bf'));
+```
+
+> **Idea clave.** Una contraseña debe almacenarse mediante un mecanismo
+> diseñado específicamente para contraseñas.
+
+> Referencia. OWASP *Password Storage Cheat Sheet*, NIST SP 800-63B,
+> secc. 5.1.1.2.
+
+## Codificación con Base64 no es cifrado
+
+```bash
+$ echo -n "numero-de-tarjeta-de-ejemplo" | base64
+bnVtZXJvLWRlLXRhcmpldGEtZGUtZWplbXBsbw==
+```
+
+No se usó ninguna clave para decodificarlo. Eso es exactamente lo que
+significa que Base64 no protege nada — cualquiera puede revertirlo sin
+ningún secreto. Base64 no proporciona confidencialidad, protección
+criptográfica ni resistencia contra lectura.
+
+> **Regla.** Codificación no significa cifrado.
+
 ## Cifrado en MongoDB: una asimetría real entre motores
+
+MongoDB puede utilizar mecanismos de seguridad para proteger
+comunicaciones, autenticación, determinados datos y almacenamiento. La
+disponibilidad exacta de determinadas capacidades depende de la versión
+y edición utilizada.
+
+> **Principio.** El mecanismo técnico debe seleccionarse de acuerdo con
+> el riesgo y la arquitectura.
 
 PostgreSQL cifra dentro del motor con `pgcrypto`. Una MongoDB Community
 típica no tiene ese equivalente nativo y transparente: el cifrado
@@ -215,24 +301,98 @@ PostgreSQL, fuera de ella (a nivel de aplicación) en MongoDB Community.
 
 ## Manejo seguro de credenciales
 
-Una llave de cifrado, igual que una contraseña, **nunca debe** guardarse
-en texto plano dentro del código de la aplicación ni en el propio
-repositorio de código. La gestión de llaves con un servicio externo
-(gestor de secretos o KMS) excede el alcance de esta unidad. Aquí se
-presenta solo como principio.
+Una credencial puede ser:
 
-> **Actividad 5 — Cifrado.** Habilita TLS en PostgreSQL y cifra `rfc` con
-> `pgcrypto`. En MongoDB, cifra el mismo campo a nivel de aplicación con
-> `openssl` antes de insertarlo. Documenta, con la tabla de ventajas y
-> desventajas vista aquí, por qué esta asimetría entre motores existe.
-> Instrucciones completas en la
-> [Actividad 5](/materias/dba/unidad-02/actividades/actividad-5/), guía
-> técnica en el
-> [Laboratorio 3](/materias/dba/unidad-02/laboratorios/laboratorio-3-proteccion-de-datos-y-cifrado/), Parte C y D.
+* contraseña
+* token
+* API key
+* certificado
+* clave privada
+* cadena de conexión
+* secreto de aplicación
+
+Nunca debe asumirse que una contraseña es el único secreto que debe
+protegerse. Una llave de cifrado, igual que una contraseña, **nunca
+debe** guardarse en texto plano dentro del código de la aplicación ni en
+el propio repositorio de código.
+
+### Credenciales expuestas en aplicaciones
+
+Un error frecuente:
+
+```text
+DB_HOST=servidor
+DB_USER=admin
+DB_PASSWORD=123456
+```
+
+dentro del código fuente. También pueden aparecer en repositorios Git,
+archivos `.env`, logs, scripts, imágenes de contenedores, archivos de
+configuración y *pipelines* CI/CD.
+
+### ¿Qué hacer ante una credencial expuesta?
+
+La respuesta no debe limitarse a eliminar el archivo.
+
+```text
+Detectar
+   ↓
+Revocar
+   ↓
+Rotar
+   ↓
+Investigar exposición
+   ↓
+Verificar accesos
+   ↓
+Corregir almacenamiento
+   ↓
+Registrar incidente
+```
+
+> **Importante.** Una credencial publicada debe considerarse
+> comprometida.
+
+## Gestión de llaves
+
+Las claves criptográficas también necesitan protección. Debe
+controlarse su generación, almacenamiento, acceso, distribución,
+rotación, revocación, respaldo y destrucción.
+
+Cifrar correctamente pero almacenar la clave junto al dato reduce
+considerablemente la protección.
+
+### Ciclo de vida de una llave
+
+```text
+Generación
+    ↓
+Almacenamiento seguro
+    ↓
+Uso controlado
+    ↓
+Rotación
+    ↓
+Revocación
+    ↓
+Destrucción
+```
+
+La gestión de llaves debe ser independiente del dato que protegen cuando
+sea posible. La gestión con un servicio externo (gestor de secretos o
+KMS) excede el alcance de esta unidad.
+
+> **Actividad 5 — Protección criptográfica.** Analiza una contraseña,
+> una conexión de base de datos, un dato almacenado, una credencial de
+> aplicación y una clave criptográfica. Para cada caso determina qué debe
+> protegerse, contra qué amenaza, qué mecanismo utilizar, dónde almacenar
+> los secretos y cómo verificar el control. Instrucciones completas en la
+> [Actividad 5](/materias/dba/unidad-02/actividades/actividad-5/), guía técnica en el
+> [Laboratorio 2](/materias/dba/unidad-02/laboratorios/laboratorio-2-cifrado-credenciales-y-comunicaciones-seguras/).
 >
-> ⚠️ **Advertencia.** En los laboratorios de esta unidad nunca uses
+> **Precaución.** En los laboratorios de esta unidad nunca uses
 > contraseñas ni llaves reales. Usa siempre valores de ejemplo, y nunca
-> los incluyas en texto plano en un entregable o repositorio público.
+> los incluyas en texto plano en un entregable o repositorio.
 
 ## Referencias de este tema
 

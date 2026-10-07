@@ -39,8 +39,8 @@ capa reemplaza a las demás.
 ```
 
 Los laboratorios de la unidad preparan `clientes` sobre dos contenedores
-Docker desechables (PostgreSQL 16 y MongoDB 7) — ver la sección "Entorno"
-del [Laboratorio 1](/materias/dba/unidad-02/laboratorios/laboratorio-1-inyeccion-sql-nosql/)
+Docker desechables (PostgreSQL 16 y MongoDB 7) — ver "Preparar el entorno"
+en la [presentación de la unidad](/materias/dba/unidad-02/presentacion/#preparar-el-entorno)
 para los comandos exactos.
 
 ## La tríada CIA aplicada a bases de datos
@@ -94,8 +94,8 @@ misma familia de vulnerabilidad reaparece en MongoDB con un filtro como
 exista.
 
 > Las simulaciones prácticas de inyección, vulnerable contra mitigada, en
-> PostgreSQL y en MongoDB, están en el
-> [Laboratorio 1](/materias/dba/unidad-02/laboratorios/laboratorio-1-inyeccion-sql-nosql/),
+> PostgreSQL y en MongoDB, están en
+> el repositorio de laboratorios de la materia (code.ficlabs.com.mx, laboratorios DBA),
 > no en este tema. Aquí nos enfocamos en el concepto, la prevención y la
 > responsabilidad organizacional.
 
@@ -180,14 +180,12 @@ revisión manual de código:
 > *Testing for NoSQL Injection*, ISO/IEC 27002:2022, secc. 5.2,
 > "Information security roles and responsibilities".
 
-> **Actividad 2 — Principios de seguridad e inyección (laboratorio).**
-> Vas a reproducir, contra PostgreSQL y MongoDB reales, la diferencia de
-> comportamiento entre una consulta vulnerable y su equivalente
-> prevenida, y a responder qué equipo sería responsable de corregir cada
-> causa raíz que identifiques. Instrucciones completas en la
-> [Actividad 2](/materias/dba/unidad-02/actividades/actividad-2/), guía
-> técnica paso a paso en el
-> [Laboratorio 1](/materias/dba/unidad-02/laboratorios/laboratorio-1-inyeccion-sql-nosql/).
+> **Actividad 2 — Inyección.** Reproduce el laboratorio de inyección
+> SQL y NoSQL del repositorio de la materia (code.ficlabs.com.mx,
+> laboratorios DBA), documenta el comportamiento vulnerable y mitigado,
+> y responde qué equipo sería responsable de corregir cada causa raíz
+> que identificaste. Instrucciones completas en la
+> [Actividad 2](/materias/dba/unidad-02/actividades/actividad-2/).
 
 ## Referencias de este tema
 

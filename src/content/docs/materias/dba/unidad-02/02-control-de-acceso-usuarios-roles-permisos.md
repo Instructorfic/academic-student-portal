@@ -167,14 +167,11 @@ permisos que ya no deberían existir — privilegios "acumulados" con el
 tiempo, un riesgo directo al principio de privilegio mínimo del tema
 anterior.
 
-> **Actividad 3 — Matriz de usuarios, roles y permisos (laboratorio,
-> primera parte de la evidencia oficial).** Crea al menos tres roles con
+> **Actividad 3 — Matriz de roles.** Crea al menos tres roles con
 > distinto nivel de privilegio sobre `clientes` en PostgreSQL y su
 > equivalente en MongoDB. Identifica qué modelo de control de acceso está
 > en juego en cada mecanismo que uses. Instrucciones completas en la
-> [Actividad 3](/materias/dba/unidad-02/actividades/actividad-3/), guía
-> técnica en el
-> [Laboratorio 2](/materias/dba/unidad-02/laboratorios/laboratorio-2-control-de-acceso/).
+> [Actividad 3](/materias/dba/unidad-02/actividades/actividad-3/).
 
 ## Referencias de este tema
 

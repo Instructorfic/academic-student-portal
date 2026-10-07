@@ -1,6 +1,6 @@
 ---
 title: "6. Hardening de servidores de bases de datos"
-description: "Unidad 2 de DBA — estructura de archivos de PostgreSQL y MongoDB, parámetros críticos, hardening del sistema operativo y de la red, y línea base de configuración segura."
+description: "Unidad 2 de DBA — superficie de ataque, configuración segura, rutas y archivos de PostgreSQL y MongoDB, sistema operativo, red, línea base, parches y defensa en profundidad."
 ---
 
 Ya conectamos cada control técnico con la obligación legal que lo exige.
@@ -14,14 +14,88 @@ de forma que quede menos espacio para que algo salga mal. Un DBA no solo
 instala el motor: decide qué parte de esa instalación por defecto se
 queda y cuál se apaga. Esa decisión continua es hardening.
 
+Una base de datos no funciona de manera aislada. Cada capa puede
+introducir riesgos:
+
+```text
+Datos
+  ↓
+Motor de BD
+  ↓
+Sistema operativo
+  ↓
+Red
+  ↓
+Infraestructura
+```
+
+## Reducción de superficie de ataque
+
+El hardening incluye eliminar configuraciones innecesarias, restringir
+accesos, proteger servicios y archivos, reducir exposición, aplicar
+actualizaciones, registrar eventos y establecer una línea base.
+
+```text
+Más servicios
++
+Más puertos
++
+Más usuarios
++
+Más permisos
++
+Más interfaces
+=
+Mayor superficie de ataque
+```
+
+El hardening busca reducirla sin afectar la función necesaria.
+
 ## Instalación funcional contra instalación segura
 
-| | |
+Una instalación funcional no necesariamente es una instalación segura.
+La pregunta no es "¿funciona?", sino:
+
+> ¿Funciona con la menor exposición razonable?
+
+| Funcional | Segura |
 | --- | --- |
-| **Instalación funcional** | Todo habilitado, cualquier interfaz, cualquier extensión. |
-| **Instalación endurecida** | Solo lo que la aplicación realmente necesita. |
+| Permite conexiones | Permite conexiones necesarias |
+| Muchos servicios activos | Servicios necesarios |
+| Acceso amplio | Acceso restringido |
+| Configuración predeterminada | Configuración revisada |
+| Privilegios amplios | Mínimo privilegio |
+| Sin línea base | Línea base documentada |
+
+**Una instalación funcional es solamente el punto de partida.** Una
+configuración segura por defecto implica escuchar solamente donde sea
+necesario, deshabilitar funciones no utilizadas, evitar cuentas
+innecesarias, restringir accesos y utilizar autenticación adecuada.
 
 > Referencia. Saltzer y Schroeder (1975), ISO/IEC 27002:2022.
+
+## Cuentas, servicios y extensiones innecesarias
+
+Durante el hardening deben revisarse cuentas, roles, servicios,
+procesos, extensiones, módulos, puertos e interfaces. Antes de eliminar
+algo:
+
+1. identificar su función
+2. determinar dependencias
+3. evaluar impacto
+4. aplicar el cambio
+5. verificar
+
+## Separación de ambientes
+
+Los ambientes de desarrollo, pruebas y producción no deberían tratarse
+como uno solo. Deben controlarse por separado los datos, las
+credenciales, los accesos, las configuraciones, los permisos y las
+conexiones.
+
+Los datos reales de producción no deberían copiarse directamente a
+desarrollo sin controles apropiados de protección y transformación (ver
+[3. Protección de datos sensibles](/materias/dba/unidad-02/03-proteccion-de-datos-sensibles/)).
 
 ## Dónde viven los datos realmente
 
@@ -36,6 +110,28 @@ necesita saber dónde está cada uno antes de tocar cualquier parámetro:
   archivo de datos. Da durabilidad ante una caída.
 * **Archivos de autenticación y metadatos** — quién puede conectarse y
   con qué método, versión del motor que creó los archivos.
+
+### Rutas habituales en una instalación de paquete
+
+En instalaciones mediante paquetes Debian/Ubuntu, las rutas habituales
+son:
+
+| Elemento | PostgreSQL | MongoDB |
+| --- | --- | --- |
+| Configuración principal | `/etc/postgresql/16/main/postgresql.conf` | `/etc/mongod.conf` |
+| Control de acceso | `/etc/postgresql/16/main/pg_hba.conf` | Roles y autorización |
+| Identificación | `/etc/postgresql/16/main/pg_ident.conf` | — |
+| Directorio de datos | `/var/lib/postgresql/16/main/` | `/var/lib/mongodb/` |
+| Logs | `/var/log/postgresql/` | `/var/log/mongodb/` |
+| Log principal | `/var/log/postgresql/postgresql-16-main.log` | `/var/log/mongodb/mongod.log` |
+| Servicio | `postgresql@16-main.service` | `mongod.service` |
+| Puerto | `5432` | `27017` |
+
+Las rutas pueden cambiar según versión, distribución y método de
+instalación. El directorio de datos no debe utilizarse como un
+directorio común de intercambio de archivos, y los logs ayudan a
+detectar conexiones, desconexiones, errores, problemas de autenticación
+y eventos administrativos.
 
 ### PostgreSQL: estructura del directorio de datos (PGDATA)
 
@@ -128,6 +224,22 @@ organizado por secciones.
 
 ## Parámetros críticos que un DBA debe conocer
 
+El DBA debe revisar parámetros relacionados con conexiones, interfaces,
+autenticación, autorización, logging, TLS, límites, extensiones,
+archivos y almacenamiento. La configuración debe documentarse.
+
+`pg_hba.conf` es uno de los archivos más importantes para el control de
+acceso en PostgreSQL. Una regla determina tipo de conexión, base de
+datos, usuario, origen y método de autenticación:
+
+```text
+host  db_app  usuario_app  red_autorizada  scram-sha-256
+```
+
+En MongoDB, autenticación (¿quién eres?) y autorización (¿qué puedes
+hacer?) son conceptos diferentes. La autorización basada en roles
+permite limitar las operaciones disponibles para cada usuario.
+
 ### PostgreSQL
 
 | Parámetro en `postgresql.conf` | Por defecto | Qué decide el DBA |
@@ -164,6 +276,25 @@ venga inseguro por naturaleza.
 > Referencia. MongoDB Manual, "Configuration File Options", MongoDB
 > Engineering Blog.
 
+## Referencia rápida: PostgreSQL y MongoDB
+
+| Elemento | PostgreSQL | MongoDB |
+| --- | --- | --- |
+| Cliente | `psql` | `mongosh` |
+| Servicio | `postgresql@16-main` | `mongod` |
+| Puerto | `5432` | `27017` |
+| Configuración | `postgresql.conf` | `mongod.conf` |
+| Control de acceso | `pg_hba.conf` | Roles + autorización |
+| Datos | `/var/lib/postgresql/16/main/` | `/var/lib/mongodb/` |
+| Logs | `/var/log/postgresql/` | `/var/log/mongodb/` |
+| Estado | `pg_isready` | conexión con `mongosh` |
+| Red | `listen_addresses` | `bindIp` |
+| Comunicación segura | TLS | TLS |
+
+**No son equivalencias funcionales exactas.** Utiliza esta tabla como
+referencia durante las prácticas, no como sustituto de la documentación
+oficial del motor.
+
 ## Lo mínimo que un DBA debe conocer del sistema operativo
 
 Esto no reemplaza al equipo de infraestructura. Es la base que un DBA
@@ -187,6 +318,26 @@ necesita para no depender de otro equipo en una emergencia.
 | Permisos de datos y respaldos | Directorio de datos con `chmod 700` — un respaldo sin cifrar y con permisos abiertos deshace el cifrado en reposo del [tema 4](/materias/dba/unidad-02/04-cifrado-en-transito-y-en-reposo/). |
 | Gestión de parches | Parchar el motor y parchar el sistema operativo son procesos distintos que el DBA debe coordinar. |
 
+El proceso del motor no debería ejecutarse como `root`: si un servicio
+es comprometido, sus privilegios deben estar limitados.
+
+### Protección de respaldos
+
+Un respaldo contiene información que puede ser tan sensible como la base
+de datos original. Debe protegerse su acceso, almacenamiento,
+transmisión, cifrado, retención y eliminación.
+
+> ¿Qué ocurriría si un atacante obtiene nuestro respaldo?
+
+### Restricción del acceso administrativo
+
+No todos los usuarios deben administrar el servidor. Deben controlarse
+las cuentas administrativas, el acceso remoto, los privilegios, `sudo`,
+el acceso al sistema operativo y el acceso a la base de datos.
+
+> **Principio.** Administrar una base de datos no implica administrar
+> todo el servidor.
+
 ## Seguridad de red
 
 | Elemento | En qué consiste |
@@ -195,6 +346,52 @@ necesita para no depender de otro equipo en una emergencia.
 | Firewall | Solo el servidor de aplicación tiene regla de entrada al puerto del motor. |
 | Listas de control de acceso | `pg_hba.conf` o `bindIp` más *firewall* trabajan juntos — defensa en profundidad, no alternativas entre sí. |
 | Acceso administrativo | Por túnel SSH o VPN, mismo mecanismo ya visto en el [tema 4](/materias/dba/unidad-02/04-cifrado-en-transito-y-en-reposo/). |
+
+### Allowlists
+
+Una *allowlist* define explícitamente qué orígenes están autorizados.
+
+```text
+Servidor de aplicación
+        ↓
+TCP 5432
+        ↓
+Servidor PostgreSQL
+```
+
+en lugar de:
+
+```text
+Cualquier origen
+        ↓
+TCP 5432
+        ↓
+Servidor PostgreSQL
+```
+
+Una política básica de *firewall* se expresa como "permitir lo necesario
+y bloquear lo innecesario". Es preferible autorizar explícitamente lo
+necesario.
+
+### Restricción de exposición pública
+
+Un servidor de base de datos no necesita estar expuesto directamente a
+Internet. El acceso administrativo puede realizarse mediante redes
+privadas, VPN, túneles seguros, bastiones o canales administrativos
+controlados. El puerto del motor no debería exponerse públicamente si la
+operación no lo requiere.
+
+### Diagnóstico de una conexión
+
+Cuando una conexión falla, analiza por capas:
+
+```text
+Cliente → Conectividad → Firewall → Puerto → Servicio
+        → Configuración → Autenticación → Autorización → Permisos
+```
+
+**No cambies cinco configuraciones al mismo tiempo.** Primero identifica
+dónde está el problema.
 
 ## Más allá del checklist básico
 
@@ -205,17 +402,6 @@ necesita para no depender de otro equipo en una emergencia.
 | Swap del sistema operativo | Si el motor puede paginar datos sensibles a memoria virtual, un *swap* sin cifrar filtra esos datos fuera del control del motor. |
 | Aislamiento del usuario del servicio | El usuario del sistema operativo que corre el motor solo debe tener permisos sobre su propio directorio de datos. |
 
-## Checklist de hardening: antes y después
-
-| Elemento | Capa | Antes | Después |
-| --- | --- | --- | --- |
-| Puerto publicado por el contenedor | Host | Abierto a todo | Restringido a red interna |
-| `listen_addresses` o `bindIp` | Motor | `*` o `0.0.0.0` | Solo las necesarias |
-| `pg_hba.conf` | Motor | Acepta cualquier origen | Restringido a rango de red |
-| Extensiones no usadas | Motor | Pueden estar instaladas | Eliminadas |
-| Cuentas de ejemplo | Motor | Presentes | Deshabilitadas |
-| SSH | Sistema operativo | Acepta contraseña y root | Solo llave, sin root directo |
-
 ## Línea base de configuración segura
 
 Una **línea base** (*baseline*) de configuración segura es un documento
@@ -225,6 +411,71 @@ Center for Internet Security, es un ejemplo público y ampliamente usado
 de este tipo de *checklist* para PostgreSQL (REF-U2-11). Documentar los
 cambios de seguridad realizados y revisar la configuración
 periódicamente son parte integral de mantener esa línea base vigente.
+
+Sin línea base es difícil determinar si un servidor continúa endurecido.
+
+```text
+Estado inicial
+      ↓
+Hardening
+      ↓
+Estado esperado
+```
+
+### Configuración mínima aceptable
+
+Una línea base puede definir usuarios autorizados, servicios necesarios,
+puertos e interfaces permitidos, autenticación requerida, privilegios,
+archivos protegidos, logging, actualizaciones y reglas de *firewall*.
+**La línea base debe ser verificable.**
+
+| Capa | Verificaciones |
+| --- | --- |
+| Sistema operativo | Usuarios identificados, privilegios revisados, acceso administrativo restringido, servicios innecesarios deshabilitados, actualizaciones aplicadas, logs disponibles. |
+| Base de datos | Usuarios y roles revisados, privilegios mínimos, conexiones restringidas, autenticación configurada, TLS evaluado, logging revisado. |
+| Red | Puertos necesarios identificados, origen permitido definido, *firewall* configurado, exposición pública evaluada. |
+
+### Documentación de cambios
+
+Todo cambio relevante debe registrar:
+
+```text
+¿Qué se cambió?
+¿Por qué?
+¿Quién lo realizó?
+¿Cuándo?
+¿Qué riesgo reduce?
+¿Cómo se verificó?
+¿Qué impacto tuvo?
+¿Cómo revertirlo?
+```
+
+Esto convierte una modificación técnica en un cambio administrado.
+
+### Revisión periódica y deriva de configuración
+
+El hardening no es una actividad de una sola vez. Cambian el software,
+los usuarios, los servicios, las aplicaciones, las vulnerabilidades, los
+requisitos y la arquitectura. Con el tiempo, nuevos servicios, usuarios,
+puertos o configuraciones modificadas alejan al servidor de su línea
+base: eso es **deriva de configuración**, y la revisión periódica busca
+detectarla.
+
+> ¿El servidor sigue cumpliendo la línea base seis meses después?
+
+## Checklist de hardening: antes y después
+
+El hardening debe producir evidencia. La evidencia debe demostrar el
+cambio, por ejemplo:
+
+| Elemento | Capa | Antes | Después |
+| --- | --- | --- | --- |
+| Puerto publicado por el contenedor | Host | Abierto a todo | Restringido a red interna |
+| `listen_addresses` o `bindIp` | Motor | `*` o `0.0.0.0` | Solo las necesarias |
+| `pg_hba.conf` | Motor | Acepta cualquier origen | Restringido a rango de red |
+| Extensiones no usadas | Motor | Pueden estar instaladas | Eliminadas |
+| Cuentas de ejemplo | Motor | Presentes | Deshabilitadas |
+| SSH | Sistema operativo | Acepta contraseña y root | Solo llave, sin root directo |
 
 ## Caso real: MongoDB sin autenticación (2017)
 
@@ -246,14 +497,59 @@ detección de vulnerabilidades, segmentación del acceso a las bases de
 datos, y gobierno de los datos como parte de las causas que permitieron
 el ataque (REF-U2-12).
 
-> **Actividad 7 — Checklist de hardening (laboratorio, antes/después).**
-> Documenta el estado por defecto de los contenedores que contienen
-> `clientes`, en PostgreSQL y MongoDB, en las tres capas vistas — motor,
-> sistema operativo y red. Aplica al menos tres cambios de
-> endurecimiento en cada capa y compara antes contra después.
-> Instrucciones completas en la
-> [Actividad 7](/materias/dba/unidad-02/actividades/actividad-7/), guía
-> técnica en el
+Pero actualizar también requiere control:
+
+```text
+Identificar → Evaluar → Probar → Aplicar → Verificar → Documentar
+```
+
+El DBA debe conocer la versión instalada, la versión disponible, las
+vulnerabilidades relevantes, la dependencia con aplicaciones, la ventana
+de mantenimiento, el procedimiento de reversión y la evidencia
+posterior. **No basta con decir "está actualizado": debe poder
+demostrarse.**
+
+## Defensa en profundidad
+
+La seguridad debe combinar controles. Si una capa falla, otras pueden
+limitar el impacto.
+
+```text
+Datos → Roles y privilegios → Motor de BD → Sistema operativo
+      → Firewall → Segmentación → Red
+```
+
+El principio de mínimo privilegio aplica en todas las capas:
+
+| Capa | Ejemplo |
+| --- | --- |
+| Base de datos | `GRANT SELECT` |
+| Sistema operativo | `sudo systemctl reload postgresql` |
+| Red | Permitir únicamente el origen autorizado |
+
+Un servidor endurecido combina usuarios, privilegios, configuración,
+archivos, servicios, red, logs, parches y línea base. Ningún control
+individual resuelve todos los riesgos.
+
+## Metodología de trabajo
+
+```text
+Preguntar → Observar → Decidir → Cambiar → Verificar → Documentar
+```
+
+**El objetivo no es memorizar comandos**, sino aprender a tomar
+decisiones de administración segura. La evidencia de hardening puede
+incluir comandos ejecutados, configuración antes y después, servicios
+activos, puertos abiertos, permisos, usuarios, reglas de acceso, logs y
+pruebas de conexión. **Una evidencia debe permitir que otra persona
+comprenda qué ocurrió.**
+
+> **Actividad 7 — Reducción de superficie de ataque.** Identifica
+> servicios activos y puertos, relaciona puertos y procesos, revisa
+> configuraciones, identifica componentes innecesarios, analiza
+> privilegios, aplica cambios controlados, verifica el funcionamiento y
+> documenta la evidencia. Instrucciones completas en la
+> [Actividad 7](/materias/dba/unidad-02/actividades/actividad-7/), guía técnica en el
 > [Laboratorio 4](/materias/dba/unidad-02/laboratorios/laboratorio-4-hardening/).
 
 ## Referencias de este tema

@@ -1,15 +1,26 @@
 ---
 title: "5. Privacidad y cumplimiento normativo"
-description: "Unidad 2 de DBA — marco normativo mexicano e internacional de protección de datos personales, los ocho principios rectores, derechos ARCO y qué marco aplica según el tipo de dato."
+description: "Unidad 2 de DBA — seguridad y privacidad, marco normativo mexicano e internacional, principios rectores, aviso de privacidad, finalidad, minimización, derechos ARCO y trazabilidad."
 ---
 
 Todo lo que trabajaste en
 [2. Control de acceso](/materias/dba/unidad-02/02-control-de-acceso-usuarios-roles-permisos/),
 [3. Protección de datos sensibles](/materias/dba/unidad-02/03-proteccion-de-datos-sensibles/) y
-[4. Cifrado](/materias/dba/unidad-02/04-cifrado-en-transito-y-en-reposo/)
+[4. Cifrado y protección técnica](/materias/dba/unidad-02/04-cifrado-en-transito-y-en-reposo/)
 no es solo una buena práctica técnica: en México, buena parte de esas
 prácticas están **obligadas por ley** cuando se trata de datos
 personales.
+
+La seguridad busca proteger la información. La privacidad busca asegurar
+que los datos personales sean tratados de manera adecuada.
+
+```text
+Seguridad
+¿Qué controles protegen los datos?
+
+Privacidad
+¿Por qué tenemos estos datos y cómo los utilizamos?
+```
 
 ## Marco normativo mexicano
 
@@ -22,6 +33,13 @@ personales.
 > el 14 de noviembre de 2025 — es un marco normativo relativamente
 > reciente, no el de hace más de una década. Verifica siempre su vigencia
 > antes de aplicarlo a un caso real.
+
+La aplicación concreta depende de:
+
+* quién trata los datos
+* qué tipo de organización es
+* qué información se procesa
+* cuál es la finalidad del tratamiento
 
 > Referencia. LFPDPPP Art. 6, LGPDPPSO Art. 16.
 
@@ -48,6 +66,64 @@ expone lo estrictamente necesario. La **minimización de datos** —no
 recolectar más de lo necesario— también se desprende de este mismo
 principio.
 
+Estos principios deben traducirse en decisiones técnicas.
+
+## Aviso de privacidad
+
+El aviso de privacidad informa al titular sobre aspectos del tratamiento
+de sus datos. Entre otros elementos, puede explicar:
+
+* quién trata los datos
+* qué datos se recopilan
+* para qué se utilizan
+* cómo pueden ejercerse derechos
+* con quién pueden compartirse
+
+**Implicación para el DBA.** La base de datos debe almacenar solamente
+la información necesaria para las finalidades definidas.
+
+## Consentimiento y finalidad
+
+Antes de almacenar un dato debe existir una razón válida para hacerlo.
+
+```text
+Dato
+ ↓
+¿Por qué se necesita?
+ ↓
+¿Para qué finalidad?
+ ↓
+¿Quién lo necesita?
+ ↓
+¿Durante cuánto tiempo?
+```
+
+La finalidad ayuda a determinar qué datos son necesarios y qué
+tratamiento está justificado.
+
+## Minimización de datos
+
+Un diseño puede ser técnicamente funcional y aun así recopilar
+información innecesaria.
+
+```text
+Registro de usuario
+
+Necesario:
+nombre
+correo
+contraseña
+
+¿Realmente necesario?
+fecha de nacimiento
+CURP
+teléfono
+dirección
+```
+
+> **Principio.** No almacenar información solamente porque técnicamente
+> podemos hacerlo.
+
 ## Derechos ARCO y normativa sectorial mexicana
 
 Los titulares de los datos tienen los derechos **ARCO**:
@@ -57,9 +133,38 @@ Los titulares de los datos tienen los derechos **ARCO**:
 * **C**ancelación — solicitar que se eliminen sus datos.
 * **O**posición — oponerse a un uso específico de sus datos.
 
+La organización debe contar con mecanismos para responder a estas
+solicitudes conforme al marco aplicable.
+
 Si `clientes` incluyera historia clínica, entraría además la
 **NOM-024-SSA3-2012** (sistemas de expediente clínico electrónico),
 aplicada **junto con** la LFPDPPP, no en lugar de ella.
+
+## Trazabilidad del tratamiento
+
+La trazabilidad permite responder:
+
+* quién accedió
+* cuándo accedió
+* qué operación realizó
+* sobre qué información
+* desde dónde
+* con qué cuenta
+
+```text
+Usuario
+  ↓
+Autenticación
+  ↓
+Consulta
+  ↓
+Registro de actividad
+  ↓
+Evidencia
+```
+
+**La trazabilidad permite investigar y demostrar.** En la Unidad III
+profundizarás en bitácoras técnicas e interpretación de eventos.
 
 ## Marco normativo internacional
 
@@ -71,6 +176,9 @@ aplicada **junto con** la LFPDPPP, no en lugar de ella.
 | **HIPAA, SOX, CCPA** | HIPAA (salud) y SOX (financiero), ambas de EUA, y CCPA (California) — referencias sectoriales y regionales útiles para contrastar enfoques. |
 
 > Referencia. ISO/IEC 27701:2019, ISO/IEC 29100.
+
+> **Idea clave.** No se implementa una norma únicamente porque el nombre
+> aparezca en una lista de cumplimiento.
 
 El programa de esta materia menciona estos marcos internacionales como
 **referencia comparativa**, no como marco normativo central: el marco
@@ -94,11 +202,32 @@ corresponde por ese tipo de dato".
 > Referencia. PCI Security Standards Council, PCI DSS v4.0, GDPR Art. 3,
 > ámbito territorial.
 
+## Base de datos y privacidad
+
+El diseño de la base de datos puede facilitar o dificultar el
+cumplimiento. Por ejemplo:
+
+* almacenar únicamente datos necesarios
+* separar información sensible
+* controlar privilegios
+* registrar accesos
+* aplicar retención
+* eliminar información cuando corresponda
+* proteger respaldos
+
 ## Implicaciones para el DBA
 
 Un DBA no decide las políticas de privacidad de la organización, pero es
 quien **implementa técnicamente** las obligaciones que de ellas se
-derivan. Cuatro preguntas que debería hacerse quien trabaja con datos e
+derivan. El cumplimiento no se resuelve únicamente con documentos
+legales: puede tener consecuencias técnicas sobre el acceso, la
+clasificación, la retención, la eliminación, la trazabilidad, los
+respaldos, el cifrado, la auditoría y la minimización.
+
+> El DBA participa en la implementación técnica de controles
+> relacionados con el tratamiento de datos.
+
+Cuatro preguntas que debería hacerse quien trabaja con datos e
 información:
 
 * ¿Son responsables o encargados del tratamiento? La obligación legal
@@ -115,18 +244,14 @@ columnas realmente necesitan almacenarse. Si un titular ejerce su
 derecho de cancelación, el DBA es quien ejecuta —de forma segura y
 verificable— la eliminación de esos datos.
 
-> **Actividad 6 — Trazabilidad control → obligación legal.** Conecta
-> cada control técnico ya implementado sobre `clientes` con el principio
-> rector o norma que respalda su necesidad, por ejemplo:
->
-> | Control aplicado | Principio o norma |
-> | --- | --- |
-> | Enmascaramiento de correo y rfc | Proporcionalidad |
-> | Roles lector, editor, administrador | Responsabilidad |
-> | Cifrado de rfc | Licitud y calidad |
->
+> **Actividad 6 — De requisito de privacidad a control técnico.** Para
+> un caso de tratamiento de datos, identifica el dato y su finalidad,
+> determina quién debe acceder, define el periodo de retención,
+> selecciona los controles y define la evidencia. El resultado es la
+> cadena requisito → riesgo → control → implementación → evidencia.
 > Instrucciones completas en la
-> [Actividad 6](/materias/dba/unidad-02/actividades/actividad-6/).
+> [Actividad 6](/materias/dba/unidad-02/actividades/actividad-6/), guía técnica en el
+> [Laboratorio 3](/materias/dba/unidad-02/laboratorios/laboratorio-3-privacidad-cumplimiento-y-gobierno-de-los-datos/).
 
 ## Referencias de este tema
 

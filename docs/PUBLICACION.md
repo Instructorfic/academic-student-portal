@@ -362,3 +362,73 @@ responsable académico.
 | `dba/referencias/ postgresql-dba.md` | `.../dba/referencias/postgresql-dba.md` | Nueva. Emojis de advertencia sustituidos por "Precaución". |
 | `dba/referencias/mongodb-dba.md` | `.../dba/referencias/mongodb-dba.md` | Nueva. |
 | `dba/referencias/glosario.md` | `.../dba/referencias/glosario.md` | Nueva. Sigla corregida en la fuente: LFPDPPSO → LGPDPPSO. |
+
+## 14. Nueva derivación — DBA Unidad 2, laboratorios y presentación
+
+Fecha: **2026-10-06**. Fuente: `academic-workspace`,
+`materias/dba/unidad02/` (commit `0cd9342`). Publicación por instrucción
+directa del responsable académico: tomar estrictamente los laboratorios
+que existen en el workspace y sustituir con ellos los del portal. Los
+laboratorios nuevos no tienen todavía registro en `CONTEXTO_UNIDAD.md`
+ni dictamen de QA en `AUDITORIA_QA_MATERIALES_U2.md`.
+
+| Archivo fuente | Destino | Notas |
+| --- | --- | --- |
+| `laboratorios/unidad02_lab01_protección y privacidad de datos.md` | `.../unidad-02/laboratorios/laboratorio-1-proteccion-y-privacidad-de-datos.md` | Nuevo. Copia íntegra. Sustituye a `laboratorio-1-inyeccion-sql-nosql.md` (eliminado). |
+| `laboratorios/unidad02_lab02_cifrado, credenciales y comunicaciones seguras.md` (versión del 2026-10-06) | `.../unidad-02/laboratorios/laboratorio-2-cifrado-credenciales-y-comunicaciones-seguras.md` | Nuevo. Copia íntegra. Sustituye a `laboratorio-2-control-de-acceso.md` (eliminado), derivado de la versión anterior del mismo archivo, que aún contenía el laboratorio de control de acceso. |
+| `laboratorios/unidad02_lab03_privacidad, cumplimiento y gobierno de los datos.md` | `.../unidad-02/laboratorios/laboratorio-3-privacidad-cumplimiento-y-gobierno-de-los-datos.md` | Nuevo. Copia íntegra. Sustituye a `laboratorio-3-proteccion-de-datos-y-cifrado.md` (eliminado). |
+| `laboratorios/unidad02_lab04_hardening_servidor_bases_datos.md` | `.../unidad-02/laboratorios/laboratorio-4-hardening.md` | Copia íntegra de la nueva versión (solo PostgreSQL). |
+| `material/unidad02_presentacion.md` (v5) | `.../unidad-02/presentacion.md` | Versión completa (no condensada), convertida de Marp. Imagen en `public/imagenes/dba/unidad-02/`. |
+
+Los enlaces de otras páginas de la unidad (`index.md`, temas 1, 3 y 4,
+actividades 2, 4 y 5, lecturas complementarias) que apuntaban a los
+laboratorios eliminados se reapuntaron por tema: la práctica de inyección
+remite al repositorio de laboratorios de la materia (como lo hace la
+presentación v5), la protección de datos al Laboratorio 1 y la privacidad
+al Laboratorio 3 y el cifrado (tema 4, Actividad 5) al Laboratorio 2. Las
+referencias al antiguo laboratorio de control de acceso (tema 2,
+Actividad 3, lecturas complementarias) se retiraron: ya no existe un
+laboratorio de control de acceso en la fuente.
+
+**Inconsistencias detectadas y no corregidas en la fuente.**
+
+- La Actividad 3 (matriz de usuarios, roles y permisos, primera mitad
+  de la evidencia oficial) se quedó sin laboratorio de apoyo.
+- `unidad02_manual_estudiante.md`, `unidad02_actividades.md` y
+  `CONTEXTO_UNIDAD.md` siguen describiendo la secuencia anterior de
+  laboratorios.
+
+## 15. Ajuste directo en el portal — DBA Unidad 2, temas y actividades
+
+Fecha: **2026-10-06**. Decisión explícita del responsable académico:
+ajustar los temas y las actividades de la Unidad 2 **directamente en
+este portal**, tomando como base la presentación v5
+(`material/unidad02_presentacion.md`), y adoptar las actividades que
+propone la presentación en lugar de las Actividades 1 a 8 anteriores.
+
+**Esto es una excepción a la regla de la sección 2.** Las páginas de
+temas y actividades ya no se derivan de `unidad02_manual_estudiante.md`
+ni de `unidad02_actividades.md`, que en `academic-workspace` siguen
+describiendo la versión anterior. Si en el futuro se vuelve a derivar la
+unidad desde el workspace, el manual y las actividades deben
+actualizarse antes en la fuente, o se perderán estos ajustes.
+
+| Página | Ajuste |
+| --- | --- |
+| `actividades/actividad-1.md` a `actividad-8.md` | Sustituidas por las 8 actividades de la presentación: Diagnóstico, Inyección, Matriz de roles, Protección de datos (2.3), Protección criptográfica (2.4), De requisito de privacidad a control técnico (2.5), Reducción de superficie de ataque (2.6) y Evaluación de seguridad (actividad integral). Cada una enlaza a su tema y a su laboratorio. Se retiró la sección "Criterio de logro", que la presentación no define. |
+| `01-…`, `02-…` | Sin cambios de contenido (ya coincidían con la presentación); solo el recuadro de actividad. |
+| `03-proteccion-de-datos-sensibles.md` | Se agregan clasificación organizacional, por qué clasificar, datos personales frente a sensibles, decisiones del DBA, cuándo enmascarar, retención y eliminación segura. Se conserva la clasificación jurídica (LFPDPPP) y los ejemplos guiados. |
+| `04-cifrado-en-transito-y-en-reposo.md` | Título cambiado a "4. Cifrado y protección técnica" (la ruta se conserva). Se agregan TLS en bases de datos, cifrado frente a hashing, almacenamiento de contraseñas, credenciales expuestas, respuesta ante una credencial expuesta, gestión y ciclo de vida de llaves. |
+| `05-privacidad-y-cumplimiento-normativo.md` | Se agregan seguridad frente a privacidad, aviso de privacidad, consentimiento y finalidad, minimización, trazabilidad del tratamiento y base de datos y privacidad. |
+| `06-hardening-servidor-bases-datos.md` | Reorganizado según la presentación: capas, superficie de ataque, instalación funcional frente a segura, cuentas y servicios innecesarios, separación de ambientes, rutas habituales, referencia rápida, respaldos, acceso administrativo, allowlists, exposición pública, diagnóstico por capas, línea base verificable, documentación de cambios, deriva de configuración, parches, defensa en profundidad y metodología. |
+| `07-cierre-y-autoevaluacion.md` | Se agregan el resultado esperado y la pregunta de cierre de la presentación. |
+| `index.md`, `evaluacion.md`, `astro.config.mjs`, lecturas complementarias | Navegación, nombres de actividades y criterios generales alineados con lo anterior. |
+
+**Contradicción registrada, no resuelta.** El programa oficial fija
+como evidencia de la unidad la "Matriz de usuarios, roles, permisos y
+controles de privacidad". La actividad integral de la presentación
+("Evaluación de seguridad") no menciona esa matriz. Para no contradecir
+el programa, la Actividad 8 pide incluir la matriz dentro del documento
+de hallazgos. Esta integración es una decisión de redacción en el
+portal, no un contenido de la presentación, y debe confirmarse por el
+responsable académico.

@@ -5,31 +5,34 @@ description: "Qué se evalúa en la Unidad 2 y criterios generales de logro."
 
 ## Evidencia oficial de la unidad
 
-La **Actividad 8** (Matriz de usuarios, roles, permisos y controles de
-privacidad) es la evidencia oficial de la Unidad 2, según la tabla de
-evidencias del programa oficial de la materia. Las actividades 1 a 7 son
-evidencias de apoyo y no la sustituyen. Todas las actividades de
-laboratorio (2, 3, 4, 5, 7, 8) se ejecutan sobre contenedores
-PostgreSQL/MongoDB desechables — ningún estudiante debe entregar
-credenciales ni datos personales reales como parte de su evidencia.
+La evidencia oficial de la Unidad 2, según la tabla de evidencias del
+programa oficial de la materia, es la **matriz de usuarios, roles,
+permisos y controles de privacidad**. Se entrega como parte del
+documento de hallazgos de la **Actividad 8** (evaluación de seguridad,
+actividad integral). Las Actividades 1 a 7 son evidencias de apoyo y no
+la sustituyen. Ningún estudiante debe entregar credenciales ni datos
+personales reales como parte de su evidencia.
 
 ## Criterios generales de logro
 
 Cada actividad, en la sección
-[Actividades](/materias/dba/unidad-02/actividades/actividad-1/), incluye
-su propio **criterio de logro**: la condición que debe cumplirse para
-considerar la actividad satisfactoriamente resuelta. Revisa esa sección
-en cada actividad antes de entregarla.
+[Actividades](/materias/dba/unidad-02/actividades/actividad-1/), indica
+el **producto o evidencia** que debe entregarse. Revísalo en cada
+actividad antes de entregarla.
 
-En conjunto, la unidad evalúa que el estudiante sea capaz de:
+En conjunto, al finalizar la unidad el estudiante debe poder:
 
-- Explicar los principios de seguridad de datos y aplicar mitigación de inyección SQL/NoSQL.
-- Implementar control de acceso mediante usuarios, roles y permisos, distinguiendo los modelos DAC, RBAC y ABAC.
-- Clasificar y aplicar protección de datos sensibles (enmascaramiento, seudonimización, anonimización).
-- Aplicar cifrado en tránsito y en reposo, en PostgreSQL y en MongoDB.
-- Explicar el marco de privacidad y cumplimiento normativo mexicano aplicable a datos personales.
-- Aplicar hardening a un servidor de base de datos, en las capas de motor, sistema operativo y red.
-- Integrar todo lo anterior en una matriz de usuarios, roles, permisos y controles de privacidad (Actividad 8).
+- proteger datos
+- administrar privilegios
+- reconocer información sensible
+- aplicar mecanismos de protección criptográfica
+- identificar riesgos de credenciales
+- relacionar privacidad con bases de datos
+- analizar un servidor
+- reducir superficie de ataque
+- aplicar controles de hardening
+- verificar configuraciones
+- documentar evidencia
 
 ## Ponderación
 

@@ -168,7 +168,7 @@ export default defineConfig({
 											slug: 'materias/dba/unidad-02/03-proteccion-de-datos-sensibles',
 										},
 										{
-											label: '4. Cifrado en tránsito y en reposo',
+											label: '4. Cifrado y protección técnica',
 											slug: 'materias/dba/unidad-02/04-cifrado-en-transito-y-en-reposo',
 										},
 										{
@@ -193,23 +193,23 @@ export default defineConfig({
 												{ label: 'Actividad 5', slug: 'materias/dba/unidad-02/actividades/actividad-5' },
 												{ label: 'Actividad 6', slug: 'materias/dba/unidad-02/actividades/actividad-6' },
 												{ label: 'Actividad 7', slug: 'materias/dba/unidad-02/actividades/actividad-7' },
-												{ label: 'Actividad 8 (evidencia oficial)', slug: 'materias/dba/unidad-02/actividades/actividad-8' },
+												{ label: 'Actividad 8 (integral)', slug: 'materias/dba/unidad-02/actividades/actividad-8' },
 											],
 										},
 										{
 											label: 'Laboratorios',
 											items: [
 												{
-													label: 'Laboratorio 1 — Inyección SQL y NoSQL',
-													slug: 'materias/dba/unidad-02/laboratorios/laboratorio-1-inyeccion-sql-nosql',
+													label: 'Laboratorio 1 — Protección y privacidad de datos',
+													slug: 'materias/dba/unidad-02/laboratorios/laboratorio-1-proteccion-y-privacidad-de-datos',
 												},
 												{
-													label: 'Laboratorio 2 — Control de acceso',
-													slug: 'materias/dba/unidad-02/laboratorios/laboratorio-2-control-de-acceso',
+													label: 'Laboratorio 2 — Cifrado, credenciales y comunicaciones seguras',
+													slug: 'materias/dba/unidad-02/laboratorios/laboratorio-2-cifrado-credenciales-y-comunicaciones-seguras',
 												},
 												{
-													label: 'Laboratorio 3 — Protección de datos y cifrado',
-													slug: 'materias/dba/unidad-02/laboratorios/laboratorio-3-proteccion-de-datos-y-cifrado',
+													label: 'Laboratorio 3 — Privacidad, cumplimiento y gobierno de los datos',
+													slug: 'materias/dba/unidad-02/laboratorios/laboratorio-3-privacidad-cumplimiento-y-gobierno-de-los-datos',
 												},
 												{
 													label: 'Laboratorio 4 — Hardening',

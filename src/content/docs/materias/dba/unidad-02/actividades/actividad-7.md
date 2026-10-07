@@ -1,35 +1,36 @@
 ---
-title: "Actividad 7 — Checklist de hardening (laboratorio, antes/después)"
-description: "Unidad 2 de DBA — documentar el estado por defecto de un servidor y aplicar cambios de endurecimiento en tres capas."
+title: "Actividad 7 — Reducción de superficie de ataque"
+description: "Unidad 2 de DBA — actividad de hardening: identificar servicios, puertos y privilegios, aplicar cambios controlados y documentar evidencia."
 ---
 
-**Objetivo específico:** OE-U2.6. **Modalidad:** individual o pareja.
+**Objetivo específico:** OE-U2.6.
 
 ## Requisitos antes de empezar
 
 * Haber leído [6. Hardening de servidores de bases de datos](/materias/dba/unidad-02/06-hardening-servidor-bases-datos/).
-* Guía técnica completa: [Laboratorio 4](/materias/dba/unidad-02/laboratorios/laboratorio-4-hardening/).
-* Esta actividad usa contenedores **nuevos**, sin los cambios de
-  actividades anteriores, para observar el estado por defecto real.
+* Guía técnica: [Laboratorio 4](/materias/dba/unidad-02/laboratorios/laboratorio-4-hardening/).
 
 ## Instrucciones para el estudiante
 
-1. Documenta el estado "por defecto" de un contenedor PostgreSQL y uno
-   de MongoDB recién creados, en al menos cinco elementos (conexiones
-   remotas aceptadas, interfaces de escucha, cuenta administrativa,
-   puerto expuesto, usuario del sistema operativo que corre el proceso).
-2. Aplica al menos tres cambios de endurecimiento, en las tres capas:
-   motor, sistema operativo, red.
-3. Documenta el estado "después" para cada uno, y explica qué riesgo
-   concreto reduce cada cambio.
+1. identifica los servicios activos
+2. identifica los puertos
+3. relaciona puertos y procesos
+4. revisa las configuraciones
+5. identifica componentes innecesarios
+6. analiza los privilegios
+7. aplica cambios controlados
+8. verifica el funcionamiento
+9. documenta la evidencia
+
+Utiliza la secuencia de trabajo de la unidad:
+
+```text
+Preguntar → Observar → Decidir → Cambiar → Verificar → Documentar
+```
 
 ## Producto/evidencia
 
-Checklist con estado antes/después de al menos cinco elementos, en las
-tres capas, con justificación del riesgo que cada cambio reduce.
-
-## Criterio de logro
-
-El estudiante documenta al menos cinco cambios de hardening reales y
-verificables, en las tres capas, en ambos motores, y justifica cada uno
-con el riesgo que mitiga.
+Evidencia que permita a otra persona comprender qué ocurrió: comandos
+ejecutados, configuración antes y después, servicios activos, puertos
+abiertos, permisos, usuarios, reglas de acceso, logs y pruebas de
+conexión.

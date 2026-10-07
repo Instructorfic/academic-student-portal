@@ -1,29 +1,38 @@
 ---
-title: "Actividad 6 — Trazabilidad control → obligación legal"
-description: "Unidad 2 de DBA — conectar los controles técnicos aplicados con el marco normativo mexicano de protección de datos."
+title: "Actividad 6 — De requisito de privacidad a control técnico"
+description: "Unidad 2 de DBA — traducir un caso de tratamiento de datos personales en controles técnicos verificables."
 ---
 
-**Objetivo específico:** OE-U2.5. **Modalidad:** individual o grupal.
+**Objetivo específico:** OE-U2.5.
 
 ## Requisitos antes de empezar
 
 * Haber leído [5. Privacidad y cumplimiento normativo](/materias/dba/unidad-02/05-privacidad-y-cumplimiento-normativo/).
-* Haber completado las Actividades 3, 4 y 5.
+* Guía técnica: [Laboratorio 3](/materias/dba/unidad-02/laboratorios/laboratorio-3-privacidad-cumplimiento-y-gobierno-de-los-datos/).
 
 ## Instrucciones para el estudiante
 
-Para cada control implementado en las Actividades 3 a 5 (control de
-acceso, clasificación/enmascaramiento, cifrado), identifica qué principio
-o disposición de la LFPDPPP y/o la LGPDPPSO respalda su necesidad (por
-ejemplo: minimización de datos, seguridad de los datos personales,
-derechos ARCO). Construye una tabla control → obligación legal.
+Para un caso de tratamiento de datos:
+
+1. identifica el dato
+2. identifica su finalidad
+3. determina quién debe acceder
+4. define el periodo de retención
+5. selecciona los controles
+6. define la evidencia
 
 ## Producto/evidencia
 
-Tabla control → obligación legal.
+La cadena completa para el caso analizado:
 
-## Criterio de logro
-
-El estudiante conecta correctamente al menos tres controles técnicos con
-un principio o derecho del marco normativo mexicano, sin necesidad de
-citar artículos específicos de la ley.
+```text
+Requisito
+   ↓
+Riesgo
+   ↓
+Control
+   ↓
+Implementación
+   ↓
+Evidencia
+```

@@ -1,0 +1,37 @@
+<svg viewBox="0 0 640 440" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Triada CIA: confidencialidad, integridad y disponibilidad, protegiendo los datos en el centro">
+  <defs>
+    <marker id="flecha" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0a3161"/>
+    </marker>
+  </defs>
+
+  <!-- Triángulo -->
+  <polygon points="320,40 580,380 60,380" fill="none" stroke="#0a3161" stroke-width="3"/>
+
+  <!-- Confidencialidad (vértice superior) -->
+  <circle cx="320" cy="40" r="46" fill="#eaf1fb" stroke="#0a3161" stroke-width="2.5"/>
+  <text x="320" y="32" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0a3161">Confiden-</text>
+  <text x="320" y="50" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0a3161">cialidad</text>
+
+  <!-- Integridad (vértice inferior izquierdo) -->
+  <circle cx="60" cy="380" r="46" fill="#fdf6e3" stroke="#c9a227" stroke-width="2.5"/>
+  <text x="60" y="376" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#8a6c1a">Integridad</text>
+
+  <!-- Disponibilidad (vértice inferior derecho) -->
+  <circle cx="580" cy="380" r="46" fill="#e9f5ea" stroke="#2e7d32" stroke-width="2.5"/>
+  <text x="580" y="372" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e7d32">Disponibi-</text>
+  <text x="580" y="390" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#2e7d32">lidad</text>
+
+  <!-- Centro -->
+  <rect x="235" y="215" width="170" height="70" rx="10" fill="#ffffff" stroke="#5a6470" stroke-width="2"/>
+  <text x="320" y="245" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#1c1f24">Datos</text>
+  <text x="320" y="264" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#1c1f24">protegidos</text>
+
+  <!-- Preguntas por vértice -->
+  <text x="320" y="120" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-style="italic" fill="#1c1f24">¿Quién puede leerlo?</text>
+  <text x="140" y="330" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-style="italic" fill="#1c1f24">¿Está completo</text>
+  <text x="140" y="346" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-style="italic" fill="#1c1f24">y sin alterar?</text>
+  <text x="500" y="330" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-style="italic" fill="#1c1f24">¿Se puede</text>
+  <text x="500" y="346" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-style="italic" fill="#1c1f24">acceder cuando</text>
+  <text x="500" y="362" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" font-style="italic" fill="#1c1f24">se necesita?</text>
+</svg>

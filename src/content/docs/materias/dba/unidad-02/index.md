@@ -17,7 +17,7 @@ description: Introducción a la Unidad 2 de DBA — seguridad, control de acceso
 - **OE-U2.1** — Explicar los principios de seguridad de datos y aplicar mitigación de inyección SQL/NoSQL.
 - **OE-U2.2** — Implementar control de acceso mediante usuarios, roles y permisos.
 - **OE-U2.3** — Aplicar protección de datos sensibles.
-- **OE-U2.4** — Aplicar cifrado en tránsito y en reposo.
+- **OE-U2.4** — Aplicar cifrado en tránsito y en reposo, y proteger credenciales y llaves.
 - **OE-U2.5** — Explicar el marco de privacidad y cumplimiento normativo.
 - **OE-U2.6** — Aplicar hardening a un servidor de base de datos.
 
@@ -45,24 +45,24 @@ de Contenedores y Cloud Native.
 
 ## Cómo navegar esta unidad
 
-1. Lee esta introducción y realiza la [Actividad 1](/materias/dba/unidad-02/actividades/actividad-1/) (diagnóstico de riesgos).
-2. Lee [1. Principios de seguridad e inyección SQL/NoSQL](/materias/dba/unidad-02/01-principios-de-seguridad-e-inyeccion/) y realiza la [Actividad 2](/materias/dba/unidad-02/actividades/actividad-2/) con el [Laboratorio 1](/materias/dba/unidad-02/laboratorios/laboratorio-1-inyeccion-sql-nosql/).
-3. Lee [2. Control de acceso: usuarios, roles y permisos](/materias/dba/unidad-02/02-control-de-acceso-usuarios-roles-permisos/) y realiza la [Actividad 3](/materias/dba/unidad-02/actividades/actividad-3/) con el [Laboratorio 2](/materias/dba/unidad-02/laboratorios/laboratorio-2-control-de-acceso/).
-4. Lee [3. Protección de datos sensibles](/materias/dba/unidad-02/03-proteccion-de-datos-sensibles/) y realiza la [Actividad 4](/materias/dba/unidad-02/actividades/actividad-4/).
-5. Lee [4. Cifrado en tránsito y en reposo](/materias/dba/unidad-02/04-cifrado-en-transito-y-en-reposo/) y realiza la [Actividad 5](/materias/dba/unidad-02/actividades/actividad-5/) — ambas con el [Laboratorio 3](/materias/dba/unidad-02/laboratorios/laboratorio-3-proteccion-de-datos-y-cifrado/).
-6. Lee [5. Privacidad y cumplimiento normativo](/materias/dba/unidad-02/05-privacidad-y-cumplimiento-normativo/) y realiza la [Actividad 6](/materias/dba/unidad-02/actividades/actividad-6/).
+1. Lee esta introducción y realiza la [Actividad 1](/materias/dba/unidad-02/actividades/actividad-1/) (diagnóstico).
+2. Lee [1. Principios de seguridad e inyección SQL/NoSQL](/materias/dba/unidad-02/01-principios-de-seguridad-e-inyeccion/) y realiza la [Actividad 2](/materias/dba/unidad-02/actividades/actividad-2/) con el laboratorio de inyección del repositorio de laboratorios de la materia (code.ficlabs.com.mx, laboratorios DBA).
+3. Lee [2. Control de acceso: usuarios, roles y permisos](/materias/dba/unidad-02/02-control-de-acceso-usuarios-roles-permisos/) y realiza la [Actividad 3](/materias/dba/unidad-02/actividades/actividad-3/).
+4. Lee [3. Protección de datos sensibles](/materias/dba/unidad-02/03-proteccion-de-datos-sensibles/) y realiza la [Actividad 4](/materias/dba/unidad-02/actividades/actividad-4/) con el [Laboratorio 1](/materias/dba/unidad-02/laboratorios/laboratorio-1-proteccion-y-privacidad-de-datos/).
+5. Lee [4. Cifrado y protección técnica](/materias/dba/unidad-02/04-cifrado-en-transito-y-en-reposo/) y realiza la [Actividad 5](/materias/dba/unidad-02/actividades/actividad-5/) con el [Laboratorio 2](/materias/dba/unidad-02/laboratorios/laboratorio-2-cifrado-credenciales-y-comunicaciones-seguras/).
+6. Lee [5. Privacidad y cumplimiento normativo](/materias/dba/unidad-02/05-privacidad-y-cumplimiento-normativo/) y realiza la [Actividad 6](/materias/dba/unidad-02/actividades/actividad-6/) con el [Laboratorio 3](/materias/dba/unidad-02/laboratorios/laboratorio-3-privacidad-cumplimiento-y-gobierno-de-los-datos/).
 7. Lee [6. Hardening de servidores de bases de datos](/materias/dba/unidad-02/06-hardening-servidor-bases-datos/) y realiza la [Actividad 7](/materias/dba/unidad-02/actividades/actividad-7/) con el [Laboratorio 4](/materias/dba/unidad-02/laboratorios/laboratorio-4-hardening/).
-8. Realiza la [Actividad 8](/materias/dba/unidad-02/actividades/actividad-8/) (evidencia oficial de la unidad).
+8. Realiza la [Actividad 8](/materias/dba/unidad-02/actividades/actividad-8/) (evaluación de seguridad, actividad integral).
 9. Revisa el [cierre y autoevaluación](/materias/dba/unidad-02/07-cierre-y-autoevaluacion/) antes de avanzar a la Unidad 3.
 
 ## Qué vas a producir
 
-Al terminar la unidad vas a producir, como **evidencia oficial**, una
-matriz de usuarios, roles, permisos y controles de privacidad que
-integra control de acceso, protección de datos sensibles, respaldo
-normativo y estado de hardening de un servidor (Actividad 8). Las
-Actividades 1 a 7 son evidencia de apoyo: te preparan para poder
-construir esa evidencia final.
+Al terminar la unidad vas a realizar una **evaluación integral de
+seguridad** de un servidor de base de datos (Actividad 8). Su documento
+de hallazgos incluye la matriz de usuarios, roles, permisos y controles
+de privacidad, que es la **evidencia oficial** de la unidad según el
+programa de la materia. Las Actividades 1 a 7 son evidencia de apoyo:
+cada una corresponde a un tema y te prepara para esa evaluación.
 
 ## Qué aprenderás después
 

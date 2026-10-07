@@ -1,30 +1,40 @@
 ---
-title: "Actividad 1 — Diagnóstico de riesgos del entorno sin protección"
-description: "Unidad 2 de DBA — actividad de activación sobre un entorno sin control de acceso, cifrado ni clasificación de datos."
+title: "Actividad 1 — Diagnóstico"
+description: "Unidad 2 de DBA — identificar los problemas de seguridad del entorno que dejamos en la Unidad 1."
 ---
 
-**Objetivo específico:** insumo para OE-U2.1–OE-U2.6. **Modalidad:**
-individual o grupal.
+**Objetivo específico:** insumo para OE-U2.1 a OE-U2.6.
 
 ## Requisitos antes de empezar
 
-* Haber leído la [introducción de la unidad](/materias/dba/unidad-02/) (el problema que vamos a resolver).
-* No requiere ningún material técnico ni instalación previa.
+* Haber leído la [introducción de la unidad](/materias/dba/unidad-02/).
+* No requiere material técnico ni instalación previa.
+
+## Escenario
+
+A partir del caso analizado al inicio de la Unidad 1, identifica los
+problemas de seguridad presentes en el nuevo escenario:
+
+1. Cualquier persona con la contraseña del usuario administrador puede leer, modificar o borrar cualquier dato.
+2. No hay cifrado en las conexiones, las credenciales viajan en texto plano, no hay clasificación de qué datos son sensibles, y el servidor conserva su configuración de instalación por defecto.
 
 ## Instrucciones para el estudiante
 
-A partir de la situación descrita en la introducción de la unidad
-(entorno sin control de acceso, sin cifrado, sin clasificación de datos,
-con configuración por defecto), identifica por escrito qué riesgos
-concretos existen y a qué principio o mecanismo de la unidad
-correspondería resolver cada uno.
+Identifica:
+
+* qué situaciones representan un riesgo
+* qué podría ocurrir si el riesgo se materializa
+* qué tipo de protección parece hacer falta
+
+Usa como guía las tres preguntas de la unidad:
+
+| Área | Pregunta |
+| --- | --- |
+| Acceso | ¿Quién puede utilizar el recurso y qué puede hacer? |
+| Información | ¿Cómo protegemos los datos cuando se almacenan o transmiten? |
+| Exposición | ¿Qué servicios, puertos y configuraciones están disponibles para la red? |
 
 ## Producto/evidencia
 
-Registro breve de riesgos identificados.
-
-## Criterio de logro
-
-El estudiante identifica al menos tres riesgos distintos (por ejemplo:
-acceso sin control, datos sin cifrar, configuración por defecto) sin
-necesidad todavía de vocabulario técnico preciso.
+Registro de los riesgos identificados, con su posible consecuencia y el
+tipo de protección que haría falta.

@@ -1,37 +1,44 @@
 ---
-title: "Actividad 8 — Matriz completa (evidencia oficial de la unidad)"
-description: "Unidad 2 de DBA — síntesis: usuarios, roles, permisos, protección de datos sensibles, obligación normativa y hardening."
+title: "Actividad 8 — Evaluación de seguridad (actividad integral)"
+description: "Unidad 2 de DBA — evaluación integral de seguridad de un servidor de base de datos."
 ---
 
-**Objetivo específico:** síntesis de OE-U2.1–OE-U2.6. **Modalidad:**
-individual o pareja.
-
-Esta es la **evidencia oficial** de la Unidad 2, según la tabla de
-evidencias del programa oficial ("Matriz de usuarios, roles, permisos y
-controles de privacidad").
+**Objetivo específico:** síntesis de OE-U2.1 a OE-U2.6.
 
 ## Requisitos antes de empezar
 
-* Haber completado las Actividades 3 a 7.
+* Haber completado las Actividades 1 a 7.
+* Haber completado el [Laboratorio 4](/materias/dba/unidad-02/laboratorios/laboratorio-4-hardening/), que sirve de base para esta evaluación.
 
 ## Instrucciones para el estudiante
 
-Consolida, en un solo documento, la matriz de la Actividad 3, ampliada
-con:
+Para un servidor de base de datos:
 
-1. Para cada rol: qué datos sensibles puede ver (retomando la
-   clasificación de la Actividad 4) y si esos datos están enmascarados o
-   cifrados para ese rol.
-2. Qué obligación normativa (Actividad 6) respalda cada control.
-3. Un resumen del estado de hardening del servidor (Actividad 7).
+1. identifica los activos
+2. identifica los datos
+3. identifica los usuarios
+4. identifica los servicios
+5. identifica los puertos
+6. revisa la configuración
+7. revisa los privilegios
+8. revisa los archivos
+9. revisa la red
+10. revisa las actualizaciones
+11. establece una línea base
+12. documenta los hallazgos
 
 ## Producto/evidencia
 
-Matriz de usuarios, roles, permisos y controles de privacidad (evidencia
-oficial de la unidad).
+Documento de hallazgos de la evaluación de seguridad. Debe incluir la
+**matriz de usuarios, roles, permisos y controles de privacidad**, que
+es la evidencia oficial de la unidad según el programa de la materia.
 
-## Criterio de logro
+## Pregunta de cierre
 
-La matriz integra correctamente control de acceso, protección de datos
-sensibles, respaldo normativo y estado de hardening, de forma coherente
-con lo trabajado en las Actividades 3 a 7.
+> Una base de datos tiene usuarios correctamente configurados, pero el
+> servidor permite acceso administrativo amplio, tiene servicios
+> innecesarios y expone el puerto del motor a Internet. ¿Está realmente
+> segura?
+
+Responde en tu documento considerando datos, base de datos, sistema
+operativo, red, administración y evidencia.

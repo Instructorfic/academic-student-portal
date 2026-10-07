@@ -1,39 +1,37 @@
 ---
-title: "Actividad 5 — Cifrado en tránsito y en reposo (laboratorio)"
-description: "Unidad 2 de DBA — habilitar TLS en PostgreSQL y cifrar una columna sensible con pgcrypto."
+title: "Actividad 5 — Protección criptográfica"
+description: "Unidad 2 de DBA — decidir qué proteger, contra qué amenaza y con qué mecanismo para contraseñas, conexiones, datos, credenciales y claves."
 ---
 
-**Objetivo específico:** OE-U2.4. **Modalidad:** individual o pareja.
+**Objetivo específico:** OE-U2.4.
 
 ## Requisitos antes de empezar
 
-* Haber leído [4. Cifrado en tránsito y en reposo](/materias/dba/unidad-02/04-cifrado-en-transito-y-en-reposo/).
-* `openssl` disponible en tu equipo (la imagen oficial `postgres:16` no lo incluye).
-* Guía técnica completa: [Laboratorio 3](/materias/dba/unidad-02/laboratorios/laboratorio-3-proteccion-de-datos-y-cifrado/), Parte C y D.
+* Haber leído [4. Cifrado y protección técnica](/materias/dba/unidad-02/04-cifrado-en-transito-y-en-reposo/).
+* Guía técnica: [Laboratorio 2](/materias/dba/unidad-02/laboratorios/laboratorio-2-cifrado-credenciales-y-comunicaciones-seguras/).
 
 ## Instrucciones para el estudiante
 
-**Parte A — Cifrado en tránsito.** Verifica si la conexión al contenedor
-PostgreSQL usa TLS (`SHOW ssl;`). Si no, genera un certificado
-autofirmado, cópialo al contenedor, habilita `ssl = on`, recarga la
-configuración y conecta explícitamente con `sslmode=require`. Documenta
-el estado "antes" y "después".
+Analiza:
 
-**Parte B — Cifrado en reposo.** Habilita la extensión `pgcrypto` y
-cifra el valor de una columna sensible con `pgp_sym_encrypt`. Demuestra
-que el valor almacenado no es legible directamente, y que sí se recupera
-con `pgp_sym_decrypt` usando la llave correcta.
+1. una contraseña
+2. una conexión de base de datos
+3. un dato almacenado
+4. una credencial de aplicación
+5. una clave criptográfica
+
+Para cada caso determina:
+
+* qué debe protegerse
+* contra qué amenaza
+* qué mecanismo utilizar
+* dónde almacenar los secretos
+* cómo verificar el control
 
 ## Producto/evidencia
 
-Evidencia del estado de la conexión (antes/después) + evidencia de que
-el valor cifrado no es legible sin la llave, y que sí lo es con ella.
+Tabla con los cinco casos y las cinco decisiones de cada uno.
 
-## Criterio de logro
-
-El estudiante verifica correctamente el estado de cifrado en tránsito, y
-demuestra que `pgcrypto` protege el valor en reposo.
-
-> ⚠️ **Advertencia.** Nunca uses contraseñas ni llaves reales. Usa
-> siempre valores de ejemplo, y nunca los incluyas en texto plano en un
-> entregable o repositorio público.
+> **Precaución.** Nunca uses contraseñas ni llaves reales. Usa siempre
+> valores de ejemplo, y nunca los incluyas en un entregable o
+> repositorio.

@@ -12,17 +12,52 @@ el control de acceso
 ([2](/materias/dba/unidad-02/02-control-de-acceso-usuarios-roles-permisos/)),
 la protección de datos sensibles
 ([3](/materias/dba/unidad-02/03-proteccion-de-datos-sensibles/)), el
-cifrado
+cifrado y la protección técnica
 ([4](/materias/dba/unidad-02/04-cifrado-en-transito-y-en-reposo/)), el
 marco normativo
 ([5](/materias/dba/unidad-02/05-privacidad-y-cumplimiento-normativo/))
 y el hardening del servidor
 ([6](/materias/dba/unidad-02/06-hardening-servidor-bases-datos/)).
 
-> **Actividad 8 — Matriz de usuarios, roles, permisos y controles de
-> privacidad (evidencia oficial de la unidad).** Vas a integrar todo lo
-> anterior en un solo instrumento. Instrucciones completas en la
+## Resultado esperado
+
+Al finalizar esta unidad debes poder:
+
+* proteger datos
+* administrar privilegios
+* reconocer información sensible
+* aplicar mecanismos de protección criptográfica
+* identificar riesgos de credenciales
+* relacionar privacidad con bases de datos
+* analizar un servidor
+* reducir superficie de ataque
+* aplicar controles de hardening
+* verificar configuraciones
+* documentar evidencia
+
+> **Actividad 8 — Evaluación de seguridad (actividad integral).** Para
+> un servidor de base de datos, identifica activos, datos, usuarios,
+> servicios y puertos; revisa configuración, privilegios, archivos, red
+> y actualizaciones; establece una línea base y documenta los hallazgos.
+> Instrucciones completas en la
 > [Actividad 8](/materias/dba/unidad-02/actividades/actividad-8/).
+
+## Pregunta de cierre
+
+> Una base de datos tiene usuarios correctamente configurados, pero el
+> servidor permite acceso administrativo amplio, tiene servicios
+> innecesarios y expone el puerto del motor a Internet.
+>
+> **¿Está realmente segura?**
+
+No. La seguridad debe evaluarse de forma integral:
+
+```text
+Datos + Base de datos + Sistema operativo + Red + Administración + Evidencia
+```
+
+**El DBA debe proteger el sistema completo, no solamente la base de
+datos.**
 
 ## Mini quiz de verificación
 
