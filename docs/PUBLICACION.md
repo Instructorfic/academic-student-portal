@@ -432,3 +432,165 @@ el programa, la Actividad 8 pide incluir la matriz dentro del documento
 de hallazgos. Esta integración es una decisión de redacción en el
 portal, no un contenido de la presentación, y debe confirmarse por el
 responsable académico.
+
+## 16. Derivación — DBA Unidad 3, presentación y laboratorios
+
+Fecha: **2026-10-26**. Fuente: `academic-workspace`,
+`materias/dba/unidad03/` (commit `a3617d4`). Publicación por instrucción
+directa del responsable académico: publicar la presentación y los
+laboratorios de la unidad. Dictamen técnico en
+`AUDITORIA_QA_MATERIALES_U3.md`: `APROBADO_CON_OBSERVACIONES`; la
+validación académica sigue pendiente. Siguiendo la sección 9, no se
+agregan insignias de estado.
+
+| Archivo fuente | Destino | Notas |
+| --- | --- | --- |
+| `material/unidad03_presentacion.md` (v4) | `.../unidad-03/presentacion.md` + `.../unidad-03/{01..08}-*.md` | Convertida de Marp y separada por tema, a solicitud del responsable académico, para que cada sección tenga su propia página como en las Unidades 1 y 2. `presentacion.md` conserva solo la apertura (objetivos, caso, pregunta, Actividad 1 y preparación con `psql`) y la lista de temas. Cada lámina de sección se vuelve una página (`01-auditoria-de-bases-de-datos` a `08-cierre-de-la-unidad`) y cada lámina interna un encabezado `##` sin el prefijo de tema. Se retiran el frontmatter Marp, los comentarios internos y la portada. Se agregan, como navegación, la línea "Temas del programa", la sección "Qué sigue" y el recuadro "Relación con el laboratorio" en los temas 2, 5, 6 y 7, según los temas que declara cada laboratorio; los temas 3 y 4 ya traían esa relación en la fuente. |
+| `laboratorios/unidad03_lab01_bitacoras_auditoria_postgresql.md` | `.../unidad-03/laboratorios/laboratorio-1-bitacoras-y-auditoria-del-dato-postgresql.md` | Copia íntegra. Se retiran el bloque YAML de metadatos internos y las referencias a `CONTEXTO_UNIDAD.md`, a la decisión D-004 y a `unidad03_rubrica.md`. |
+| `laboratorios/unidad03_lab02_trazabilidad_mongodb.md` | `.../unidad-03/laboratorios/laboratorio-2-trazabilidad-mongodb.md` | Copia íntegra. Se retira el bloque YAML de metadatos internos. |
+| `laboratorios/unidad03_lab03_politicas_gobierno_evidencias.md` | `.../unidad-03/laboratorios/laboratorio-3-politicas-gobierno-y-evidencias.md` | Copia íntegra. Se retiran el bloque YAML, la referencia a `unidad03_rubrica.md` y las marcas `PENDIENTE DE VERIFICACIÓN` (la ponderación se remite al docente). |
+| `CONTEXTO_UNIDAD.md` §1, §3, §16 (extracto) y presentación | `.../unidad-03/index.md` | Identificación, propósito, problema, navegación y evidencia oficial. |
+
+No se derivan, por no estar en la solicitud: `unidad03_manual_estudiante.md`,
+`unidad03_actividades.md` y `referencias/`. Tampoco
+`planeacion/`, `evaluacion/unidad03_rubrica.md` (TEACHER_RESTRICTED),
+`CONTEXTO_UNIDAD.md` ni `AUDITORIA_QA_MATERIALES_U3.md` (WORKSPACE_ONLY).
+Las páginas de temas se derivan de la presentación, no del manual del
+estudiante. Si después se deriva el manual, deben conciliarse. La unidad
+no tiene todavía páginas de actividades, evaluación ni referencias en
+este portal.
+
+## 17. Derivación — Pruebas de Software, Unidad III
+
+Fecha: **2026-10-26**. Fuente: `academic-workspace`,
+`materias/pruebas-software/unidad03/` (commit `a3617d4`). Publicación por
+instrucción directa del responsable académico: publicar la presentación
+y los laboratorios, con la presentación separada por temas. En la fuente,
+los materiales están en `BORRADOR`, `CONTEXTO_UNIDAD.md` §19 registra
+`qa_inicial` y `qa_final` como `PENDIENTE` y no existe todavía un
+`AUDITORIA_QA_*.md`. Siguiendo la sección 9, no se agregan insignias de
+estado.
+
+| Archivo fuente | Destino | Notas |
+| --- | --- | --- |
+| `material/unidad03_presentacion.md` (v2.0) | `.../unidad-03/presentacion.md` + `.../unidad-03/{01..08}-*.md` | Convertida de Marp y separada por bloque: la apertura queda en `presentacion.md` con la lista de temas, cada bloque (1 a 7) es un tema y las láminas finales de Bloque 7 ("Cierre — volviendo al SPB" en adelante) forman `08-cierre-y-resumen`. Se agregan como navegación la línea "Temas del programa" y "Qué sigue". Se retiran el frontmatter Marp, los comentarios internos, la portada, la mención de la decisión D-005 y la ruta interna de la ficha de referencias. La mención a la rúbrica remite al docente. Imágenes copiadas a `public/imagenes/pruebas-software/unidad-03/`. |
+| `laboratorios/unidad03_lab01_tecnicas_caja_negra.md` | `.../unidad-03/laboratorios/laboratorio-1-tecnicas-caja-negra.md` | Copia íntegra salvo las adaptaciones descritas abajo. |
+| `laboratorios/unidad03_lab02_caja_blanca_rutas.md` | `.../unidad-03/laboratorios/laboratorio-2-caja-blanca-rutas.md` | Ídem. |
+| `laboratorios/unidad03_lab03_plan_pruebas_proyecto.md` | `.../unidad-03/laboratorios/laboratorio-3-plan-de-pruebas.md` | Ídem. Las menciones a la decisión D-002 se sustituyen por "la ponderación la confirmará tu docente". |
+| `FORMATO_PLAN_PRUEBAS.md` (v1.0) | `.../unidad-03/formato-plan-pruebas.md` | Nuevo. Se publica porque los tres laboratorios lo usan como formato obligatorio, igual que el formato de la matriz en la Unidad II. Se retiran el bloque YAML y el pie de fuentes internas. |
+| `CONTEXTO_UNIDAD.md` §1, §3 y presentación (extracto) | `.../unidad-03/index.md` | Identificación, propósito, RA3.1 a RA3.4, pregunta orientadora, ruta de estudio y evidencia oficial. |
+
+Adaptaciones comunes a los laboratorios y al formato: se retiran el
+bloque YAML de metadatos; `PROYECTOS_BASE.md` y
+`FORMATO_MATRIZ_TRAZABILIDAD.md` enlazan a sus páginas de la Unidad II
+(la numeración de secciones coincide); los enlaces a la rúbrica docente
+se sustituyen por "rúbrica de la unidad" sin enlace; se retira la ruta
+interna de las fichas de referencias; `PENDIENTE DE VERIFICACIÓN` se
+conserva en minúsculas.
+
+**Inconsistencia registrada, no resuelta.** Los laboratorios remiten
+unas 40 veces a secciones del manual del estudiante (§4 a §11), que no se
+publica. Por decisión del responsable académico, las páginas de temas se
+derivan de la presentación y cada referencia "manual §N" se sustituye
+por un enlace al tema equivalente (§5 → tema 1 … §11 → tema 7; §4 →
+"Antes de empezar" en la presentación; Unidad I §8.4 y §9.2 → sus
+páginas). Parte de lo que piden los laboratorios solo está desarrollado
+en el manual (por ejemplo, la comprobación del número de reglas de una
+tabla de decisión, la regla del "conjunto de valores" o las familias de
+criterios de salida), así que el tema enlazado puede no contener ese
+detalle. Si se publica el manual, deben sustituirse estos enlaces.
+
+No se derivan: `unidad03_manual_estudiante.md`, `unidad03_actividades.md`
+y `referencias/` (fuera de la solicitud); `unidad03_manual_profesor.md` y
+`evaluacion/unidad03_rubrica.md` (TEACHER_RESTRICTED); `CONTEXTO_UNIDAD.md`,
+`PLANEACION_UNIDAD.md` y `planeacion/` (WORKSPACE_ONLY).
+
+## 18. Derivación — Taller Integrador, Bloques III y IV
+
+Fecha: **2026-10-26**. Fuente: `academic-workspace`,
+`materias/taller-integrador/bloque03/` y `bloque04/` (commit `a3617d4`).
+Publicación por instrucción directa del responsable académico: publicar
+las presentaciones y los laboratorios de ambos bloques, con la
+presentación separada por temas, igual que DBA U3 y Pruebas de Software
+U3. Todos los archivos fuente están en `BORRADOR` y declaran
+`qa: PENDIENTE`; no existe `AUDITORIA_QA_*.md` para estos bloques.
+Siguiendo la sección 9, no se agregan insignias de estado.
+
+| Archivo fuente | Destino | Notas |
+| --- | --- | --- |
+| `bloque03/material/bloque03_presentacion.md` (v2) | `.../bloque-03/presentacion.md` + `.../bloque-03/{01..09}-*.md` | Convertida de Marp y separada por lámina de sección. La apertura y "Un defecto que nadie vio" quedan en `presentacion.md`. Cada sección (3.2, 3.1, 3.1.3, 3.3, Datos de prueba, 3.4, 3.4.3, 3.5) es un tema, en el orden de la fuente. Las láminas desde "Scrum en este bloque" y "Siguiente bloque" forman `09-cierre-y-resumen`. Se retira la mención a D-008. |
+| `bloque04/material/bloque04_presentacion.md` | `.../bloque-04/presentacion.md` + `.../bloque-04/{01..14}-*.md` | Ídem. Los títulos de lámina `#` se bajan un nivel. "Regresemos a Docker" se agrega como sección al final del tema 6. Las cuatro secciones finales (Comprueba tu comprensión, El mapa completo, La idea central y Fin del bloque conceptual) forman `14-cierre-y-autoevaluacion`. |
+| `bloque03/laboratorios/bloque03_lab01` a `lab05` | `.../bloque-03/laboratorios/laboratorio-{1..5}-*.md` | Copia íntegra salvo las adaptaciones descritas abajo. |
+| `bloque04/laboratorios/bloque04_lab01` a `lab05` | `.../bloque-04/laboratorios/laboratorio-{1..5}-*.md` | Ídem. |
+| `bloque04/material/bloque04_guia_fundamentos_contenedores.md` | `.../bloque-04/guia-fundamentos-contenedores.md` | Nuevo. Se publica porque el Laboratorio 1 pide leer sus secciones G1 a G4 y hacer sus experimentos. Las citas `[Txx]` remiten a su propia sección G16. |
+| Manuales del estudiante §1 a §3 (extracto) | `.../bloque-03/index.md`, `.../bloque-04/index.md` | Identificación, RA, problema del bloque y ruta de estudio. |
+
+En cada tema se agregan, como navegación, la línea "Temas del programa"
+(cuando la sección corresponde a un contenido numerado del programa),
+"Relación con el laboratorio" según los contenidos que declara cada
+laboratorio y "Qué sigue". La presentación del Bloque III, por criterio
+de su versión 2, no menciona los laboratorios; el portal agrega esos
+enlaces solo como navegación.
+
+Adaptaciones en laboratorios y guía: se retiran el título, el subtítulo
+de bloque y el bloque YAML; los encabezados `#` bajan un nivel; se
+retiran las referencias a `CONTEXTO_UNIDAD.md`, a las decisiones,
+hallazgos y riesgos (D-, H-, R-) y a
+`PLAN_ACTIVIDADES_Y_PROYECTO_INTEGRADOR.md`, reescribiendo la frase sin
+cambiar la instrucción; `bloque01_lab02_laravel.md` enlaza al
+Laboratorio 2 del Bloque I; `PENDIENTE DE VERIFICACIÓN` se conserva en
+minúsculas.
+
+**Inconsistencias registradas, no resueltas.**
+
+- Los laboratorios remiten unas 50 veces al manual del estudiante, que no
+  se publica (la mayoría en el Bloque IV). Cada "manual §N" se sustituye
+  por un enlace al tema equivalente de la presentación: en el Bloque III,
+  §5 → temas 2 y 3, §6 → 1, §7 → 4 y 5, §8 → 6 y 7, §9 → 8; en el
+  Bloque IV, §5 → 1 y 2, §6 → 3, §7 → 4, §8 a §10 → 8 (§9.5 → 10),
+  §11 y §12 → 9, §13, §14 y §18 → 11, §15 a §17 → 12. La presentación
+  del Bloque IV es conceptual y no desarrolla HTTPS con Caddy, k6, la ley
+  de Little ni los niveles de afirmación de capacidad, que los
+  Laboratorios 4 y 5 dan por estudiados en el manual. El tema enlazado
+  puede no contener ese detalle.
+- Los laboratorios citan los estándares del proyecto
+  (`02-ESTANDAR-BACKEND-LARAVEL.md`, `08-ESTANDAR-PRUEBAS.md`,
+  `STD-TEST`, etc.), que viven en `academic-workspace/recursos/estandares/`
+  y no se publican en este portal. Las citas se conservan sin enlace.
+
+No se derivan: manuales del estudiante, actividades, `bloque04_referencia_rapida.md`
+y `referencias/` (fuera de la solicitud); manuales del profesor,
+`evaluacion/` (TEACHER_RESTRICTED); `CONTEXTO_UNIDAD.md` (WORKSPACE_ONLY).
+
+## 19. Derivación — Estándares de desarrollo (Engineering Handbook)
+
+Fecha: **2026-10-26**. Fuente: `academic-workspace`, `recursos/estandares/`
+(commit `a3617d4`). Publicación por instrucción directa del responsable
+académico. Dictamen en `AUDITORIA_QA_ESTANDARES.md`:
+`APROBADO_CON_OBSERVACIONES`, validación académica `PENDIENTE`. La
+auditoría recomienda derivar solo el subconjunto `STUDENT_PUBLIC`
+(Docs 00–13, 16, 17 y `config-examples/`) y no derivar los Docs 14 y 15
+(audiencia docente); esta derivación sigue esa recomendación. Siguiendo
+la sección 9, no se agregan insignias de estado.
+
+Es un recurso transversal, así que se publica fuera de `materias/`, en
+una sección "Recursos" del menú principal.
+
+| Archivo fuente | Destino | Notas |
+| --- | --- | --- |
+| `README.md` | `src/content/docs/recursos/estandares/index.md` | Adaptado para estudiantes. Se retiran la audiencia docente (auditoría y calificación), la nota sobre el documento 18 y la descripción de directorios del workspace. |
+| `00-…md` a `13-…md`, `16-…md`, `17-…md` | `.../recursos/estandares/<nombre-en-minúsculas>.md` | Copia íntegra. El título del documento pasa al frontmatter. Las menciones `NN-NOMBRE.md` y los pies "Continúa en…" enlazan a la página publicada. En Doc 00, las filas 14 y 15 se marcan como instrumentos docentes no publicados y la fila 18 ya no remite a la auditoría. El pie de Doc 13 continúa en Doc 16. El pie de Doc 17 ya no remite a la auditoría. |
+| `config-examples/` (17 archivos) | `.../recursos/estandares/config-examples.md` | Una sola página con cada archivo en un bloque de código copiable, y la nota del README sobre las rutas `docs/handbook/`. |
+| `14-MATRIZ-…md`, `15-RUBRICA-…md` | — (no se derivan) | `TEACHER_RESTRICTED`. |
+| `AUDITORIA_QA_ESTANDARES.md` | — (no se deriva) | `WORKSPACE_ONLY`. |
+
+Cambios en otras páginas del portal: las citas `NN-ESTANDAR-….md` de los
+laboratorios de Taller Integrador (Bloques III y IV) ahora enlazan al
+documento publicado, lo que resuelve la segunda inconsistencia registrada
+en la sección 18. La portada (`index.md`) lista las unidades publicadas
+hasta hoy y enlaza a los estándares.
+
+**Inconsistencia registrada, no resuelta.** El Doc 09 (Seguridad) se
+alinea con el OWASP Top 10:2021 y conserva su nota de verificación
+pendiente (PEND-EST-01). El Laboratorio 4 y el tema 7 del Bloque III de
+Taller Integrador ya usan la edición 2025 y lo señalan.

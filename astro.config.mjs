@@ -233,6 +233,65 @@ export default defineConfig({
 										},
 									],
 								},
+								{
+									label: 'Unidad 3 — Auditoría, trazabilidad y gobierno práctico de datos',
+									items: [
+										{ label: 'Introducción', slug: 'materias/dba/unidad-03' },
+										{
+											label: 'Presentación',
+											slug: 'materias/dba/unidad-03/presentacion',
+										},
+										{
+											label: '1. Auditoría de bases de datos',
+											slug: 'materias/dba/unidad-03/01-auditoria-de-bases-de-datos',
+										},
+										{
+											label: '2. Bitácoras en PostgreSQL',
+											slug: 'materias/dba/unidad-03/02-bitacoras-en-postgresql',
+										},
+										{
+											label: '3. Auditoría del dato',
+											slug: 'materias/dba/unidad-03/03-auditoria-del-dato',
+										},
+										{
+											label: '4. Trazabilidad en MongoDB Community',
+											slug: 'materias/dba/unidad-03/04-trazabilidad-en-mongodb',
+										},
+										{
+											label: '5. Conservación e interpretación de bitácoras',
+											slug: 'materias/dba/unidad-03/05-conservacion-e-interpretacion-de-bitacoras',
+										},
+										{
+											label: '6. Políticas prácticas de datos',
+											slug: 'materias/dba/unidad-03/06-politicas-practicas-de-datos',
+										},
+										{
+											label: '7. Gobierno práctico de datos',
+											slug: 'materias/dba/unidad-03/07-gobierno-practico-de-datos',
+										},
+										{
+											label: '8. Cierre de la unidad',
+											slug: 'materias/dba/unidad-03/08-cierre-de-la-unidad',
+										},
+										{
+											label: 'Laboratorios',
+											items: [
+												{
+													label: 'Laboratorio 1 — Bitácoras y auditoría del dato en PostgreSQL',
+													slug: 'materias/dba/unidad-03/laboratorios/laboratorio-1-bitacoras-y-auditoria-del-dato-postgresql',
+												},
+												{
+													label: 'Laboratorio 2 — Trazabilidad en MongoDB Community',
+													slug: 'materias/dba/unidad-03/laboratorios/laboratorio-2-trazabilidad-mongodb',
+												},
+												{
+													label: 'Laboratorio 3 — Políticas, gobierno de datos y evidencias',
+													slug: 'materias/dba/unidad-03/laboratorios/laboratorio-3-politicas-gobierno-y-evidencias',
+												},
+											],
+										},
+									],
+								},
 							],
 						},
 						{
@@ -392,6 +451,172 @@ export default defineConfig({
 												{
 													label: 'Lecturas complementarias',
 													slug: 'materias/taller-integrador/bloque-02/referencias/lecturas-complementarias',
+												},
+											],
+										},
+									],
+								},
+								{
+									label: 'Bloque III — Construcción del sistema',
+									items: [
+										{ label: 'Introducción', slug: 'materias/taller-integrador/bloque-03' },
+										{
+											label: 'Presentación',
+											slug: 'materias/taller-integrador/bloque-03/presentacion',
+										},
+										{
+											label: '1. Manejo de datos',
+											slug: 'materias/taller-integrador/bloque-03/01-manejo-de-datos',
+										},
+										{
+											label: '2. Desarrollo de componentes',
+											slug: 'materias/taller-integrador/bloque-03/02-desarrollo-de-componentes',
+										},
+										{
+											label: '3. Manejo de errores',
+											slug: 'materias/taller-integrador/bloque-03/03-manejo-de-errores',
+										},
+										{
+											label: '4. Pruebas automatizadas',
+											slug: 'materias/taller-integrador/bloque-03/04-pruebas-automatizadas',
+										},
+										{
+											label: '5. Datos de prueba',
+											slug: 'materias/taller-integrador/bloque-03/05-datos-de-prueba',
+										},
+										{
+											label: '6. Desarrollo seguro',
+											slug: 'materias/taller-integrador/bloque-03/06-desarrollo-seguro',
+										},
+										{
+											label: '7. Gestión de secretos',
+											slug: 'materias/taller-integrador/bloque-03/07-gestion-de-secretos',
+										},
+										{
+											label: '8. Integración continua',
+											slug: 'materias/taller-integrador/bloque-03/08-integracion-continua',
+										},
+										{
+											label: '9. Cierre y resumen',
+											slug: 'materias/taller-integrador/bloque-03/09-cierre-y-resumen',
+										},
+										{
+											label: 'Laboratorios',
+											items: [
+												{
+													label: 'Laboratorio 1 — Persistencia en PostgreSQL',
+													slug: 'materias/taller-integrador/bloque-03/laboratorios/laboratorio-1-persistencia-postgresql',
+												},
+												{
+													label: 'Laboratorio 2 — API REST del proyecto',
+													slug: 'materias/taller-integrador/bloque-03/laboratorios/laboratorio-2-api-rest',
+												},
+												{
+													label: 'Laboratorio 3 — Pruebas unitarias y de integración',
+													slug: 'materias/taller-integrador/bloque-03/laboratorios/laboratorio-3-pruebas',
+												},
+												{
+													label: 'Laboratorio 4 — Desarrollo seguro',
+													slug: 'materias/taller-integrador/bloque-03/laboratorios/laboratorio-4-desarrollo-seguro',
+												},
+												{
+													label: 'Laboratorio 5 — Integración continua con GitLab CI',
+													slug: 'materias/taller-integrador/bloque-03/laboratorios/laboratorio-5-integracion-continua',
+												},
+											],
+										},
+									],
+								},
+								{
+									label: 'Bloque IV — Contenedores, despliegue y escalabilidad',
+									items: [
+										{ label: 'Introducción', slug: 'materias/taller-integrador/bloque-04' },
+										{
+											label: 'Presentación',
+											slug: 'materias/taller-integrador/bloque-04/presentacion',
+										},
+										{
+											label: '1. ¿Qué es un contenedor?',
+											slug: 'materias/taller-integrador/bloque-04/01-que-es-un-contenedor',
+										},
+										{
+											label: '2. Docker es la herramienta',
+											slug: 'materias/taller-integrador/bloque-04/02-docker-es-la-herramienta',
+										},
+										{
+											label: '3. Los cinco conceptos fundamentales',
+											slug: 'materias/taller-integrador/bloque-04/03-los-cinco-conceptos-fundamentales',
+										},
+										{
+											label: '4. Operar Docker',
+											slug: 'materias/taller-integrador/bloque-04/04-operar-docker',
+										},
+										{
+											label: '5. Linux básico para trabajar con contenedores',
+											slug: 'materias/taller-integrador/bloque-04/05-linux-basico',
+										},
+										{
+											label: '6. Usuarios, grupos y permisos',
+											slug: 'materias/taller-integrador/bloque-04/06-usuarios-grupos-y-permisos',
+										},
+										{
+											label: '7. Arquitectura de Docker',
+											slug: 'materias/taller-integrador/bloque-04/07-arquitectura-de-docker',
+										},
+										{
+											label: '8. Construir nuestras propias imágenes',
+											slug: 'materias/taller-integrador/bloque-04/08-construir-imagenes',
+										},
+										{
+											label: '9. Docker Compose',
+											slug: 'materias/taller-integrador/bloque-04/09-docker-compose',
+										},
+										{
+											label: '10. Seguridad de contenedores',
+											slug: 'materias/taller-integrador/bloque-04/10-seguridad-de-contenedores',
+										},
+										{
+											label: '11. Del desarrollo al despliegue',
+											slug: 'materias/taller-integrador/bloque-04/11-del-desarrollo-al-despliegue',
+										},
+										{
+											label: '12. Escalabilidad y orquestación',
+											slug: 'materias/taller-integrador/bloque-04/12-escalabilidad-y-orquestacion',
+										},
+										{
+											label: '13. Aplicación integradora',
+											slug: 'materias/taller-integrador/bloque-04/13-aplicacion-integradora',
+										},
+										{
+											label: '14. Cierre y autoevaluación',
+											slug: 'materias/taller-integrador/bloque-04/14-cierre-y-autoevaluacion',
+										},
+										{
+											label: 'Guía de fundamentos de contenedores',
+											slug: 'materias/taller-integrador/bloque-04/guia-fundamentos-contenedores',
+										},
+										{
+											label: 'Laboratorios',
+											items: [
+												{
+													label: 'Laboratorio 1 — Primeros contenedores',
+													slug: 'materias/taller-integrador/bloque-04/laboratorios/laboratorio-1-primeros-contenedores',
+												},
+												{
+													label: 'Laboratorio 2 — Tu sistema en una imagen: Dockerfile',
+													slug: 'materias/taller-integrador/bloque-04/laboratorios/laboratorio-2-dockerfile',
+												},
+												{
+													label: 'Laboratorio 3 — Ambiente reproducible con Docker Compose',
+													slug: 'materias/taller-integrador/bloque-04/laboratorios/laboratorio-3-docker-compose',
+												},
+												{
+													label: 'Laboratorio 4 — Despliegue en un servidor con HTTPS',
+													slug: 'materias/taller-integrador/bloque-04/laboratorios/laboratorio-4-despliegue',
+												},
+												{
+													label: 'Laboratorio 5 — Pruebas de carga y análisis de capacidad',
+													slug: 'materias/taller-integrador/bloque-04/laboratorios/laboratorio-5-pruebas-de-carga',
 												},
 											],
 										},
@@ -725,11 +950,102 @@ export default defineConfig({
 										},
 									],
 								},
+								{
+									label: 'Unidad III — Ingeniería y planificación de pruebas',
+									items: [
+										{ label: 'Introducción', slug: 'materias/pruebas-software/unidad-03' },
+										{
+											label: 'Presentación',
+											slug: 'materias/pruebas-software/unidad-03/presentacion',
+										},
+										{
+											label: '1. Tipos y niveles de pruebas',
+											slug: 'materias/pruebas-software/unidad-03/01-tipos-y-niveles-de-pruebas',
+										},
+										{
+											label: '2. Técnicas de diseño: enfoques y casos de prueba',
+											slug: 'materias/pruebas-software/unidad-03/02-tecnicas-de-diseno-enfoques-y-casos',
+										},
+										{
+											label: '3. Técnicas de caja negra',
+											slug: 'materias/pruebas-software/unidad-03/03-tecnicas-de-caja-negra',
+										},
+										{
+											label: '4. Caja blanca y caja gris',
+											slug: 'materias/pruebas-software/unidad-03/04-caja-blanca-y-caja-gris',
+										},
+										{
+											label: '5. Pruebas exploratorias y basadas en riesgos',
+											slug: 'materias/pruebas-software/unidad-03/05-pruebas-exploratorias-y-basadas-en-riesgos',
+										},
+										{
+											label: '6. Planificación de pruebas',
+											slug: 'materias/pruebas-software/unidad-03/06-planificacion-de-pruebas',
+										},
+										{
+											label: '7. Estándares y documentación',
+											slug: 'materias/pruebas-software/unidad-03/07-estandares-y-documentacion',
+										},
+										{
+											label: '8. Cierre y resumen',
+											slug: 'materias/pruebas-software/unidad-03/08-cierre-y-resumen',
+										},
+										{
+											label: 'Formato del plan de pruebas',
+											slug: 'materias/pruebas-software/unidad-03/formato-plan-pruebas',
+										},
+										{
+											label: 'Laboratorios',
+											items: [
+												{
+													label: 'Laboratorio 1 — Técnicas de caja negra',
+													slug: 'materias/pruebas-software/unidad-03/laboratorios/laboratorio-1-tecnicas-caja-negra',
+												},
+												{
+													label: 'Laboratorio 2 — Caja blanca: grafo, rutas y complejidad ciclomática',
+													slug: 'materias/pruebas-software/unidad-03/laboratorios/laboratorio-2-caja-blanca-rutas',
+												},
+												{
+													label: 'Laboratorio 3 — Plan de pruebas del proyecto integrador',
+													slug: 'materias/pruebas-software/unidad-03/laboratorios/laboratorio-3-plan-de-pruebas',
+												},
+											],
+										},
+									],
+								},
 							],
 						},
 						{
 							label: 'Otras materias (en preparación)',
 							slug: 'materias',
+						},
+					],
+				},
+				{
+					label: 'Recursos',
+					items: [
+						{
+							label: 'Estándares de desarrollo',
+							items: [
+								{ label: 'Presentación del handbook', slug: 'recursos/estandares' },
+								{ label: '00 · Arquitectura documental', slug: 'recursos/estandares/00-indice-y-arquitectura-documental' },
+								{ label: '01 · Estándar general', slug: 'recursos/estandares/01-estandar-general' },
+								{ label: '02 · Backend Laravel/PHP', slug: 'recursos/estandares/02-estandar-backend-laravel' },
+								{ label: '03 · Frontend', slug: 'recursos/estandares/03-estandar-frontend' },
+								{ label: '04 · Bases de datos', slug: 'recursos/estandares/04-estandar-bases-de-datos' },
+								{ label: '05 · APIs REST', slug: 'recursos/estandares/05-estandar-api-rest' },
+								{ label: '06 · Git y control de versiones', slug: 'recursos/estandares/06-estandar-git' },
+								{ label: '07 · Code review', slug: 'recursos/estandares/07-estandar-code-review' },
+								{ label: '08 · Pruebas', slug: 'recursos/estandares/08-estandar-pruebas' },
+								{ label: '09 · Seguridad', slug: 'recursos/estandares/09-estandar-seguridad' },
+								{ label: '10 · Documentación', slug: 'recursos/estandares/10-estandar-documentacion' },
+								{ label: '11 · Calidad y CI/CD', slug: 'recursos/estandares/11-estandar-calidad-cicd' },
+								{ label: '12 · Definition of Done', slug: 'recursos/estandares/12-definition-of-done' },
+								{ label: '13 · Checklists operativos', slug: 'recursos/estandares/13-checklists' },
+								{ label: '16 · Plan de implementación por fases', slug: 'recursos/estandares/16-plan-implementacion' },
+								{ label: '17 · 20 reglas de oro', slug: 'recursos/estandares/17-reglas-de-oro' },
+								{ label: 'Archivos de configuración', slug: 'recursos/estandares/config-examples' },
+							],
 						},
 					],
 				},

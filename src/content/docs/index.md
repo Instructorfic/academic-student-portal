@@ -24,12 +24,21 @@ Consulta las materias disponibles y accede directamente a sus unidades y materia
 
 Actualmente encontrarás contenido de:
 
-- **Gestión de Seguridad y Desempeño de Bases de Datos** — Unidades I y II
-- **Taller Integrador de Especialización** — Bloques I y II
+- **Gestión de Seguridad y Desempeño de Bases de Datos** — Unidades I, II y III
+- **Taller Integrador de Especialización** — Bloques I, II, III y IV
 - **Lógica de Programación y Pensamiento Computacional** — Unidades I, II y III
-- **Pruebas de Software** — Unidades I y II
+- **Pruebas de Software** — Unidades I, II y III
 
 [**Explorar materias →**](/materias/)
+
+## Estándares de desarrollo
+
+Las materias con proyecto de software comparten un conjunto de estándares
+y buenas prácticas: código, bases de datos, API REST, Git, revisión de
+código, pruebas, seguridad, documentación, CI/CD y Definition of Done,
+además de archivos de configuración listos para copiar.
+
+[**Consultar los estándares →**](/recursos/estandares/)
 
 ---
 

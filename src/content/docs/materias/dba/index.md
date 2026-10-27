@@ -31,8 +31,9 @@ que aplican.
 
 - [Unidad 1 — Introducción a la Gestión de Bases de Datos](/materias/dba/unidad-01/)
 - [Unidad 2 — Seguridad, privacidad y control de acceso](/materias/dba/unidad-02/)
+- [Unidad 3 — Auditoría, trazabilidad y gobierno práctico de datos](/materias/dba/unidad-03/)
 
-Las demás unidades del programa (3 a 6) todavía no están publicadas en
+Las demás unidades del programa (4 a 6) todavía no están publicadas en
 este portal.
 
 ## Referencias de la materia

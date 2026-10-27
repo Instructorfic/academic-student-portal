@@ -65,6 +65,7 @@ documentación o prototipos al final del semestre.
 
 - [Bloque I — Del problema al producto](/materias/taller-integrador/bloque-01/)
 - [Bloque II — Desarrollo colaborativo y arquitectura](/materias/taller-integrador/bloque-02/)
+- [Bloque III — Construcción del sistema](/materias/taller-integrador/bloque-03/)
+- [Bloque IV — Contenedores, despliegue y escalabilidad](/materias/taller-integrador/bloque-04/)
 
-Los Bloques III a V del programa todavía no están publicados en este
-portal.
+El Bloque V del programa todavía no está publicado en este portal.

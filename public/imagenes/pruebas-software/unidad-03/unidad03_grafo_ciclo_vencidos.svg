@@ -1,0 +1,80 @@
+<svg viewBox="0 0 760 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Grafo de flujo de control de la función contarPrestamosVencidos, con un ciclo MIENTRAS y una decisión dentro del ciclo: seis nodos, siete aristas y complejidad ciclomática igual a 3.">
+  <defs>
+    <marker id="fc" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0a3161"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="760" height="420" fill="#ffffff"/>
+
+  <line x1="220" y1="6" x2="220" y2="22" stroke="#0a3161" stroke-width="2" marker-end="url(#fc)"/>
+
+  <!-- A -->
+  <circle cx="220" cy="44" r="22" fill="#eaf1fb" stroke="#0a3161" stroke-width="2"/>
+  <text x="220" y="49" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#1c1f24">A</text>
+  <text x="252" y="49" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">líneas 1–2</text>
+
+  <line x1="220" y1="66" x2="220" y2="100" stroke="#0a3161" stroke-width="2" marker-end="url(#fc)"/>
+
+  <!-- B -->
+  <circle cx="220" cy="122" r="22" fill="#fdf6e3" stroke="#c9a227" stroke-width="2"/>
+  <text x="220" y="127" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#1c1f24">B</text>
+  <text x="160" y="104" text-anchor="end" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">línea 3</text>
+  <text x="160" y="120" text-anchor="end" font-family="Segoe UI, sans-serif" font-size="12" fill="#8a6c1a">i &lt;= longitud ?</text>
+
+  <!-- B -> F (F) -->
+  <line x1="242" y1="122" x2="358" y2="122" stroke="#0a3161" stroke-width="2" marker-end="url(#fc)"/>
+  <text x="296" y="114" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0a3161">F</text>
+
+  <!-- F -->
+  <circle cx="380" cy="122" r="22" fill="#eaf1fb" stroke="#0a3161" stroke-width="2"/>
+  <text x="380" y="127" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#1c1f24">F</text>
+  <text x="410" y="127" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">línea 9 (salida)</text>
+
+  <!-- B -> C (V) -->
+  <line x1="220" y1="144" x2="220" y2="178" stroke="#0a3161" stroke-width="2" marker-end="url(#fc)"/>
+  <text x="228" y="166" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0a3161">V</text>
+
+  <!-- C -->
+  <circle cx="220" cy="200" r="22" fill="#fdf6e3" stroke="#c9a227" stroke-width="2"/>
+  <text x="220" y="205" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#1c1f24">C</text>
+  <text x="252" y="196" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">línea 4</text>
+  <text x="252" y="212" font-family="Segoe UI, sans-serif" font-size="12" fill="#8a6c1a">diasRetraso &gt; 0 ?</text>
+
+  <!-- C -> D (V) -->
+  <line x1="205" y1="217" x2="167" y2="256" stroke="#0a3161" stroke-width="2" marker-end="url(#fc)"/>
+  <text x="172" y="232" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0a3161">V</text>
+
+  <!-- D -->
+  <circle cx="152" cy="276" r="22" fill="#eaf1fb" stroke="#0a3161" stroke-width="2"/>
+  <text x="152" y="281" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#1c1f24">D</text>
+  <text x="122" y="281" text-anchor="end" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">línea 5</text>
+
+  <!-- C -> E (F) -->
+  <line x1="220" y1="222" x2="220" y2="328" stroke="#0a3161" stroke-width="2" marker-end="url(#fc)"/>
+  <text x="228" y="280" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0a3161">F</text>
+
+  <!-- D -> E -->
+  <line x1="167" y1="293" x2="204" y2="334" stroke="#0a3161" stroke-width="2" marker-end="url(#fc)"/>
+
+  <!-- E -->
+  <circle cx="220" cy="350" r="22" fill="#eaf1fb" stroke="#0a3161" stroke-width="2"/>
+  <text x="220" y="355" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#1c1f24">E</text>
+  <text x="252" y="355" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">línea 7</text>
+
+  <!-- E -> B (regreso) -->
+  <path d="M200,360 C40,390 30,140 198,126" fill="none" stroke="#0a3161" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#fc)"/>
+  <text x="68" y="244" text-anchor="end" font-family="Segoe UI, sans-serif" font-size="11" fill="#0a3161">regreso</text>
+  <text x="68" y="258" text-anchor="end" font-family="Segoe UI, sans-serif" font-size="11" fill="#0a3161">al ciclo</text>
+
+  <!-- Panel derecho -->
+  <rect x="460" y="170" width="285" height="235" rx="10" fill="#f6f8fb" stroke="#d0d7e2" stroke-width="1"/>
+  <text x="478" y="196" font-family="Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#0a3161">Conteo</text>
+  <text x="478" y="220" font-family="Segoe UI, sans-serif" font-size="13" fill="#1c1f24">N = 6 · E = 7 · P = 2 (B y C)</text>
+  <text x="478" y="244" font-family="Segoe UI, sans-serif" font-size="13" fill="#1c1f24">V(G) = 7 − 6 + 2 = 3</text>
+  <text x="478" y="264" font-family="Segoe UI, sans-serif" font-size="13" fill="#1c1f24">V(G) = 2 + 1 = 3</text>
+  <text x="478" y="294" font-family="Segoe UI, sans-serif" font-size="14" font-weight="700" fill="#0a3161">Base independiente</text>
+  <text x="478" y="318" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">B1: A → B –F→ F</text>
+  <text x="478" y="338" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">B2: A → B –V→ C –F→ E → B –F→ F</text>
+  <text x="478" y="358" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">B3: A → B –V→ C –V→ D → E → B –F→ F</text>
+  <text x="478" y="388" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">Rutas totales: ilimitadas (dependen de la lista)</text>
+</svg>

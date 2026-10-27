@@ -79,6 +79,7 @@ reporte final.
 
 - [Unidad I — Fundamentos de pruebas y aseguramiento de calidad](/materias/pruebas-software/unidad-01/)
 - [Unidad II — Requisitos, criterios de aceptación y trazabilidad](/materias/pruebas-software/unidad-02/)
+- [Unidad III — Ingeniería y planificación de pruebas](/materias/pruebas-software/unidad-03/)
 
-Las Unidades III a VIII del programa todavía no están publicadas en
+Las Unidades IV a VIII del programa todavía no están publicadas en
 este portal.

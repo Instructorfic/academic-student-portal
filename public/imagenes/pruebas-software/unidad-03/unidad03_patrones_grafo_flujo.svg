@@ -1,0 +1,74 @@
+<svg viewBox="0 0 960 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Patrones del grafo de flujo de control: secuencia, SI-ENTONCES, SI-ENTONCES-SINO y MIENTRAS. Cada decisión tiene dos aristas de salida, verdadero (V) y falso (F).">
+  <defs>
+    <marker id="fl" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#0a3161"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="960" height="300" fill="#ffffff"/>
+
+  <!-- Panel 1: Secuencia -->
+  <text x="120" y="24" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#0a3161">Secuencia</text>
+  <circle cx="120" cy="90" r="20" fill="#eaf1fb" stroke="#0a3161" stroke-width="2"/>
+  <text x="120" y="95" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#1c1f24">a</text>
+  <line x1="120" y1="110" x2="120" y2="188" stroke="#0a3161" stroke-width="2" marker-end="url(#fl)"/>
+  <circle cx="120" cy="210" r="20" fill="#eaf1fb" stroke="#0a3161" stroke-width="2"/>
+  <text x="120" y="215" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#1c1f24">b</text>
+  <text x="120" y="270" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">Instrucciones que siempre</text>
+  <text x="120" y="286" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">se ejecutan juntas: 1 nodo</text>
+
+  <line x1="240" y1="20" x2="240" y2="290" stroke="#d0d7e2" stroke-width="1"/>
+
+  <!-- Panel 2: SI-ENTONCES -->
+  <text x="360" y="24" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#0a3161">SI – ENTONCES</text>
+  <circle cx="360" cy="70" r="20" fill="#fdf6e3" stroke="#c9a227" stroke-width="2"/>
+  <text x="360" y="75" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#1c1f24">d</text>
+  <line x1="347" y1="86" x2="318" y2="132" stroke="#0a3161" stroke-width="2" marker-end="url(#fl)"/>
+  <text x="322" y="108" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0a3161">V</text>
+  <circle cx="310" cy="150" r="20" fill="#eaf1fb" stroke="#0a3161" stroke-width="2"/>
+  <text x="310" y="155" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#1c1f24">t</text>
+  <line x1="322" y1="166" x2="349" y2="212" stroke="#0a3161" stroke-width="2" marker-end="url(#fl)"/>
+  <path d="M375,84 C415,120 415,190 375,216" fill="none" stroke="#0a3161" stroke-width="2" marker-end="url(#fl)"/>
+  <text x="410" y="152" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0a3161">F</text>
+  <circle cx="360" cy="230" r="20" fill="#eaf1fb" stroke="#0a3161" stroke-width="2"/>
+  <text x="360" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#1c1f24">j</text>
+  <text x="360" y="286" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">La rama F va directo a la unión</text>
+
+  <line x1="480" y1="20" x2="480" y2="290" stroke="#d0d7e2" stroke-width="1"/>
+
+  <!-- Panel 3: SI-ENTONCES-SINO -->
+  <text x="600" y="24" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#0a3161">SI – ENTONCES – SINO</text>
+  <circle cx="600" cy="70" r="20" fill="#fdf6e3" stroke="#c9a227" stroke-width="2"/>
+  <text x="600" y="75" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#1c1f24">d</text>
+  <line x1="587" y1="86" x2="558" y2="132" stroke="#0a3161" stroke-width="2" marker-end="url(#fl)"/>
+  <text x="560" y="108" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0a3161">V</text>
+  <line x1="613" y1="86" x2="642" y2="132" stroke="#0a3161" stroke-width="2" marker-end="url(#fl)"/>
+  <text x="632" y="108" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0a3161">F</text>
+  <circle cx="550" cy="150" r="20" fill="#eaf1fb" stroke="#0a3161" stroke-width="2"/>
+  <text x="550" y="155" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#1c1f24">t</text>
+  <circle cx="650" cy="150" r="20" fill="#eaf1fb" stroke="#0a3161" stroke-width="2"/>
+  <text x="650" y="155" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#1c1f24">e</text>
+  <line x1="562" y1="166" x2="589" y2="212" stroke="#0a3161" stroke-width="2" marker-end="url(#fl)"/>
+  <line x1="638" y1="166" x2="611" y2="212" stroke="#0a3161" stroke-width="2" marker-end="url(#fl)"/>
+  <circle cx="600" cy="230" r="20" fill="#eaf1fb" stroke="#0a3161" stroke-width="2"/>
+  <text x="600" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#1c1f24">j</text>
+  <text x="600" y="286" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">Dos ramas que se vuelven a unir</text>
+
+  <line x1="720" y1="20" x2="720" y2="290" stroke="#d0d7e2" stroke-width="1"/>
+
+  <!-- Panel 4: MIENTRAS -->
+  <text x="840" y="24" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="15" font-weight="700" fill="#0a3161">MIENTRAS</text>
+  <circle cx="840" cy="80" r="20" fill="#fdf6e3" stroke="#c9a227" stroke-width="2"/>
+  <text x="840" y="85" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#1c1f24">d</text>
+  <line x1="828" y1="97" x2="803" y2="143" stroke="#0a3161" stroke-width="2" marker-end="url(#fl)"/>
+  <text x="800" y="120" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0a3161">V</text>
+  <circle cx="795" cy="162" r="20" fill="#eaf1fb" stroke="#0a3161" stroke-width="2"/>
+  <text x="795" y="167" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#1c1f24">c</text>
+  <path d="M776,156 C745,140 750,85 819,78" fill="none" stroke="#0a3161" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#fl)"/>
+  <text x="752" y="66" font-family="Segoe UI, sans-serif" font-size="11" fill="#0a3161">regreso</text>
+  <line x1="852" y1="97" x2="884" y2="212" stroke="#0a3161" stroke-width="2" marker-end="url(#fl)"/>
+  <text x="878" y="150" font-family="Segoe UI, sans-serif" font-size="13" font-weight="700" fill="#0a3161">F</text>
+  <circle cx="890" cy="230" r="20" fill="#eaf1fb" stroke="#0a3161" stroke-width="2"/>
+  <text x="890" y="235" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="13" fill="#1c1f24">s</text>
+  <text x="840" y="270" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">El cuerpo (c) regresa a la</text>
+  <text x="840" y="286" text-anchor="middle" font-family="Segoe UI, sans-serif" font-size="12" fill="#1c1f24">condición; F sale del ciclo</text>
+</svg>
