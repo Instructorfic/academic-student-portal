@@ -598,7 +598,7 @@ Taller Integrador ya usan la edición 2025 y lo señalan.
 ## 20. Derivación — Lógica de Programación, Unidad IV y ajustes de la Unidad III
 
 Fecha: **2026-11-04**. Fuente: `academic-workspace`,
-`materias/logica-programacion/` (cambios aún sin commit en el workspace).
+`materias/logica-programacion/` (commits `411ef2e` para la Unidad III, `bdcd159` para la Unidad IV y `a87ae94` para la traducción a C, C++ y Python).
 Publicación por instrucción directa del responsable académico: publicar
 todo lo pendiente de la materia. En la fuente, los materiales de la
 Unidad IV están en `BORRADOR`, con QA inicial
