@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 254" width="960" height="254" role="img" aria-labelledby="t d">
+<title id="t">Modelo de entrada y salida</title>
+<desc id="d">El usuario escribe 19 en el teclado. La instrucción Entrada: edad guarda 19 en la celda de memoria edad, de tipo ENTERO. La instrucción Mostrar lee la celda y en la pantalla aparece Edad: 19. La entrada escribe en la memoria y la salida solo la lee.</desc>
+<defs><marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0b2e59"/></marker></defs>
+<rect width="960" height="254" fill="#ffffff"/>
+<rect x="20" y="70" width="190" height="110" rx="10" ry="10" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="115" y="100" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#0b2e59">USUARIO</text>
+<text x="115" y="128" text-anchor="middle" dominant-baseline="middle" font-size="12" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#444">escribe en el teclado</text>
+<text x="115" y="156" text-anchor="middle" dominant-baseline="middle" font-size="20" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#2e7d32">19</text>
+<rect x="340" y="50" width="280" height="150" rx="10" ry="10" fill="#f7f9fc" stroke="#0b2e59" stroke-width="2"/>
+<text x="480" y="72" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#0b2e59">MEMORIA</text>
+<rect x="380" y="96" width="200" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="390" y="112" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">edad</text>
+<text x="390" y="130" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">ENTERO</text>
+<rect x="390" y="140" width="180" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="480.0" y="152" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">19</text>
+<rect x="750" y="70" width="190" height="110" rx="10" ry="10" fill="#1e2430" stroke="#1e2430" stroke-width="2"/>
+<text x="845" y="100" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#ffffff">PANTALLA</text>
+<text x="845" y="140" text-anchor="middle" dominant-baseline="middle" font-size="16" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Edad: 19</text>
+<line x1="212" y1="125" x2="336" y2="125" stroke="#0b2e59" stroke-width="2.5" marker-end="url(#flecha)"/>
+<line x1="622" y1="125" x2="746" y2="125" stroke="#0b2e59" stroke-width="2.5" marker-end="url(#flecha)"/>
+<text x="274" y="108" text-anchor="middle" dominant-baseline="middle" font-size="13" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#0b2e59">Entrada: edad</text>
+<text x="274" y="146" text-anchor="middle" dominant-baseline="middle" font-size="12" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#444">escribe</text>
+<text x="684" y="108" text-anchor="middle" dominant-baseline="middle" font-size="13" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#0b2e59">Mostrar</text>
+<text x="684" y="146" text-anchor="middle" dominant-baseline="middle" font-size="12" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#444">solo lee</text>
+<text x="480" y="232" text-anchor="middle" dominant-baseline="middle" font-size="13" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#333">La entrada reemplaza el valor anterior de la variable. La salida no modifica la memoria.</text>
+</svg>

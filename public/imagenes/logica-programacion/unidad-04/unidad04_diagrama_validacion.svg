@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 840 445" width="840" height="445" role="img" aria-labelledby="t d">
+<title id="t">Diagrama de flujo: ciclo Repetir para validar el semestre</title>
+<desc id="d">Inicio; salida del mensaje Semestre (1 a 10); entrada semestre; decisión semestre &gt;= 1 Y semestre &lt;= 10. Rama No: una línea regresa antes del mensaje para pedir el dato otra vez. Rama Sí: salida en pantalla del semestre registrado; Fin.</desc>
+<defs><marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0b2e59"/></marker></defs>
+<rect width="840" height="445" fill="#ffffff"/>
+<rect x="360" y="15" width="120" height="40" rx="20" ry="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="420" y="35" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Inicio</text>
+<line x1="420" y1="55" x2="420" y2="79" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<circle cx="420" cy="67" r="4" fill="#0b2e59"/>
+<path d="M260.0,99 L278.0,79 L564.0,79 A16,20 0 0 1 564.0,119 L278.0,119 Z" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="420" y="99" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Mostrar "Semestre (1 a 10): "</text>
+<line x1="420" y1="119" x2="420" y2="143" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<polygon points="318.0,143 540.0,143 522.0,183 300.0,183" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="420" y="163" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Entrada: semestre</text>
+<line x1="420" y1="183" x2="420" y2="207" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<polygon points="420,207 630.0,252.0 420,297 210.0,252.0" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="420" y="252.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">semestre &gt;= 1 Y semestre &lt;= 10</text>
+<polyline points="210,252 140,252 140,67 415,67" fill="none" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<text x="195" y="236" text-anchor="end" dominant-baseline="middle" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">No</text>
+<line x1="420" y1="297" x2="420" y2="322" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<text x="436" y="310" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">Sí</text>
+<path d="M210.0,342 L228.0,322 L614.0,322 A16,20 0 0 1 614.0,362 L228.0,362 Z" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="420" y="342" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Mostrar "Semestre registrado: ", semestre</text>
+<line x1="420" y1="362" x2="420" y2="386" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="360" y="386" width="120" height="40" rx="20" ry="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="420" y="406" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Fin</text>
+</svg>

@@ -67,6 +67,8 @@ algorítmica** completa: el
 | [Plantillas de los instrumentos](/materias/logica-programacion/unidad-03/plantillas/) | Formatos de trabajo con los que se resuelve y entrega cada ejercicio. |
 | [Especificación de diagramas de flujo](/materias/logica-programacion/unidad-03/especificacion-diagramas-flujo/) | Símbolos y reglas para representar gráficamente los algoritmos. |
 | [Traducción del pseudocódigo a PSeInt](/materias/logica-programacion/unidad-03/traduccion-a-pseint/) | Correspondencia entre el pseudocódigo de la materia y PSeInt para verificar los algoritmos. |
+| [Especificación de pseudocódigo](/materias/logica-programacion/unidad-03/especificacion-pseudocodigo/) | Notación del pseudocódigo de la materia: tipos, identificadores, entrada, salida, asignación, operadores y estructuras básicas. |
+| [Glosario de términos](/materias/logica-programacion/unidad-03/glosario/) | Terminología común de la unidad y el término preferente para cada concepto. |
 
 ### Ruta de estudio sugerida
 
@@ -93,7 +95,7 @@ las tareas en la fecha y por el medio que indique el profesor.
 
 ## Qué NO se estudia todavía en esta unidad
 
-En la Unidad IV profundizarás en:
+En la [Unidad IV](/materias/logica-programacion/unidad-04/) profundizarás en:
 
 - estructuras secuenciales, condicionales (simples, dobles, múltiples,
   anidadas) y repetitivas (mientras, repetir, desde) con su sintaxis

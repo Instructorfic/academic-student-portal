@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 475" width="960" height="475" role="img" aria-labelledby="t d">
+<title id="t">Diagrama de flujo: conversión de segundos a horas, minutos y segundos</title>
+<desc id="d">Columna izquierda: Inicio; proceso SEGUNDOS_HORA = 3600; proceso SEGUNDOS_MINUTO = 60; salida en pantalla del mensaje Duración en segundos; entrada totalSegundos; conector A. Columna derecha: conector A; proceso horas = trunc(totalSegundos / SEGUNDOS_HORA); proceso resto = totalSegundos % SEGUNDOS_HORA; proceso minutos = trunc(resto / SEGUNDOS_MINUTO); proceso segundos = resto % SEGUNDOS_MINUTO; salida en pantalla del resultado; Fin.</desc>
+<defs><marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0b2e59"/></marker></defs>
+<rect width="960" height="475" fill="#ffffff"/>
+<rect x="155" y="15" width="120" height="40" rx="20" ry="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="215" y="35" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Inicio</text>
+<line x1="215" y1="55" x2="215" y2="79" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="75.0" y="79" width="280" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="215" y="99" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">SEGUNDOS_HORA = 3600</text>
+<line x1="215" y1="119" x2="215" y2="143" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="75.0" y="143" width="280" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="215" y="163" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">SEGUNDOS_MINUTO = 60</text>
+<line x1="215" y1="183" x2="215" y2="207" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<path d="M25.0,227.0 L43.0,207 L389.0,207 A16,20.0 0 0 1 389.0,247 L43.0,247 Z" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="215" y="227.0" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Mostrar "Duración en segundos: "</text>
+<line x1="215" y1="247" x2="215" y2="271" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<polygon points="93.0,271 355.0,271 337.0,311 75.0,311" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="215" y="291" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Entrada: totalSegundos</text>
+<line x1="215" y1="311" x2="215" y2="335" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<circle cx="215" cy="355" r="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="215" y="355" text-anchor="middle" dominant-baseline="middle" font-size="16" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">A</text>
+<circle cx="695" cy="35" r="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="695" y="35" text-anchor="middle" dominant-baseline="middle" font-size="16" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">A</text>
+<line x1="695" y1="55" x2="695" y2="79" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="465.0" y="79" width="460" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="695" y="99" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">horas = trunc(totalSegundos / SEGUNDOS_HORA)</text>
+<line x1="695" y1="119" x2="695" y2="143" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="465.0" y="143" width="460" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="695" y="163" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">resto = totalSegundos % SEGUNDOS_HORA</text>
+<line x1="695" y1="183" x2="695" y2="207" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="465.0" y="207" width="460" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="695" y="227" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">minutos = trunc(resto / SEGUNDOS_MINUTO)</text>
+<line x1="695" y1="247" x2="695" y2="271" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="465.0" y="271" width="460" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="695" y="291" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">segundos = resto % SEGUNDOS_MINUTO</text>
+<line x1="695" y1="311" x2="695" y2="335" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<path d="M445.0,365.0 L463.0,335 L929.0,335 A16,30.0 0 0 1 929.0,395 L463.0,395 Z" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="695" y="354" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Mostrar totalSegundos, " s equivalen a ",</text>
+<text x="695" y="376" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">horas, " h ", minutos, " min ", segundos, " s"</text>
+<line x1="695" y1="395" x2="695" y2="419" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="635" y="419" width="120" height="40" rx="20" ry="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="695" y="439" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Fin</text>
+</svg>

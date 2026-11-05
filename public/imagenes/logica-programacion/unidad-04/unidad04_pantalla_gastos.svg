@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 304" width="520" height="304" role="img" aria-labelledby="t d">
+<title id="t">Pantalla del registro de gastos</title>
+<desc id="d">Ventana de ejecución: Gasto (0 para terminar): / usuario escribe 120 / Gasto (0 para terminar): / usuario escribe 45.5 / Gasto (0 para terminar): / usuario escribe 300 / Gasto (0 para terminar): / usuario escribe 0 / Total: $465.5 en 3 gastos. Mayor: $300</desc>
+<defs><marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0b2e59"/></marker></defs>
+<rect width="520" height="304" fill="#ffffff"/>
+<rect x="10" y="10" width="500" height="244" rx="8" ry="8" fill="#1e2430" stroke="#3b4252" stroke-width="1"/>
+<rect x="10" y="10" width="500" height="30" rx="8" ry="8" fill="#3b4252"/>
+<rect x="10" y="30" width="500" height="10" fill="#3b4252"/>
+<text x="260.0" y="25" text-anchor="middle" dominant-baseline="middle" font-size="12" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#e6edf3">Ejecución · Registro de gastos</text>
+<text x="28" y="58" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Gasto (0 para terminar):</text>
+<text x="28" y="80" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#f2c94c">&gt; 120</text>
+<text x="28" y="102" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Gasto (0 para terminar):</text>
+<text x="28" y="124" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#f2c94c">&gt; 45.5</text>
+<text x="28" y="146" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Gasto (0 para terminar):</text>
+<text x="28" y="168" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#f2c94c">&gt; 300</text>
+<text x="28" y="190" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Gasto (0 para terminar):</text>
+<text x="28" y="212" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#f2c94c">&gt; 0</text>
+<text x="28" y="234" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Total: $465.5 en 3 gastos. Mayor: $300</text>
+<rect x="20" y="262" width="14" height="14" rx="2" ry="2" fill="#e6edf3" stroke="#e6edf3" stroke-width="0"/>
+<text x="42" y="270" text-anchor="start" dominant-baseline="middle" font-size="12" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#333">lo que muestra el algoritmo</text>
+<rect x="250" y="262" width="14" height="14" rx="2" ry="2" fill="#f2c94c" stroke="#f2c94c" stroke-width="0"/>
+<text x="272" y="270" text-anchor="start" dominant-baseline="middle" font-size="12" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#333">lo que escribe el usuario</text>
+<text x="20" y="290" text-anchor="start" dominant-baseline="middle" font-size="10" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#777">Representación aproximada de la ventana de ejecución, no una captura de una herramienta específica.</text>
+</svg>

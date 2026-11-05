@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 692" width="980" height="692" role="img" aria-labelledby="t d">
+<title id="t">La memoria paso a paso en el recibo de luz</title>
+<desc id="d">Tres columnas. Después de declarar: solo las constantes PRECIO_KWH 1.10 y CARGO_FIJO 35.00 tienen valor. Después de las entradas: lecturaAnterior 15230 y lecturaActual 15488. Después del proceso: consumo 258, importeEnergia 283.8 y total 318.8. En cada paso se resaltan las celdas que cambiaron.</desc>
+<defs><marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0b2e59"/></marker></defs>
+<rect width="980" height="692" fill="#ffffff"/>
+<rect x="20" y="10" width="296" height="640" rx="8" ry="8" fill="#f7f9fc" stroke="#c9d3e0" stroke-width="1"/>
+<text x="168" y="34" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#0b2e59">1. Después de declarar</text>
+<rect x="38" y="56" width="260" height="74" rx="6" ry="6" fill="#e8ecf2" stroke="#0b2e59" stroke-width="2"/>
+<text x="48" y="72" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">PRECIO_KWH</text>
+<text x="48" y="90" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL · constante</text>
+<rect x="48" y="100" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="168.0" y="112" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">1.10</text>
+<rect x="38" y="140" width="260" height="74" rx="6" ry="6" fill="#e8ecf2" stroke="#0b2e59" stroke-width="2"/>
+<text x="48" y="156" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">CARGO_FIJO</text>
+<text x="48" y="174" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL · constante</text>
+<rect x="48" y="184" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="168.0" y="196" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">35.00</text>
+<rect x="38" y="224" width="260" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="48" y="240" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">lecturaAnterior</text>
+<text x="48" y="258" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">ENTERO</text>
+<rect x="48" y="268" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="168.0" y="280" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#999">?</text>
+<rect x="38" y="308" width="260" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="48" y="324" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">lecturaActual</text>
+<text x="48" y="342" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">ENTERO</text>
+<rect x="48" y="352" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="168.0" y="364" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#999">?</text>
+<rect x="38" y="392" width="260" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="48" y="408" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">consumo</text>
+<text x="48" y="426" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">ENTERO</text>
+<rect x="48" y="436" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="168.0" y="448" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#999">?</text>
+<rect x="38" y="476" width="260" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="48" y="492" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">importeEnergia</text>
+<text x="48" y="510" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL</text>
+<rect x="48" y="520" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="168.0" y="532" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#999">?</text>
+<rect x="38" y="560" width="260" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="48" y="576" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">total</text>
+<text x="48" y="594" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL</text>
+<rect x="48" y="604" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="168.0" y="616" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#999">?</text>
+<line x1="318" y1="330" x2="334" y2="330" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="336" y="10" width="296" height="640" rx="8" ry="8" fill="#f7f9fc" stroke="#c9d3e0" stroke-width="1"/>
+<text x="484" y="34" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#0b2e59">2. Después de las entradas</text>
+<rect x="354" y="56" width="260" height="74" rx="6" ry="6" fill="#e8ecf2" stroke="#0b2e59" stroke-width="2"/>
+<text x="364" y="72" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">PRECIO_KWH</text>
+<text x="364" y="90" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL · constante</text>
+<rect x="364" y="100" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="484.0" y="112" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">1.10</text>
+<rect x="354" y="140" width="260" height="74" rx="6" ry="6" fill="#e8ecf2" stroke="#0b2e59" stroke-width="2"/>
+<text x="364" y="156" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">CARGO_FIJO</text>
+<text x="364" y="174" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL · constante</text>
+<rect x="364" y="184" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="484.0" y="196" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">35.00</text>
+<rect x="354" y="224" width="260" height="74" rx="6" ry="6" fill="#ffffff" stroke="#b8860b" stroke-width="3"/>
+<text x="364" y="240" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">lecturaAnterior</text>
+<text x="364" y="258" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">ENTERO</text>
+<rect x="364" y="268" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="484.0" y="280" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#7a5a00">15230</text>
+<rect x="354" y="308" width="260" height="74" rx="6" ry="6" fill="#ffffff" stroke="#b8860b" stroke-width="3"/>
+<text x="364" y="324" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">lecturaActual</text>
+<text x="364" y="342" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">ENTERO</text>
+<rect x="364" y="352" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="484.0" y="364" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#7a5a00">15488</text>
+<rect x="354" y="392" width="260" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="364" y="408" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">consumo</text>
+<text x="364" y="426" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">ENTERO</text>
+<rect x="364" y="436" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="484.0" y="448" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#999">?</text>
+<rect x="354" y="476" width="260" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="364" y="492" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">importeEnergia</text>
+<text x="364" y="510" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL</text>
+<rect x="364" y="520" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="484.0" y="532" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#999">?</text>
+<rect x="354" y="560" width="260" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="364" y="576" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">total</text>
+<text x="364" y="594" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL</text>
+<rect x="364" y="604" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="484.0" y="616" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#999">?</text>
+<line x1="634" y1="330" x2="650" y2="330" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="652" y="10" width="296" height="640" rx="8" ry="8" fill="#f7f9fc" stroke="#c9d3e0" stroke-width="1"/>
+<text x="800" y="34" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#0b2e59">3. Después del proceso</text>
+<rect x="670" y="56" width="260" height="74" rx="6" ry="6" fill="#e8ecf2" stroke="#0b2e59" stroke-width="2"/>
+<text x="680" y="72" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">PRECIO_KWH</text>
+<text x="680" y="90" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL · constante</text>
+<rect x="680" y="100" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="800.0" y="112" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">1.10</text>
+<rect x="670" y="140" width="260" height="74" rx="6" ry="6" fill="#e8ecf2" stroke="#0b2e59" stroke-width="2"/>
+<text x="680" y="156" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">CARGO_FIJO</text>
+<text x="680" y="174" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL · constante</text>
+<rect x="680" y="184" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="800.0" y="196" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">35.00</text>
+<rect x="670" y="224" width="260" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="680" y="240" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">lecturaAnterior</text>
+<text x="680" y="258" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">ENTERO</text>
+<rect x="680" y="268" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="800.0" y="280" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">15230</text>
+<rect x="670" y="308" width="260" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="680" y="324" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">lecturaActual</text>
+<text x="680" y="342" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">ENTERO</text>
+<rect x="680" y="352" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="800.0" y="364" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">15488</text>
+<rect x="670" y="392" width="260" height="74" rx="6" ry="6" fill="#ffffff" stroke="#b8860b" stroke-width="3"/>
+<text x="680" y="408" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">consumo</text>
+<text x="680" y="426" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">ENTERO</text>
+<rect x="680" y="436" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="800.0" y="448" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#7a5a00">258</text>
+<rect x="670" y="476" width="260" height="74" rx="6" ry="6" fill="#ffffff" stroke="#b8860b" stroke-width="3"/>
+<text x="680" y="492" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">importeEnergia</text>
+<text x="680" y="510" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL</text>
+<rect x="680" y="520" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="800.0" y="532" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#7a5a00">283.8</text>
+<rect x="670" y="560" width="260" height="74" rx="6" ry="6" fill="#ffffff" stroke="#b8860b" stroke-width="3"/>
+<text x="680" y="576" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">total</text>
+<text x="680" y="594" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL</text>
+<rect x="680" y="604" width="240" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="800.0" y="616" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#7a5a00">318.8</text>
+<rect x="20" y="664" width="22" height="16" rx="3" ry="3" fill="#ffffff" stroke="#b8860b" stroke-width="3"/>
+<text x="50" y="672" text-anchor="start" dominant-baseline="middle" font-size="13" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#111">Celda que cambió en este paso</text>
+<text x="320" y="672" text-anchor="start" dominant-baseline="middle" font-size="13" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#444">Entradas: 15230 y 15488. Las constantes no cambian en ningún paso.</text>
+</svg>

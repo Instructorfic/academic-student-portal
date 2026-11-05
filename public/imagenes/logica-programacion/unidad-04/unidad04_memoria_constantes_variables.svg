@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 350" width="960" height="350" role="img" aria-labelledby="t d">
+<title id="t">Constantes y variables en memoria</title>
+<desc id="d">Siete celdas de memoria del recibo de luz. Las constantes PRECIO_KWH (1.10) y CARGO_FIJO (35.00) tienen fondo gris y ya tienen valor. Las variables lecturaAnterior, lecturaActual, consumo, importeEnergia y total tienen fondo blanco y su valor es desconocido. Cada celda muestra una dirección ilustrativa.</desc>
+<defs><marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0b2e59"/></marker></defs>
+<rect width="960" height="350" fill="#ffffff"/>
+<text x="480" y="26" text-anchor="middle" dominant-baseline="middle" font-size="17" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#0b2e59">Memoria después de las declaraciones del recibo de luz</text>
+<rect x="30" y="50" width="200" height="74" rx="6" ry="6" fill="#e8ecf2" stroke="#0b2e59" stroke-width="2"/>
+<text x="40" y="66" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">PRECIO_KWH</text>
+<text x="40" y="84" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL · constante</text>
+<rect x="40" y="94" width="180" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="130.0" y="106" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">1.10</text>
+<text x="222" y="84" text-anchor="end" dominant-baseline="middle" font-size="10" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#777">dir. 1000</text>
+<rect x="258" y="50" width="200" height="74" rx="6" ry="6" fill="#e8ecf2" stroke="#0b2e59" stroke-width="2"/>
+<text x="268" y="66" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">CARGO_FIJO</text>
+<text x="268" y="84" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL · constante</text>
+<rect x="268" y="94" width="180" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="358.0" y="106" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">35.00</text>
+<text x="450" y="84" text-anchor="end" dominant-baseline="middle" font-size="10" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#777">dir. 1008</text>
+<rect x="486" y="50" width="200" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="496" y="66" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">lecturaAnterior</text>
+<text x="496" y="84" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">ENTERO</text>
+<rect x="496" y="94" width="180" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="586.0" y="106" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#999">?</text>
+<text x="678" y="84" text-anchor="end" dominant-baseline="middle" font-size="10" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#777">dir. 1016</text>
+<rect x="714" y="50" width="200" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="724" y="66" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">lecturaActual</text>
+<text x="724" y="84" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">ENTERO</text>
+<rect x="724" y="94" width="180" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="814.0" y="106" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#999">?</text>
+<text x="906" y="84" text-anchor="end" dominant-baseline="middle" font-size="10" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#777">dir. 1024</text>
+<rect x="30" y="146" width="200" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="40" y="162" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">consumo</text>
+<text x="40" y="180" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">ENTERO</text>
+<rect x="40" y="190" width="180" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="130.0" y="202" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#999">?</text>
+<text x="222" y="180" text-anchor="end" dominant-baseline="middle" font-size="10" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#777">dir. 1032</text>
+<rect x="258" y="146" width="200" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="268" y="162" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">importeEnergia</text>
+<text x="268" y="180" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL</text>
+<rect x="268" y="190" width="180" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="358.0" y="202" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#999">?</text>
+<text x="450" y="180" text-anchor="end" dominant-baseline="middle" font-size="10" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#777">dir. 1040</text>
+<rect x="486" y="146" width="200" height="74" rx="6" ry="6" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="496" y="162" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#111">total</text>
+<text x="496" y="180" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#555">REAL</text>
+<rect x="496" y="190" width="180" height="24" rx="3" ry="3" fill="#ffffff" stroke="#9aa8bb" stroke-width="1"/>
+<text x="586.0" y="202" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#999">?</text>
+<text x="678" y="180" text-anchor="end" dominant-baseline="middle" font-size="10" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#777">dir. 1048</text>
+<rect x="30" y="262" width="22" height="18" rx="3" ry="3" fill="#e8ecf2" stroke="#0b2e59" stroke-width="2"/>
+<text x="60" y="271" text-anchor="start" dominant-baseline="middle" font-size="13" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#111">Constante: recibe su valor al declararse y no cambia durante la ejecución</text>
+<rect x="30" y="290" width="22" height="18" rx="3" ry="3" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="60" y="299" text-anchor="start" dominant-baseline="middle" font-size="13" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#111">Variable: se reserva al declararse, pero todavía no tiene valor (?) hasta una Entrada o una asignación</text>
+<text x="30" y="328" text-anchor="start" dominant-baseline="middle" font-size="11" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#666">Representación didáctica. Las direcciones son ilustrativas: la memoria real se organiza en bytes y el tamaño de cada tipo depende del lenguaje.</text>
+</svg>

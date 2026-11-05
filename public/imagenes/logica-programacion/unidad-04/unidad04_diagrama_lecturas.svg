@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1260 550" width="1260" height="550" role="img" aria-labelledby="t d">
+<title id="t">Diagrama de flujo: condicional doble del recibo de luz con validación</title>
+<desc id="d">Columna izquierda: Inicio; procesos PRECIO_KWH = 1.10 y CARGO_FIJO = 35.00; salida y entrada de lecturaAnterior; salida y entrada de lecturaActual; conector A. Columna derecha: conector A; decisión lecturaActual &gt;= lecturaAnterior. Rama Sí: procesos consumo, importeEnergia y total, y salida de los tres valores. Rama No: salida en pantalla del mensaje Error: lecturas invertidas. Ambas ramas se unen antes de Fin.</desc>
+<defs><marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0b2e59"/></marker></defs>
+<rect width="1260" height="550" fill="#ffffff"/>
+<rect x="140" y="15" width="120" height="40" rx="20" ry="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="35" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Inicio</text>
+<line x1="200" y1="55" x2="200" y2="79" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="70.0" y="79" width="260" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="99" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">PRECIO_KWH = 1.10</text>
+<line x1="200" y1="119" x2="200" y2="143" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="70.0" y="143" width="260" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="163" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">CARGO_FIJO = 35.00</text>
+<line x1="200" y1="183" x2="200" y2="207" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<path d="M10.0,227 L28.0,207 L374.0,207 A16,20 0 0 1 374.0,247 L28.0,247 Z" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="227" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Mostrar "Lectura anterior (kWh): "</text>
+<line x1="200" y1="247" x2="200" y2="271" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<polygon points="78.0,271 340.0,271 322.0,311 60.0,311" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="291" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Entrada: lecturaAnterior</text>
+<line x1="200" y1="311" x2="200" y2="335" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<path d="M10.0,355 L28.0,335 L374.0,335 A16,20 0 0 1 374.0,375 L28.0,375 Z" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="355" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Mostrar "Lectura actual (kWh): "</text>
+<line x1="200" y1="375" x2="200" y2="399" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<polygon points="78.0,399 340.0,399 322.0,439 60.0,439" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="419" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Entrada: lecturaActual</text>
+<line x1="200" y1="439" x2="200" y2="463" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<circle cx="200" cy="483" r="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="483" text-anchor="middle" dominant-baseline="middle" font-size="16" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">A</text>
+<circle cx="835" cy="35" r="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="835" y="35" text-anchor="middle" dominant-baseline="middle" font-size="16" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">A</text>
+<line x1="835" y1="55" x2="835" y2="79" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<polygon points="835,79 1025.0,124.0 835,169 645.0,124.0" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="835" y="124.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">lecturaActual &gt;= lecturaAnterior</text>
+<polyline points="645,124 605,124 605,194" fill="none" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<text x="630" y="108" text-anchor="middle" dominant-baseline="middle" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">Sí</text>
+<rect x="410.0" y="194" width="390" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="605" y="214" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">consumo = lecturaActual - lecturaAnterior</text>
+<line x1="605" y1="234" x2="605" y2="258" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="410.0" y="258" width="390" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="605" y="278" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">importeEnergia = consumo * PRECIO_KWH</text>
+<line x1="605" y1="298" x2="605" y2="322" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="410.0" y="322" width="390" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="605" y="342" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">total = importeEnergia + CARGO_FIJO</text>
+<line x1="605" y1="362" x2="605" y2="386" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<path d="M410.0,406 L428.0,386 L784.0,386 A16,20 0 0 1 784.0,426 L428.0,426 Z" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="605" y="406" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Mostrar consumo, importeEnergia, total</text>
+<polyline points="605,426 605,466 831,466" fill="none" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<polyline points="1025,124 1065,124 1065,194" fill="none" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<text x="1040" y="108" text-anchor="middle" dominant-baseline="middle" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">No</text>
+<path d="M885.0,214 L903.0,194 L1229.0,194 A16,20 0 0 1 1229.0,234 L903.0,234 Z" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="1065" y="214" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Mostrar "Error: lecturas invertidas"</text>
+<polyline points="1065,234 1065,466 839,466" fill="none" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<circle cx="835" cy="466" r="4" fill="#0b2e59"/>
+<line x1="835" y1="470" x2="835" y2="494" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="775" y="494" width="120" height="40" rx="20" ry="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="835" y="514" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Fin</text>
+</svg>

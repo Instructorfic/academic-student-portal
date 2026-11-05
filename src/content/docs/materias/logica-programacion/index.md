@@ -33,7 +33,7 @@ la anterior.
 | I | Introducción a la programación | **Publicada** |
 | II | Elementos algorítmicos básicos | **Publicada** |
 | III | Metodología para la solución de problemas algorítmicos | **Publicada** |
-| IV | Estructuras algorítmicas | En preparación |
+| IV | Estructuras algorítmicas | **Publicada** |
 
 ```text
 Introducción a la programación
@@ -71,5 +71,8 @@ aprobatoria mínima de 6.0 en los exámenes parciales.
 - [Unidad I — Introducción a la programación](/materias/logica-programacion/unidad-01/)
 - [Unidad II — Elementos algorítmicos básicos](/materias/logica-programacion/unidad-02/)
 - [Unidad III — Metodología para la solución de problemas algorítmicos](/materias/logica-programacion/unidad-03/)
+- [Unidad IV — Estructuras algorítmicas](/materias/logica-programacion/unidad-04/)
 
-La Unidad IV del programa todavía no está publicada en este portal.
+## Material de referencia
+
+- [Del pseudocódigo a C, C++ y Python](/materias/logica-programacion/traduccion-lenguajes/): tabla de equivalencias y diez algoritmos del curso traducidos a tres lenguajes, con los programas descargables. No es evaluable.

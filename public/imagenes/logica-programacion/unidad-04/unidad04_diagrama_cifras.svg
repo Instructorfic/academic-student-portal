@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 545" width="960" height="545" role="img" aria-labelledby="t d">
+<title id="t">Diagrama de flujo: ciclo Mientras de la suma de cifras</title>
+<desc id="d">Columna izquierda: Inicio; salida del mensaje Número entero; entrada numero; procesos pendiente = numero, suma = 0 y cifras = 0; conector A. Columna derecha: conector A; decisión pendiente &gt; 0. Rama Sí: procesos suma = suma + pendiente % 10, cifras = cifras + 1 y pendiente = trunc(pendiente / 10), y una línea regresa a la decisión. Rama No: salida en pantalla de la suma y el número de cifras; Fin.</desc>
+<defs><marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0b2e59"/></marker></defs>
+<rect width="960" height="545" fill="#ffffff"/>
+<rect x="140" y="15" width="120" height="40" rx="20" ry="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="35" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Inicio</text>
+<line x1="200" y1="55" x2="200" y2="79" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<path d="M30.0,99 L48.0,79 L354.0,79 A16,20 0 0 1 354.0,119 L48.0,119 Z" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="99" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Mostrar "Número entero: "</text>
+<line x1="200" y1="119" x2="200" y2="143" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<polygon points="98.0,143 320.0,143 302.0,183 80.0,183" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="163" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Entrada: numero</text>
+<line x1="200" y1="183" x2="200" y2="207" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="80.0" y="207" width="240" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="227" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">pendiente = numero</text>
+<line x1="200" y1="247" x2="200" y2="271" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="80.0" y="271" width="240" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="291" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">suma = 0</text>
+<line x1="200" y1="311" x2="200" y2="335" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="80.0" y="335" width="240" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="355" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">cifras = 0</text>
+<line x1="200" y1="375" x2="200" y2="399" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<circle cx="200" cy="419" r="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="419" text-anchor="middle" dominant-baseline="middle" font-size="16" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">A</text>
+<circle cx="640" cy="35" r="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="640" y="35" text-anchor="middle" dominant-baseline="middle" font-size="16" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">A</text>
+<line x1="640" y1="55" x2="640" y2="79" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<polygon points="640,79 790.0,124.0 640,169 490.0,124.0" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="640" y="124.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">pendiente &gt; 0</text>
+<line x1="640" y1="169" x2="640" y2="194" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<text x="656" y="182" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">Sí</text>
+<rect x="450.0" y="194" width="380" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="640" y="214" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">suma = suma + pendiente % 10</text>
+<line x1="640" y1="234" x2="640" y2="258" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="450.0" y="258" width="380" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="640" y="278" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">cifras = cifras + 1</text>
+<line x1="640" y1="298" x2="640" y2="322" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="450.0" y="322" width="380" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="640" y="342" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">pendiente = trunc(pendiente / 10)</text>
+<polyline points="640,362 640,386 410,386 410,124 490,124" fill="none" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<polyline points="790,124 870,124 870,404 640,404 640,424" fill="none" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<text x="805" y="108" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">No</text>
+<path d="M410.0,444 L428.0,424 L854.0,424 A16,20 0 0 1 854.0,464 L428.0,464 Z" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="640" y="444" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Mostrar "Suma: ", suma, " Cifras: ", cifras</text>
+<line x1="640" y1="464" x2="640" y2="488" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="580" y="488" width="120" height="40" rx="20" ry="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="640" y="508" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Fin</text>
+</svg>

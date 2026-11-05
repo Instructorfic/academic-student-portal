@@ -14,6 +14,6 @@ materias y unidades.
 - [Taller Integrador de Especialización](/materias/taller-integrador/)
   — Bloque I.
 - [Lógica de Programación y Pensamiento Computacional](/materias/logica-programacion/)
-  — Unidad I.
+  — Unidades I a IV.
 - [Pruebas de Software](/materias/pruebas-software/)
   — Unidad I.

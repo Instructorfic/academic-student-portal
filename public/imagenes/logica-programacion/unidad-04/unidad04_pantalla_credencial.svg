@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 370" width="520" height="370" role="img" aria-labelledby="t d">
+<title id="t">Pantalla de la credencial de la biblioteca</title>
+<desc id="d">Ventana de ejecución: Nombre completo: / usuario escribe Ana Sofía López / Matrícula: / usuario escribe 0045812 / Carrera: / usuario escribe Informática / Semestre (1 a 10): / usuario escribe 1 / ===== CREDENCIAL DE BIBLIOTECA ===== / Nombre: Ana Sofía López / Matrícula: 0045812 / Carrera: Informática · Semestre 1</desc>
+<defs><marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0b2e59"/></marker></defs>
+<rect width="520" height="370" fill="#ffffff"/>
+<rect x="10" y="10" width="500" height="310" rx="8" ry="8" fill="#1e2430" stroke="#3b4252" stroke-width="1"/>
+<rect x="10" y="10" width="500" height="30" rx="8" ry="8" fill="#3b4252"/>
+<rect x="10" y="30" width="500" height="10" fill="#3b4252"/>
+<text x="260.0" y="25" text-anchor="middle" dominant-baseline="middle" font-size="12" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#e6edf3">Ejecución · Credencial de la biblioteca</text>
+<text x="28" y="58" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Nombre completo:</text>
+<text x="28" y="80" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#f2c94c">&gt; Ana Sofía López</text>
+<text x="28" y="102" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Matrícula:</text>
+<text x="28" y="124" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#f2c94c">&gt; 0045812</text>
+<text x="28" y="146" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Carrera:</text>
+<text x="28" y="168" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#f2c94c">&gt; Informática</text>
+<text x="28" y="190" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Semestre (1 a 10):</text>
+<text x="28" y="212" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#f2c94c">&gt; 1</text>
+<text x="28" y="234" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">===== CREDENCIAL DE BIBLIOTECA =====</text>
+<text x="28" y="256" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Nombre: Ana Sofía López</text>
+<text x="28" y="278" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Matrícula: 0045812</text>
+<text x="28" y="300" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Carrera: Informática · Semestre 1</text>
+<rect x="20" y="328" width="14" height="14" rx="2" ry="2" fill="#e6edf3" stroke="#e6edf3" stroke-width="0"/>
+<text x="42" y="336" text-anchor="start" dominant-baseline="middle" font-size="12" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#333">lo que muestra el algoritmo</text>
+<rect x="250" y="328" width="14" height="14" rx="2" ry="2" fill="#f2c94c" stroke="#f2c94c" stroke-width="0"/>
+<text x="272" y="336" text-anchor="start" dominant-baseline="middle" font-size="12" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#333">lo que escribe el usuario</text>
+<text x="20" y="356" text-anchor="start" dominant-baseline="middle" font-size="10" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#777">Representación aproximada de la ventana de ejecución, no una captura de una herramienta específica.</text>
+</svg>

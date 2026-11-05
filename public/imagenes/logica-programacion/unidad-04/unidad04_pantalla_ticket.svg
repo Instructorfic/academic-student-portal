@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 634" width="520" height="634" role="img" aria-labelledby="t d">
+<title id="t">Pantalla esperada del ticket del Laboratorio 01</title>
+<desc id="d">Ventana de ejecución: Cafés americanos: / usuario escribe 2 / Capuchinos: / usuario escribe 1 / Sándwiches de pollo: / usuario escribe 1 / Aguas embotelladas: / usuario escribe 0 / Importe recibido en pesos: / usuario escribe 200 / ========== CAFETERÍA EL BYTE ========== / Café americano      x 2   $50 / Capuchino           x 1   $38 / Sándwich de pollo   x 1   $55 / Agua embotellada    x 0   $0 / --------------------------------------- / Artículos: 4 / TOTAL: $143 / Base sin IVA: $123.28 / IVA incluido (16%): $19.72 / Pago: $200 / Cambio: $57 / ======================================= / Gracias por su compra</desc>
+<defs><marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0b2e59"/></marker></defs>
+<rect width="520" height="634" fill="#ffffff"/>
+<rect x="10" y="10" width="500" height="574" rx="8" ry="8" fill="#1e2430" stroke="#3b4252" stroke-width="1"/>
+<rect x="10" y="10" width="500" height="30" rx="8" ry="8" fill="#3b4252"/>
+<rect x="10" y="30" width="500" height="10" fill="#3b4252"/>
+<text x="260.0" y="25" text-anchor="middle" dominant-baseline="middle" font-size="12" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#e6edf3">Ejecución · Ticket de la Cafetería El Byte</text>
+<text x="28" y="58" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Cafés americanos:</text>
+<text x="28" y="80" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#f2c94c">&gt; 2</text>
+<text x="28" y="102" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Capuchinos:</text>
+<text x="28" y="124" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#f2c94c">&gt; 1</text>
+<text x="28" y="146" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Sándwiches de pollo:</text>
+<text x="28" y="168" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#f2c94c">&gt; 1</text>
+<text x="28" y="190" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Aguas embotelladas:</text>
+<text x="28" y="212" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#f2c94c">&gt; 0</text>
+<text x="28" y="234" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Importe recibido en pesos:</text>
+<text x="28" y="256" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="bold" fill="#f2c94c">&gt; 200</text>
+<text x="28" y="278" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">========== CAFETERÍA EL BYTE ==========</text>
+<text x="28" y="300" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Café americano      x 2   $50</text>
+<text x="28" y="322" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Capuchino           x 1   $38</text>
+<text x="28" y="344" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Sándwich de pollo   x 1   $55</text>
+<text x="28" y="366" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Agua embotellada    x 0   $0</text>
+<text x="28" y="388" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">---------------------------------------</text>
+<text x="28" y="410" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Artículos: 4</text>
+<text x="28" y="432" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">TOTAL: $143</text>
+<text x="28" y="454" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Base sin IVA: $123.28</text>
+<text x="28" y="476" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">IVA incluido (16%): $19.72</text>
+<text x="28" y="498" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Pago: $200</text>
+<text x="28" y="520" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Cambio: $57</text>
+<text x="28" y="542" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">=======================================</text>
+<text x="28" y="564" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#e6edf3">Gracias por su compra</text>
+<rect x="20" y="592" width="14" height="14" rx="2" ry="2" fill="#e6edf3" stroke="#e6edf3" stroke-width="0"/>
+<text x="42" y="600" text-anchor="start" dominant-baseline="middle" font-size="12" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#333">lo que muestra el algoritmo</text>
+<rect x="250" y="592" width="14" height="14" rx="2" ry="2" fill="#f2c94c" stroke="#f2c94c" stroke-width="0"/>
+<text x="272" y="600" text-anchor="start" dominant-baseline="middle" font-size="12" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#333">lo que escribe el usuario</text>
+<text x="20" y="620" text-anchor="start" dominant-baseline="middle" font-size="10" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="normal" fill="#777">Representación aproximada de la ventana de ejecución, no una captura de una herramienta específica.</text>
+</svg>

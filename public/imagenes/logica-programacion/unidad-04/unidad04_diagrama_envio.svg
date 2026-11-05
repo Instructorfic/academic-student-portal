@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 495" width="1080" height="495" role="img" aria-labelledby="t d">
+<title id="t">Diagrama de flujo: condicional simple del envío gratis</title>
+<desc id="d">Columna izquierda: Inicio; proceso MINIMO_ENVIO_GRATIS = 300; proceso COSTO_ENVIO = 79; salida en pantalla del mensaje Subtotal en pesos; entrada subtotal; conector A. Columna derecha: conector A; proceso total = subtotal; decisión subtotal &lt; MINIMO_ENVIO_GRATIS. Por la rama Sí, proceso total = total + COSTO_ENVIO y regreso al punto de unión. Por la rama No, directo al punto de unión. Después, salida en pantalla del total a pagar; Fin.</desc>
+<defs><marker id="flecha" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0b2e59"/></marker></defs>
+<rect width="1080" height="495" fill="#ffffff"/>
+<rect x="140" y="15" width="120" height="40" rx="20" ry="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="35" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Inicio</text>
+<line x1="200" y1="55" x2="200" y2="79" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="40.0" y="79" width="320" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="99" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">MINIMO_ENVIO_GRATIS = 300</text>
+<line x1="200" y1="119" x2="200" y2="143" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="40.0" y="143" width="320" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="163" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">COSTO_ENVIO = 79</text>
+<line x1="200" y1="183" x2="200" y2="207" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<path d="M15.0,227 L33.0,207 L369.0,207 A16,20 0 0 1 369.0,247 L33.0,247 Z" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="227" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Mostrar "Subtotal en pesos: "</text>
+<line x1="200" y1="247" x2="200" y2="271" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<polygon points="93.0,271 325.0,271 307.0,311 75.0,311" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="291" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Entrada: subtotal</text>
+<line x1="200" y1="311" x2="200" y2="335" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<circle cx="200" cy="355" r="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="200" y="355" text-anchor="middle" dominant-baseline="middle" font-size="16" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">A</text>
+<circle cx="620" cy="35" r="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="620" y="35" text-anchor="middle" dominant-baseline="middle" font-size="16" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">A</text>
+<line x1="620" y1="55" x2="620" y2="79" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="490.0" y="79" width="260" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="620" y="99" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">total = subtotal</text>
+<line x1="620" y1="119" x2="620" y2="143" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<polygon points="620,143 800.0,188.0 620,233 440.0,188.0" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="620" y="188.0" text-anchor="middle" dominant-baseline="middle" font-size="14" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">subtotal &lt; MINIMO_ENVIO_GRATIS</text>
+<polyline points="800,188 870,188 870,258" fill="none" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<text x="825" y="175" text-anchor="middle" dominant-baseline="middle" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">Sí</text>
+<rect x="730.0" y="258" width="280" height="40" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="870" y="278" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">total = total + COSTO_ENVIO</text>
+<polyline points="870,298 870,338 624,338" fill="none" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<line x1="620" y1="233" x2="620" y2="334" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<text x="638" y="258" text-anchor="start" dominant-baseline="middle" font-size="14" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="bold" fill="#111">No</text>
+<circle cx="620" cy="338" r="4" fill="#0b2e59"/>
+<line x1="620" y1="342" x2="620" y2="372" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<path d="M440.0,392 L458.0,372 L784.0,372 A16,20 0 0 1 784.0,412 L458.0,412 Z" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="620" y="392" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Mostrar "Total a pagar: $", total</text>
+<line x1="620" y1="412" x2="620" y2="436" stroke="#0b2e59" stroke-width="2" marker-end="url(#flecha)"/>
+<rect x="560" y="436" width="120" height="40" rx="20" ry="20" fill="#ffffff" stroke="#0b2e59" stroke-width="2"/>
+<text x="620" y="456" text-anchor="middle" dominant-baseline="middle" font-size="15" font-family="Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-weight="normal" fill="#111">Fin</text>
+</svg>

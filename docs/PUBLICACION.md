@@ -594,3 +594,41 @@ hasta hoy y enlaza a los estándares.
 alinea con el OWASP Top 10:2021 y conserva su nota de verificación
 pendiente (PEND-EST-01). El Laboratorio 4 y el tema 7 del Bloque III de
 Taller Integrador ya usan la edición 2025 y lo señalan.
+
+## 20. Derivación — Lógica de Programación, Unidad IV y ajustes de la Unidad III
+
+Fecha: **2026-11-04**. Fuente: `academic-workspace`,
+`materias/logica-programacion/` (cambios aún sin commit en el workspace).
+Publicación por instrucción directa del responsable académico: publicar
+todo lo pendiente de la materia. En la fuente, los materiales de la
+Unidad IV están en `BORRADOR`, con QA inicial
+`APROBADO_CON_OBSERVACIONES` en `unidad04/AUDITORIA_QA_MATERIALES_U4.md`
+(la observación principal es que las traducciones a PSeInt no se han
+ejecutado). Siguiendo la sección 9, no se agregan insignias de estado.
+
+### Unidad III — ajustes
+
+| Archivo fuente | Destino | Notas |
+| --- | --- | --- |
+| `unidad03/material/unidad03_especificacion_pseudocodigo.md` | `.../unidad-03/especificacion-pseudocodigo.md` | Nuevo en el portal. Incluye la corrección de §19: "Condicional encadenada (Sino Si)", con la condicional múltiple remitida a la Unidad IV (U3 D-017). La fuente es texto plano: se le dio formato Markdown (títulos, tablas, listas y bloques de código). Se retiran el encabezado de estado y versión, la mención de la decisión D-010 y el registro de cambios. |
+| `unidad03/material/unidad03_glosario_terminos.md` | `.../unidad-03/glosario.md` | Nuevo en el portal. Incluye la distinción entre condicional encadenada y condicional múltiple. Mismo tratamiento de formato. Se retira la mención de la decisión D-013. |
+| — | `.../unidad-03/index.md` | Se agregan las dos páginas a la tabla de materiales y el enlace a la Unidad IV. |
+
+### Unidad IV
+
+| Archivo fuente | Destino | Notas |
+| --- | --- | --- |
+| `unidad04/material/unidad04_presentacion.md` | `.../unidad-04/presentacion.md` + `.../unidad-04/{01..12}-*.md` | Convertida de Marp y separada por subtema oficial (4.1.1 a 4.3.5) más una página de proyecto y cierre. Se retiran la portada, los comentarios internos y las láminas divisorias ("Actividad guiada", "Práctica", "Ejemplo", "Tareas"). Las menciones a la guía del laboratorio, la del proyecto, las tareas y la especificación se convierten en enlaces. Se agrega "Qué sigue". Imágenes en `public/imagenes/logica-programacion/unidad-04/`. |
+| `unidad04/material/unidad04_especificacion_estructuras.md` | `.../unidad-04/especificacion-estructuras.md` | Sin encabezado interno, identificadores de decisiones, rutas del workspace ni registro de cambios. Las referencias a imágenes se sustituyen por los diagramas. `PENDIENTE DE VERIFICACIÓN` se conserva en minúsculas. |
+| `unidad04/tareas/unidad04_tarea_*.md` (6) | `.../unidad-04/tareas/*.md` + índice | Sin comentarios internos (códigos U4-XXX). Descargas en `public/descargas/logica-programacion/unidad-04/` en Markdown y Word. Los `.docx` se generaron localmente con `marked` y `textutil` (pandoc no está disponible). |
+| `unidad04/laboratorios/unidad04_lab0{1,2,3}_*.md` | `.../unidad-04/laboratorios/laboratorio-{1,2,3}-*.md` + índice | Copia íntegra salvo comentarios internos, título, enlaces a la especificación y ruta de la imagen del ticket. |
+| `unidad04/proyectos/unidad04_proyecto_cafeteria.md` | `.../unidad-04/proyecto.md` | Copia íntegra salvo comentario interno. Sin fechas, por decisión del responsable (D-011). |
+| `unidad04/CONTEXTO_UNIDAD.md` §1 a §9 (extracto) | `.../unidad-04/index.md` | Identificación, pregunta, RA4.1 a RA4.11, contenidos, caso, materiales y ruta de estudio. |
+| `recursos/traduccion-lenguajes/` | `.../logica-programacion/traduccion-lenguajes.md` + `public/descargas/logica-programacion/traduccion-lenguajes/{c,cpp,python}/` | Material de referencia no evaluable (U4 D-013). Sin comentario interno ni registro de cambios. Se agrega una sección de descargas con los 31 programas. |
+
+No se derivan: `unidad04/evaluacion/unidad04_examen_parcial.md` y su
+clave (instrumento aún no aplicado), `evaluacion/unidad04_rubrica_proyecto.md`
+y `material/unidad04_solucionario_profesor.md` (TEACHER_RESTRICTED; la
+guía del proyecto resume la evaluación en su sección 9),
+`AUDITORIA_QA_MATERIALES_U4.md`, `CONTEXTO_UNIDAD.md` y `tareas/README.md`
+(WORKSPACE_ONLY).
