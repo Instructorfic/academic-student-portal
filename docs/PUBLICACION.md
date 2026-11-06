@@ -632,3 +632,20 @@ y `material/unidad04_solucionario_profesor.md` (TEACHER_RESTRICTED; la
 guía del proyecto resume la evaluación en su sección 9),
 `AUDITORIA_QA_MATERIALES_U4.md`, `CONTEXTO_UNIDAD.md` y `tareas/README.md`
 (WORKSPACE_ONLY).
+
+## 21. Derivación — Taller Integrador, guía de doble repositorio remoto
+
+Fecha: **2026-11-05**. Fuente: `academic-workspace`,
+`materias/taller-integrador/recursos/guias/guia_doble_repositorio_remoto.md`
+(commit `0f6b6dd`). Publicación por instrucción directa del responsable
+académico. En la fuente, la guía está en `BORRADOR`, sin dictamen de QA.
+Siguiendo la sección 9, no se agregan insignias de estado.
+
+| Archivo fuente | Destino | Notas |
+| --- | --- | --- |
+| `recursos/guias/guia_doble_repositorio_remoto.md` | `.../taller-integrador/guia-doble-repositorio-remoto.md` | Copia íntegra salvo el comentario interno (estado, fuente, corrección técnica y verificación pendiente). El título pasa al frontmatter. |
+| — | `.../taller-integrador/index.md` | Se agrega la sección "Material de referencia" con el enlace a la guía. |
+
+**Verificación pendiente, no resuelta.** Los menús del paso 2 (creación
+del token) se tomaron de la documentación vigente de GitLab y no se han
+comprobado en la instancia `code.ficlabs.com.mx` (GitLab EE v19.5.1).

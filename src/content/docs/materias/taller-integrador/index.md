@@ -69,3 +69,7 @@ documentación o prototipos al final del semestre.
 - [Bloque IV — Contenedores, despliegue y escalabilidad](/materias/taller-integrador/bloque-04/)
 
 El Bloque V del programa todavía no está publicado en este portal.
+
+## Material de referencia
+
+- [Configuración de doble repositorio remoto (GitHub + GitLab institucional)](/materias/taller-integrador/guia-doble-repositorio-remoto/): cómo enviar los cambios del proyecto a GitHub y a `code.ficlabs.com.mx` con un solo `git push`. No es evaluable.

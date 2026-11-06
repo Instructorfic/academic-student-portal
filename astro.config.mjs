@@ -622,6 +622,7 @@ export default defineConfig({
 										},
 									],
 								},
+								{ label: 'Doble repositorio remoto (GitHub + GitLab)', slug: 'materias/taller-integrador/guia-doble-repositorio-remoto' },
 							],
 						},
 						{
